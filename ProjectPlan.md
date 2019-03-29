@@ -9,13 +9,13 @@ It is a exploratory experiment (serum vs stand medium).
 
 De novo assembly with Illumina, PacBio, Nanopore. 
 
-    - How were the samples prepared? 
+ - How were the samples prepared? 
 
     Isolated strain, don't worry about heterozygosity. Extra analysis: BLAST against human to check for contaminations. 2Mbp
 
     Enterobacteria -> look for general properties.
 
-    - What kind of data we have?
+ - What kind of data we have?
 
     DNA reads as well as RNA reads. Annotation of the genome.  
     Both long (PacBio and Nanopore) and short reads (Illumina). 
