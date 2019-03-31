@@ -1,11 +1,10 @@
-## Project Plan
+# Project Plan
 
-# What is the hypothesis?
+## What is the hypothesis?
 
 It is a exploratory experiment (serum vs stand medium). 
 
-
-# What is our data?
+## What is our data?
 
 De novo assembly with Illumina, PacBio, Nanopore. 
 
@@ -26,11 +25,11 @@ De novo assembly with Illumina, PacBio, Nanopore.
 
 Expression analysis with RNA-seq.
 
-# What can we download?
+## What can we download?
 
 What is the accession number -> SRA archive -> find the reads. -> unzip it to FASTQ files
 
-# Steps for analysis
+## Steps for analysis
 
 1. Check read quality with FASTQC. 
     
