@@ -47,6 +47,30 @@ It was extracted form **hospitalized patients**.
     * Data analysis using Rockhopper with strand specific analysis
 
 4. Tn-seq
+    > What is it? Basically purification of genomic DNA from a pooled population of mutants, cleavage of the DNA (using either specific enzymes or random shearing), attachment of one or more adaptors to the DNA fragments to facilitate PCR amplification of the fragments contain- ing transposon sequences, and finally, MPS of the amplified fragments to determine the location of the transposon and the relative abundance of mutants containing a transposon at this site.
+    - What genes are essential for growth in general medium?
+    
+        - 10 replicates of mutant library grown in general medium.
+        - DNA extraction
+        - Tn-seq
+        - sequence reads mapped to the genome
+        - read-counts were tailed for essentiality
+        
+    - What genes are essential for growth in serum?
+        - grown in general medium and serum
+        - same procedure as before
+        - triplicate
+
+Tn-seq samples were sequenced (50 nt, single-end) on one lane of a Illumina Hiseq 2500 generating an average of 15 million high quality reads per sample.
+
+* Reads were split using Galaxy according to their barcode
+* fragments of 16 nt of each read were mapped to the genome using Bowtie 2
+* results sorted and counter by IGV using 25nt window size. 
+* the transposons mapping to the genome will be from the bacteria that survived, meaning that the gene mapped is not essential
+* Read counts normalized RPKM -> statistical analysis with Cyber-T
+* p-value (BH) < 0.05 and >2 abundance in transposon between general and serium medium -> genes contributing to growth in human serum.
+
+---
 
 ## Metadata
 
@@ -60,34 +84,19 @@ It was extracted form **hospitalized patients**.
 |    pE745-5   |   55167   |       166,16      |     CP014534     |
 |    pE745-6   |   65558   |       176,04      |     CP014535     |
 
+---
 
 ## Time consuming steps
 
+---
+
 ## Diagram
+
+---
 
 ## Metadata
 
-
-## What is our data?
-
-De novo assembly with Illumina, PacBio, Nanopore. 
-
- - How were the samples prepared? 
-
-    Isolated strain, don't worry about heterozygosity. Extra analysis: BLAST against human to check for contaminations. 2Mbp
-
-    Enterobacteria -> look for general properties.
-
- - What kind of data we have?
-
-    DNA reads as well as RNA reads. Annotation of the genome.  
-    Both long (PacBio and Nanopore) and short reads (Illumina). 
-
-    RNA-seq : Illumina + Nanopore
-    Genome assembly : Illumina + PacBio 
-
-
-Expression analysis with RNA-seq.
+---
 
 ## What can we download?
 
