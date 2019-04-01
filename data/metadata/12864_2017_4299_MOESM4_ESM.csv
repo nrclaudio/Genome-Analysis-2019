@@ -1,5 +1,3 @@
-Additional file 4. E745 genes that exhibited significant (q<0.001 and fold-change>2) differential expression in human serum, as determined by RNA-Seq.;;;;;;;;;
-;;;;;;;;;
 Synonym;Chromosome/Plasmid;Name;Product;Fold HSerum/BHI RNA-Seqa;q HSerum/BHI RNA-Seqb;;;;
 EfmE745_01939;Chromosome;purL;Phosphoribosylformylglycinamidine synthase 2;422,56;0;;;;
 EfmE745_01937;Chromosome;purM;Phosphoribosylformylglycinamidine cyclo-ligase;322,70;0;;;;
@@ -942,5 +940,3 @@ EfmE745_02195;Chromosome;fabD;Malonyl CoA-acyl carrier protein transacylase;0,02
 EfmE745_02196;Chromosome;acpA_1;Acyl carrier protein;0,02;0;;;;
 predicted RNA;;-;-;0,02;0;;;;
 EfmE745_01547;Chromosome;lacC_1;Tagatose-6-phosphate kinase;0,01;0;;;;
-"a Differential gene expression in BHI and heat-inactivated serum. Only significant values (fold change <0.5 or >2; q <0.001) are shown.";;;;;;;;;
-b q values as reported by Rockhopper;;;;;;;;;
