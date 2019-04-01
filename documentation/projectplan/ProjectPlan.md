@@ -88,6 +88,8 @@ Tn-seq samples were sequenced (50 nt, single-end) on one lane of a Illumina Hise
 
 ## Metadata
 
+_Genome assembly_
+
 | Plasmid name | Size (bp) | Sequence coverage | Accession number |
 |:------------:|:---------:|:-----------------:|:----------------:|
 |  Chromosome  |  2765010  |       85,74       |     CP014529     |
@@ -97,6 +99,10 @@ Tn-seq samples were sequenced (50 nt, single-end) on one lane of a Illumina Hise
 |    pE745-4   |   17254   |       81,08       |     CP014533     |
 |    pE745-5   |   55167   |       166,16      |     CP014534     |
 |    pE745-6   |   65558   |       176,04      |     CP014535     |
+
+_RNA-seq_
+
+[Differentially expresed genes](data/metadata/12864_2017_4299_MOESM4_ESM.csv)
 
 ---
 
