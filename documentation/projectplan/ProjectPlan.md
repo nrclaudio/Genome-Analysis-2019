@@ -71,7 +71,7 @@ They want to prove that the strain they are analyzing (E745) is part of the A-1 
         - read-counts were tailed for essentiality
         
     - What genes are essential for growth in serum?
-        - grown in general medium and serum
+        - grown in general medium and serum (heat inactivated)
         - same procedure as before
         - triplicate
 
@@ -79,9 +79,11 @@ Tn-seq samples were sequenced (50 nt, single-end) on one lane of a Illumina Hise
 
 * Reads were split using Galaxy according to their barcode
 * fragments of 16 nt of each read were mapped to the genome using Bowtie 2
-* results sorted and counter by IGV using 25nt window size. 
+* results sorted and counter by IGV using 25nt window size (110,601). 
+* 49,984 contained one or more seq reads
+* no positional bias in the tranposon insertion sites
 * the transposons mapping to the genome will be from the bacteria that survived, meaning that the gene mapped is not essential
-* Read counts normalized RPKM -> statistical analysis with Cyber-T
+* Read counts (15 mill for each library) normalized RPKM -> statistical analysis with Cyber-T
 * p-value (BH) < 0.05 and >2 abundance in transposon between general and serium medium -> genes contributing to growth in human serum.
 
 ---
@@ -116,9 +118,6 @@ _RNA-seq_
 
 ---
 
-## Metadata
-
----
 
 ## What can we download?
 
