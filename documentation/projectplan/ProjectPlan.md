@@ -85,6 +85,8 @@ Tn-seq samples were sequenced (50 nt, single-end) on one lane of a Illumina Hise
 * the transposons mapping to the genome will be from the bacteria that survived, meaning that the gene mapped is not essential
 * Read counts (15 mill for each library) normalized RPKM -> statistical analysis with Cyber-T
 * p-value (BH) < 0.05 and >2 abundance in transposon between general and serium medium -> genes contributing to growth in human serum.
+* 37 genes contributed to growth of E745 in human serum -> multifactorial process
+* fold change between BHI/Serum -> if theres 100 fold means that the mutant in that mapped gene is not required un BHI but it is on Serum -> possible target
 
 ---
 
@@ -108,6 +110,9 @@ _RNA-seq_
 
 [Differentially expressed genes](https://github.com/Slakky/stunning-garbanzo/blob/master/data/metadata/12864_2017_4299_MOESM4_ESM.csv)
 
+_Tn-seq_
+
+[Genes contributing to growth in human serum](https://github.com/Slakky/stunning-garbanzo/blob/master/data/metadata/12864_2017_4299_MOESM8_ESM.csv)
 ---
 
 ## Time consuming steps
