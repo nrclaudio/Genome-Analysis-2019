@@ -113,7 +113,6 @@ _RNA-seq_
 _Tn-seq_
 
 [Genes contributing to growth in human serum](https://github.com/Slakky/stunning-garbanzo/blob/master/data/metadata/12864_2017_4299_MOESM8_ESM.csv)
----
 
 ## Time consuming steps
 
