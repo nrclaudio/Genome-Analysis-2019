@@ -19,7 +19,7 @@ How come can *E. faecium* grow on human serum (low nutrients)? They try to find 
 Biological data:
 
 1. *Enterococcus faecium* E745
-    -  G+  commensal 
+    -  G+ 
     -  non-hemolytic
     -  commensal
     -  Amp - Vmc resistant
@@ -54,9 +54,6 @@ It was extracted form **hospitalized patients**.
 |    pE745-5   |   55167   |       166,16      |     CP014534     |
 |    pE745-6   |   65558   |       176,04      |     CP014535     |
 
-## Biological source
-
-## How was it generated?
 
 ## Time consuming steps
 
@@ -64,9 +61,6 @@ It was extracted form **hospitalized patients**.
 
 ## Metadata
 
-## What is the hypothesis?
-
-It is a exploratory experiment (serum vs stand medium). 
 
 ## What is our data?
 
