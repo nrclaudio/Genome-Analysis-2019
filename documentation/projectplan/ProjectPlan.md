@@ -35,10 +35,19 @@ It was extracted form **hospitalized patients**.
             - BWA-MEM algorithm
             - -M alignment
         -  5 non-overlapping contigs. These 5 contigs were aligned against the NCBI Genbank database and all were found to be part of the E. faecium plasmid pMG1 A single gap between two contigs, could not be closed by PCR. Thus, we assembled Illumina reads together with MinION 2D reads using the SPAdes assembler (version 3.0)
+        - 3095 CDS
         - Sequence coverage was  determined with SAMtools 0.1.18 using short-reads to the assembly using BWA 0.7.9a
         - Base-calling and assembly errors using SAMtools aligning short reads
         - Genome annotation using Prokka 1.10
+            - The chromosome contains a pathogenicity island encoding *esp*, as expected in the A-1 clade
         - Identify antibiotic resistance genes with ResFinder
+            - *vanA*, vancomycin resistance carried on pE745-2
+            - *dfrG*, pE745-6
+            - *msrC*, chromosome
+
+3. Phylogenetic Analysis
+
+They want to prove that the strain they are analyzing (E745) is part of the A-1 clade. This clade exclusively contains genetic elements that are absent from animal or human commensal isolates and which contribute to gut colonization and pathogenicity. 
 
 3. RNA-seq
     - Strand-specific library generation with ScriptSeq
