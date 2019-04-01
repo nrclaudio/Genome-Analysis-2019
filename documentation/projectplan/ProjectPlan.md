@@ -110,26 +110,38 @@ _RNA-seq_
 
 [Differentially expressed genes](https://github.com/Slakky/stunning-garbanzo/blob/master/data/metadata/12864_2017_4299_MOESM4_ESM.csv)
 
-| Synonym       | Chromosome/Plasmid | Name   | Product                                             | Fold HSerum/BHI RNA-Seqa | q HSerum/BHI RNA-Seqb |  | 
-|---------------|--------------------|--------|-----------------------------------------------------|--------------------------|-----------------------|--| 
-| EfmE745_01939 | Chromosome         | purL   | Phosphoribosylformylglycinamidine synthase 2        | 422,56                   | 0                     |  | 
-| EfmE745_01937 | Chromosome         | purM   | Phosphoribosylformylglycinamidine cyclo-ligase      | 322,70                   | 0                     |  | 
-| EfmE745_01935 | Chromosome         | purH   | Bifunctional purine biosynthesis protein PurH       | 287,82                   | 0                     |  | 
-| EfmE745_01934 | Chromosome         | purD   | Phosphoribosylamine--glycine ligase                 | 266,60                   | 0                     |  | 
-| EfmE745_01936 | Chromosome         | purN   | Phosphoribosylglycinamide formyltransferase         | 260,33                   | 0                     |  | 
-| EfmE745_01881 | Chromosome         | -      | hypothetical protein                                | 202,95                   | 0                     |  | 
-| EfmE745_01665 | Chromosome         | gspA_2 | General stress protein A                            | 197,50                   | 0                     |  | 
-| EfmE745_01664 | Chromosome         | gspA_1 | General stress protein A                            | 196,00                   | 0                     |  | 
-| EfmE745_01667 | Chromosome         | corA_2 | Magnesium transport protein CorA                    | 175,33                   | 0                     |  | 
-| EfmE745_00732 | Chromosome         | chbC   | N,N'-diacetylchitobiose permease IIC component      | 173,50                   | 0                     |  | 
-| EfmE745_00882 | Chromosome         | dppE   | Dipeptide-binding protein DppE precursor            | 144,79                   | 0                     |  | 
-| EfmE745_00884 | Chromosome         | oppB   | Oligopeptide transport system permease protein OppB | 144,38                   | 0                     |  | 
+| Synonym       | Chromosome/Plasmid | Name   | Product                                             | Fold HSerum/BHI RNA-Seqa | q HSerum/BHI RNA-Seqb | 
+|---------------|--------------------|--------|-----------------------------------------------------|--------------------------|-----------------------| 
+| EfmE745_01939 | Chromosome         | purL   | Phosphoribosylformylglycinamidine synthase 2        | 422,56                   | 0                     | 
+| EfmE745_01937 | Chromosome         | purM   | Phosphoribosylformylglycinamidine cyclo-ligase      | 322,70                   | 0                     | 
+| EfmE745_01935 | Chromosome         | purH   | Bifunctional purine biosynthesis protein PurH       | 287,82                   | 0                     | 
+| EfmE745_01934 | Chromosome         | purD   | Phosphoribosylamine--glycine ligase                 | 266,60                   | 0                     | 
+| EfmE745_01936 | Chromosome         | purN   | Phosphoribosylglycinamide formyltransferase         | 260,33                   | 0                     | 
+| EfmE745_01881 | Chromosome         | -      | hypothetical protein                                | 202,95                   | 0                     | 
+| EfmE745_01665 | Chromosome         | gspA_2 | General stress protein A                            | 197,50                   | 0                     | 
+| EfmE745_01664 | Chromosome         | gspA_1 | General stress protein A                            | 196,00                   | 0                     | 
+| EfmE745_01667 | Chromosome         | corA_2 | Magnesium transport protein CorA                    | 175,33                   | 0                     | 
+| EfmE745_00732 | Chromosome         | chbC   | N,N'-diacetylchitobiose permease IIC component      | 173,50                   | 0                     | 
+| EfmE745_00882 | Chromosome         | dppE   | Dipeptide-binding protein DppE precursor            | 144,79                   | 0                     | 
+| EfmE745_00884 | Chromosome         | oppB   | Oligopeptide transport system permease protein OppB | 144,38                   | 0                     | 
 
 >it cotinues...
 
 _Tn-seq_
 
 [Genes contributing to growth in human serum](https://github.com/Slakky/stunning-garbanzo/blob/master/data/metadata/12864_2017_4299_MOESM8_ESM.csv)
+
+| Synonym       | Chromosome/Plasmid | Name   | Product                                                       | fold change BHI/HSerum Tn-seqa | q BHI/HSerum_Tn-seqb | 
+|---------------|--------------------|--------|---------------------------------------------------------------|--------------------------------|----------------------| 
+| EfmE745_00013 | Chromosome         | purA   | Adenylosuccinate synthetase                                   | >100                           | 3,04E-05             | 
+| EfmE745_01785 | Chromosome         | pyrF   | Orotidine 5'-phosphate decarboxylase                          | >100                           | 2,27E-03             | 
+| EfmE745_01958 | Chromosome         | -      | hypothetical protein                                          | >100                           | 9,63E-03             | 
+| EfmE745_00690 | Chromosome         | manY_2 | Mannose permease IIC component                                | 77,76                          | 1,71E-10             | 
+| EfmE745_01942 | Chromosome         | purC   | Phosphoribosylaminoimidazole-succinocarboxamide synthase      | 54,05                          | 0,01                 | 
+| EfmE745_00691 | Chromosome         | manZ_3 | Mannose permease IID component                                | 37,70                          | 9,16E-11             | 
+| EfmE745_00687 | Chromosome         | algB   | Alginate biosynthesis transcriptional regulatory protein AlgB | 32,74                          | 1,33E-06             | 
+
+>it continues...
 
 ## Time consuming steps
 
