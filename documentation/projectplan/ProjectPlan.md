@@ -33,7 +33,7 @@ It was extracted form **hospitalized patients**.
     * Corrected PacBio were assembled using Celera 8.1
     * Assembled contigs were corrected with Illumins using BWA 0.7.9a
         * BWA-MEM algorithm
-        * - M alignment
+        * -M alignment
     *  5 non-overlapping contigs. These 5 contigs were aligned against the NCBI Genbank database and all were found to be part of the E. faecium plasmid pMG1 A single gap between two contigs, could not be closed by PCR. Thus, we assembled Illumina reads together with MinION 2D reads using the SPAdes assembler (version 3.0)
     * Sequence coverage was  determined with SAMtools 0.1.18 using short-reads to the assembly using BWA 0.7.9a
     * Base-calling and assembly errors using SAMtools aligning short reads
