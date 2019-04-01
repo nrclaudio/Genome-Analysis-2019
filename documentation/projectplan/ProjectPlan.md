@@ -102,7 +102,7 @@ _Genome assembly_
 
 _RNA-seq_
 
-[Differentially expresed genes](https://github.com/Slakky/stunning-garbanzo/blob/master/data/metadata/12864_2017_4299_MOESM4_ESM.csv)
+[Differentially expressed genes](https://github.com/Slakky/stunning-garbanzo/blob/master/data/metadata/12864_2017_4299_MOESM4_ESM.csv)
 
 ---
 
