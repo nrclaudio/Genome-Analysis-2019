@@ -42,7 +42,7 @@ It was extracted form **hospitalized patients**.
 
 3. RNA-seq
     - Strand-specific library generation with ScriptSeq
-    > What is a strand-specific library?
+        > What is a strand-specific library?
     - Illumina HiSeq 2500 100 bp pair-end sequence amplified RNA-seq libraries
     * Data analysis using Rockhopper with strand specific analysis
 
