@@ -31,7 +31,7 @@ It was extracted form **hospitalized patients**.
     - Nanopore MinION R7 long-reads
     - Illumina HiSeq 100 bp pair-end short-reads
         - Corrected PacBio were assembled using Celera 8.1
-        - Assembled contigs were corrected with Illumins using BWA 0.7.9a
+        - Assembled contigs were corrected with Illumina using BWA 0.7.9a
             - BWA-MEM algorithm
             - -M alignment
         -  5 non-overlapping contigs. These 5 contigs were aligned against the NCBI Genbank database and all were found to be part of the E. faecium plasmid pMG1 A single gap between two contigs, could not be closed by PCR. Thus, we assembled Illumina reads together with MinION 2D reads using the SPAdes assembler (version 3.0)
@@ -52,7 +52,12 @@ They want to prove that the strain they are analyzing (E745) is part of the A-1 
 3. RNA-seq
     - Strand-specific library generation with ScriptSeq
         > What is a strand-specific library?
-    - Illumina HiSeq 2500 100 bp pair-end sequence amplified RNA-seq libraries
+    - Illumina HiSeq 2500 100 bp pair-end sequence amplified RNA-seq libraries were aligned to the genome
+        + 3217 transcription units identified, including 651 operons
+        + 860 (q<0.001 and fold >2 or <0.5) different expression between conditions
+        + among those there's a cluster in purin biosynthesis (DNA)
+        + verification using qRT-PCR (r2 = 0.98)
+    - Three replicates
     * Data analysis using Rockhopper with strand specific analysis
 
 4. Tn-seq
