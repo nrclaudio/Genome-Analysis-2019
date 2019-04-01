@@ -41,6 +41,12 @@ It was extracted form **hospitalized patients**.
     * Identify antibiotic resistance genes with ResFinder
 
 3. RNA-seq
+    - Strand-specific library generation with ScriptSeq
+    > What is a strand-specific library?
+    - Illumina HiSeq 2500 100 bp pair-end sequence amplified RNA-seq libraries
+    * Data analysis using Rockhopper with strand specific analysis
+
+4. Tn-seq
 
 ## Metadata
 
