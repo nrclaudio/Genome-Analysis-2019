@@ -90,6 +90,8 @@ Tn-seq samples were sequenced (50 nt, single-end) on one lane of a Illumina Hise
 
 _Genome assembly_
 
+[Assembly metadata](https://github.com/Slakky/stunning-garbanzo/blob/master/data/metadata/12864_2017_4299_MOESM1_ESM.csv)
+
 | Plasmid name | Size (bp) | Sequence coverage | Accession number |
 |:------------:|:---------:|:-----------------:|:----------------:|
 |  Chromosome  |  2765010  |       85,74       |     CP014529     |

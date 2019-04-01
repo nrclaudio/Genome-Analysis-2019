@@ -1,5 +1,3 @@
-Additional file 1: Genome sequencing information of E. faecium E745 ;;;
-;;;
 Plasmid name;Size (bp);Sequence coverage*;Accession numbers
 Chromosome;2 765 010;85,74;CP014529
 pE745-1;223 688;99,69;CP014530
@@ -8,4 +6,3 @@ pE745-3;9 310;396,93;CP014532
 pE745-4;17 254;81,08;CP014533
 pE745-5;55 167;166,16;CP014534
 pE745-6;65 558;176,04;CP014535
-* Sequence coverage of chromosomal and plasmid sequences was determined with SAMtools (version 0.1.18) using short read alignments to the assembly, which were generated using BWA (version 0.7.9a).;;;
