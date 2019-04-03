@@ -170,7 +170,7 @@ With the following options:
 - -J job's name
 - -mail-user 
 
-```console
+```bash
 $sbatch sbatch_script.sh
 ```
 
@@ -210,7 +210,7 @@ canu -p canu -d canu_outdir genomeSize=2.8m -pacbio-raw pacbio.fastq.gz
 
 >Genome Size approximation?: [NCBI Genomes](https://www.ncbi.nlm.nih.gov/genome/)
 
-```console
+```bash
 ls canu_outdir
 
 #out
@@ -230,7 +230,7 @@ Now we want to get some info about the contigs:
 
 [Circlator](http://sanger-pathogens.github.io/circlator/) identifies and trims overhangs. It uses dnaA to locate the origin in the chromosomal contig. For small plasmids we have to provide a file to tell him to set repA for instance. 
 
-```console
+```bash
 circlator all --threads 2 --verbose canu.contigs.fasta canu.correctedReads.fasta.gz outdir
 
 mv fixstart.fasta contig1.fasta #new assembled chromosome
@@ -240,7 +240,7 @@ mv fixstart.fasta contig1.fasta #new assembled chromosome
 
 ### Extract unmapped reads
 
-```console
+```bash
 samtools index alignment.bam
 samtools fastq -f 4 -1 unmappedR1.fastq -2 unmapped.R2.fastq -s singletonfile alignment.bam
 ```
@@ -248,18 +248,18 @@ samtools fastq -f 4 -1 unmappedR1.fastq -2 unmapped.R2.fastq -s singletonfile al
 ### Assemble unmapped reads with Spades
 [Spades](http://spades.bioinf.spbau.ru/release3.5.0/manual.html)
 
-```console
+```bash
 spades.py -1 unmapped.R1.fastq -2 unmapped.R2.fastq -s unmapped.RS.fastq --careful --cov-cutoff auto -o spades_assembly
 ```
 
 Check contigs
 
-```console
+```bash
 infoseq spades_assembly/contigs.fasta
 ```
 
 Now we extract the contigs we are interested in (at least >650pb)
-```console
+```bash
 samtools faidx contigs.fasta
 samtools faidx contigs.fasta NODEINTERESTING > contig2.fasta
 ```
@@ -272,24 +272,24 @@ First we need to do a quality check / trimming process of the raw reads, since w
 For that we use both [FastQC](https://www.bioinformatics.babraham.ac.uk/projects/fastqc/) (alternatively [MultiQ](https://multiqc.info/)) and [Trimmomatic](http://www.usadellab.org/cms/uploads/supplementary/Trimmomatic/TrimmomaticManual_V0.32.pdf).
 
 Aligning the illumina reads to the assembly:
-```console
+```bash
 bwa index assembly.fasta
 bwa mem -t 2 assembly.fasta Illumina_R1_fastq.gz Illumina_R2_fastq.gz | samtools sort > alignment.bam
 ```
 
 indexing files:
-```console
+```bash
 samtools index alignment.bam
 samtools faidx assembly.fasta
 ```
 
 Now we can run [Pilon](https://github.com/broadinstitute/pilon/wiki) on the .bam file:
-```console
+```bash
 pilon --genome assembly.fasta --frags alignment.bam --outoput pilonout --fix all --threads 2 --changes --verbose
 ```
 
 This will be our new assembled genome:
-```console
+```bash
 cp pilonout.fasta assembly.fasta
 ```
 
