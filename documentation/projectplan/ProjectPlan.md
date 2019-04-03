@@ -263,6 +263,15 @@ Now we extract the contigs we are interested in (at least >650pb)
 samtools faidx contigs.fasta
 samtools faidx contigs.fasta NODEINTERESTING > contig2.fasta
 ```
+### Trim 
+
+To trim the assembled contigs we have to `blastn` the `head` of the sequence against the assembled contig. With the result of the blast if there is an overhang there will be two hits, one at the beginning (expected) and another one in the sequence (not expected). The start position on the second hit is what we want to trim, so:
+
+```bash
+samtools faidx contig2.fasta contig_name:1-2473 > plasmid.fa.trimmed
+```
+
+### Orientation
 
 
 ## Genome PacBio assembly correction with short Illumina reads
