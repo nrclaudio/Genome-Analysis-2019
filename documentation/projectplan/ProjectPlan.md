@@ -179,13 +179,25 @@ $sbatch sbatch_script.sh
 
 ## Diagram
 
----
+
+
+#General assembly workflow
+
+Workflow
+
+<p align="center">
+    <img src="../../images_github/assembly.png" width="950"/>
+</p>
+
+
+Tools 
 
 <p align="center">
     <img src="../../images_github/workflow.png" width="950"/>
 </p>
 
 
+---
 
 ## What can we download?
 
