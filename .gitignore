@@ -1,5 +1,11 @@
 ProjectPlan.md
 
+*.log
+
+**/raw_data
+
+**/trimmed_data
+
 **/articles
 
 *.pdf
