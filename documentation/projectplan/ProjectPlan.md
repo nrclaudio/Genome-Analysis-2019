@@ -182,7 +182,7 @@ $sbatch sbatch_script.sh
 ---
 
 <p align="center">
-    <img src="../../images_github/workflow.png" width="900"/>
+    <img src="../../images_github/workflow.png" width="950"/>
 </p>
 
 
