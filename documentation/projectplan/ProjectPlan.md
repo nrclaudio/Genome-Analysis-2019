@@ -145,11 +145,44 @@ _Tn-seq_
 
 ## Time consuming steps
 
+For time consuming steps, use the following config file:
+
+```
+#!/bin/bash -l
+#SBATCH -A g2019003
+#SBATCH -p core
+#SBATCH -n 2
+#SBATCH -t 00:00:00
+#SBATCH -J job_name
+#SBATCH --mail-type=ALL
+#SBATCH --mail-user your_email
+# Load modules
+module load bioinfo-tools
+module load ....
+# Your commands
+<Command_1...>
+<Command_2...>
+```
+
+With the following options:
+- -n (number of cores). This does not substitute the option from the software
+- -t (dd-hh:mm:ss)
+- -J job's name
+- -mail-user 
+
+```console
+sbatch sbatch_script.sh
+```
+
+
 ---
 
 ## Diagram
 
 ---
+
+
+
 
 
 ## What can we download?
