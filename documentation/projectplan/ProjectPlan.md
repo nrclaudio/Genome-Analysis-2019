@@ -188,6 +188,8 @@ $sbatch sbatch_script.sh
     <img src="../../images_github/assembly.png" width="700"/>
 </p>
 
+In this workflow I will use some of the following tools...
+
 <p align="left">
     <img src="../../images_github/workflow.png" width="700"/>
 </p>
