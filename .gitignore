@@ -2,6 +2,18 @@ ProjectPlan.md
 
 *.log
 
+data/genomics/raw_data
+
+data/genomics/trimmed_data
+
+data/transcriptomics/RNA-seq/raw_data
+
+data/transcriptomics/Tn-seq/raw_data
+
+data/transcriptomics/RNA-seq/trimmed_data
+
+data/transcriptomics/Tn-seq/trimmed_data
+
 **/raw_data
 
 **/trimmed_data
