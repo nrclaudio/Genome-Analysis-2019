@@ -183,14 +183,14 @@ $sbatch sbatch_script.sh
 
 ### General assembly workflow
 
-<center><b>Workflow</b></center></p>
 
 <p align="center">
     <img src="../../images_github/assembly.png" width="700"/>
 </p>
 
-
-<center><b>Tools</b></center></p>
+---
+---
+---
 
 <p align="center">
     <img src="../../images_github/workflow.png" width="950"/>
