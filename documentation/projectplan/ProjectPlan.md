@@ -188,20 +188,10 @@ $sbatch sbatch_script.sh
     <img src="../../images_github/assembly.png" width="700"/>
 </p>
 
-
-
-
-
-
-
-
-
-<p align="center">
+<p align="left">
     <img src="../../images_github/workflow.png" width="700"/>
 </p>
 
-
----
 
 ## What can we download?
 
