@@ -188,9 +188,13 @@ $sbatch sbatch_script.sh
     <img src="../../images_github/assembly.png" width="700"/>
 </p>
 
----
----
----
+
+
+
+
+
+
+
 
 <p align="center">
     <img src="../../images_github/workflow.png" width="950"/>
