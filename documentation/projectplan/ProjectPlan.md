@@ -171,7 +171,7 @@ With the following options:
 - -mail-user 
 
 ```console
-sbatch sbatch_script.sh
+$sbatch sbatch_script.sh
 ```
 
 
