@@ -195,36 +195,111 @@ In this workflow I will use some of the following tools...
 </p>
 
 
-## What can we download?
 
-What is the accession number -> SRA archive -> find the reads. -> unzip it to FASTQ files
+## Genome assembly with PacBio reads
 
-## Steps for analysis
+We use [Canu](https://canu.readthedocs.io/en/latest/) instead of Celera, which is the assembler used in the original paper. This allow us to skip the previous processing steps of quality check and trimming, since the assembler does that for us use `-pacbio-raw`
 
-1. Check read quality with FASTQC. 
+```
+canu -p canu -d canu_outdir genomeSize=2.8m -pacbio-raw pacbio.fastq.gz
+```
+
+- `-p` is specifying the prefix of output files
+- `-d canu_outdir` is specifying the output directory
+- `genomeSize` is an approximation
+
+>Genome Size approximation?: [NCBI Genomes](https://www.ncbi.nlm.nih.gov/genome/)
+
+```console
+ls canu_outdir
+
+#out
+
+canu.contigs.fasta #assembled sequences
+canu.unassembled.fasta #reads not assembled
+canu.correctedReads.fasta.gz #corrected PacBio reads
+canu.file.gfa #assembly graph
+```
+
+Now we want to get some info about the contigs:
+    - check with `nano canu.contigs.fasta`
+    - check with `infoseq canu.contigs.fasta`
+
+
+## Extra: run Circlator
+
+[Circlator](http://sanger-pathogens.github.io/circlator/) identifies and trims overhangs. It uses dnaA to locate the origin in the chromosomal contig. For small plasmids we have to provide a file to tell him to set repA for instance. 
+
+```console
+circlator all --threads 2 --verbose canu.contigs.fasta canu.correctedReads.fasta.gz outdir
+
+mv fixstart.fasta contig1.fasta #new assembled chromosome
+```
+
+## Extra: Find Small Plasmids
+
+### Extract unmapped reads
+
+```console
+samtools index alignment.bam
+samtools fastq -f 4 -1 unmappedR1.fastq -2 unmapped.R2.fastq -s singletonfile alignment.bam
+```
+
+### Assemble unmapped reads with Spades
+[Spades](http://spades.bioinf.spbau.ru/release3.5.0/manual.html)
+
+```console
+spades.py -1 unmapped.R1.fastq -2 unmapped.R2.fastq -s unmapped.RS.fastq --careful --cov-cutoff auto -o spades_assembly
+```
+
+Check contigs
+
+```console
+infoseq spades_assembly/contigs.fasta
+```
+
+Now we extract the contigs we are interested in (at least >650pb)
+```console
+samtools faidx contigs.fasta
+samtools faidx contigs.fasta NODEINTERESTING > contig2.fasta
+```
+
+
+## Genome PacBio assembly correction with short Illumina reads
+
+First we need to do a quality check / trimming process of the raw reads, since we are not using Canu to directly assemble the reads. 
+
+For that we use both [FastQC](https://www.bioinformatics.babraham.ac.uk/projects/fastqc/) (alternatively [MultiQ](https://multiqc.info/)) and [Trimmomatic](http://www.usadellab.org/cms/uploads/supplementary/Trimmomatic/TrimmomaticManual_V0.32.pdf).
+
+Aligning the illumina reads to the assembly:
+```console
+bwa index assembly.fasta
+bwa mem -t 2 assembly.fasta Illumina_R1_fastq.gz Illumina_R2_fastq.gz | samtools sort > alignment.bam
+```
+
+indexing files:
+```console
+samtools index alignment.bam
+samtools faidx assembly.fasta
+```
+
+Now we can run [Pilon](https://github.com/broadinstitute/pilon/wiki) on the .bam file:
+```console
+pilon --genome assembly.fasta --frags alignment.bam --outoput pilonout --fix all --threads 2 --changes --verbose
+```
+
+This will be our new assembled genome:
+```console
+cp pilonout.fasta assembly.fasta
+```
+
+We can now check for information as before:
+    - check with `nano assembly.fasta`
+    - check with `infoseq assembly.fasta`
     
-    Get rid of bad reads and trim the tail of the read that is not good enough.
 
-    3 thousand CDS. 
 
-    How to run FASTQC with all the different types of data. 
+## Assembly evaluation
+[QUAST](http://quast.sourceforge.net/) and [MUMmerplot](https://jmonlong.github.io/Hippocamplus/2017/09/19/mummerplots-with-ggplot2/)
 
-2. Filter the reads
-
-    Tool for filtering the reads -> trimomatic
-
-3. Genome assembly 
-
-    - PacBio -> Celera
-    - Nanopore -> MaSURCa
-    - Illumina HiSeq -> Spades
-
-4.  Genome assembly quality checking
-
-Find software to do so 
-
-5. Compare genome assemblies and their qualities 
-
-6. Synteny, look at the genome, does the genes look equally disposed as closely related genomes
-7. 
 
