@@ -238,12 +238,33 @@ mv fixstart.fasta contig1.fasta #new assembled chromosome
 
 ## Extra: Find Small Plasmids
 
+### Align Illumina reads to the PacBio contig
+Indexing
+```bash
+bwa index contig.fasta
+```
+Align using bwa mem:
+
+```bash
+bwa mem -t 2 contig.fasta illuminareads1.fastq.gz illuminareads2.fastq.gz | samtools sort > alignment.bam
+```
+
+- `bwa mem` is the alignment tool
+- `-t 2` is the number of cores
+- `contig1.fasta` is the alignment file
+
 ### Extract unmapped reads
 
 ```bash
 samtools index alignment.bam
 samtools fastq -f 4 -1 unmappedR1.fastq -2 unmapped.R2.fastq -s singletonfile alignment.bam
 ```
+-`fastq` converts `.bam` into fastq format
+-`-f 4` output unmapped reads
+-`-1` put R1 reads into the file specified
+-`-2` put R2 reads into the file specified
+-`-s` put singletons into the file specified
+
 
 ### Assemble unmapped reads with Spades
 [Spades](http://spades.bioinf.spbau.ru/release3.5.0/manual.html)
@@ -251,7 +272,12 @@ samtools fastq -f 4 -1 unmappedR1.fastq -2 unmapped.R2.fastq -s singletonfile al
 ```bash
 spades.py -1 unmapped.R1.fastq -2 unmapped.R2.fastq -s unmapped.RS.fastq --careful --cov-cutoff auto -o spades_assembly
 ```
-
+-`-1` forward
+-`-2` reverse
+-`-s` unpaired (unmapped reads)
+-`--careful` minimizes mismatches and short indels
+-`--cov-cutoff auto` computes the coverage threshold
+-`-o` output directory
 Check contigs
 
 ```bash
@@ -272,6 +298,15 @@ samtools faidx contig2.fasta contig_name:1-2473 > plasmid.fa.trimmed
 ```
 
 ### Orientation
+
+We can run circlator 
+
+```bash
+circlator fixstart plasmid.fa.trimmed plasmid_fixstart
+```
+
+-`plasmid_fixstart` is the prefix for the output
+
 
 
 ## Genome PacBio assembly correction with short Illumina reads
