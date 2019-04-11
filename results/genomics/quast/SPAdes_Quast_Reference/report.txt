@@ -1,0 +1,52 @@
+All statistics are based on contigs of size >= 500 bp, unless otherwise noted (e.g., "# contigs (>= 0 bp)" and "Total length (>= 0 bp)" include all contigs).
+Suggestion: assembly scaffolds contains continuous fragments of N's of length >= 10 bp. You may consider rerunning QUAST using --scaffolds (-s) option!
+
+Assembly                     scaffolds   
+# contigs (>= 0 bp)          167         
+# contigs (>= 1000 bp)       27          
+# contigs (>= 5000 bp)       16          
+# contigs (>= 10000 bp)      8           
+# contigs (>= 25000 bp)      6           
+# contigs (>= 50000 bp)      6           
+Total length (>= 0 bp)       3135716     
+Total length (>= 1000 bp)    3111330     
+Total length (>= 5000 bp)    3077772     
+Total length (>= 10000 bp)   3020239     
+Total length (>= 25000 bp)   2999016     
+Total length (>= 50000 bp)   2999016     
+# contigs                    31          
+Largest contig               1439166     
+Total length                 3113949     
+Reference length             3052572     
+GC (%)                       37.63       
+Reference GC (%)             37.87       
+N50                          835679      
+NG50                         835679      
+N75                          293214      
+NG75                         293214      
+L50                          2           
+LG50                         2           
+L75                          3           
+LG75                         3           
+# misassemblies              146         
+# misassembled contigs       7           
+Misassembled contigs length  2955317     
+# local misassemblies        19          
+# unaligned mis. contigs     2           
+# unaligned contigs          14 + 10 part
+Unaligned length             420787      
+Genome fraction (%)          86.283      
+Duplication ratio            1.023       
+# N's per 100 kbp            1187.56     
+# mismatches per 100 kbp     188.20      
+# indels per 100 kbp         13.52       
+Largest alignment            231981      
+Total aligned length         2693017     
+NA50                         107749      
+NGA50                        107749      
+NA75                         15545       
+NGA75                        19407       
+LA50                         10          
+LGA50                        10          
+LA75                         34          
+LGA75                        31          

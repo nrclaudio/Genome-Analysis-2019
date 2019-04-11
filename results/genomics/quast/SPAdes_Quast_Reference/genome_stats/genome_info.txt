@@ -1,0 +1,17 @@
+reference chromosomes:
+	NC_017962.1_Enterococcus_faecium_DO_plasmid_2__complete_sequence (total length: 66247 bp, maximal covered length: 19945 bp)
+	NC_017960.1_Enterococcus_faecium_DO_chromosome__complete_genome (total length: 2698137 bp, maximal covered length: 2461619 bp)
+	NC_017963.1_Enterococcus_faecium_DO_plasmid_3__complete_sequence (total length: 251926 bp, maximal covered length: 145539 bp)
+	NC_017961.1_Enterococcus_faecium_DO_plasmid_1__complete_sequence (total length: 36262 bp, maximal covered length: 6744 bp)
+
+total genome size: 3052572
+
+gap min size: 50
+partial gene/operon min size: 100
+
+
+
+assembly                 | genome    | duplication | gaps      | genes     | partial   | operons   | partial   |
+                         | fraction  | ratio       | number    |           | genes     |           | operons   |
+========================================================================================================================
+scaffolds                | 86.28288% | 1.02252     | 80        | -         | -         | -         | -         |

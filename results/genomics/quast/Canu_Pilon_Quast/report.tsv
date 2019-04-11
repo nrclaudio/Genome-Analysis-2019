@@ -1,0 +1,22 @@
+Assembly	pilon_outdir.sorted.05-04-2019
+# contigs (>= 0 bp)	8
+# contigs (>= 1000 bp)	8
+# contigs (>= 5000 bp)	8
+# contigs (>= 10000 bp)	7
+# contigs (>= 25000 bp)	5
+# contigs (>= 50000 bp)	2
+Total length (>= 0 bp)	3136314
+Total length (>= 1000 bp)	3136314
+Total length (>= 5000 bp)	3136314
+Total length (>= 10000 bp)	3128014
+Total length (>= 25000 bp)	3103592
+Total length (>= 50000 bp)	2992679
+# contigs	8
+Largest contig	2773702
+Total length	3136314
+GC (%)	37.79
+N50	2773702
+N75	2773702
+L50	1
+L75	1
+# N's per 100 kbp	0.00

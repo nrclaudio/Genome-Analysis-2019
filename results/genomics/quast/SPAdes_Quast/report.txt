@@ -1,0 +1,25 @@
+All statistics are based on contigs of size >= 500 bp, unless otherwise noted (e.g., "# contigs (>= 0 bp)" and "Total length (>= 0 bp)" include all contigs).
+Suggestion: assembly scaffolds contains continuous fragments of N's of length >= 10 bp. You may consider rerunning QUAST using --scaffolds (-s) option!
+
+Assembly                    scaffolds
+# contigs (>= 0 bp)         167      
+# contigs (>= 1000 bp)      27       
+# contigs (>= 5000 bp)      16       
+# contigs (>= 10000 bp)     8        
+# contigs (>= 25000 bp)     6        
+# contigs (>= 50000 bp)     6        
+Total length (>= 0 bp)      3135716  
+Total length (>= 1000 bp)   3111330  
+Total length (>= 5000 bp)   3077772  
+Total length (>= 10000 bp)  3020239  
+Total length (>= 25000 bp)  2999016  
+Total length (>= 50000 bp)  2999016  
+# contigs                   31       
+Largest contig              1439166  
+Total length                3113949  
+GC (%)                      37.63    
+N50                         835679   
+N75                         293214   
+L50                         2        
+L75                         3        
+# N's per 100 kbp           1187.56  

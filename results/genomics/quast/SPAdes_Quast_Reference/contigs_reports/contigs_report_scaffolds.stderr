@@ -1,0 +1,5 @@
+Writing filtered delta file /domus/h1/clno2215/SPAdes_Quast_Reference/contigs_reports/nucmer_output/scaffolds.filter
+Reading delta file /domus/h1/clno2215/SPAdes_Quast_Reference/contigs_reports/nucmer_output/scaffolds.delta
+Writing plot files /domus/h1/clno2215/SPAdes_Quast_Reference/contigs_reports/nucmer_output/scaffolds.fplot, /domus/h1/clno2215/SPAdes_Quast_Reference/contigs_reports/nucmer_output/scaffolds.rplot
+Writing gnuplot script /domus/h1/clno2215/SPAdes_Quast_Reference/contigs_reports/nucmer_output/scaffolds.gp
+Rendering plot /domus/h1/clno2215/SPAdes_Quast_Reference/contigs_reports/nucmer_output/scaffolds.html

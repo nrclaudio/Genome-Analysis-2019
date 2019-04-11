@@ -1,0 +1,412 @@
+S1	E1	S2	E2	Reference	Contig	IDY	Ambiguous	Best_group
+590611	652180	61565	1	NC_017960.1_Enterococcus_faecium_DO_chromosome__complete_genome	tig00000001_pilon	99.98		True
+relocation, inconsistency = 13242
+415470	577368	223469	61566	NC_017960.1_Enterococcus_faecium_DO_chromosome__complete_genome	tig00000001_pilon	99.98		True
+local misassembly
+413850	415470	225213	223593	NC_017960.1_Enterococcus_faecium_DO_chromosome__complete_genome	tig00000001_pilon	99.75		True
+translocation
+232181	232465	226607	226891	NC_017963.1_Enterococcus_faecium_DO_plasmid_3__complete_sequence	tig00000001_pilon	99.65		True
+translocation
+393056	413854	247692	226892	NC_017960.1_Enterococcus_faecium_DO_chromosome__complete_genome	tig00000001_pilon	99.74		True
+relocation, inconsistency = 121793
+270203	271262	248752	247693	NC_017960.1_Enterococcus_faecium_DO_chromosome__complete_genome	tig00000001_pilon	99.62		True
+relocation, inconsistency = -122860
+377949	393062	263865	248753	NC_017960.1_Enterococcus_faecium_DO_chromosome__complete_genome	tig00000001_pilon	98.88		True
+local misassembly
+365040	377826	276661	263866	NC_017960.1_Enterococcus_faecium_DO_chromosome__complete_genome	tig00000001_pilon	98.75		True
+relocation, inconsistency = 7342
+354222	357639	280135	276720	NC_017960.1_Enterococcus_faecium_DO_chromosome__complete_genome	tig00000001_pilon	99.01		True
+relocation, inconsistency = -1745
+351511	354100	284595	282002	NC_017960.1_Enterococcus_faecium_DO_chromosome__complete_genome	tig00000001_pilon	99.11		True
+translocation
+181788	182859	284596	285667	NC_017963.1_Enterococcus_faecium_DO_plasmid_3__complete_sequence	tig00000001_pilon	99.53		True
+translocation
+296792	300142	291356	288006	NC_017960.1_Enterococcus_faecium_DO_chromosome__complete_genome	tig00000001_pilon	99.05		True
+relocation, inconsistency = -721994
+1016582	1017656	293562	292486	NC_017960.1_Enterococcus_faecium_DO_chromosome__complete_genome	tig00000001_pilon	99.16		True
+relocation, inconsistency = 770511
+245705	246070	293928	293563	NC_017960.1_Enterococcus_faecium_DO_chromosome__complete_genome	tig00000001_pilon	98.91		True
+relocation, inconsistency = -33827
+265698	279531	307763	293929	NC_017960.1_Enterococcus_faecium_DO_chromosome__complete_genome	tig00000001_pilon	99.05		True
+relocation, inconsistency = -29433
+289651	291042	313249	311852	NC_017960.1_Enterococcus_faecium_DO_chromosome__complete_genome	tig00000001_pilon	95.64		True
+translocation
+232181	232465	314643	314927	NC_017963.1_Enterococcus_faecium_DO_plasmid_3__complete_sequence	tig00000001_pilon	99.65		True
+translocation
+288114	289656	316471	314928	NC_017960.1_Enterococcus_faecium_DO_chromosome__complete_genome	tig00000001_pilon	97.6		True
+relocation, inconsistency = 143024
+143692	145036	317868	316525	NC_017960.1_Enterococcus_faecium_DO_chromosome__complete_genome	tig00000001_pilon	99.63		True
+translocation
+232181	232466	318242	317957	NC_017963.1_Enterococcus_faecium_DO_plasmid_3__complete_sequence	tig00000001_pilon	99.65		True
+translocation
+285596	286643	325141	324092	NC_017960.1_Enterococcus_faecium_DO_chromosome__complete_genome	tig00000001_pilon	99.52		True
+relocation, inconsistency = 1590180
+1878144	1879511	326462	327829	NC_017960.1_Enterococcus_faecium_DO_chromosome__complete_genome	tig00000001_pilon	99.85		True
+relocation, inconsistency = 1631110
+234932	239241	339931	335622	NC_017960.1_Enterococcus_faecium_DO_chromosome__complete_genome	tig00000001_pilon	99.49		True
+local misassembly
+211969	234834	362796	339932	NC_017960.1_Enterococcus_faecium_DO_chromosome__complete_genome	tig00000001_pilon	99.42		True
+relocation, inconsistency = -59297
+270202	271265	363860	362797	NC_017960.1_Enterococcus_faecium_DO_chromosome__complete_genome	tig00000001_pilon	99.53		True
+relocation, inconsistency = 64948
+202226	205253	366888	363861	NC_017960.1_Enterococcus_faecium_DO_chromosome__complete_genome	tig00000001_pilon	99.44		True
+translocation
+232181	232465	368282	368566	NC_017963.1_Enterococcus_faecium_DO_plasmid_3__complete_sequence	tig00000001_pilon	99.65		True
+translocation
+170012	202230	400785	368567	NC_017960.1_Enterococcus_faecium_DO_chromosome__complete_genome	tig00000001_pilon	99.24		True
+relocation, inconsistency = 143558
+345789	347164	400786	402161	NC_017960.1_Enterococcus_faecium_DO_chromosome__complete_genome	tig00000001_pilon	100.0		True
+relocation, inconsistency = 177154
+161272	168634	409527	402162	NC_017960.1_Enterococcus_faecium_DO_chromosome__complete_genome	tig00000001_pilon	99.59		True
+local misassembly
+145397	161272	425516	409651	NC_017960.1_Enterococcus_faecium_DO_chromosome__complete_genome	tig00000001_pilon	99.62		True
+translocation
+114732	115814	425692	426774	NC_017963.1_Enterococcus_faecium_DO_plasmid_3__complete_sequence	tig00000001_pilon	99.35		True
+translocation
+119863	143696	450644	426815	NC_017960.1_Enterococcus_faecium_DO_chromosome__complete_genome	tig00000001_pilon	99.39		True
+translocation
+88406	89471	451710	450645	NC_017963.1_Enterococcus_faecium_DO_plasmid_3__complete_sequence	tig00000001_pilon	99.53		True
+translocation
+111215	114073	454569	451711	NC_017960.1_Enterococcus_faecium_DO_chromosome__complete_genome	tig00000001_pilon	99.58		True
+relocation, inconsistency = 1596242
+1710316	1711352	454570	455595	NC_017960.1_Enterococcus_faecium_DO_chromosome__complete_genome	tig00000001_pilon	98.56		True
+relocation, inconsistency = 1599092
+109484	111223	457334	455596	NC_017960.1_Enterococcus_faecium_DO_chromosome__complete_genome	tig00000001_pilon	99.14		True
+relocation, inconsistency = -1332
+109222	109491	458929	458659	NC_017960.1_Enterococcus_faecium_DO_chromosome__complete_genome	tig00000001_pilon	99.26		True
+relocation, inconsistency = 1340294
+1449786	1450849	458930	459993	NC_017960.1_Enterococcus_faecium_DO_chromosome__complete_genome	tig00000001_pilon	99.91		True
+relocation, inconsistency = 1340561
+109053	109224	460167	459994	NC_017960.1_Enterococcus_faecium_DO_chromosome__complete_genome	tig00000001_pilon	97.52		True
+local misassembly
+89544	108929	479552	460168	NC_017960.1_Enterococcus_faecium_DO_chromosome__complete_genome	tig00000001_pilon	99.35		True
+relocation, inconsistency = -1620
+80248	89545	490468	481171	NC_017960.1_Enterococcus_faecium_DO_chromosome__complete_genome	tig00000001_pilon	99.74		True
+relocation, inconsistency = -1795186
+1874301	1875343	491601	490559	NC_017960.1_Enterococcus_faecium_DO_chromosome__complete_genome	tig00000001_pilon	99.62		True
+relocation, inconsistency = 41002
+1830169	1831524	493376	494728	NC_017960.1_Enterococcus_faecium_DO_chromosome__complete_genome	tig00000001_pilon	99.63		True
+relocation, inconsistency = 1746602
+80007	80248	498288	498047	NC_017960.1_Enterococcus_faecium_DO_chromosome__complete_genome	tig00000001_pilon	96.69		True
+local misassembly
+1	79921	578356	498439	NC_017960.1_Enterococcus_faecium_DO_chromosome__complete_genome	tig00000001_pilon	99.92		True
+fake: not a misassembly [linear representation of circular genome]
+2657363	2698137	619139	578357	NC_017960.1_Enterococcus_faecium_DO_chromosome__complete_genome	tig00000001_pilon	99.96		True
+local misassembly
+2624629	2657530	652040	619140	NC_017960.1_Enterococcus_faecium_DO_chromosome__complete_genome	tig00000001_pilon	99.93		True
+translocation
+25274	28204	704138	701208	NC_017961.1_Enterococcus_faecium_DO_plasmid_1__complete_sequence	tig00000001_pilon	98.57		True
+translocation
+2516934	2624683	824671	716923	NC_017960.1_Enterococcus_faecium_DO_chromosome__complete_genome	tig00000001_pilon	99.99		True
+translocation
+160682	161801	825968	824849	NC_017963.1_Enterococcus_faecium_DO_plasmid_3__complete_sequence	tig00000001_pilon	95.71		True
+translocation
+2509636	2516941	833415	826186	NC_017960.1_Enterococcus_faecium_DO_chromosome__complete_genome	tig00000001_pilon	98.89		True
+local misassembly
+2509554	2509627	833619	833546	NC_017960.1_Enterococcus_faecium_DO_chromosome__complete_genome	tig00000001_pilon	100.0		True
+local misassembly
+2508045	2510151	835737	833631	NC_017960.1_Enterococcus_faecium_DO_chromosome__complete_genome	tig00000001_pilon	99.91		True
+relocation, inconsistency = 574913
+1931618	1933131	837251	835738	NC_017960.1_Enterococcus_faecium_DO_chromosome__complete_genome	tig00000001_pilon	99.93		True
+relocation, inconsistency = -576435
+2482660	2508052	862644	837252	NC_017960.1_Enterococcus_faecium_DO_chromosome__complete_genome	tig00000001_pilon	99.84		True
+local misassembly
+2298541	2482938	1047058	862645	NC_017960.1_Enterococcus_faecium_DO_chromosome__complete_genome	tig00000001_pilon	99.98		True
+relocation, inconsistency = 1463093
+828192	829775	1052731	1054312	NC_017960.1_Enterococcus_faecium_DO_chromosome__complete_genome	tig00000001_pilon	95.27		True
+local misassembly
+832887	835267	1058347	1060727	NC_017960.1_Enterococcus_faecium_DO_chromosome__complete_genome	tig00000001_pilon	99.83		True
+relocation, inconsistency = -4287
+854125	882648	1083872	1112395	NC_017960.1_Enterococcus_faecium_DO_chromosome__complete_genome	tig00000001_pilon	98.63		True
+translocation
+88405	89469	1113520	1112456	NC_017963.1_Enterococcus_faecium_DO_plasmid_3__complete_sequence	tig00000001_pilon	99.62		True
+relocation, inconsistency = -111223
+185814	187349	1127334	1125799	NC_017963.1_Enterococcus_faecium_DO_plasmid_3__complete_sequence	tig00000001_pilon	99.93		True
+translocation
+1885005	1887350	1136729	1134384	NC_017960.1_Enterococcus_faecium_DO_chromosome__complete_genome	tig00000001_pilon	100.0		True
+relocation, inconsistency = 924509
+916614	960495	1136730	1180611	NC_017960.1_Enterococcus_faecium_DO_chromosome__complete_genome	tig00000001_pilon	99.99		True
+translocation
+160682	161801	1181907	1180788	NC_017963.1_Enterococcus_faecium_DO_plasmid_3__complete_sequence	tig00000001_pilon	95.71		True
+translocation
+960487	976031	1182125	1197669	NC_017960.1_Enterococcus_faecium_DO_chromosome__complete_genome	tig00000001_pilon	99.99		True
+relocation, inconsistency = 870307
+1846340	1847852	1199182	1197670	NC_017960.1_Enterococcus_faecium_DO_chromosome__complete_genome	tig00000001_pilon	99.93		True
+relocation, inconsistency = 782574
+976023	1063765	1199183	1286927	NC_017960.1_Enterococcus_faecium_DO_chromosome__complete_genome	tig00000001_pilon	99.97		True
+relocation, inconsistency = 1511
+1065277	1078356	1286928	1300006	NC_017960.1_Enterococcus_faecium_DO_chromosome__complete_genome	tig00000001_pilon	99.98		True
+translocation
+160682	161904	1301303	1300081	NC_017963.1_Enterococcus_faecium_DO_plasmid_3__complete_sequence	tig00000001_pilon	95.99		True
+translocation
+1078376	1249579	1301517	1472715	NC_017960.1_Enterococcus_faecium_DO_chromosome__complete_genome	tig00000001_pilon	99.97		True
+indel: indel (> 5bp)
+1249629	1258986	1472716	1482074	NC_017960.1_Enterococcus_faecium_DO_chromosome__complete_genome	tig00000001_pilon	99.84		True
+translocation
+160682	161801	1483371	1482252	NC_017963.1_Enterococcus_faecium_DO_plasmid_3__complete_sequence	tig00000001_pilon	95.71		True
+translocation
+1258979	1284485	1483589	1509096	NC_017960.1_Enterococcus_faecium_DO_chromosome__complete_genome	tig00000001_pilon	99.63		True
+translocation
+88405	89466	1510158	1509097	NC_017963.1_Enterococcus_faecium_DO_plasmid_3__complete_sequence	tig00000001_pilon	99.53		True
+translocation
+1284480	1298290	1510159	1523970	NC_017960.1_Enterococcus_faecium_DO_chromosome__complete_genome	tig00000001_pilon	99.7		True
+relocation, inconsistency = 1013215
+270202	271264	1525033	1523971	NC_017960.1_Enterococcus_faecium_DO_chromosome__complete_genome	tig00000001_pilon	99.72		True
+relocation, inconsistency = 1027022
+1298287	1307561	1525034	1534300	NC_017960.1_Enterococcus_faecium_DO_chromosome__complete_genome	tig00000001_pilon	99.7		True
+relocation, inconsistency = 538777
+1846339	1847852	1534301	1535814	NC_017960.1_Enterococcus_faecium_DO_chromosome__complete_genome	tig00000001_pilon	99.93		True
+relocation, inconsistency = -540299
+1307554	1445864	1535815	1674130	NC_017960.1_Enterococcus_faecium_DO_chromosome__complete_genome	tig00000001_pilon	99.94		True
+relocation, inconsistency = 1542
+1447407	1449777	1674131	1676501	NC_017960.1_Enterococcus_faecium_DO_chromosome__complete_genome	tig00000001_pilon	99.92		True
+relocation, inconsistency = 1067
+1450845	1456470	1676502	1682127	NC_017960.1_Enterococcus_faecium_DO_chromosome__complete_genome	tig00000001_pilon	99.95		True
+relocation, inconsistency = 1065
+1457536	1461894	1682128	1686486	NC_017960.1_Enterococcus_faecium_DO_chromosome__complete_genome	tig00000001_pilon	100.0		True
+translocation
+160682	161904	1686704	1687926	NC_017963.1_Enterococcus_faecium_DO_plasmid_3__complete_sequence	tig00000001_pilon	95.99		True
+translocation
+1461887	1526124	1688001	1752238	NC_017960.1_Enterococcus_faecium_DO_chromosome__complete_genome	tig00000001_pilon	99.99		True
+relocation, inconsistency = 405493
+1931618	1933129	1752239	1753750	NC_017960.1_Enterococcus_faecium_DO_chromosome__complete_genome	tig00000001_pilon	99.93		True
+relocation, inconsistency = -407015
+1526115	1700464	1753751	1928103	NC_017960.1_Enterococcus_faecium_DO_chromosome__complete_genome	tig00000001_pilon	99.99		True
+relocation, inconsistency = 130667
+1831522	1833657	1928494	1930630	NC_017960.1_Enterococcus_faecium_DO_chromosome__complete_genome	tig00000001_pilon	96.35		True
+relocation, inconsistency = 974897
+831943	833305	1955312	1953950	NC_017960.1_Enterococcus_faecium_DO_chromosome__complete_genome	tig00000001_pilon	99.27		True
+local misassembly
+827378	831264	1959703	1955818	NC_017960.1_Enterococcus_faecium_DO_chromosome__complete_genome	tig00000001_pilon	95.45		True
+local misassembly
+826308	826825	1960934	1960422	NC_017960.1_Enterococcus_faecium_DO_chromosome__complete_genome	tig00000001_pilon	95.76		True
+relocation, inconsistency = 869612
+1700391	1711175	1964888	1975675	NC_017960.1_Enterococcus_faecium_DO_chromosome__complete_genome	tig00000001_pilon	99.96		True
+translocation
+185814	187349	1977211	1975676	NC_017963.1_Enterococcus_faecium_DO_plasmid_3__complete_sequence	tig00000001_pilon	99.93		True
+translocation
+1711158	1711814	1977212	1977868	NC_017960.1_Enterococcus_faecium_DO_chromosome__complete_genome	tig00000001_pilon	100.0		True
+translocation
+160682	161904	1978086	1979308	NC_017963.1_Enterococcus_faecium_DO_plasmid_3__complete_sequence	tig00000001_pilon	95.91		True
+translocation
+1711807	1738901	1979383	2006477	NC_017960.1_Enterococcus_faecium_DO_chromosome__complete_genome	tig00000001_pilon	99.99		True
+translocation
+160682	161801	2006695	2007814	NC_017963.1_Enterococcus_faecium_DO_plasmid_3__complete_sequence	tig00000001_pilon	95.71		True
+translocation
+1738894	1795489	2007992	2064589	NC_017960.1_Enterococcus_faecium_DO_chromosome__complete_genome	tig00000001_pilon	99.99		True
+relocation, inconsistency = -2712
+1795488	1830169	2067300	2101980	NC_017960.1_Enterococcus_faecium_DO_chromosome__complete_genome	tig00000001_pilon	99.96		True
+relocation, inconsistency = -1713786
+116388	117731	2101985	2103328	NC_017960.1_Enterococcus_faecium_DO_chromosome__complete_genome	tig00000001_pilon	99.78		True
+relocation, inconsistency = 1713787
+1831522	1871232	2103332	2143045	NC_017960.1_Enterococcus_faecium_DO_chromosome__complete_genome	tig00000001_pilon	98.83		True
+relocation, inconsistency = 20483
+1915695	1931617	2167025	2182974	NC_017960.1_Enterococcus_faecium_DO_chromosome__complete_genome	tig00000001_pilon	97.92		True
+relocation, inconsistency = 1522
+1933140	1943381	2182975	2193216	NC_017960.1_Enterococcus_faecium_DO_chromosome__complete_genome	tig00000001_pilon	98.94		True
+local misassembly
+1944527	1953691	2194368	2203532	NC_017960.1_Enterococcus_faecium_DO_chromosome__complete_genome	tig00000001_pilon	98.22		True
+relocation, inconsistency = -1620
+1953690	1959998	2205151	2211459	NC_017960.1_Enterococcus_faecium_DO_chromosome__complete_genome	tig00000001_pilon	99.46		True
+relocation, inconsistency = 2353
+1962352	1967507	2211460	2216615	NC_017960.1_Enterococcus_faecium_DO_chromosome__complete_genome	tig00000001_pilon	99.71		True
+relocation, inconsistency = -35890
+1931618	1933131	2216616	2218129	NC_017960.1_Enterococcus_faecium_DO_chromosome__complete_genome	tig00000001_pilon	99.93		True
+relocation, inconsistency = 34368
+1967500	1992662	2218130	2243297	NC_017960.1_Enterococcus_faecium_DO_chromosome__complete_genome	tig00000001_pilon	99.32		True
+local misassembly
+1992783	2011026	2243298	2261542	NC_017960.1_Enterococcus_faecium_DO_chromosome__complete_genome	tig00000001_pilon	99.72		True
+translocation
+160682	161592	2261760	2262670	NC_017963.1_Enterococcus_faecium_DO_plasmid_3__complete_sequence	tig00000001_pilon	95.28		True
+translocation
+1831522	1832936	2264086	2262671	NC_017960.1_Enterococcus_faecium_DO_chromosome__complete_genome	tig00000001_pilon	99.93		True
+translocation
+132608	132996	2264475	2264087	NC_017963.1_Enterococcus_faecium_DO_plasmid_3__complete_sequence	tig00000001_pilon	97.94		True
+translocation
+2011019	2182601	2264476	2436057	NC_017960.1_Enterococcus_faecium_DO_chromosome__complete_genome	tig00000001_pilon	99.88		True
+relocation, inconsistency = 989180
+1020058	1021838	2437838	2436058	NC_017960.1_Enterococcus_faecium_DO_chromosome__complete_genome	tig00000001_pilon	100.0		True
+relocation, inconsistency = 1160761
+2182600	2298559	2437839	2553805	NC_017960.1_Enterococcus_faecium_DO_chromosome__complete_genome	tig00000001_pilon	99.98		True
+relocation, inconsistency = 1321325
+848730	860836	2566350	2554244	NC_017960.1_Enterococcus_faecium_DO_chromosome__complete_genome	tig00000001_pilon	99.6		True
+translocation
+160682	161801	2566567	2567686	NC_017963.1_Enterococcus_faecium_DO_plasmid_3__complete_sequence	tig00000001_pilon	95.71		True
+translocation
+825913	848740	2590690	2567862	NC_017960.1_Enterococcus_faecium_DO_chromosome__complete_genome	tig00000001_pilon	99.98		True
+relocation, inconsistency = 1017
+823139	823854	2592447	2591732	NC_017960.1_Enterococcus_faecium_DO_chromosome__complete_genome	tig00000001_pilon	96.09		True
+relocation, inconsistency = -1477
+681848	822470	2735215	2594593	NC_017960.1_Enterococcus_faecium_DO_chromosome__complete_genome	tig00000001_pilon	99.98		True
+local misassembly
+643484	681969	2773702	2735216	NC_017960.1_Enterococcus_faecium_DO_chromosome__complete_genome	tig00000001_pilon	99.96		True
+CONTIG	tig00000001_pilon	2773702	misassembled
+10614	12677	1	2068	NC_017961.1_Enterococcus_faecium_DO_plasmid_1__complete_sequence	tig00000019_pilon	99.61		True
+unknown
+47991	48804	2069	2881	NC_017962.1_Enterococcus_faecium_DO_plasmid_2__complete_sequence	tig00000019_pilon	99.88		True
+unknown
+52497	53305	8610	7802	NC_017962.1_Enterococcus_faecium_DO_plasmid_2__complete_sequence	tig00000019_pilon	99.75		True
+unknown
+47991	48799	14043	13235	NC_017962.1_Enterococcus_faecium_DO_plasmid_2__complete_sequence	tig00000019_pilon	99.63		True
+unknown
+38796	39605	22607	21798	NC_017962.1_Enterococcus_faecium_DO_plasmid_2__complete_sequence	tig00000019_pilon	99.63		True
+unknown
+47990	48804	24542	25355	NC_017962.1_Enterococcus_faecium_DO_plasmid_2__complete_sequence	tig00000019_pilon	99.75		True
+unknown
+52497	53305	29528	30336	NC_017962.1_Enterococcus_faecium_DO_plasmid_2__complete_sequence	tig00000019_pilon	99.75		True
+unknown
+2110770	2111109	30675	30337	NC_017960.1_Enterococcus_faecium_DO_chromosome__complete_genome	tig00000019_pilon	97.94		True
+unknown
+8865	12677	30680	34492	NC_017961.1_Enterococcus_faecium_DO_plasmid_1__complete_sequence	tig00000019_pilon	99.95		True
+unknown
+47991	48804	34493	35305	NC_017962.1_Enterococcus_faecium_DO_plasmid_2__complete_sequence	tig00000019_pilon	99.88		True
+unknown
+CONTIG	tig00000019_pilon	40017	mis_unaligned
+12303	18078	1	5769	NC_017963.1_Enterococcus_faecium_DO_plasmid_3__complete_sequence	tig00000020_pilon	96.52		True
+unknown
+26955	30753	20096	23894	NC_017963.1_Enterococcus_faecium_DO_plasmid_3__complete_sequence	tig00000020_pilon	97.53		True
+unknown
+56798	57145	29492	29839	NC_017962.1_Enterococcus_faecium_DO_plasmid_2__complete_sequence	tig00000020_pilon	96.55		True
+unknown
+241180	243443	31970	34232	NC_017963.1_Enterococcus_faecium_DO_plasmid_3__complete_sequence	tig00000020_pilon	97.26		True
+unknown
+243577	245106	35004	36530	NC_017963.1_Enterococcus_faecium_DO_plasmid_3__complete_sequence	tig00000020_pilon	96.35		True
+unknown
+245794	247907	36869	38982	NC_017963.1_Enterococcus_faecium_DO_plasmid_3__complete_sequence	tig00000020_pilon	96.45		True
+unknown
+3	3305	41307	44609	NC_017963.1_Enterococcus_faecium_DO_plasmid_3__complete_sequence	tig00000020_pilon	95.91		True
+unknown
+CONTIG	tig00000020_pilon	44609	mis_unaligned
+52959	53305	1	347	NC_017962.1_Enterococcus_faecium_DO_plasmid_2__complete_sequence	tig00000025_pilon	99.43		True
+local misassembly
+53629	64390	349	11103	NC_017962.1_Enterococcus_faecium_DO_plasmid_2__complete_sequence	tig00000025_pilon	99.85		True
+relocation, inconsistency = -10764
+53627	54956	11104	12433	NC_017962.1_Enterococcus_faecium_DO_plasmid_2__complete_sequence	tig00000025_pilon	100.0		True
+CONTIG	tig00000025_pilon	12433	misassembled
+583652	583870	7003	6785	NC_017960.1_Enterococcus_faecium_DO_chromosome__complete_genome	tig00000027_pilon	98.17		True
+unknown
+582485	583650	8272	7110	NC_017960.1_Enterococcus_faecium_DO_chromosome__complete_genome	tig00000027_pilon	95.97		True
+unknown
+CONTIG	tig00000027_pilon	26287	mis_unaligned
+5463	9568	1	4104	NC_017962.1_Enterococcus_faecium_DO_plasmid_2__complete_sequence	tig00000029_pilon	99.17		True
+relocation, inconsistency = -9320
+1269	8135	5125	11989	NC_017962.1_Enterococcus_faecium_DO_plasmid_2__complete_sequence	tig00000029_pilon	98.81		True
+CONTIG	tig00000029_pilon	11989	misassembled
+68796	69310	1	515	NC_017963.1_Enterococcus_faecium_DO_plasmid_3__complete_sequence	tig00000464_pilon	98.84		True
+local misassembly
+69414	71884	517	2987	NC_017963.1_Enterococcus_faecium_DO_plasmid_3__complete_sequence	tig00000464_pilon	99.72		True
+translocation
+20890	22409	4507	2988	NC_017962.1_Enterococcus_faecium_DO_plasmid_2__complete_sequence	tig00000464_pilon	100.0		True
+translocation
+40541	40965	5054	4630	NC_017963.1_Enterococcus_faecium_DO_plasmid_3__complete_sequence	tig00000464_pilon	99.53		True
+inversion
+41762	43964	5437	7639	NC_017963.1_Enterococcus_faecium_DO_plasmid_3__complete_sequence	tig00000464_pilon	99.82		True
+relocation, inconsistency = 203943
+247908	249798	7640	9530	NC_017963.1_Enterococcus_faecium_DO_plasmid_3__complete_sequence	tig00000464_pilon	95.63		True
+relocation, inconsistency = -205834
+43965	53030	9531	18575	NC_017963.1_Enterococcus_faecium_DO_plasmid_3__complete_sequence	tig00000464_pilon	99.66		True
+relocation, inconsistency = 2353
+55384	57195	18576	20384	NC_017963.1_Enterococcus_faecium_DO_plasmid_3__complete_sequence	tig00000464_pilon	99.45		True
+relocation, inconsistency = 15615
+72811	90820	20385	38395	NC_017963.1_Enterococcus_faecium_DO_plasmid_3__complete_sequence	tig00000464_pilon	99.84		True
+translocation
+1157701	1159038	38439	39776	NC_017960.1_Enterococcus_faecium_DO_chromosome__complete_genome	tig00000464_pilon	100.0		True
+translocation
+187516	187969	40230	39777	NC_017963.1_Enterococcus_faecium_DO_plasmid_3__complete_sequence	tig00000464_pilon	100.0		True
+relocation, inconsistency = 98179
+88405	89102	40465	41162	NC_017963.1_Enterococcus_faecium_DO_plasmid_3__complete_sequence	tig00000464_pilon	99.57		True
+translocation
+143706	145021	42491	41176	NC_017960.1_Enterococcus_faecium_DO_chromosome__complete_genome	tig00000464_pilon	99.77		True
+relocation, inconsistency = 131651
+279506	280991	45325	46810	NC_017960.1_Enterococcus_faecium_DO_chromosome__complete_genome	tig00000464_pilon	99.66		True
+relocation, inconsistency = 2030384
+2311376	2312449	47884	46811	NC_017960.1_Enterococcus_faecium_DO_chromosome__complete_genome	tig00000464_pilon	99.44		True
+relocation, inconsistency = 434047
+1874450	1875350	50762	49863	NC_017960.1_Enterococcus_faecium_DO_chromosome__complete_genome	tig00000464_pilon	99.52		True
+translocation
+184651	185817	51930	50763	NC_017963.1_Enterococcus_faecium_DO_plasmid_3__complete_sequence	tig00000464_pilon	99.91		True
+relocation, inconsistency = 62085
+247903	249799	51931	53827	NC_017963.1_Enterococcus_faecium_DO_plasmid_3__complete_sequence	tig00000464_pilon	95.52		True
+relocation, inconsistency = 64392
+182853	183510	54488	53828	NC_017963.1_Enterococcus_faecium_DO_plasmid_3__complete_sequence	tig00000464_pilon	96.89		True
+relocation, inconsistency = 14984
+198495	199403	54489	55397	NC_017963.1_Enterococcus_faecium_DO_plasmid_3__complete_sequence	tig00000464_pilon	100.0		True
+relocation, inconsistency = 16552
+173363	181942	63987	55398	NC_017963.1_Enterococcus_faecium_DO_plasmid_3__complete_sequence	tig00000464_pilon	99.26		True
+relocation, inconsistency = 65724
+103812	107638	63988	67773	NC_017963.1_Enterococcus_faecium_DO_plasmid_3__complete_sequence	tig00000464_pilon	98.75		True
+indel: indel (> 5bp)
+107788	108031	67854	68097	NC_017963.1_Enterococcus_faecium_DO_plasmid_3__complete_sequence	tig00000464_pilon	99.59		True
+relocation, inconsistency = 77782
+185814	187351	68098	69635	NC_017963.1_Enterococcus_faecium_DO_plasmid_3__complete_sequence	tig00000464_pilon	99.48		True
+relocation, inconsistency = 17119
+137728	160687	100602	77643	NC_017963.1_Enterococcus_faecium_DO_plasmid_3__complete_sequence	tig00000464_pilon	99.73		True
+local misassembly
+137213	137633	101024	100603	NC_017963.1_Enterococcus_faecium_DO_plasmid_3__complete_sequence	tig00000464_pilon	99.76		True
+relocation, inconsistency = -112586
+247903	249798	102920	101025	NC_017963.1_Enterococcus_faecium_DO_plasmid_3__complete_sequence	tig00000464_pilon	100.0		True
+relocation, inconsistency = 50503
+195792	197307	103013	104528	NC_017963.1_Enterococcus_faecium_DO_plasmid_3__complete_sequence	tig00000464_pilon	99.87		True
+relocation, inconsistency = -89679
+107678	109041	104578	105941	NC_017963.1_Enterococcus_faecium_DO_plasmid_3__complete_sequence	tig00000464_pilon	95.38		True
+translocation
+1828756	1830176	106258	107681	NC_017960.1_Enterococcus_faecium_DO_chromosome__complete_genome	tig00000464_pilon	99.65		True
+relocation, inconsistency = 47846
+1878142	1879509	107801	109168	NC_017960.1_Enterococcus_faecium_DO_chromosome__complete_genome	tig00000464_pilon	99.78		True
+translocation
+247903	249799	117724	115828	NC_017963.1_Enterococcus_faecium_DO_plasmid_3__complete_sequence	tig00000464_pilon	95.52		True
+translocation
+20892	22410	117766	119284	NC_017962.1_Enterococcus_faecium_DO_plasmid_2__complete_sequence	tig00000464_pilon	100.0		True
+translocation
+90820	92187	121111	119745	NC_017963.1_Enterococcus_faecium_DO_plasmid_3__complete_sequence	tig00000464_pilon	99.78		True
+relocation, inconsistency = 16588
+109128	114656	121464	126992	NC_017963.1_Enterococcus_faecium_DO_plasmid_3__complete_sequence	tig00000464_pilon	99.93		True
+local misassembly
+114745	115846	126993	128095	NC_017963.1_Enterococcus_faecium_DO_plasmid_3__complete_sequence	tig00000464_pilon	99.64		True
+relocation, inconsistency = 3034
+118881	120579	128096	129795	NC_017963.1_Enterococcus_faecium_DO_plasmid_3__complete_sequence	tig00000464_pilon	99.82		True
+relocation, inconsistency = 1048
+121628	122583	129796	130751	NC_017963.1_Enterococcus_faecium_DO_plasmid_3__complete_sequence	tig00000464_pilon	99.69		True
+relocation, inconsistency = 27261
+90819	94159	134237	130959	NC_017963.1_Enterococcus_faecium_DO_plasmid_3__complete_sequence	tig00000464_pilon	98.05		True
+relocation, inconsistency = 96728
+191172	191740	134522	135090	NC_017963.1_Enterococcus_faecium_DO_plasmid_3__complete_sequence	tig00000464_pilon	99.83		True
+relocation, inconsistency = 42302
+234046	235832	136877	135091	NC_017963.1_Enterococcus_faecium_DO_plasmid_3__complete_sequence	tig00000464_pilon	99.94		True
+relocation, inconsistency = 38560
+191745	195485	136878	140618	NC_017963.1_Enterococcus_faecium_DO_plasmid_3__complete_sequence	tig00000464_pilon	99.95		True
+relocation, inconsistency = 35282
+232181	232466	142032	142317	NC_017963.1_Enterococcus_faecium_DO_plasmid_3__complete_sequence	tig00000464_pilon	99.65		True
+translocation
+483857	484731	144119	144992	NC_017960.1_Enterococcus_faecium_DO_chromosome__complete_genome	tig00000464_pilon	98.51		True
+translocation
+197307	198367	152185	151125	NC_017963.1_Enterococcus_faecium_DO_plasmid_3__complete_sequence	tig00000464_pilon	99.72		True
+relocation, inconsistency = 139943
+56389	57200	153128	152349	NC_017963.1_Enterococcus_faecium_DO_plasmid_3__complete_sequence	tig00000464_pilon	95.57		True
+translocation
+1727264	1728613	163785	165134	NC_017960.1_Enterococcus_faecium_DO_chromosome__complete_genome	tig00000464_pilon	99.7		True
+relocation, inconsistency = 1606850
+118788	119873	166760	165675	NC_017960.1_Enterococcus_faecium_DO_chromosome__complete_genome	tig00000464_pilon	99.72		True
+translocation
+242821	246307	168101	171587	NC_017963.1_Enterococcus_faecium_DO_plasmid_3__complete_sequence	tig00000464_pilon	95.56		True
+relocation, inconsistency = -250150
+899	3939	176329	179369	NC_017963.1_Enterococcus_faecium_DO_plasmid_3__complete_sequence	tig00000464_pilon	95.82		True
+translocation
+1500180	1501945	179370	181135	NC_017960.1_Enterococcus_faecium_DO_chromosome__complete_genome	tig00000464_pilon	99.83		True
+translocation
+8740	18078	185699	195050	NC_017963.1_Enterococcus_faecium_DO_plasmid_3__complete_sequence	tig00000464_pilon	97.78		True
+relocation, inconsistency = -2749
+18073	29702	197794	209423	NC_017963.1_Enterococcus_faecium_DO_plasmid_3__complete_sequence	tig00000464_pilon	99.57		True
+relocation, inconsistency = -2030
+30394	34896	212145	216622	NC_017963.1_Enterococcus_faecium_DO_plasmid_3__complete_sequence	tig00000464_pilon	96.85		True
+relocation, inconsistency = 126167
+161168	163418	218976	216727	NC_017963.1_Enterococcus_faecium_DO_plasmid_3__complete_sequence	tig00000464_pilon	97.96		True
+CONTIG	tig00000464_pilon	218977	misassembled
+31364	34896	1	3503	NC_017963.1_Enterococcus_faecium_DO_plasmid_3__complete_sequence	tig00000465_pilon	96.8		True
+relocation, inconsistency = 80922
+115923	117436	3608	5122	NC_017963.1_Enterococcus_faecium_DO_plasmid_3__complete_sequence	tig00000465_pilon	99.8		True
+relocation, inconsistency = -1440
+115997	118880	5123	7969	NC_017963.1_Enterococcus_faecium_DO_plasmid_3__complete_sequence	tig00000465_pilon	98.34		True
+relocation, inconsistency = -83992
+34889	35197	7970	8277	NC_017963.1_Enterococcus_faecium_DO_plasmid_3__complete_sequence	tig00000465_pilon	95.48		True
+CONTIG	tig00000465_pilon	8300	misassembled
