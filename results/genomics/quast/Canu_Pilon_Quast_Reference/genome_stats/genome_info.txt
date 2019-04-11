@@ -1,10 +1,13 @@
 reference chromosomes:
-	NC_017962.1_Enterococcus_faecium_DO_plasmid_2__complete_sequence (total length: 66247 bp, maximal covered length: 23019 bp)
-	NC_017960.1_Enterococcus_faecium_DO_chromosome__complete_genome (total length: 2698137 bp, maximal covered length: 2494398 bp)
-	NC_017963.1_Enterococcus_faecium_DO_plasmid_3__complete_sequence (total length: 251926 bp, maximal covered length: 143981 bp)
-	NC_017961.1_Enterococcus_faecium_DO_plasmid_1__complete_sequence (total length: 36262 bp, maximal covered length: 6744 bp)
+	CP014530.1_Enterococcus_faecium_strain_E745_plasmid_pl1__complete_sequence (total length: 223688 bp, maximal covered length: 213065 bp)
+	CP014529.1_Enterococcus_faecium_strain_E745__complete_genome (total length: 2765010 bp, maximal covered length: 2765010 bp)
+	CP014532.1_Enterococcus_faecium_strain_E745_plasmid_pl3__complete_sequence (total length: 9310 bp, maximal covered length: 9310 bp)
+	CP014531.1_Enterococcus_faecium_strain_E745_plasmid_pl2__complete_sequence (total length: 32423 bp, maximal covered length: 32423 bp)
+	CP014533.1_Enterococcus_faecium_strain_E745_plasmid_pl4__complete_sequence (total length: 17254 bp, maximal covered length: 12280 bp)
+	CP014534.1_Enterococcus_faecium_strain_E745_plasmid_pl5__complete_sequence (total length: 55167 bp, maximal covered length: 50452 bp)
+	CP014535.1_Enterococcus_faecium_strain_E745_plasmid_pl6__complete_sequence (total length: 65558 bp, maximal covered length: 26288 bp)
 
-total genome size: 3052572
+total genome size: 3168410
 
 gap min size: 50
 partial gene/operon min size: 100
@@ -14,4 +17,4 @@ partial gene/operon min size: 100
 assembly                 | genome    | duplication | gaps      | genes     | partial   | operons   | partial   |
                          | fraction  | ratio       | number    |           | genes     |           | operons   |
 ========================================================================================================================
-pilon_outdir-sorted-05-0 | 87.40636% | 1.04220     | 68        | -         | -         | -         | -         |
+pilon_outdir-sorted-05-0 | 98.11950% | 1.00884     | 9         | -         | -         | -         | -         |

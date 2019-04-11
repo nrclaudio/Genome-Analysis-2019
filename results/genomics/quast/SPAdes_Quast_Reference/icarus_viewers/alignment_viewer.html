@@ -2465,10 +2465,10 @@ THE SOFTWARE.
                 <span id="misassemblies_selector_panel">
                     <div class="text_div" id="misassemblies_checkboxes_div">
                         Show misassemblies:
-                        <label><input type="checkbox" id="relocation" name="misassemblies_select" checked="checked"/>relocations (91)</label>
-                        <label><input type="checkbox" id="translocation" name="misassemblies_select" checked="checked"/>translocations (54)</label>
-                        <label><input type="checkbox" id="inversion" name="misassemblies_select" checked="checked"/>inversion (1)</label>
-                        <label><input type="checkbox" id="local" name="misassemblies_select" checked="checked"/>local (19)</label>
+                        <label><input type="checkbox" id="relocation" name="misassemblies_select" checked="checked"/>relocations (0)</label>
+                        <label><input type="checkbox" id="translocation" name="misassemblies_select" checked="checked"/>translocation (1)</label>
+                        <label><input type="checkbox" id="inversion" name="misassemblies_select" checked="checked"/>inversions (0)</label>
+                        <label><input type="checkbox" id="local" name="misassemblies_select" checked="checked"/>local (2)</label>
                     </div>
                 </span>
             </div>
@@ -2482,7 +2482,7 @@ THE SOFTWARE.
     </table>
 </div>
 <div class="content" style="padding-bottom: 0;">
-    <div class="reftitle"><b>Contig alignment viewer</b>. Contigs aligned to GCF 000174395.2 ASM17439v2 genomic
+    <div class="reftitle"><b>Contig alignment viewer</b>. Contigs aligned to Assembled genome
     </div>
 </div>
 
@@ -2509,863 +2509,281 @@ THE SOFTWARE.
 	}
 </script>
     <script type="text/javascript">var references_by_id = {};
-references_by_id["2"] = "NC_017962.1_Enterococcus_faecium_DO_plasmid_2__complete_sequence";
-references_by_id["0"] = "NC_017960.1_Enterococcus_faecium_DO_chromosome__complete_genome";
-references_by_id["3"] = "NC_017963.1_Enterococcus_faecium_DO_plasmid_3__complete_sequence";
-references_by_id["1"] = "NC_017961.1_Enterococcus_faecium_DO_plasmid_1__complete_sequence";
+references_by_id["1"] = "CP014530.1_Enterococcus_faecium_strain_E745_plasmid_pl1__complete_sequence";
+references_by_id["0"] = "CP014529.1_Enterococcus_faecium_strain_E745__complete_genome";
+references_by_id["3"] = "CP014532.1_Enterococcus_faecium_strain_E745_plasmid_pl3__complete_sequence";
+references_by_id["2"] = "CP014531.1_Enterococcus_faecium_strain_E745_plasmid_pl2__complete_sequence";
+references_by_id["4"] = "CP014533.1_Enterococcus_faecium_strain_E745_plasmid_pl4__complete_sequence";
+references_by_id["5"] = "CP014534.1_Enterococcus_faecium_strain_E745_plasmid_pl5__complete_sequence";
+references_by_id["6"] = "CP014535.1_Enterococcus_faecium_strain_E745_plasmid_pl6__complete_sequence";
 var assemblies_links = {};
 var assemblies_len = {};
 var assemblies_contigs = {};
 var assemblies_misassemblies = {};
 var assemblies_n50 = {};
 assemblies_links["scaffolds"] = "../contigs_reports/contigs_report_scaffolds.stdout";
-assemblies_len["scaffolds"] = 2693017;
-assemblies_contigs["scaffolds"] = 17;
-assemblies_misassemblies["scaffolds"] = "153+19";
-chromosome = "GCF_000174395.2_ASM17439v2_genomic";
-var chrContigs = ["NC_017960.1_Enterococcus_faecium_DO_chromosome__complete_genome","NC_017961.1_Enterococcus_faecium_DO_plasmid_1__complete_sequence","NC_017962.1_Enterococcus_faecium_DO_plasmid_2__complete_sequence","NC_017963.1_Enterococcus_faecium_DO_plasmid_3__complete_sequence"];
+assemblies_len["scaffolds"] = 3070843;
+assemblies_contigs["scaffolds"] = 30;
+assemblies_misassemblies["scaffolds"] = "1+2";
+chromosome = "Assembled_genome";
+var chrContigs = ["CP014529.1_Enterococcus_faecium_strain_E745__complete_genome","CP014530.1_Enterococcus_faecium_strain_E745_plasmid_pl1__complete_sequence","CP014531.1_Enterococcus_faecium_strain_E745_plasmid_pl2__complete_sequence","CP014532.1_Enterococcus_faecium_strain_E745_plasmid_pl3__complete_sequence","CP014533.1_Enterococcus_faecium_strain_E745_plasmid_pl4__complete_sequence","CP014534.1_Enterococcus_faecium_strain_E745_plasmid_pl5__complete_sequence","CP014535.1_Enterococcus_faecium_strain_E745_plasmid_pl6__complete_sequence"];
 var features_data;
 features_data = [];
 var chromosomes_len = {};
-chromosomes_len["NC_017960.1_Enterococcus_faecium_DO_chromosome__complete_genome"] = 2698137;
-chromosomes_len["NC_017961.1_Enterococcus_faecium_DO_plasmid_1__complete_sequence"] = 36262;
-chromosomes_len["NC_017962.1_Enterococcus_faecium_DO_plasmid_2__complete_sequence"] = 66247;
-chromosomes_len["NC_017963.1_Enterococcus_faecium_DO_plasmid_3__complete_sequence"] = 251926;
+chromosomes_len["CP014529.1_Enterococcus_faecium_strain_E745__complete_genome"] = 2765010;
+chromosomes_len["CP014530.1_Enterococcus_faecium_strain_E745_plasmid_pl1__complete_sequence"] = 223688;
+chromosomes_len["CP014531.1_Enterococcus_faecium_strain_E745_plasmid_pl2__complete_sequence"] = 32423;
+chromosomes_len["CP014532.1_Enterococcus_faecium_strain_E745_plasmid_pl3__complete_sequence"] = 9310;
+chromosomes_len["CP014533.1_Enterococcus_faecium_strain_E745_plasmid_pl4__complete_sequence"] = 17254;
+chromosomes_len["CP014534.1_Enterococcus_faecium_strain_E745_plasmid_pl5__complete_sequence"] = 55167;
+chromosomes_len["CP014535.1_Enterococcus_faecium_strain_E745_plasmid_pl6__complete_sequence"] = 65558;
 var links_to_chromosomes;
 var oneHtml = true;
 var contig_data = {};
-contig_data["GCF_000174395.2_ASM17439v2_genomic"] = {};
-contig_data["GCF_000174395.2_ASM17439v2_genomic"]["scaffolds"] = [ 
-{name:"NODE_1_length_1439166_cov_42.837164",corr_start:1,corr_end:79921,start:1,end:79921,misassemblies:";local",mis_ends:";R",is_best:"True"},
-{name:"NODE_1_length_1439166_cov_42.837164",corr_start:80007,corr_end:80248,start:80007,end:80248,misassemblies:"local;relocation",mis_ends:"L;R",is_best:"True"},
-{name:"NODE_1_length_1439166_cov_42.837164",corr_start:80248,corr_end:89545,start:80248,end:89545,misassemblies:"relocation;relocation",mis_ends:"L;R",is_best:"True"},
-{name:"NODE_1_length_1439166_cov_42.837164",corr_start:89544,corr_end:108929,start:89544,end:108929,misassemblies:"relocation;local",mis_ends:"L;R",is_best:"True"},
-{name:"NODE_1_length_1439166_cov_42.837164",corr_start:109053,corr_end:109224,start:109053,end:109224,misassemblies:"local;relocation",mis_ends:"L;R",is_best:"True"},
-{name:"NODE_1_length_1439166_cov_42.837164",corr_start:109222,corr_end:109491,start:109222,end:109491,misassemblies:"relocation;relocation",mis_ends:"L;R",is_best:"True"},
-{name:"NODE_1_length_1439166_cov_42.837164",corr_start:109484,corr_end:111223,start:109484,end:111223,misassemblies:"relocation;relocation",mis_ends:"L;R",is_best:"True"},
-{name:"NODE_1_length_1439166_cov_42.837164",corr_start:111215,corr_end:114073,start:111215,end:114073,misassemblies:"relocation;translocation",mis_ends:"L;R",is_best:"True"},
-{name:"NODE_4_length_212823_cov_82.822680",corr_start:119469,corr_end:119873,start:119469,end:119873,misassemblies:"translocation;translocation",mis_ends:"R;L",is_best:"True"},
-{name:"NODE_1_length_1439166_cov_42.837164",corr_start:119863,corr_end:143696,start:119863,end:143696,misassemblies:"translocation;translocation",mis_ends:"L;R",is_best:"True"},
-{name:"NODE_1_length_1439166_cov_42.837164",corr_start:145397,corr_end:161272,start:145397,end:161272,misassemblies:"translocation;local",mis_ends:"L;R",is_best:"True"},
-{name:"NODE_1_length_1439166_cov_42.837164",corr_start:161272,corr_end:168634,start:161272,end:168634,misassemblies:"local;relocation",mis_ends:"L;R",is_best:"True"},
-{name:"NODE_4_length_212823_cov_82.822680",corr_start:168613,corr_end:170031,start:168613,end:170031,misassemblies:"translocation;translocation",mis_ends:"L;R",is_best:"True"},
-{name:"NODE_1_length_1439166_cov_42.837164",corr_start:170012,corr_end:202230,start:170012,end:202230,misassemblies:"relocation;translocation",mis_ends:"L;R",is_best:"True"},
-{name:"NODE_1_length_1439166_cov_42.837164",corr_start:202226,corr_end:205253,start:202226,end:205253,misassemblies:"translocation;relocation",mis_ends:"L;R",is_best:"True"},
-{name:"NODE_1_length_1439166_cov_42.837164",corr_start:211969,corr_end:234834,start:211969,end:234834,misassemblies:"relocation;local",mis_ends:"L;R",is_best:"True"},
-{name:"NODE_1_length_1439166_cov_42.837164",corr_start:234932,corr_end:239241,start:234932,end:239241,misassemblies:"local;relocation",mis_ends:"L;R",is_best:"True"},
-{name:"NODE_1_length_1439166_cov_42.837164",corr_start:245705,corr_end:246070,start:245705,end:246070,misassemblies:"relocation;relocation",mis_ends:"L;R",is_best:"True"},
-{name:"NODE_1_length_1439166_cov_42.837164",corr_start:265698,corr_end:279531,start:265698,end:279531,misassemblies:"relocation;relocation",mis_ends:"L;R",is_best:"True"
-,overlaps:[ 
-{contig:"NODE_2_length_835679_cov_39.731750",corr_start: 270202,corr_end: 271264,start:270202,end:271264,start_in_contig:436877,end_in_contig:435815,chr: "0"}
-]},
-{name:"NODE_1_length_1439166_cov_42.837164",corr_start:270202,corr_end:271265,start:270202,end:271265,misassemblies:"relocation;relocation",mis_ends:"L;R",is_best:"True"
-,overlaps:[ 
-{contig:"NODE_2_length_835679_cov_39.731750",corr_start: 270202,corr_end: 271264,start:270202,end:271264,start_in_contig:436877,end_in_contig:435815,chr: "0"}
-]},
-{name:"NODE_2_length_835679_cov_39.731750",corr_start:270202,corr_end:271264,start:270202,end:271264,misassemblies:"relocation;relocation",mis_ends:"R;L",is_best:"True"
-,overlaps:[ 
-{contig:"NODE_1_length_1439166_cov_42.837164",corr_start: 265698,corr_end: 279531,start:265698,end:279531,start_in_contig:771317,end_in_contig:785151,chr: "0"},{contig:"NODE_1_length_1439166_cov_42.837164",corr_start: 270202,corr_end: 271265,start:270202,end:271265,start_in_contig:715220,end_in_contig:716283,chr: "0"},{contig:"NODE_1_length_1439166_cov_42.837164",corr_start: 270203,corr_end: 271262,start:270203,end:271262,start_in_contig:830328,end_in_contig:831387,chr: "0"}
-]},
-{name:"NODE_1_length_1439166_cov_42.837164",corr_start:270203,corr_end:271262,start:270203,end:271262,misassemblies:"relocation;relocation",mis_ends:"L;R",is_best:"True"
-,overlaps:[ 
-{contig:"NODE_2_length_835679_cov_39.731750",corr_start: 270202,corr_end: 271264,start:270202,end:271264,start_in_contig:436877,end_in_contig:435815,chr: "0"}
-]},
-{name:"NODE_4_length_212823_cov_82.822680",corr_start:279506,corr_end:280991,start:279506,end:280991,misassemblies:"translocation;relocation",mis_ends:"L;R",is_best:"True"},
-{name:"NODE_1_length_1439166_cov_42.837164",corr_start:288114,corr_end:289656,start:288114,end:289656,misassemblies:"relocation;translocation",mis_ends:"L;R",is_best:"True"},
-{name:"NODE_1_length_1439166_cov_42.837164",corr_start:289651,corr_end:291042,start:289651,end:291042,misassemblies:"translocation;relocation",mis_ends:"L;R",is_best:"True"},
-{name:"NODE_1_length_1439166_cov_42.837164",corr_start:296792,corr_end:300142,start:296792,end:300142,misassemblies:"relocation;translocation",mis_ends:"L;R",is_best:"True"},
-{name:"NODE_1_length_1439166_cov_42.837164",corr_start:345789,corr_end:347164,start:345789,end:347164,misassemblies:"relocation;relocation",mis_ends:"R;L",is_best:"True"},
-{name:"NODE_1_length_1439166_cov_42.837164",corr_start:351511,corr_end:354100,start:351511,end:354100,misassemblies:"translocation;relocation",mis_ends:"L;R",is_best:"True"},
-{name:"NODE_1_length_1439166_cov_42.837164",corr_start:354222,corr_end:357639,start:354222,end:357639,misassemblies:"relocation;relocation",mis_ends:"L;R",is_best:"True"},
-{name:"NODE_1_length_1439166_cov_42.837164",corr_start:365040,corr_end:377826,start:365040,end:377826,misassemblies:"relocation;local",mis_ends:"L;R",is_best:"True"},
-{name:"NODE_1_length_1439166_cov_42.837164",corr_start:377949,corr_end:393062,start:377949,end:393062,misassemblies:"local;relocation",mis_ends:"L;R",is_best:"True"},
-{name:"NODE_1_length_1439166_cov_42.837164",corr_start:393056,corr_end:413854,start:393056,end:413854,misassemblies:"relocation;translocation",mis_ends:"L;R",is_best:"True"},
-{name:"NODE_1_length_1439166_cov_42.837164",corr_start:413850,corr_end:415470,start:413850,end:415470,misassemblies:"translocation;local",mis_ends:"L;R",is_best:"True"},
-{name:"NODE_1_length_1439166_cov_42.837164",corr_start:415470,corr_end:462967,start:415470,end:462967,misassemblies:"local;",mis_ends:"L",is_best:"True"},
-{name:"NODE_1_length_1439166_cov_42.837164",corr_start:464573,corr_end:577368,start:464573,end:577368,misassemblies:";relocation",mis_ends:";R",is_best:"True"
-,overlaps:[ 
-{contig:"NODE_4_length_212823_cov_82.822680",corr_start: 483857,corr_end: 484731,start:483857,end:484731,start_in_contig:170961,end_in_contig:171834,chr: "0"}
-]},
-{name:"NODE_4_length_212823_cov_82.822680",corr_start:483857,corr_end:484731,start:483857,end:484731,misassemblies:"translocation;translocation",mis_ends:"L;R",is_best:"True"
-,overlaps:[ 
-{contig:"NODE_1_length_1439166_cov_42.837164",corr_start: 464573,corr_end: 577368,start:464573,end:577368,start_in_contig:904723,end_in_contig:1017514,chr: "0"}
-]},
-{name:"NODE_6_length_62897_cov_73.711292",corr_start:579052,corr_end:579469,start:579052,end:579469,misassemblies:"unknown",mis_ends:"",is_best:"True",more_unaligned:"True"},
-{name:"NODE_6_length_62897_cov_73.711292",corr_start:582485,corr_end:583650,start:582485,end:583650,misassemblies:"unknown",mis_ends:"",is_best:"True",more_unaligned:"True"},
-{name:"NODE_6_length_62897_cov_73.711292",corr_start:583652,corr_end:583870,start:583652,end:583870,misassemblies:"unknown",mis_ends:"",is_best:"True",more_unaligned:"True"},
-{name:"NODE_1_length_1439166_cov_42.837164",corr_start:590611,corr_end:681969,start:590611,end:681969,misassemblies:"relocation;local",mis_ends:"L;R",is_best:"True"},
-{name:"NODE_1_length_1439166_cov_42.837164",corr_start:681848,corr_end:822470,start:681848,end:822470,misassemblies:"local;relocation",mis_ends:"L;R",is_best:"True"},
-{name:"NODE_1_length_1439166_cov_42.837164",corr_start:823139,corr_end:823854,start:823139,end:823854,misassemblies:"relocation;relocation",mis_ends:"L;R",is_best:"True"},
-{name:"NODE_1_length_1439166_cov_42.837164",corr_start:825913,corr_end:848740,start:825913,end:848740,misassemblies:"relocation;translocation",mis_ends:"L;R",is_best:"True"
-,overlaps:[ 
-{contig:"NODE_5_length_155237_cov_56.663271",corr_start: 826308,corr_end: 826825,start:826308,end:826825,start_in_contig:131975,end_in_contig:132487,chr: "0"},{contig:"NODE_5_length_155237_cov_56.663271",corr_start: 827378,corr_end: 830711,start:827378,end:830711,start_in_contig:133206,end_in_contig:136538,chr: "0"},{contig:"NODE_5_length_155237_cov_56.663271",corr_start: 832887,corr_end: 833299,start:832887,end:833299,start_in_contig:138251,end_in_contig:138663,chr: "0"}
-]},
-{name:"NODE_5_length_155237_cov_56.663271",corr_start:826308,corr_end:826825,start:826308,end:826825,misassemblies:"relocation;local",mis_ends:"L;R",is_best:"True"
-,overlaps:[ 
-{contig:"NODE_1_length_1439166_cov_42.837164",corr_start: 825913,corr_end: 848740,start:825913,end:848740,start_in_contig:1253398,end_in_contig:1276226,chr: "0"}
-]},
-{name:"NODE_5_length_155237_cov_56.663271",corr_start:827378,corr_end:830711,start:827378,end:830711,misassemblies:"local;local",mis_ends:"L;R",is_best:"True"
-,overlaps:[ 
-{contig:"NODE_1_length_1439166_cov_42.837164",corr_start: 825913,corr_end: 848740,start:825913,end:848740,start_in_contig:1253398,end_in_contig:1276226,chr: "0"},{contig:"NODE_1_length_1439166_cov_42.837164",corr_start: 828192,corr_end: 829775,start:828192,end:829775,start_in_contig:26509,end_in_contig:24928,chr: "0"}
-]},
-{name:"NODE_1_length_1439166_cov_42.837164",corr_start:828192,corr_end:829775,start:828192,end:829775,misassemblies:"local;relocation",mis_ends:"R;L",is_best:"True"
-,overlaps:[ 
-{contig:"NODE_5_length_155237_cov_56.663271",corr_start: 827378,corr_end: 830711,start:827378,end:830711,start_in_contig:133206,end_in_contig:136538,chr: "0"}
-]},
-{name:"NODE_1_length_1439166_cov_42.837164",corr_start:832887,corr_end:835267,start:832887,end:835267,misassemblies:";local",mis_ends:";L",is_best:"True"
-,overlaps:[ 
-{contig:"NODE_5_length_155237_cov_56.663271",corr_start: 832887,corr_end: 833299,start:832887,end:833299,start_in_contig:138251,end_in_contig:138663,chr: "0"}
-]},
-{name:"NODE_5_length_155237_cov_56.663271",corr_start:832887,corr_end:833299,start:832887,end:833299,misassemblies:"local;",mis_ends:"L",is_best:"True"
-,overlaps:[ 
-{contig:"NODE_1_length_1439166_cov_42.837164",corr_start: 825913,corr_end: 848740,start:825913,end:848740,start_in_contig:1253398,end_in_contig:1276226,chr: "0"},{contig:"NODE_1_length_1439166_cov_42.837164",corr_start: 832887,corr_end: 835267,start:832887,end:835267,start_in_contig:20893,end_in_contig:18513,chr: "0"}
-]},
-{name:"NODE_1_length_1439166_cov_42.837164",corr_start:848730,corr_end:858462,start:848730,end:858462,misassemblies:"translocation;relocation",mis_ends:"L;R",is_best:"True"},
-{name:"NODE_2_length_835679_cov_39.731750",corr_start:858408,corr_end:882648,start:858408,end:882648,misassemblies:";translocation",mis_ends:";R",is_best:"True"},
-{name:"NODE_2_length_835679_cov_39.731750",corr_start:916614,corr_end:960495,start:916614,end:960495,misassemblies:"relocation;translocation",mis_ends:"L;R",is_best:"True"},
-{name:"NODE_2_length_835679_cov_39.731750",corr_start:960487,corr_end:976031,start:960487,end:976031,misassemblies:"translocation;translocation",mis_ends:"L;R",is_best:"True"},
-{name:"NODE_2_length_835679_cov_39.731750",corr_start:976023,corr_end:990619,start:976023,end:990619,misassemblies:"translocation;",mis_ends:"L",is_best:"True"},
-{name:"NODE_2_length_835679_cov_39.731750",corr_start:993952,corr_end:1063765,start:993952,end:1063765,misassemblies:";relocation",mis_ends:";R",is_best:"True"
-,overlaps:[ 
-{contig:"NODE_1_length_1439166_cov_42.837164",corr_start: 1016582,corr_end: 1017656,start:1016582,end:1017656,start_in_contig:785518,end_in_contig:786594,chr: "0"},{contig:"NODE_4_length_212823_cov_82.822680",corr_start: 1020053,corr_end: 1021817,start:1020053,end:1021817,start_in_contig:207974,end_in_contig:206210,chr: "0"},{contig:"NODE_1_length_1439166_cov_42.837164",corr_start: 1020058,corr_end: 1021838,start:1020058,end:1021838,start_in_contig:1406251,end_in_contig:1408031,chr: "0"}
-]},
-{name:"NODE_1_length_1439166_cov_42.837164",corr_start:1016582,corr_end:1017656,start:1016582,end:1017656,misassemblies:"relocation;relocation",mis_ends:"L;R",is_best:"True"
-,overlaps:[ 
-{contig:"NODE_2_length_835679_cov_39.731750",corr_start: 993952,corr_end: 1063765,start:993952,end:1063765,start_in_contig:128957,end_in_contig:198771,chr: "0"}
-]},
-{name:"NODE_4_length_212823_cov_82.822680",corr_start:1020053,corr_end:1021817,start:1020053,end:1021817,misassemblies:"translocation;",mis_ends:"R",is_best:"True"
-,overlaps:[ 
-{contig:"NODE_2_length_835679_cov_39.731750",corr_start: 993952,corr_end: 1063765,start:993952,end:1063765,start_in_contig:128957,end_in_contig:198771,chr: "0"},{contig:"NODE_1_length_1439166_cov_42.837164",corr_start: 1020058,corr_end: 1021838,start:1020058,end:1021838,start_in_contig:1406251,end_in_contig:1408031,chr: "0"}
-]},
-{name:"NODE_1_length_1439166_cov_42.837164",corr_start:1020058,corr_end:1021838,start:1020058,end:1021838,misassemblies:"relocation;relocation",mis_ends:"L;R",is_best:"True"
-,overlaps:[ 
-{contig:"NODE_2_length_835679_cov_39.731750",corr_start: 993952,corr_end: 1063765,start:993952,end:1063765,start_in_contig:128957,end_in_contig:198771,chr: "0"},{contig:"NODE_4_length_212823_cov_82.822680",corr_start: 1020053,corr_end: 1021817,start:1020053,end:1021817,start_in_contig:207974,end_in_contig:206210,chr: "0"}
-]},
-{name:"NODE_2_length_835679_cov_39.731750",corr_start:1065277,corr_end:1078356,start:1065277,end:1078356,misassemblies:"relocation;translocation",mis_ends:"L;R",is_best:"True"},
-{name:"NODE_2_length_835679_cov_39.731750",corr_start:1078376,corr_end:1157754,start:1078376,end:1157754,misassemblies:"translocation;",mis_ends:"L",is_best:"True"},
-{name:"NODE_2_length_835679_cov_39.731750",corr_start:1158573,corr_end:1249579,start:1158573,end:1249579,misassemblies:"",mis_ends:"",is_best:"True"},
-{name:"NODE_2_length_835679_cov_39.731750",corr_start:1249629,corr_end:1258986,start:1249629,end:1258986,misassemblies:";translocation",mis_ends:";R",is_best:"True"},
-{name:"NODE_2_length_835679_cov_39.731750",corr_start:1258979,corr_end:1284485,start:1258979,end:1284485,misassemblies:"translocation;translocation",mis_ends:"L;R",is_best:"True"},
-{name:"NODE_2_length_835679_cov_39.731750",corr_start:1284480,corr_end:1298290,start:1284480,end:1298290,misassemblies:"translocation;relocation",mis_ends:"L;R",is_best:"True"},
-{name:"NODE_2_length_835679_cov_39.731750",corr_start:1298287,corr_end:1307561,start:1298287,end:1307561,misassemblies:"relocation;relocation",mis_ends:"L;R",is_best:"True"},
-{name:"NODE_2_length_835679_cov_39.731750",corr_start:1307554,corr_end:1445864,start:1307554,end:1445864,misassemblies:"relocation;relocation",mis_ends:"L;R",is_best:"True"},
-{name:"NODE_2_length_835679_cov_39.731750",corr_start:1447407,corr_end:1449777,start:1447407,end:1449777,misassemblies:"relocation;relocation",mis_ends:"L;R",is_best:"True"},
-{name:"NODE_1_length_1439166_cov_42.837164",corr_start:1449786,corr_end:1450849,start:1449786,end:1450849,misassemblies:"relocation;relocation",mis_ends:"R;L",is_best:"True"},
-{name:"NODE_2_length_835679_cov_39.731750",corr_start:1450845,corr_end:1456470,start:1450845,end:1456470,misassemblies:"relocation;relocation",mis_ends:"L;R",is_best:"True"},
-{name:"NODE_2_length_835679_cov_39.731750",corr_start:1457536,corr_end:1461894,start:1457536,end:1461894,misassemblies:"relocation;translocation",mis_ends:"L;R",is_best:"True"},
-{name:"NODE_2_length_835679_cov_39.731750",corr_start:1461887,corr_end:1526124,start:1461887,end:1526124,misassemblies:"translocation;relocation",mis_ends:"L;R",is_best:"True"
-,overlaps:[ 
-{contig:"NODE_1_length_1439166_cov_42.837164",corr_start: 1510174,corr_end: 1510890,start:1510174,end:1510890,start_in_contig:761842,end_in_contig:762558,chr: "0"}
-]},
-{name:"NODE_1_length_1439166_cov_42.837164",corr_start:1510174,corr_end:1510890,start:1510174,end:1510890,misassemblies:"relocation;relocation",mis_ends:"L;R",is_best:"True"
-,overlaps:[ 
-{contig:"NODE_2_length_835679_cov_39.731750",corr_start: 1461887,corr_end: 1526124,start:1461887,end:1526124,start_in_contig:599845,end_in_contig:664082,chr: "0"}
-]},
-{name:"NODE_2_length_835679_cov_39.731750",corr_start:1526115,corr_end:1696197,start:1526115,end:1696197,misassemblies:"relocation;",mis_ends:"L",is_best:"True"},
-{name:"NODE_23_length_2830_cov_183.700901",corr_start:1697628,corr_end:1700456,start:1697628,end:1700456,misassemblies:"",mis_ends:"",is_best:"True"},
-{name:"NODE_5_length_155237_cov_56.663271",corr_start:1700391,corr_end:1711175,start:1700391,end:1711175,misassemblies:"translocation;relocation",mis_ends:"R;L",is_best:"True"
-,overlaps:[ 
-{contig:"NODE_1_length_1439166_cov_42.837164",corr_start: 1710316,corr_end: 1711352,start:1710316,end:1711352,start_in_contig:624510,end_in_contig:623485,chr: "0"}
-]},
-{name:"NODE_1_length_1439166_cov_42.837164",corr_start:1710316,corr_end:1711352,start:1710316,end:1711352,misassemblies:"relocation;relocation",mis_ends:"R;L",is_best:"True"
-,overlaps:[ 
-{contig:"NODE_5_length_155237_cov_56.663271",corr_start: 1700391,corr_end: 1711175,start:1700391,end:1711175,start_in_contig:128021,end_in_contig:117234,chr: "0"},{contig:"NODE_5_length_155237_cov_56.663271",corr_start: 1711158,corr_end: 1711814,start:1711158,end:1711814,start_in_contig:115697,end_in_contig:115041,chr: "0"}
-]},
-{name:"NODE_5_length_155237_cov_56.663271",corr_start:1711158,corr_end:1711814,start:1711158,end:1711814,misassemblies:"translocation;translocation",mis_ends:"R;L",is_best:"True"
-,overlaps:[ 
-{contig:"NODE_1_length_1439166_cov_42.837164",corr_start: 1710316,corr_end: 1711352,start:1710316,end:1711352,start_in_contig:624510,end_in_contig:623485,chr: "0"}
-]},
-{name:"NODE_5_length_155237_cov_56.663271",corr_start:1711807,corr_end:1738901,start:1711807,end:1738901,misassemblies:"translocation;translocation",mis_ends:"R;L",is_best:"True"},
-{name:"NODE_5_length_155237_cov_56.663271",corr_start:1738894,corr_end:1795489,start:1738894,end:1795489,misassemblies:"relocation;translocation",mis_ends:"R;L",is_best:"True"},
-{name:"NODE_5_length_155237_cov_56.663271",corr_start:1795488,corr_end:1821097,start:1795488,end:1821097,misassemblies:";relocation",mis_ends:";L",is_best:"True"},
-{name:"NODE_14_length_6410_cov_179.274587",corr_start:1822457,corr_end:1827450,start:1822457,end:1827450,misassemblies:"",mis_ends:"",is_best:"True"},
-{name:"NODE_14_length_6410_cov_179.274587",corr_start:1827399,corr_end:1828809,start:1827399,end:1828809,misassemblies:"",mis_ends:"",is_best:"True"},
-{name:"NODE_1_length_1439166_cov_42.837164",corr_start:1830169,corr_end:1831524,start:1830169,end:1831524,misassemblies:"relocation;relocation",mis_ends:"R;L",is_best:"True"},
-{name:"NODE_3_length_293214_cov_37.144294",corr_start:1831522,corr_end:1832936,start:1831522,end:1832936,misassemblies:"translocation;translocation",mis_ends:"R;L",is_best:"True"},
-{name:"NODE_3_length_293214_cov_37.144294",corr_start:1832882,corr_end:1871232,start:1832882,end:1871232,misassemblies:";relocation",mis_ends:";R",is_best:"True"
-,overlaps:[ 
-{contig:"NODE_2_length_835679_cov_39.731750",corr_start: 1846339,corr_end: 1847852,start:1846339,end:1847852,start_in_contig:446145,end_in_contig:447658,chr: "0"}
-]},
-{name:"NODE_2_length_835679_cov_39.731750",corr_start:1846339,corr_end:1847852,start:1846339,end:1847852,misassemblies:"relocation;relocation",mis_ends:"L;R",is_best:"True"
-,overlaps:[ 
-{contig:"NODE_3_length_293214_cov_37.144294",corr_start: 1832882,corr_end: 1871232,start:1832882,end:1871232,start_in_contig:1,end_in_contig:38353,chr: "0"}
-]},
-{name:"NODE_1_length_1439166_cov_42.837164",corr_start:1874301,corr_end:1875343,start:1874301,end:1875343,misassemblies:"relocation;relocation",mis_ends:"L;R",is_best:"True"
-,overlaps:[ 
-{contig:"NODE_4_length_212823_cov_82.822680",corr_start: 1874450,corr_end: 1875350,start:1874450,end:1875350,start_in_contig:77604,end_in_contig:76705,chr: "0"}
-]},
-{name:"NODE_4_length_212823_cov_82.822680",corr_start:1874450,corr_end:1875350,start:1874450,end:1875350,misassemblies:"relocation;translocation",mis_ends:"R;L",is_best:"True"
-,overlaps:[ 
-{contig:"NODE_1_length_1439166_cov_42.837164",corr_start: 1874301,corr_end: 1875343,start:1874301,end:1875343,start_in_contig:587479,end_in_contig:588521,chr: "0"},{contig:"NODE_1_length_1439166_cov_42.837164",corr_start: 1874776,corr_end: 1875350,start:1874776,end:1875350,start_in_contig:754412,end_in_contig:754987,chr: "0"}
-]},
-{name:"NODE_1_length_1439166_cov_42.837164",corr_start:1874776,corr_end:1875350,start:1874776,end:1875350,misassemblies:"inversion;relocation",mis_ends:"L;R",is_best:"True"
-,overlaps:[ 
-{contig:"NODE_4_length_212823_cov_82.822680",corr_start: 1874450,corr_end: 1875350,start:1874450,end:1875350,start_in_contig:77604,end_in_contig:76705,chr: "0"}
-]},
-{name:"NODE_1_length_1439166_cov_42.837164",corr_start:1878144,corr_end:1879509,start:1878144,end:1879509,misassemblies:"relocation;inversion",mis_ends:"R;L",is_best:"True"},
-{name:"NODE_2_length_835679_cov_39.731750",corr_start:1885005,corr_end:1887350,start:1885005,end:1887350,misassemblies:"translocation;relocation",mis_ends:"R;L",is_best:"True"},
-{name:"NODE_3_length_293214_cov_37.144294",corr_start:1915695,corr_end:1931617,start:1915695,end:1931617,misassemblies:"relocation;relocation",mis_ends:"L;R",is_best:"True"},
-{name:"NODE_1_length_1439166_cov_42.837164",corr_start:1931618,corr_end:1933131,start:1931618,end:1933131,misassemblies:"relocation;relocation",mis_ends:"L;R",is_best:"True"
-,overlaps:[ 
-{contig:"NODE_2_length_835679_cov_39.731750",corr_start: 1931618,corr_end: 1933129,start:1931618,end:1933129,start_in_contig:664083,end_in_contig:665594,chr: "0"},{contig:"NODE_3_length_293214_cov_37.144294",corr_start: 1931618,corr_end: 1932392,start:1931618,end:1932392,start_in_contig:111924,end_in_contig:112698,chr: "0"}
-]},
-{name:"NODE_2_length_835679_cov_39.731750",corr_start:1931618,corr_end:1933129,start:1931618,end:1933129,misassemblies:"relocation;relocation",mis_ends:"L;R",is_best:"True"
-,overlaps:[ 
-{contig:"NODE_1_length_1439166_cov_42.837164",corr_start: 1931618,corr_end: 1933131,start:1931618,end:1933131,start_in_contig:242051,end_in_contig:243564,chr: "0"},{contig:"NODE_3_length_293214_cov_37.144294",corr_start: 1931618,corr_end: 1932392,start:1931618,end:1932392,start_in_contig:111924,end_in_contig:112698,chr: "0"}
-]},
-{name:"NODE_3_length_293214_cov_37.144294",corr_start:1931618,corr_end:1932392,start:1931618,end:1932392,misassemblies:"relocation;relocation",mis_ends:"L;R",is_best:"True"
-,overlaps:[ 
-{contig:"NODE_1_length_1439166_cov_42.837164",corr_start: 1931618,corr_end: 1933131,start:1931618,end:1933131,start_in_contig:242051,end_in_contig:243564,chr: "0"},{contig:"NODE_2_length_835679_cov_39.731750",corr_start: 1931618,corr_end: 1933129,start:1931618,end:1933129,start_in_contig:664083,end_in_contig:665594,chr: "0"}
-]},
-{name:"NODE_3_length_293214_cov_37.144294",corr_start:1933140,corr_end:1943381,start:1933140,end:1943381,misassemblies:"relocation;local",mis_ends:"L;R",is_best:"True"},
-{name:"NODE_3_length_293214_cov_37.144294",corr_start:1944527,corr_end:1953691,start:1944527,end:1953691,misassemblies:"local;relocation",mis_ends:"L;R",is_best:"True"},
-{name:"NODE_3_length_293214_cov_37.144294",corr_start:1953690,corr_end:1959998,start:1953690,end:1959998,misassemblies:"relocation;relocation",mis_ends:"L;R",is_best:"True"},
-{name:"NODE_3_length_293214_cov_37.144294",corr_start:1962352,corr_end:1967507,start:1962352,end:1967507,misassemblies:"relocation;relocation",mis_ends:"L;R",is_best:"True"},
-{name:"NODE_3_length_293214_cov_37.144294",corr_start:1967500,corr_end:1992662,start:1967500,end:1992662,misassemblies:"relocation;local",mis_ends:"L;R",is_best:"True"},
-{name:"NODE_3_length_293214_cov_37.144294",corr_start:1992783,corr_end:2011026,start:1992783,end:2011026,misassemblies:"local;translocation",mis_ends:"L;R",is_best:"True"},
-{name:"NODE_3_length_293214_cov_37.144294",corr_start:2011019,corr_end:2144453,start:2011019,end:2144453,misassemblies:"translocation;",mis_ends:"L",is_best:"True"},
-{name:"NODE_1_length_1439166_cov_42.837164",corr_start:2151469,corr_end:2182601,start:2151469,end:2182601,misassemblies:"relocation;",mis_ends:"R",is_best:"True"},
-{name:"NODE_1_length_1439166_cov_42.837164",corr_start:2182600,corr_end:2298559,start:2182600,end:2298559,misassemblies:"relocation;relocation",mis_ends:"R;L",is_best:"True"},
-{name:"NODE_1_length_1439166_cov_42.837164",corr_start:2298541,corr_end:2417518,start:2298541,end:2417518,misassemblies:"relocation;",mis_ends:"L",is_best:"True"
-,overlaps:[ 
-{contig:"NODE_4_length_212823_cov_82.822680",corr_start: 2311376,corr_end: 2312449,start:2311376,end:2312449,start_in_contig:74726,end_in_contig:73653,chr: "0"}
-]},
-{name:"NODE_4_length_212823_cov_82.822680",corr_start:2311376,corr_end:2312449,start:2311376,end:2312449,misassemblies:"relocation;relocation",mis_ends:"R;L",is_best:"True"
-,overlaps:[ 
-{contig:"NODE_1_length_1439166_cov_42.837164",corr_start: 2298541,corr_end: 2417518,start:2298541,end:2417518,start_in_contig:32182,end_in_contig:151170,chr: "0"}
-]},
-{name:"NODE_1_length_1439166_cov_42.837164",corr_start:2422277,corr_end:2482938,start:2422277,end:2482938,misassemblies:";local",mis_ends:";R",is_best:"True"},
-{name:"NODE_1_length_1439166_cov_42.837164",corr_start:2482658,corr_end:2508052,start:2482658,end:2508052,misassemblies:"local;relocation",mis_ends:"L;R",is_best:"True"},
-{name:"NODE_1_length_1439166_cov_42.837164",corr_start:2508045,corr_end:2509608,start:2508045,end:2509608,misassemblies:"relocation;local",mis_ends:"L;R",is_best:"True"},
-{name:"NODE_30_length_578_cov_71.022945",corr_start:2510528,corr_end:2511105,start:2510528,end:2511105,misassemblies:"",mis_ends:"",is_best:"True"},
-{name:"NODE_1_length_1439166_cov_42.837164",corr_start:2516010,corr_end:2516941,start:2516010,end:2516941,misassemblies:"local;translocation",mis_ends:"L;R",is_best:"True"},
-{name:"NODE_1_length_1439166_cov_42.837164",corr_start:2516934,corr_end:2624683,start:2516934,end:2624683,misassemblies:"translocation;translocation",mis_ends:"L;R",is_best:"True"},
-{name:"NODE_1_length_1439166_cov_42.837164",corr_start:2624629,corr_end:2657799,start:2624629,end:2657799,misassemblies:"translocation;local",mis_ends:"L;R",is_best:"True"},
-{name:"NODE_1_length_1439166_cov_42.837164",corr_start:2657632,corr_end:2674082,start:2657632,end:2674082,misassemblies:"local;",mis_ends:"L",is_best:"True"},
-{name:"NODE_1_length_1439166_cov_42.837164",corr_start:2676741,corr_end:2698137,start:2676741,end:2698137,misassemblies:"",mis_ends:"",is_best:"True"},
-{name:"NODE_19_length_3950_cov_107.460591",corr_start:2707001,corr_end:2710813,start:8865,end:12677,misassemblies:"",mis_ends:"",is_best:"True"},
-{name:"NODE_1_length_1439166_cov_42.837164",corr_start:2723410,corr_end:2726340,start:25274,end:28204,misassemblies:"translocation;translocation",mis_ends:"L;R",is_best:"True"},
-{name:"NODE_9_length_9325_cov_146.068608",corr_start:2735667,corr_end:2743966,start:1269,end:9568,misassemblies:"",mis_ends:"",is_best:"True"},
-{name:"NODE_4_length_212823_cov_82.822680",corr_start:2755288,corr_end:2756808,start:20890,end:22410,misassemblies:"translocation;translocation",mis_ends:"R;L",is_best:"True"},
-{name:"NODE_4_length_212823_cov_82.822680",corr_start:2755290,corr_end:2756808,start:20892,end:22410,misassemblies:"translocation;translocation",mis_ends:"L;R",is_best:"True"},
-{name:"NODE_8_length_10124_cov_111.618631",corr_start:2788023,corr_end:2793359,start:53625,end:58961,misassemblies:";relocation",mis_ends:";L",is_best:"True"
-,overlaps:[ 
-{contig:"NODE_7_length_11099_cov_67.285675",corr_start: 2791196,corr_end: 2791543,start:56798,end:57145,start_in_contig:4337,end_in_contig:3990,chr: "2"}
-]},
-{name:"NODE_7_length_11099_cov_67.285675",corr_start:2791196,corr_end:2791543,start:56798,end:57145,misassemblies:"unknown",mis_ends:"",is_best:"True",more_unaligned:"True"
-,overlaps:[ 
-{contig:"NODE_8_length_10124_cov_111.618631",corr_start: 2788023,corr_end: 2793359,start:53625,end:58961,start_in_contig:5337,end_in_contig:1,chr: "2"}
-]},
-{name:"NODE_8_length_10124_cov_111.618631",corr_start:2794000,corr_end:2798786,start:59602,end:64388,misassemblies:"relocation;",mis_ends:"R",is_best:"True"},
-{name:"NODE_10_length_9074_cov_81.922386",corr_start:2800648,corr_end:2804491,start:3,end:3846,misassemblies:";relocation",mis_ends:";L",is_best:"True"
-,overlaps:[ 
-{contig:"NODE_4_length_212823_cov_82.822680",corr_start: 2801544,corr_end: 2804584,start:899,end:3939,start_in_contig:203170,end_in_contig:206209,chr: "3"}
-]},
-{name:"NODE_4_length_212823_cov_82.822680",corr_start:2801544,corr_end:2804584,start:899,end:3939,misassemblies:"relocation;translocation",mis_ends:"L;R",is_best:"True"
-,overlaps:[ 
-{contig:"NODE_10_length_9074_cov_81.922386",corr_start: 2800648,corr_end: 2804491,start:3,end:3846,start_in_contig:3844,end_in_contig:1,chr: "3"}
-]},
-{name:"NODE_20_length_3758_cov_69.106670",corr_start:2807730,corr_end:2808043,start:7085,end:7398,misassemblies:"",mis_ends:"",is_best:"True",more_unaligned:"True"},
-{name:"NODE_29_length_692_cov_74.073783",corr_start:2809595,corr_end:2810286,start:8950,end:9641,misassemblies:"",mis_ends:"",is_best:"True"},
-{name:"NODE_13_length_7020_cov_106.988945",corr_start:2810443,corr_end:2817450,start:9798,end:16805,misassemblies:"",mis_ends:"",is_best:"True"},
-{name:"NODE_4_length_212823_cov_82.822680",corr_start:2818943,corr_end:2830347,start:18298,end:29702,misassemblies:";relocation",mis_ends:";R",is_best:"True"
-,overlaps:[ 
-{contig:"NODE_7_length_11099_cov_67.285675",corr_start: 2830234,corr_end: 2831398,start:29589,end:30753,start_in_contig:11099,end_in_contig:9935,chr: "3"}
-]},
-{name:"NODE_7_length_11099_cov_67.285675",corr_start:2830234,corr_end:2831398,start:29589,end:30753,misassemblies:"unknown",mis_ends:"",is_best:"True",more_unaligned:"True"
-,overlaps:[ 
-{contig:"NODE_4_length_212823_cov_82.822680",corr_start: 2818943,corr_end: 2830347,start:18298,end:29702,start_in_contig:1,end_in_contig:11396,chr: "3"},{contig:"NODE_4_length_212823_cov_82.822680",corr_start: 2831039,corr_end: 2835541,start:30394,end:34896,start_in_contig:14118,end_in_contig:18596,chr: "3"}
-]},
-{name:"NODE_4_length_212823_cov_82.822680",corr_start:2831039,corr_end:2835541,start:30394,end:34896,misassemblies:"relocation;relocation",mis_ends:"L;R",is_best:"True"
-,overlaps:[ 
-{contig:"NODE_7_length_11099_cov_67.285675",corr_start: 2830234,corr_end: 2831398,start:29589,end:30753,start_in_contig:11099,end_in_contig:9935,chr: "3"}
-]},
-{name:"NODE_4_length_212823_cov_82.822680",corr_start:2835541,corr_end:2835834,start:34896,end:35189,misassemblies:"relocation;relocation",mis_ends:"L;R",is_best:"True"},
-{name:"NODE_4_length_212823_cov_82.822680",corr_start:2835843,corr_end:2836361,start:35198,end:35716,misassemblies:"relocation;relocation",mis_ends:"R;L",is_best:"True"},
-{name:"NODE_4_length_212823_cov_82.822680",corr_start:2837181,corr_end:2838863,start:36536,end:38218,misassemblies:"relocation;relocation",mis_ends:"L;R",is_best:"True"},
-{name:"NODE_4_length_212823_cov_82.822680",corr_start:2841186,corr_end:2841610,start:40541,end:40965,misassemblies:"translocation;relocation",mis_ends:"R;L",is_best:"True"},
-{name:"NODE_4_length_212823_cov_82.822680",corr_start:2842407,corr_end:2844609,start:41762,end:43964,misassemblies:"relocation;relocation",mis_ends:"L;R",is_best:"True"},
-{name:"NODE_4_length_212823_cov_82.822680",corr_start:2844610,corr_end:2853675,start:43965,end:53030,misassemblies:"relocation;relocation",mis_ends:"L;R",is_best:"True"},
-{name:"NODE_6_length_62897_cov_73.711292",corr_start:2853676,corr_end:2856023,start:53031,end:55378,misassemblies:"unknown",mis_ends:"",is_best:"True",more_unaligned:"True"},
-{name:"NODE_4_length_212823_cov_82.822680",corr_start:2856029,corr_end:2857840,start:55384,end:57195,misassemblies:"relocation;relocation",mis_ends:"L;R",is_best:"True"},
-{name:"NODE_4_length_212823_cov_82.822680",corr_start:2857034,corr_end:2857845,start:56389,end:57200,misassemblies:"relocation;translocation",mis_ends:"R;L",is_best:"True"},
-{name:"NODE_4_length_212823_cov_82.822680",corr_start:2869148,corr_end:2869955,start:68503,end:69310,misassemblies:"relocation;local",mis_ends:"L;R",is_best:"True"},
-{name:"NODE_4_length_212823_cov_82.822680",corr_start:2870059,corr_end:2872529,start:69414,end:71884,misassemblies:"local;translocation",mis_ends:"L;R",is_best:"True"},
-{name:"NODE_4_length_212823_cov_82.822680",corr_start:2873456,corr_end:2891465,start:72811,end:90820,misassemblies:"relocation;relocation",mis_ends:"L;R",is_best:"True"
-,overlaps:[ 
-{contig:"NODE_2_length_835679_cov_39.731750",corr_start: 2889050,corr_end: 2890114,start:88405,end:89469,start_in_contig:25365,end_in_contig:24301,chr: "3"},{contig:"NODE_2_length_835679_cov_39.731750",corr_start: 2889050,corr_end: 2890111,start:88405,end:89466,start_in_contig:422002,end_in_contig:420941,chr: "3"},{contig:"NODE_1_length_1439166_cov_42.837164",corr_start: 2889051,corr_end: 2890116,start:88406,end:89471,start_in_contig:627370,end_in_contig:628435,chr: "3"}
-]},
-{name:"NODE_2_length_835679_cov_39.731750",corr_start:2889050,corr_end:2890114,start:88405,end:89469,misassemblies:"translocation;relocation",mis_ends:"R;L",is_best:"True"
-,overlaps:[ 
-{contig:"NODE_4_length_212823_cov_82.822680",corr_start: 2873456,corr_end: 2891465,start:72811,end:90820,start_in_contig:47227,end_in_contig:65237,chr: "3"},{contig:"NODE_1_length_1439166_cov_42.837164",corr_start: 2889051,corr_end: 2890116,start:88406,end:89471,start_in_contig:627370,end_in_contig:628435,chr: "3"}
-]},
-{name:"NODE_2_length_835679_cov_39.731750",corr_start:2889050,corr_end:2890111,start:88405,end:89466,misassemblies:"translocation;translocation",mis_ends:"R;L",is_best:"True"
-,overlaps:[ 
-{contig:"NODE_4_length_212823_cov_82.822680",corr_start: 2873456,corr_end: 2891465,start:72811,end:90820,start_in_contig:47227,end_in_contig:65237,chr: "3"},{contig:"NODE_1_length_1439166_cov_42.837164",corr_start: 2889051,corr_end: 2890116,start:88406,end:89471,start_in_contig:627370,end_in_contig:628435,chr: "3"}
-]},
-{name:"NODE_1_length_1439166_cov_42.837164",corr_start:2889051,corr_end:2890116,start:88406,end:89471,misassemblies:"translocation;translocation",mis_ends:"L;R",is_best:"True"
-,overlaps:[ 
-{contig:"NODE_4_length_212823_cov_82.822680",corr_start: 2873456,corr_end: 2891465,start:72811,end:90820,start_in_contig:47227,end_in_contig:65237,chr: "3"},{contig:"NODE_2_length_835679_cov_39.731750",corr_start: 2889050,corr_end: 2890114,start:88405,end:89469,start_in_contig:25365,end_in_contig:24301,chr: "3"},{contig:"NODE_2_length_835679_cov_39.731750",corr_start: 2889050,corr_end: 2890111,start:88405,end:89466,start_in_contig:422002,end_in_contig:420941,chr: "3"}
-]},
-{name:"NODE_4_length_212823_cov_82.822680",corr_start:2891464,corr_end:2894804,start:90819,end:94159,misassemblies:"relocation;relocation",mis_ends:"R;L",is_best:"True"},
-{name:"NODE_4_length_212823_cov_82.822680",corr_start:2891465,corr_end:2892832,start:90820,end:92187,misassemblies:"translocation;relocation",mis_ends:"R;L",is_best:"True"},
-{name:"NODE_4_length_212823_cov_82.822680",corr_start:2904457,corr_end:2908283,start:103812,end:107638,misassemblies:"relocation;",mis_ends:"L",is_best:"True"},
-{name:"NODE_4_length_212823_cov_82.822680",corr_start:2908433,corr_end:2908676,start:107788,end:108031,misassemblies:";relocation",mis_ends:";R",is_best:"True"},
-{name:"NODE_4_length_212823_cov_82.822680",corr_start:2908676,corr_end:2909686,start:108031,end:109041,misassemblies:"relocation;translocation",mis_ends:"L;R",is_best:"True"},
-{name:"NODE_4_length_212823_cov_82.822680",corr_start:2909773,corr_end:2915301,start:109128,end:114656,misassemblies:"relocation;local",mis_ends:"L;R",is_best:"True"},
-{name:"NODE_1_length_1439166_cov_42.837164",corr_start:2915377,corr_end:2916459,start:114732,end:115814,misassemblies:"translocation;translocation",mis_ends:"R;L",is_best:"True"
-,overlaps:[ 
-{contig:"NODE_4_length_212823_cov_82.822680",corr_start: 2915390,corr_end: 2916491,start:114745,end:115846,start_in_contig:153835,end_in_contig:154937,chr: "3"}
-]},
-{name:"NODE_4_length_212823_cov_82.822680",corr_start:2915390,corr_end:2916491,start:114745,end:115846,misassemblies:"local;relocation",mis_ends:"L;R",is_best:"True"
-,overlaps:[ 
-{contig:"NODE_1_length_1439166_cov_42.837164",corr_start: 2915377,corr_end: 2916459,start:114732,end:115814,start_in_contig:653388,end_in_contig:652306,chr: "3"}
-]},
-{name:"NODE_4_length_212823_cov_82.822680",corr_start:2917063,corr_end:2919525,start:116418,end:118880,misassemblies:"relocation;relocation",mis_ends:"L;R",is_best:"True"},
-{name:"NODE_4_length_212823_cov_82.822680",corr_start:2919526,corr_end:2921224,start:118881,end:120579,misassemblies:"relocation;relocation",mis_ends:"L;R",is_best:"True"},
-{name:"NODE_4_length_212823_cov_82.822680",corr_start:2922273,corr_end:2923228,start:121628,end:122583,misassemblies:"relocation;relocation",mis_ends:"L;R",is_best:"True"},
-{name:"NODE_3_length_293214_cov_37.144294",corr_start:2933253,corr_end:2933641,start:132608,end:132996,misassemblies:"translocation;translocation",mis_ends:"R;L",is_best:"True"},
-{name:"NODE_4_length_212823_cov_82.822680",corr_start:2937858,corr_end:2938278,start:137213,end:137633,misassemblies:"local;relocation",mis_ends:"R;L",is_best:"True"},
-{name:"NODE_4_length_212823_cov_82.822680",corr_start:2938373,corr_end:2961332,start:137728,end:160687,misassemblies:"relocation;local",mis_ends:"R;L",is_best:"True"},
-{name:"NODE_1_length_1439166_cov_42.837164",corr_start:2961327,corr_end:2962446,start:160682,end:161801,misassemblies:"translocation;translocation",mis_ends:"L;R",is_best:"True"
-,overlaps:[ 
-{contig:"NODE_2_length_835679_cov_39.731750",corr_start: 2961327,corr_end: 2962446,start:160682,end:161801,start_in_contig:93752,end_in_contig:92633,chr: "3"},{contig:"NODE_2_length_835679_cov_39.731750",corr_start: 2961327,corr_end: 2962549,start:160682,end:161904,start_in_contig:213147,end_in_contig:211925,chr: "3"},{contig:"NODE_2_length_835679_cov_39.731750",corr_start: 2961327,corr_end: 2962446,start:160682,end:161801,start_in_contig:395215,end_in_contig:394096,chr: "3"},{contig:"NODE_2_length_835679_cov_39.731750",corr_start: 2961327,corr_end: 2962549,start:160682,end:161904,start_in_contig:598548,end_in_contig:599770,chr: "3"},{contig:"NODE_3_length_293214_cov_37.144294",corr_start: 2961327,corr_end: 2962237,start:160682,end:161592,start_in_contig:157068,end_in_contig:157978,chr: "3"},{contig:"NODE_5_length_155237_cov_56.663271",corr_start: 2961327,corr_end: 2962446,start:160682,end:161801,start_in_contig:86214,end_in_contig:85095,chr: "3"},{contig:"NODE_5_length_155237_cov_56.663271",corr_start: 2961327,corr_end: 2962549,start:160682,end:161904,start_in_contig:114823,end_in_contig:113601,chr: "3"}
-]},
-{name:"NODE_1_length_1439166_cov_42.837164",corr_start:2961327,corr_end:2962446,start:160682,end:161801,misassemblies:"translocation;translocation",mis_ends:"R;L",is_best:"True"
-,overlaps:[ 
-{contig:"NODE_2_length_835679_cov_39.731750",corr_start: 2961327,corr_end: 2962446,start:160682,end:161801,start_in_contig:93752,end_in_contig:92633,chr: "3"},{contig:"NODE_2_length_835679_cov_39.731750",corr_start: 2961327,corr_end: 2962549,start:160682,end:161904,start_in_contig:213147,end_in_contig:211925,chr: "3"},{contig:"NODE_2_length_835679_cov_39.731750",corr_start: 2961327,corr_end: 2962446,start:160682,end:161801,start_in_contig:395215,end_in_contig:394096,chr: "3"},{contig:"NODE_2_length_835679_cov_39.731750",corr_start: 2961327,corr_end: 2962549,start:160682,end:161904,start_in_contig:598548,end_in_contig:599770,chr: "3"},{contig:"NODE_3_length_293214_cov_37.144294",corr_start: 2961327,corr_end: 2962237,start:160682,end:161592,start_in_contig:157068,end_in_contig:157978,chr: "3"},{contig:"NODE_5_length_155237_cov_56.663271",corr_start: 2961327,corr_end: 2962446,start:160682,end:161801,start_in_contig:86214,end_in_contig:85095,chr: "3"},{contig:"NODE_5_length_155237_cov_56.663271",corr_start: 2961327,corr_end: 2962549,start:160682,end:161904,start_in_contig:114823,end_in_contig:113601,chr: "3"}
-]},
-{name:"NODE_2_length_835679_cov_39.731750",corr_start:2961327,corr_end:2962446,start:160682,end:161801,misassemblies:"translocation;translocation",mis_ends:"R;L",is_best:"True"
-,overlaps:[ 
-{contig:"NODE_1_length_1439166_cov_42.837164",corr_start: 2961327,corr_end: 2962446,start:160682,end:161801,start_in_contig:253115,end_in_contig:254234,chr: "3"},{contig:"NODE_1_length_1439166_cov_42.837164",corr_start: 2961327,corr_end: 2962446,start:160682,end:161801,start_in_contig:1277521,end_in_contig:1276402,chr: "3"},{contig:"NODE_3_length_293214_cov_37.144294",corr_start: 2961327,corr_end: 2962237,start:160682,end:161592,start_in_contig:157068,end_in_contig:157978,chr: "3"},{contig:"NODE_5_length_155237_cov_56.663271",corr_start: 2961327,corr_end: 2962446,start:160682,end:161801,start_in_contig:86214,end_in_contig:85095,chr: "3"},{contig:"NODE_5_length_155237_cov_56.663271",corr_start: 2961327,corr_end: 2962549,start:160682,end:161904,start_in_contig:114823,end_in_contig:113601,chr: "3"}
-]},
-{name:"NODE_2_length_835679_cov_39.731750",corr_start:2961327,corr_end:2962549,start:160682,end:161904,misassemblies:"translocation;translocation",mis_ends:"R;L",is_best:"True"
-,overlaps:[ 
-{contig:"NODE_1_length_1439166_cov_42.837164",corr_start: 2961327,corr_end: 2962446,start:160682,end:161801,start_in_contig:253115,end_in_contig:254234,chr: "3"},{contig:"NODE_1_length_1439166_cov_42.837164",corr_start: 2961327,corr_end: 2962446,start:160682,end:161801,start_in_contig:1277521,end_in_contig:1276402,chr: "3"},{contig:"NODE_3_length_293214_cov_37.144294",corr_start: 2961327,corr_end: 2962237,start:160682,end:161592,start_in_contig:157068,end_in_contig:157978,chr: "3"},{contig:"NODE_5_length_155237_cov_56.663271",corr_start: 2961327,corr_end: 2962446,start:160682,end:161801,start_in_contig:86214,end_in_contig:85095,chr: "3"},{contig:"NODE_5_length_155237_cov_56.663271",corr_start: 2961327,corr_end: 2962549,start:160682,end:161904,start_in_contig:114823,end_in_contig:113601,chr: "3"}
-]},
-{name:"NODE_2_length_835679_cov_39.731750",corr_start:2961327,corr_end:2962446,start:160682,end:161801,misassemblies:"translocation;translocation",mis_ends:"R;L",is_best:"True"
-,overlaps:[ 
-{contig:"NODE_1_length_1439166_cov_42.837164",corr_start: 2961327,corr_end: 2962446,start:160682,end:161801,start_in_contig:253115,end_in_contig:254234,chr: "3"},{contig:"NODE_1_length_1439166_cov_42.837164",corr_start: 2961327,corr_end: 2962446,start:160682,end:161801,start_in_contig:1277521,end_in_contig:1276402,chr: "3"},{contig:"NODE_3_length_293214_cov_37.144294",corr_start: 2961327,corr_end: 2962237,start:160682,end:161592,start_in_contig:157068,end_in_contig:157978,chr: "3"},{contig:"NODE_5_length_155237_cov_56.663271",corr_start: 2961327,corr_end: 2962446,start:160682,end:161801,start_in_contig:86214,end_in_contig:85095,chr: "3"},{contig:"NODE_5_length_155237_cov_56.663271",corr_start: 2961327,corr_end: 2962549,start:160682,end:161904,start_in_contig:114823,end_in_contig:113601,chr: "3"}
-]},
-{name:"NODE_2_length_835679_cov_39.731750",corr_start:2961327,corr_end:2962549,start:160682,end:161904,misassemblies:"translocation;translocation",mis_ends:"L;R",is_best:"True"
-,overlaps:[ 
-{contig:"NODE_1_length_1439166_cov_42.837164",corr_start: 2961327,corr_end: 2962446,start:160682,end:161801,start_in_contig:253115,end_in_contig:254234,chr: "3"},{contig:"NODE_1_length_1439166_cov_42.837164",corr_start: 2961327,corr_end: 2962446,start:160682,end:161801,start_in_contig:1277521,end_in_contig:1276402,chr: "3"},{contig:"NODE_3_length_293214_cov_37.144294",corr_start: 2961327,corr_end: 2962237,start:160682,end:161592,start_in_contig:157068,end_in_contig:157978,chr: "3"},{contig:"NODE_5_length_155237_cov_56.663271",corr_start: 2961327,corr_end: 2962446,start:160682,end:161801,start_in_contig:86214,end_in_contig:85095,chr: "3"},{contig:"NODE_5_length_155237_cov_56.663271",corr_start: 2961327,corr_end: 2962549,start:160682,end:161904,start_in_contig:114823,end_in_contig:113601,chr: "3"}
-]},
-{name:"NODE_3_length_293214_cov_37.144294",corr_start:2961327,corr_end:2962237,start:160682,end:161592,misassemblies:"translocation;translocation",mis_ends:"L;R",is_best:"True"
-,overlaps:[ 
-{contig:"NODE_1_length_1439166_cov_42.837164",corr_start: 2961327,corr_end: 2962446,start:160682,end:161801,start_in_contig:253115,end_in_contig:254234,chr: "3"},{contig:"NODE_1_length_1439166_cov_42.837164",corr_start: 2961327,corr_end: 2962446,start:160682,end:161801,start_in_contig:1277521,end_in_contig:1276402,chr: "3"},{contig:"NODE_2_length_835679_cov_39.731750",corr_start: 2961327,corr_end: 2962446,start:160682,end:161801,start_in_contig:93752,end_in_contig:92633,chr: "3"},{contig:"NODE_2_length_835679_cov_39.731750",corr_start: 2961327,corr_end: 2962549,start:160682,end:161904,start_in_contig:213147,end_in_contig:211925,chr: "3"},{contig:"NODE_2_length_835679_cov_39.731750",corr_start: 2961327,corr_end: 2962446,start:160682,end:161801,start_in_contig:395215,end_in_contig:394096,chr: "3"},{contig:"NODE_2_length_835679_cov_39.731750",corr_start: 2961327,corr_end: 2962549,start:160682,end:161904,start_in_contig:598548,end_in_contig:599770,chr: "3"},{contig:"NODE_5_length_155237_cov_56.663271",corr_start: 2961327,corr_end: 2962446,start:160682,end:161801,start_in_contig:86214,end_in_contig:85095,chr: "3"},{contig:"NODE_5_length_155237_cov_56.663271",corr_start: 2961327,corr_end: 2962549,start:160682,end:161904,start_in_contig:114823,end_in_contig:113601,chr: "3"}
-]},
-{name:"NODE_5_length_155237_cov_56.663271",corr_start:2961327,corr_end:2962446,start:160682,end:161801,misassemblies:"translocation;translocation",mis_ends:"R;L",is_best:"True"
-,overlaps:[ 
-{contig:"NODE_1_length_1439166_cov_42.837164",corr_start: 2961327,corr_end: 2962446,start:160682,end:161801,start_in_contig:253115,end_in_contig:254234,chr: "3"},{contig:"NODE_1_length_1439166_cov_42.837164",corr_start: 2961327,corr_end: 2962446,start:160682,end:161801,start_in_contig:1277521,end_in_contig:1276402,chr: "3"},{contig:"NODE_2_length_835679_cov_39.731750",corr_start: 2961327,corr_end: 2962446,start:160682,end:161801,start_in_contig:93752,end_in_contig:92633,chr: "3"},{contig:"NODE_2_length_835679_cov_39.731750",corr_start: 2961327,corr_end: 2962549,start:160682,end:161904,start_in_contig:213147,end_in_contig:211925,chr: "3"},{contig:"NODE_2_length_835679_cov_39.731750",corr_start: 2961327,corr_end: 2962446,start:160682,end:161801,start_in_contig:395215,end_in_contig:394096,chr: "3"},{contig:"NODE_2_length_835679_cov_39.731750",corr_start: 2961327,corr_end: 2962549,start:160682,end:161904,start_in_contig:598548,end_in_contig:599770,chr: "3"},{contig:"NODE_3_length_293214_cov_37.144294",corr_start: 2961327,corr_end: 2962237,start:160682,end:161592,start_in_contig:157068,end_in_contig:157978,chr: "3"}
-]},
-{name:"NODE_5_length_155237_cov_56.663271",corr_start:2961327,corr_end:2962549,start:160682,end:161904,misassemblies:"translocation;translocation",mis_ends:"R;L",is_best:"True"
-,overlaps:[ 
-{contig:"NODE_1_length_1439166_cov_42.837164",corr_start: 2961327,corr_end: 2962446,start:160682,end:161801,start_in_contig:253115,end_in_contig:254234,chr: "3"},{contig:"NODE_1_length_1439166_cov_42.837164",corr_start: 2961327,corr_end: 2962446,start:160682,end:161801,start_in_contig:1277521,end_in_contig:1276402,chr: "3"},{contig:"NODE_2_length_835679_cov_39.731750",corr_start: 2961327,corr_end: 2962446,start:160682,end:161801,start_in_contig:93752,end_in_contig:92633,chr: "3"},{contig:"NODE_2_length_835679_cov_39.731750",corr_start: 2961327,corr_end: 2962549,start:160682,end:161904,start_in_contig:213147,end_in_contig:211925,chr: "3"},{contig:"NODE_2_length_835679_cov_39.731750",corr_start: 2961327,corr_end: 2962446,start:160682,end:161801,start_in_contig:395215,end_in_contig:394096,chr: "3"},{contig:"NODE_2_length_835679_cov_39.731750",corr_start: 2961327,corr_end: 2962549,start:160682,end:161904,start_in_contig:598548,end_in_contig:599770,chr: "3"},{contig:"NODE_3_length_293214_cov_37.144294",corr_start: 2961327,corr_end: 2962237,start:160682,end:161592,start_in_contig:157068,end_in_contig:157978,chr: "3"}
-]},
-{name:"NODE_4_length_212823_cov_82.822680",corr_start:2974008,corr_end:2982587,start:173363,end:181942,misassemblies:"relocation;relocation",mis_ends:"R;L",is_best:"True"
-,overlaps:[ 
-{contig:"NODE_1_length_1439166_cov_42.837164",corr_start: 2982433,corr_end: 2983504,start:181788,end:182859,start_in_contig:794484,end_in_contig:793413,chr: "3"}
-]},
-{name:"NODE_1_length_1439166_cov_42.837164",corr_start:2982433,corr_end:2983504,start:181788,end:182859,misassemblies:"translocation;translocation",mis_ends:"R;L",is_best:"True"
-,overlaps:[ 
-{contig:"NODE_4_length_212823_cov_82.822680",corr_start: 2974008,corr_end: 2982587,start:173363,end:181942,start_in_contig:90829,end_in_contig:82240,chr: "3"}
-]},
-{name:"NODE_4_length_212823_cov_82.822680",corr_start:2983498,corr_end:2984155,start:182853,end:183510,misassemblies:"relocation;relocation",mis_ends:"R;L",is_best:"True"},
-{name:"NODE_4_length_212823_cov_82.822680",corr_start:2985296,corr_end:2986462,start:184651,end:185817,misassemblies:"translocation;relocation",mis_ends:"R;L",is_best:"True"},
-{name:"NODE_2_length_835679_cov_39.731750",corr_start:2986459,corr_end:2987994,start:185814,end:187349,misassemblies:"relocation;translocation",mis_ends:"R;L",is_best:"True"
-,overlaps:[ 
-{contig:"NODE_4_length_212823_cov_82.822680",corr_start: 2986459,corr_end: 2987996,start:185814,end:187351,start_in_contig:94940,end_in_contig:96477,chr: "3"},{contig:"NODE_5_length_155237_cov_56.663271",corr_start: 2986459,corr_end: 2987994,start:185814,end:187349,start_in_contig:115698,end_in_contig:117233,chr: "3"}
-]},
-{name:"NODE_4_length_212823_cov_82.822680",corr_start:2986459,corr_end:2987996,start:185814,end:187351,misassemblies:"relocation;relocation",mis_ends:"L;R",is_best:"True"
-,overlaps:[ 
-{contig:"NODE_2_length_835679_cov_39.731750",corr_start: 2986459,corr_end: 2987994,start:185814,end:187349,start_in_contig:39179,end_in_contig:37644,chr: "3"},{contig:"NODE_5_length_155237_cov_56.663271",corr_start: 2986459,corr_end: 2987994,start:185814,end:187349,start_in_contig:115698,end_in_contig:117233,chr: "3"}
-]},
-{name:"NODE_5_length_155237_cov_56.663271",corr_start:2986459,corr_end:2987994,start:185814,end:187349,misassemblies:"translocation;translocation",mis_ends:"L;R",is_best:"True"
-,overlaps:[ 
-{contig:"NODE_2_length_835679_cov_39.731750",corr_start: 2986459,corr_end: 2987994,start:185814,end:187349,start_in_contig:39179,end_in_contig:37644,chr: "3"},{contig:"NODE_4_length_212823_cov_82.822680",corr_start: 2986459,corr_end: 2987996,start:185814,end:187351,start_in_contig:94940,end_in_contig:96477,chr: "3"}
-]},
-{name:"NODE_4_length_212823_cov_82.822680",corr_start:2988161,corr_end:2988614,start:187516,end:187969,misassemblies:"relocation;translocation",mis_ends:"R;L",is_best:"True"},
-{name:"NODE_4_length_212823_cov_82.822680",corr_start:2991817,corr_end:2992385,start:191172,end:191740,misassemblies:"relocation;relocation",mis_ends:"L;R",is_best:"True"},
-{name:"NODE_4_length_212823_cov_82.822680",corr_start:2992390,corr_end:2996130,start:191745,end:195485,misassemblies:"relocation;relocation",mis_ends:"L;R",is_best:"True"},
-{name:"NODE_4_length_212823_cov_82.822680",corr_start:2996437,corr_end:2997952,start:195792,end:197307,misassemblies:"relocation;relocation",mis_ends:"L;R",is_best:"True"
-,overlaps:[ 
-{contig:"NODE_2_length_835679_cov_39.731750",corr_start: 2996439,corr_end: 2997951,start:195794,end:197306,start_in_contig:111027,end_in_contig:109515,chr: "3"}
-]},
-{name:"NODE_2_length_835679_cov_39.731750",corr_start:2996439,corr_end:2997951,start:195794,end:197306,misassemblies:"translocation;translocation",mis_ends:"R;L",is_best:"True"
-,overlaps:[ 
-{contig:"NODE_4_length_212823_cov_82.822680",corr_start: 2996437,corr_end: 2997952,start:195792,end:197307,start_in_contig:129855,end_in_contig:131370,chr: "3"}
-]},
-{name:"NODE_4_length_212823_cov_82.822680",corr_start:2997952,corr_end:2999012,start:197307,end:198367,misassemblies:"translocation;relocation",mis_ends:"R;L",is_best:"True"},
-{name:"NODE_4_length_212823_cov_82.822680",corr_start:2999140,corr_end:3000048,start:198495,end:199403,misassemblies:"relocation;relocation",mis_ends:"L;R",is_best:"True"},
-{name:"NODE_4_length_212823_cov_82.822680",corr_start:3032015,corr_end:3032400,start:231370,end:231755,misassemblies:"relocation;relocation",mis_ends:"R;L",is_best:"True"},
-{name:"NODE_1_length_1439166_cov_42.837164",corr_start:3032826,corr_end:3033110,start:232181,end:232465,misassemblies:"translocation;translocation",mis_ends:"R;L",is_best:"True"
-,overlaps:[ 
-{contig:"NODE_4_length_212823_cov_82.822680",corr_start: 3032826,corr_end: 3033111,start:232181,end:232466,start_in_contig:168874,end_in_contig:169159,chr: "3"}
-]},
-{name:"NODE_1_length_1439166_cov_42.837164",corr_start:3032826,corr_end:3033110,start:232181,end:232465,misassemblies:"translocation;translocation",mis_ends:"R;L",is_best:"True"
-,overlaps:[ 
-{contig:"NODE_4_length_212823_cov_82.822680",corr_start: 3032826,corr_end: 3033111,start:232181,end:232466,start_in_contig:168874,end_in_contig:169159,chr: "3"}
-]},
-{name:"NODE_1_length_1439166_cov_42.837164",corr_start:3032826,corr_end:3033110,start:232181,end:232465,misassemblies:"translocation;translocation",mis_ends:"R;L",is_best:"True"
-,overlaps:[ 
-{contig:"NODE_4_length_212823_cov_82.822680",corr_start: 3032826,corr_end: 3033111,start:232181,end:232466,start_in_contig:168874,end_in_contig:169159,chr: "3"}
-]},
-{name:"NODE_4_length_212823_cov_82.822680",corr_start:3032826,corr_end:3033111,start:232181,end:232466,misassemblies:"relocation;translocation",mis_ends:"L;R",is_best:"True"
-,overlaps:[ 
-{contig:"NODE_1_length_1439166_cov_42.837164",corr_start: 3032826,corr_end: 3033110,start:232181,end:232465,start_in_contig:710798,end_in_contig:710514,chr: "3"},{contig:"NODE_1_length_1439166_cov_42.837164",corr_start: 3032826,corr_end: 3033110,start:232181,end:232465,start_in_contig:764437,end_in_contig:764153,chr: "3"},{contig:"NODE_1_length_1439166_cov_42.837164",corr_start: 3032826,corr_end: 3033110,start:232181,end:232465,start_in_contig:852473,end_in_contig:852189,chr: "3"}
-]},
-{name:"NODE_4_length_212823_cov_82.822680",corr_start:3034691,corr_end:3036477,start:234046,end:235832,misassemblies:"relocation;relocation",mis_ends:"R;L",is_best:"True"},
-{name:"NODE_7_length_11099_cov_67.285675",corr_start:3041825,corr_end:3043682,start:241180,end:243037,misassemblies:"unknown",mis_ends:"",is_best:"True",more_unaligned:"True"
-,overlaps:[ 
-{contig:"NODE_4_length_212823_cov_82.822680",corr_start: 3043466,corr_end: 3046952,start:242821,end:246307,start_in_contig:194943,end_in_contig:198428,chr: "3"}
-]},
-{name:"NODE_4_length_212823_cov_82.822680",corr_start:3043466,corr_end:3046952,start:242821,end:246307,misassemblies:"translocation;relocation",mis_ends:"L;R",is_best:"True"
-,overlaps:[ 
-{contig:"NODE_7_length_11099_cov_67.285675",corr_start: 3041825,corr_end: 3043682,start:241180,end:243037,start_in_contig:1859,end_in_contig:1,chr: "3"},{contig:"NODE_10_length_9074_cov_81.922386",corr_start: 3045298,corr_end: 3045751,start:244653,end:245106,start_in_contig:9072,end_in_contig:8621,chr: "3"},{contig:"NODE_10_length_9074_cov_81.922386",corr_start: 3046439,corr_end: 3048552,start:245794,end:247907,start_in_contig:8282,end_in_contig:6169,chr: "3"}
-]},
-{name:"NODE_10_length_9074_cov_81.922386",corr_start:3045298,corr_end:3045751,start:244653,end:245106,misassemblies:"local;",mis_ends:"R",is_best:"True"
-,overlaps:[ 
-{contig:"NODE_4_length_212823_cov_82.822680",corr_start: 3043466,corr_end: 3046952,start:242821,end:246307,start_in_contig:194943,end_in_contig:198428,chr: "3"}
-]},
-{name:"NODE_10_length_9074_cov_81.922386",corr_start:3046439,corr_end:3048552,start:245794,end:247907,misassemblies:"relocation;local",mis_ends:"R;L",is_best:"True"
-,overlaps:[ 
-{contig:"NODE_4_length_212823_cov_82.822680",corr_start: 3043466,corr_end: 3046952,start:242821,end:246307,start_in_contig:194943,end_in_contig:198428,chr: "3"}
-]},
-{name:"NODE_4_length_212823_cov_82.822680",corr_start:3048548,corr_end:3050444,start:247903,end:249799,misassemblies:"relocation;relocation",mis_ends:"L;R",is_best:"True"},
-{name:"NODE_4_length_212823_cov_82.822680",corr_start:3048548,corr_end:3050443,start:247903,end:249798,misassemblies:"relocation;relocation",mis_ends:"R;L",is_best:"True"},
-{name:"NODE_4_length_212823_cov_82.822680",corr_start:3048548,corr_end:3050444,start:247903,end:249799,misassemblies:"relocation;relocation",mis_ends:"R;L",is_best:"True"},
-{name:"NODE_4_length_212823_cov_82.822680",corr_start:3048553,corr_end:3050443,start:247908,end:249798,misassemblies:"relocation;relocation",mis_ends:"L;R",is_best:"True"}];var contig_lengths = {};
+contig_data["Assembled_genome"] = {};
+contig_data["Assembled_genome"]["scaffolds"] = [ 
+{name:"NODE_1_length_1439166_cov_42.837164",corr_start:1,corr_end:250251,start:1,end:250251,misassemblies:"",mis_ends:"",is_best:"True"},
+{name:"NODE_1_length_1439166_cov_42.837164",corr_start:250460,corr_end:253200,start:250460,end:253200,misassemblies:"",mis_ends:"",is_best:"True"},
+{name:"NODE_1_length_1439166_cov_42.837164",corr_start:253620,corr_end:258707,start:253620,end:258707,misassemblies:"",mis_ends:"",is_best:"True"},
+{name:"NODE_1_length_1439166_cov_42.837164",corr_start:261049,corr_end:402324,start:261049,end:402324,misassemblies:"",mis_ends:"",is_best:"True"},
+{name:"NODE_1_length_1439166_cov_42.837164",corr_start:403930,corr_end:786677,start:403930,end:786677,misassemblies:"",mis_ends:"",is_best:"True"},
+{name:"NODE_1_length_1439166_cov_42.837164",corr_start:788966,corr_end:938372,start:788966,end:938372,misassemblies:"",mis_ends:"",is_best:"True"},
+{name:"NODE_3_length_293214_cov_37.144294",corr_start:945389,corr_end:1125218,start:945389,end:1125218,misassemblies:"",mis_ends:"",is_best:"True"},
+{name:"NODE_3_length_293214_cov_37.144294",corr_start:1125905,corr_end:1238602,start:1125905,end:1238602,misassemblies:"",mis_ends:"",is_best:"True"},
+{name:"NODE_14_length_6410_cov_179.274587",corr_start:1242677,corr_end:1244086,start:1242677,end:1244086,misassemblies:"",mis_ends:"",is_best:"True"},
+{name:"NODE_14_length_6410_cov_179.274587",corr_start:1244035,corr_end:1249026,start:1244035,end:1249026,misassemblies:"",mis_ends:"",is_best:"True"},
+{name:"NODE_5_length_155237_cov_56.663271",corr_start:1250386,corr_end:1386923,start:1250386,end:1386923,misassemblies:";local",mis_ends:";R",is_best:"True"},
+{name:"NODE_5_length_155237_cov_56.663271",corr_start:1388926,corr_end:1389338,start:1388926,end:1389338,misassemblies:"local;",mis_ends:"L",is_best:"True"},
+{name:"NODE_5_length_155237_cov_56.663271",corr_start:1389283,corr_end:1405847,start:1389283,end:1405847,misassemblies:"",mis_ends:"",is_best:"True"},
+{name:"NODE_31_length_519_cov_32.366379",corr_start:1405797,corr_end:1406315,start:1405797,end:1406315,misassemblies:"",mis_ends:"",is_best:"True"},
+{name:"NODE_17_length_4989_cov_70.473855",corr_start:1406504,corr_end:1411492,start:1406504,end:1411492,misassemblies:"",mis_ends:"",is_best:"True"},
+{name:"NODE_27_length_1391_cov_40.581587",corr_start:1412048,corr_end:1413438,start:1412048,end:1413438,misassemblies:"",mis_ends:"",is_best:"True"},
+{name:"NODE_23_length_2830_cov_183.700901",corr_start:1415199,corr_end:1418028,start:1415199,end:1418028,misassemblies:"",mis_ends:"",is_best:"True"},
+{name:"NODE_2_length_835679_cov_39.731750",corr_start:1419459,corr_end:1961578,start:1419459,end:1961578,misassemblies:"",mis_ends:"",is_best:"True"},
+{name:"NODE_2_length_835679_cov_39.731750",corr_start:1962397,corr_end:2126181,start:1962397,end:2126181,misassemblies:"",mis_ends:"",is_best:"True"},
+{name:"NODE_2_length_835679_cov_39.731750",corr_start:2129514,corr_end:2255139,start:2129514,end:2255139,misassemblies:"",mis_ends:"",is_best:"True"},
+{name:"NODE_1_length_1439166_cov_42.837164",corr_start:2264055,corr_end:2415224,start:2264055,end:2415224,misassemblies:"",mis_ends:"",is_best:"True"},
+{name:"NODE_1_length_1439166_cov_42.837164",corr_start:2419983,corr_end:2506102,start:2419983,end:2506102,misassemblies:"",mis_ends:"",is_best:"True"},
+{name:"NODE_1_length_1439166_cov_42.837164",corr_start:2506045,corr_end:2509123,start:2506045,end:2509123,misassemblies:";local",mis_ends:";R",is_best:"True"},
+{name:"NODE_30_length_578_cov_71.022945",corr_start:2510698,corr_end:2511275,start:2510698,end:2511275,misassemblies:"",mis_ends:"",is_best:"True"},
+{name:"NODE_1_length_1439166_cov_42.837164",corr_start:2516180,corr_end:2740880,start:2516180,end:2740880,misassemblies:"local;",mis_ends:"L",is_best:"True"},
+{name:"NODE_1_length_1439166_cov_42.837164",corr_start:2743539,corr_end:2765010,start:2743539,end:2765010,misassemblies:"",mis_ends:"",is_best:"True"},
+{name:"NODE_20_length_3758_cov_69.106670",corr_start:2770843,corr_end:2774601,start:5834,end:9592,misassemblies:"",mis_ends:"",is_best:"True"
+,overlaps:[ 
+{contig:"NODE_4_length_212823_cov_82.822680",corr_start: 2772247,corr_end: 2788995,start:7238,end:23986,start_in_contig:210307,end_in_contig:193546,chr: "1"}
+]},
+{name:"NODE_4_length_212823_cov_82.822680",corr_start:2772247,corr_end:2788995,start:7238,end:23986,misassemblies:";translocation",mis_ends:";L",is_best:"True"
+,overlaps:[ 
+{contig:"NODE_20_length_3758_cov_69.106670",corr_start: 2770843,corr_end: 2774601,start:5834,end:9592,start_in_contig:1,end_in_contig:3758,chr: "1"}
+]},
+{name:"NODE_4_length_212823_cov_82.822680",corr_start:2789620,corr_end:2790672,start:24611,end:25663,misassemblies:"",mis_ends:"",is_best:"True"},
+{name:"NODE_4_length_212823_cov_82.822680",corr_start:2791835,corr_end:2846587,start:26826,end:81578,misassemblies:"",mis_ends:"",is_best:"True"},
+{name:"NODE_4_length_212823_cov_82.822680",corr_start:2848026,corr_end:2913309,start:83017,end:148300,misassemblies:"",mis_ends:"",is_best:"True"},
+{name:"NODE_4_length_212823_cov_82.822680",corr_start:2915184,corr_end:2916441,start:150175,end:151432,misassemblies:"",mis_ends:"",is_best:"True"},
+{name:"NODE_4_length_212823_cov_82.822680",corr_start:2917207,corr_end:2952712,start:152198,end:187703,misassemblies:"",mis_ends:"",is_best:"True"},
+{name:"NODE_4_length_212823_cov_82.822680",corr_start:2952657,corr_end:2960400,start:187648,end:195391,misassemblies:"",mis_ends:"",is_best:"True"},
+{name:"NODE_4_length_212823_cov_82.822680",corr_start:2963824,corr_end:2982484,start:198815,end:217475,misassemblies:"",mis_ends:"",is_best:"True"},
+{name:"NODE_18_length_4732_cov_102.521061",corr_start:2988701,corr_end:2993432,start:4,end:4735,misassemblies:"",mis_ends:"",is_best:"True"},
+{name:"NODE_16_length_5029_cov_113.684962",corr_start:2994133,corr_end:2999161,start:5436,end:10464,misassemblies:"",mis_ends:"",is_best:"True"},
+{name:"NODE_19_length_3950_cov_107.460591",corr_start:2999866,corr_end:3003815,start:11169,end:15118,misassemblies:"",mis_ends:"",is_best:"True"},
+{name:"NODE_26_length_1510_cov_195.775258",corr_start:3004831,corr_end:3006340,start:16134,end:17643,misassemblies:"",mis_ends:"",is_best:"True"
+,overlaps:[ 
+{contig:"NODE_21_length_3460_cov_267.052570",corr_start: 3005374,corr_end: 3005921,start:16677,end:17224,start_in_contig:2327,end_in_contig:2874,chr: "2"}
+]},
+{name:"NODE_21_length_3460_cov_267.052570",corr_start:3005374,corr_end:3005921,start:16677,end:17224,misassemblies:"",mis_ends:"",is_best:"True",more_unaligned:"True"
+,overlaps:[ 
+{contig:"NODE_26_length_1510_cov_195.775258",corr_start: 3004831,corr_end: 3006340,start:16134,end:17643,start_in_contig:1,end_in_contig:1510,chr: "2"}
+]},
+{name:"NODE_28_length_830_cov_355.651613",corr_start:3006656,corr_end:3007485,start:17959,end:18788,misassemblies:"",mis_ends:"",is_best:"True"},
+{name:"NODE_25_length_1681_cov_106.083641",corr_start:3007431,corr_end:3009111,start:18734,end:20414,misassemblies:"",mis_ends:"",is_best:"True"},
+{name:"NODE_24_length_2043_cov_124.488431",corr_start:3009817,corr_end:3011859,start:21120,end:23162,misassemblies:"",mis_ends:"",is_best:"True"},
+{name:"NODE_11_length_7934_cov_102.905191",corr_start:3012561,corr_end:3020495,start:23864,end:31798,misassemblies:"",mis_ends:"",is_best:"True"},
+{name:"NODE_9_length_9325_cov_146.068608",corr_start:3021121,corr_end:3024261,start:1,end:3141,misassemblies:"",mis_ends:"",is_best:"True"},
+{name:"NODE_9_length_9325_cov_146.068608",corr_start:3024255,corr_end:3030430,start:3135,end:9310,misassemblies:"",mis_ends:"",is_best:"True"},
+{name:"NODE_8_length_10124_cov_111.618631",corr_start:3037665,corr_end:3047610,start:7235,end:17180,misassemblies:"",mis_ends:"",is_best:"True"},
+{name:"NODE_10_length_9074_cov_81.922386",corr_start:3048658,corr_end:3057733,start:974,end:10049,misassemblies:"",mis_ends:"",is_best:"True"},
+{name:"NODE_7_length_11099_cov_67.285675",corr_start:3059982,corr_end:3071080,start:12298,end:23396,misassemblies:"",mis_ends:"",is_best:"True"},
+{name:"NODE_12_length_7618_cov_68.746397",corr_start:3073218,corr_end:3080835,start:25534,end:33151,misassemblies:"",mis_ends:"",is_best:"True"},
+{name:"NODE_15_length_5123_cov_123.773875",corr_start:3084245,corr_end:3089367,start:36561,end:41683,misassemblies:"",mis_ends:"",is_best:"True"},
+{name:"NODE_13_length_7020_cov_106.988945",corr_start:3089313,corr_end:3096328,start:41629,end:48644,misassemblies:"",mis_ends:"",is_best:"True"},
+{name:"NODE_29_length_692_cov_74.073783",corr_start:3096486,corr_end:3097173,start:48802,end:49489,misassemblies:"",mis_ends:"",is_best:"True"},
+{name:"NODE_4_length_212823_cov_82.822680",corr_start:3097119,corr_end:3099633,start:49435,end:51949,misassemblies:"translocation;",mis_ends:"R",is_best:"True"},
+{name:"NODE_6_length_62897_cov_73.711292",corr_start:3102852,corr_end:3132396,start:1,end:29545,misassemblies:"",mis_ends:"",is_best:"True"},
+{name:"NODE_6_length_62897_cov_73.711292",corr_start:3135058,corr_end:3168409,start:32207,end:65558,misassemblies:"",mis_ends:"",is_best:"True"}];var contig_lengths = {};
 var contig_structures = {};
 contig_lengths["scaffolds"] = {};
 contig_structures["scaffolds"] = {};
 contig_lengths["scaffolds"]["NODE_1_length_1439166_cov_42.837164"] = 1439166;
 contig_structures["scaffolds"]["NODE_1_length_1439166_cov_42.837164"] = [ 
-{corr_start: 832887,corr_end: 835267,start:832887,end:835267,start_in_contig:20893,end_in_contig:18513,IDY:99.83,chr: "0"},
-{contig_type: "M", mstype: "real", msg: "local misassembly"},
-{corr_start: 828192,corr_end: 829775,start:828192,end:829775,start_in_contig:26509,end_in_contig:24928,IDY:95.27,chr: "0"},
-{contig_type: "M", mstype: "real", msg: "relocation, inconsistency = 1463093"},
-{corr_start: 2298541,corr_end: 2417518,start:2298541,end:2417518,start_in_contig:32182,end_in_contig:151170,IDY:99.98,chr: "0"},
+{corr_start: 2264055,corr_end: 2415224,start:2264055,end:2415224,start_in_contig:1,end_in_contig:151170,IDY:100.0,chr: "0"},
 {contig_type: "M", mstype: "indel", msg: " indel (<= 5bp)"},
-{corr_start: 2422277,corr_end: 2482938,start:2422277,end:2482938,start_in_contig:155930,end_in_contig:216594,IDY:99.9,chr: "0"},
+{corr_start: 2419983,corr_end: 2506102,start:2419983,end:2506102,start_in_contig:155930,end_in_contig:242044,IDY:99.95,chr: "0"},
+{contig_type: "M", mstype: "indel", msg: " indel (> 5bp)"},
+{corr_start: 2506045,corr_end: 2509123,start:2506045,end:2509123,start_in_contig:242050,end_in_contig:245128,IDY:100.0,chr: "0"},
 {contig_type: "M", mstype: "real", msg: "local misassembly"},
-{corr_start: 2482658,corr_end: 2508052,start:2482658,end:2508052,start_in_contig:216595,end_in_contig:241987,IDY:99.76,chr: "0"},
-{contig_type: "M", mstype: "real", msg: "relocation, inconsistency = -576498"},
-{corr_start: 1931618,corr_end: 1933131,start:1931618,end:1933131,start_in_contig:242051,end_in_contig:243564,IDY:99.93,chr: "0"},
-{contig_type: "M", mstype: "real", msg: "relocation, inconsistency = 574913"},
-{corr_start: 2508045,corr_end: 2509608,start:2508045,end:2509608,start_in_contig:243565,end_in_contig:245128,IDY:100.0,chr: "0"},
-{contig_type: "M", mstype: "real", msg: "local misassembly"},
-{corr_start: 2516010,corr_end: 2516941,start:2516010,end:2516941,start_in_contig:251966,end_in_contig:252897,IDY:100.0,chr: "0"},
-{contig_type: "M", mstype: "real", msg: "translocation"},
-{corr_start: 2961327,corr_end: 2962446,start:160682,end:161801,start_in_contig:253115,end_in_contig:254234,IDY:95.71,chr: "3"},
-{contig_type: "M", mstype: "real", msg: "translocation"},
-{corr_start: 2516934,corr_end: 2624683,start:2516934,end:2624683,start_in_contig:254412,end_in_contig:362160,IDY:99.99,chr: "0"},
-{contig_type: "M", mstype: "real", msg: "translocation"},
-{corr_start: 2723410,corr_end: 2726340,start:25274,end:28204,start_in_contig:374945,end_in_contig:377875,IDY:98.57,chr: "1"},
-{contig_type: "M", mstype: "real", msg: "translocation"},
-{corr_start: 2624629,corr_end: 2657799,start:2624629,end:2657799,start_in_contig:427043,end_in_contig:460212,IDY:99.93,chr: "0"},
-{contig_type: "M", mstype: "real", msg: "local misassembly"},
-{corr_start: 2657632,corr_end: 2674082,start:2657632,end:2674082,start_in_contig:460213,end_in_contig:476664,IDY:99.92,chr: "0"},
+{corr_start: 2516180,corr_end: 2740880,start:2516180,end:2740880,start_in_contig:251966,end_in_contig:476664,IDY:99.99,chr: "0"},
 {contig_type: "M", mstype: "indel", msg: " stretch of mismatches"},
-{corr_start: 2676741,corr_end: 2698137,start:2676741,end:2698137,start_in_contig:479323,end_in_contig:500723,IDY:99.97,chr: "0"},
+{corr_start: 2743539,corr_end: 2765010,start:2743539,end:2765010,start_in_contig:479323,end_in_contig:500793,IDY:99.99,chr: "0"},
 {contig_type: "M", mstype: "fake", msg: " not a misassembly [linear representation of circular genome]"},
-{corr_start: 1,corr_end: 79921,start:1,end:79921,start_in_contig:500724,end_in_contig:580641,IDY:99.92,chr: "0"},
-{contig_type: "M", mstype: "real", msg: "local misassembly"},
-{corr_start: 80007,corr_end: 80248,start:80007,end:80248,start_in_contig:580792,end_in_contig:581033,IDY:96.69,chr: "0"},
-{contig_type: "M", mstype: "real", msg: "relocation, inconsistency = 1746602"},
-{corr_start: 1830169,corr_end: 1831524,start:1830169,end:1831524,start_in_contig:585704,end_in_contig:584352,IDY:99.71,chr: "0"},
-{contig_type: "M", mstype: "real", msg: "relocation, inconsistency = 41002"},
-{corr_start: 1874301,corr_end: 1875343,start:1874301,end:1875343,start_in_contig:587479,end_in_contig:588521,IDY:99.62,chr: "0"},
-{contig_type: "M", mstype: "real", msg: "relocation, inconsistency = -1795186"},
-{corr_start: 80248,corr_end: 89545,start:80248,end:89545,start_in_contig:588612,end_in_contig:597909,IDY:99.74,chr: "0"},
-{contig_type: "M", mstype: "real", msg: "relocation, inconsistency = -1620"},
-{corr_start: 89544,corr_end: 108929,start:89544,end:108929,start_in_contig:599528,end_in_contig:618912,IDY:99.35,chr: "0"},
-{contig_type: "M", mstype: "real", msg: "local misassembly"},
-{corr_start: 109053,corr_end: 109224,start:109053,end:109224,start_in_contig:618913,end_in_contig:619086,IDY:97.52,chr: "0"},
-{contig_type: "M", mstype: "real", msg: "relocation, inconsistency = 1340561"},
-{corr_start: 1449786,corr_end: 1450849,start:1449786,end:1450849,start_in_contig:620150,end_in_contig:619087,IDY:100.0,chr: "0"},
-{contig_type: "M", mstype: "real", msg: "relocation, inconsistency = 1340294"},
-{corr_start: 109222,corr_end: 109491,start:109222,end:109491,start_in_contig:620151,end_in_contig:620421,IDY:99.26,chr: "0"},
-{contig_type: "M", mstype: "real", msg: "relocation, inconsistency = -1332"},
-{corr_start: 109484,corr_end: 111223,start:109484,end:111223,start_in_contig:621746,end_in_contig:623484,IDY:99.14,chr: "0"},
-{contig_type: "M", mstype: "real", msg: "relocation, inconsistency = 1599091"},
-{corr_start: 1710316,corr_end: 1711352,start:1710316,end:1711352,start_in_contig:624510,end_in_contig:623485,IDY:98.56,chr: "0"},
-{contig_type: "M", mstype: "real", msg: "relocation, inconsistency = 1596242"},
-{corr_start: 111215,corr_end: 114073,start:111215,end:114073,start_in_contig:624511,end_in_contig:627369,IDY:99.58,chr: "0"},
-{contig_type: "M", mstype: "real", msg: "translocation"},
-{corr_start: 2889051,corr_end: 2890116,start:88406,end:89471,start_in_contig:627370,end_in_contig:628435,IDY:99.53,chr: "3"},
-{contig_type: "M", mstype: "real", msg: "translocation"},
-{corr_start: 119863,corr_end: 143696,start:119863,end:143696,start_in_contig:628436,end_in_contig:652265,IDY:99.39,chr: "0"},
-{contig_type: "M", mstype: "real", msg: "translocation"},
-{corr_start: 2915377,corr_end: 2916459,start:114732,end:115814,start_in_contig:653388,end_in_contig:652306,IDY:99.35,chr: "3"},
-{contig_type: "M", mstype: "real", msg: "translocation"},
-{corr_start: 145397,corr_end: 161272,start:145397,end:161272,start_in_contig:653564,end_in_contig:669429,IDY:99.62,chr: "0"},
-{contig_type: "M", mstype: "real", msg: "local misassembly"},
-{corr_start: 161272,corr_end: 168634,start:161272,end:168634,start_in_contig:669553,end_in_contig:676918,IDY:99.59,chr: "0"},
-{contig_type: "M", mstype: "real", msg: "relocation, inconsistency = 177134"},
-{corr_start: 345789,corr_end: 347164,start:345789,end:347164,start_in_contig:678294,end_in_contig:676919,IDY:100.0,chr: "0"},
-{contig_type: "M", mstype: "real", msg: "relocation, inconsistency = 143558"},
-{corr_start: 170012,corr_end: 202230,start:170012,end:202230,start_in_contig:678295,end_in_contig:710513,IDY:99.24,chr: "0"},
-{contig_type: "M", mstype: "real", msg: "translocation"},
-{corr_start: 3032826,corr_end: 3033110,start:232181,end:232465,start_in_contig:710798,end_in_contig:710514,IDY:99.65,chr: "3"},
-{contig_type: "M", mstype: "real", msg: "translocation"},
-{corr_start: 202226,corr_end: 205253,start:202226,end:205253,start_in_contig:712192,end_in_contig:715219,IDY:99.44,chr: "0"},
-{contig_type: "M", mstype: "real", msg: "relocation, inconsistency = 64948"},
-{corr_start: 270202,corr_end: 271265,start:270202,end:271265,start_in_contig:715220,end_in_contig:716283,IDY:99.62,chr: "0"},
-{contig_type: "M", mstype: "real", msg: "relocation, inconsistency = -59297"},
-{corr_start: 211969,corr_end: 234834,start:211969,end:234834,start_in_contig:716284,end_in_contig:739148,IDY:99.42,chr: "0"},
-{contig_type: "M", mstype: "real", msg: "local misassembly"},
-{corr_start: 234932,corr_end: 239241,start:234932,end:239241,start_in_contig:739149,end_in_contig:743458,IDY:99.49,chr: "0"},
-{contig_type: "M", mstype: "real", msg: "relocation, inconsistency = 1631108"},
-{corr_start: 1878144,corr_end: 1879509,start:1878144,end:1879509,start_in_contig:752618,end_in_contig:751253,IDY:99.93,chr: "0"},
-{contig_type: "M", mstype: "real", msg: "inversion"},
-{corr_start: 1874776,corr_end: 1875350,start:1874776,end:1875350,start_in_contig:754412,end_in_contig:754987,IDY:99.31,chr: "0"},
-{contig_type: "M", mstype: "real", msg: "relocation, inconsistency = -372031"},
-{corr_start: 1510174,corr_end: 1510890,start:1510174,end:1510890,start_in_contig:761842,end_in_contig:762558,IDY:99.72,chr: "0"},
-{contig_type: "M", mstype: "real", msg: "relocation, inconsistency = -1222827"},
-{corr_start: 288114,corr_end: 289656,start:288114,end:289656,start_in_contig:762609,end_in_contig:764152,IDY:97.6,chr: "0"},
-{contig_type: "M", mstype: "real", msg: "translocation"},
-{corr_start: 3032826,corr_end: 3033110,start:232181,end:232465,start_in_contig:764437,end_in_contig:764153,IDY:99.65,chr: "3"},
-{contig_type: "M", mstype: "real", msg: "translocation"},
-{corr_start: 289651,corr_end: 291042,start:289651,end:291042,start_in_contig:765831,end_in_contig:767228,IDY:95.64,chr: "0"},
-{contig_type: "M", mstype: "real", msg: "relocation, inconsistency = -29433"},
-{corr_start: 265698,corr_end: 279531,start:265698,end:279531,start_in_contig:771317,end_in_contig:785151,IDY:99.05,chr: "0"},
-{contig_type: "M", mstype: "real", msg: "relocation, inconsistency = -33827"},
-{corr_start: 245705,corr_end: 246070,start:245705,end:246070,start_in_contig:785152,end_in_contig:785517,IDY:98.91,chr: "0"},
-{contig_type: "M", mstype: "real", msg: "relocation, inconsistency = 770511"},
-{corr_start: 1016582,corr_end: 1017656,start:1016582,end:1017656,start_in_contig:785518,end_in_contig:786594,IDY:99.35,chr: "0"},
-{contig_type: "M", mstype: "real", msg: "relocation, inconsistency = -721994"},
-{corr_start: 296792,corr_end: 300142,start:296792,end:300142,start_in_contig:787724,end_in_contig:791074,IDY:99.05,chr: "0"},
-{contig_type: "M", mstype: "real", msg: "translocation"},
-{corr_start: 2982433,corr_end: 2983504,start:181788,end:182859,start_in_contig:794484,end_in_contig:793413,IDY:99.53,chr: "3"},
-{contig_type: "M", mstype: "real", msg: "translocation"},
-{corr_start: 351511,corr_end: 354100,start:351511,end:354100,start_in_contig:794485,end_in_contig:797078,IDY:99.11,chr: "0"},
-{contig_type: "M", mstype: "real", msg: "relocation, inconsistency = -1745"},
-{corr_start: 354222,corr_end: 357639,start:354222,end:357639,start_in_contig:798945,end_in_contig:802360,IDY:99.01,chr: "0"},
-{contig_type: "M", mstype: "real", msg: "relocation, inconsistency = 7342"},
-{corr_start: 365040,corr_end: 377826,start:365040,end:377826,start_in_contig:802419,end_in_contig:815214,IDY:98.75,chr: "0"},
-{contig_type: "M", mstype: "real", msg: "local misassembly"},
-{corr_start: 377949,corr_end: 393062,start:377949,end:393062,start_in_contig:815215,end_in_contig:830327,IDY:98.88,chr: "0"},
-{contig_type: "M", mstype: "real", msg: "relocation, inconsistency = -122860"},
-{corr_start: 270203,corr_end: 271262,start:270203,end:271262,start_in_contig:830328,end_in_contig:831387,IDY:99.62,chr: "0"},
-{contig_type: "M", mstype: "real", msg: "relocation, inconsistency = 121793"},
-{corr_start: 393056,corr_end: 413854,start:393056,end:413854,start_in_contig:831388,end_in_contig:852188,IDY:99.74,chr: "0"},
-{contig_type: "M", mstype: "real", msg: "translocation"},
-{corr_start: 3032826,corr_end: 3033110,start:232181,end:232465,start_in_contig:852473,end_in_contig:852189,IDY:99.65,chr: "3"},
-{contig_type: "M", mstype: "real", msg: "translocation"},
-{corr_start: 413850,corr_end: 415470,start:413850,end:415470,start_in_contig:853867,end_in_contig:855487,IDY:99.75,chr: "0"},
-{contig_type: "M", mstype: "real", msg: "local misassembly"},
-{corr_start: 415470,corr_end: 462967,start:415470,end:462967,start_in_contig:855611,end_in_contig:903117,IDY:99.95,chr: "0"},
+{corr_start: 1,corr_end: 250251,start:1,end:250251,start_in_contig:500794,end_in_contig:751044,IDY:99.99,chr: "0"},
 {contig_type: "M", mstype: "indel", msg: " stretch of mismatches"},
-{corr_start: 464573,corr_end: 577368,start:464573,end:577368,start_in_contig:904723,end_in_contig:1017514,IDY:99.98,chr: "0"},
-{contig_type: "M", mstype: "real", msg: "relocation, inconsistency = 13242"},
-{corr_start: 590611,corr_end: 681969,start:590611,end:681969,start_in_contig:1017515,end_in_contig:1108872,IDY:99.97,chr: "0"},
-{contig_type: "M", mstype: "real", msg: "local misassembly"},
-{corr_start: 681848,corr_end: 822470,start:681848,end:822470,start_in_contig:1108873,end_in_contig:1249495,IDY:99.98,chr: "0"},
-{contig_type: "M", mstype: "real", msg: "relocation, inconsistency = -1477"},
-{corr_start: 823139,corr_end: 823854,start:823139,end:823854,start_in_contig:1251641,end_in_contig:1252356,IDY:96.09,chr: "0"},
-{contig_type: "M", mstype: "real", msg: "relocation, inconsistency = 1017"},
-{corr_start: 825913,corr_end: 848740,start:825913,end:848740,start_in_contig:1253398,end_in_contig:1276226,IDY:99.98,chr: "0"},
-{contig_type: "M", mstype: "real", msg: "translocation"},
-{corr_start: 2961327,corr_end: 2962446,start:160682,end:161801,start_in_contig:1277521,end_in_contig:1276402,IDY:95.71,chr: "3"},
-{contig_type: "M", mstype: "real", msg: "translocation"},
-{corr_start: 848730,corr_end: 858462,start:848730,end:858462,start_in_contig:1277738,end_in_contig:1287470,IDY:99.54,chr: "0"},
-{contig_type: "M", mstype: "real", msg: "relocation, inconsistency = 1321324"},
-{corr_start: 2182600,corr_end: 2298559,start:2182600,end:2298559,start_in_contig:1406250,end_in_contig:1290284,IDY:99.98,chr: "0"},
-{contig_type: "M", mstype: "real", msg: "relocation, inconsistency = 1160753"},
-{corr_start: 1020058,corr_end: 1021838,start:1020058,end:1021838,start_in_contig:1406251,end_in_contig:1408031,IDY:100.0,chr: "0"},
-{contig_type: "M", mstype: "real", msg: "relocation, inconsistency = 1129630"},
-{corr_start: 2151469,corr_end: 2182601,start:2151469,end:2182601,start_in_contig:1439166,end_in_contig:1408032,IDY:99.99,chr: "0"},
+{corr_start: 250460,corr_end: 253200,start:250460,end:253200,start_in_contig:751253,end_in_contig:753993,IDY:99.96,chr: "0"},
+{contig_type: "M", mstype: "indel", msg: " indel (<= 5bp)"},
+{corr_start: 253620,corr_end: 258707,start:253620,end:258707,start_in_contig:754412,end_in_contig:759499,IDY:100.0,chr: "0"},
+{contig_type: "M", mstype: "indel", msg: " indel (<= 5bp)"},
+{corr_start: 261049,corr_end: 402324,start:261049,end:402324,start_in_contig:761842,end_in_contig:903117,IDY:99.99,chr: "0"},
+{contig_type: "M", mstype: "indel", msg: " stretch of mismatches"},
+{corr_start: 403930,corr_end: 786677,start:403930,end:786677,start_in_contig:904723,end_in_contig:1287470,IDY:99.99,chr: "0"},
+{contig_type: "M", mstype: "indel", msg: " indel (<= 5bp)"},
+{corr_start: 788966,corr_end: 938372,start:788966,end:938372,start_in_contig:1289760,end_in_contig:1439166,IDY:100.0,chr: "0"},
 ];
 contig_lengths["scaffolds"]["NODE_2_length_835679_cov_39.731750"] = 835679;
 contig_structures["scaffolds"]["NODE_2_length_835679_cov_39.731750"] = [ 
-{corr_start: 858408,corr_end: 882648,start:858408,end:882648,start_in_contig:1,end_in_contig:24240,IDY:98.76,chr: "0"},
-{contig_type: "M", mstype: "real", msg: "translocation"},
-{corr_start: 2889050,corr_end: 2890114,start:88405,end:89469,start_in_contig:25365,end_in_contig:24301,IDY:99.62,chr: "3"},
-{contig_type: "M", mstype: "real", msg: "relocation, inconsistency = -111223"},
-{corr_start: 2986459,corr_end: 2987994,start:185814,end:187349,start_in_contig:39179,end_in_contig:37644,IDY:99.54,chr: "3"},
-{contig_type: "M", mstype: "real", msg: "translocation"},
-{corr_start: 1885005,corr_end: 1887350,start:1885005,end:1887350,start_in_contig:48574,end_in_contig:46229,IDY:100.0,chr: "0"},
-{contig_type: "M", mstype: "real", msg: "relocation, inconsistency = 924509"},
-{corr_start: 916614,corr_end: 960495,start:916614,end:960495,start_in_contig:48575,end_in_contig:92456,IDY:99.99,chr: "0"},
-{contig_type: "M", mstype: "real", msg: "translocation"},
-{corr_start: 2961327,corr_end: 2962446,start:160682,end:161801,start_in_contig:93752,end_in_contig:92633,IDY:95.71,chr: "3"},
-{contig_type: "M", mstype: "real", msg: "translocation"},
-{corr_start: 960487,corr_end: 976031,start:960487,end:976031,start_in_contig:93970,end_in_contig:109514,IDY:99.99,chr: "0"},
-{contig_type: "M", mstype: "real", msg: "translocation"},
-{corr_start: 2996439,corr_end: 2997951,start:195794,end:197306,start_in_contig:111027,end_in_contig:109515,IDY:97.89,chr: "3"},
-{contig_type: "M", mstype: "real", msg: "translocation"},
-{corr_start: 976023,corr_end: 990619,start:976023,end:990619,start_in_contig:111028,end_in_contig:125625,IDY:99.97,chr: "0"},
+{corr_start: 2129514,corr_end: 2255139,start:2129514,end:2255139,start_in_contig:125625,end_in_contig:1,IDY:99.97,chr: "0"},
 {contig_type: "M", mstype: "indel", msg: " indel (<= 5bp)"},
-{corr_start: 993952,corr_end: 1063765,start:993952,end:1063765,start_in_contig:128957,end_in_contig:198771,IDY:99.97,chr: "0"},
-{contig_type: "M", mstype: "real", msg: "relocation, inconsistency = 1511"},
-{corr_start: 1065277,corr_end: 1078356,start:1065277,end:1078356,start_in_contig:198772,end_in_contig:211850,IDY:99.98,chr: "0"},
-{contig_type: "M", mstype: "real", msg: "translocation"},
-{corr_start: 2961327,corr_end: 2962549,start:160682,end:161904,start_in_contig:213147,end_in_contig:211925,IDY:95.99,chr: "3"},
-{contig_type: "M", mstype: "real", msg: "translocation"},
-{corr_start: 1078376,corr_end: 1157754,start:1078376,end:1157754,start_in_contig:213361,end_in_contig:292741,IDY:99.98,chr: "0"},
+{corr_start: 1962397,corr_end: 2126181,start:1962397,end:2126181,start_in_contig:292741,end_in_contig:128957,IDY:99.99,chr: "0"},
 {contig_type: "M", mstype: "indel", msg: " stretch of mismatches"},
-{corr_start: 1158573,corr_end: 1249579,start:1158573,end:1249579,start_in_contig:293560,end_in_contig:384559,IDY:99.97,chr: "0"},
-{contig_type: "M", mstype: "indel", msg: " indel (> 5bp)"},
-{corr_start: 1249629,corr_end: 1258986,start:1249629,end:1258986,start_in_contig:384560,end_in_contig:393918,IDY:99.84,chr: "0"},
-{contig_type: "M", mstype: "real", msg: "translocation"},
-{corr_start: 2961327,corr_end: 2962446,start:160682,end:161801,start_in_contig:395215,end_in_contig:394096,IDY:95.71,chr: "3"},
-{contig_type: "M", mstype: "real", msg: "translocation"},
-{corr_start: 1258979,corr_end: 1284485,start:1258979,end:1284485,start_in_contig:395433,end_in_contig:420940,IDY:99.63,chr: "0"},
-{contig_type: "M", mstype: "real", msg: "translocation"},
-{corr_start: 2889050,corr_end: 2890111,start:88405,end:89466,start_in_contig:422002,end_in_contig:420941,IDY:99.53,chr: "3"},
-{contig_type: "M", mstype: "real", msg: "translocation"},
-{corr_start: 1284480,corr_end: 1298290,start:1284480,end:1298290,start_in_contig:422003,end_in_contig:435814,IDY:99.7,chr: "0"},
-{contig_type: "M", mstype: "real", msg: "relocation, inconsistency = 1013215"},
-{corr_start: 270202,corr_end: 271264,start:270202,end:271264,start_in_contig:436877,end_in_contig:435815,IDY:99.81,chr: "0"},
-{contig_type: "M", mstype: "real", msg: "relocation, inconsistency = 1027022"},
-{corr_start: 1298287,corr_end: 1307561,start:1298287,end:1307561,start_in_contig:436878,end_in_contig:446144,IDY:99.7,chr: "0"},
-{contig_type: "M", mstype: "real", msg: "relocation, inconsistency = 538777"},
-{corr_start: 1846339,corr_end: 1847852,start:1846339,end:1847852,start_in_contig:446145,end_in_contig:447658,IDY:97.82,chr: "0"},
-{contig_type: "M", mstype: "real", msg: "relocation, inconsistency = -540299"},
-{corr_start: 1307554,corr_end: 1445864,start:1307554,end:1445864,start_in_contig:447659,end_in_contig:585974,IDY:99.94,chr: "0"},
-{contig_type: "M", mstype: "real", msg: "relocation, inconsistency = 1542"},
-{corr_start: 1447407,corr_end: 1449777,start:1447407,end:1449777,start_in_contig:585975,end_in_contig:588345,IDY:99.92,chr: "0"},
-{contig_type: "M", mstype: "real", msg: "relocation, inconsistency = 1067"},
-{corr_start: 1450845,corr_end: 1456470,start:1450845,end:1456470,start_in_contig:588346,end_in_contig:593971,IDY:99.95,chr: "0"},
-{contig_type: "M", mstype: "real", msg: "relocation, inconsistency = 1065"},
-{corr_start: 1457536,corr_end: 1461894,start:1457536,end:1461894,start_in_contig:593972,end_in_contig:598330,IDY:100.0,chr: "0"},
-{contig_type: "M", mstype: "real", msg: "translocation"},
-{corr_start: 2961327,corr_end: 2962549,start:160682,end:161904,start_in_contig:598548,end_in_contig:599770,IDY:95.99,chr: "3"},
-{contig_type: "M", mstype: "real", msg: "translocation"},
-{corr_start: 1461887,corr_end: 1526124,start:1461887,end:1526124,start_in_contig:599845,end_in_contig:664082,IDY:99.99,chr: "0"},
-{contig_type: "M", mstype: "real", msg: "relocation, inconsistency = 405493"},
-{corr_start: 1931618,corr_end: 1933129,start:1931618,end:1933129,start_in_contig:664083,end_in_contig:665594,IDY:99.93,chr: "0"},
-{contig_type: "M", mstype: "real", msg: "relocation, inconsistency = -407015"},
-{corr_start: 1526115,corr_end: 1696197,start:1526115,end:1696197,start_in_contig:665595,end_in_contig:835679,IDY:99.99,chr: "0"},
+{corr_start: 1419459,corr_end: 1961578,start:1419459,end:1961578,start_in_contig:835679,end_in_contig:293560,IDY:99.99,chr: "0"},
 ];
 contig_lengths["scaffolds"]["NODE_3_length_293214_cov_37.144294"] = 293214;
 contig_structures["scaffolds"]["NODE_3_length_293214_cov_37.144294"] = [ 
-{corr_start: 1832882,corr_end: 1871232,start:1832882,end:1871232,start_in_contig:1,end_in_contig:38353,IDY:98.71,chr: "0"},
-{contig_type: "M", mstype: "real", msg: "relocation, inconsistency = 20483"},
-{corr_start: 1915695,corr_end: 1931617,start:1915695,end:1931617,start_in_contig:62333,end_in_contig:78282,IDY:97.92,chr: "0"},
-{contig_type: "M", mstype: "real", msg: "relocation, inconsistency = 1522"},
-{corr_start: 1933140,corr_end: 1943381,start:1933140,end:1943381,start_in_contig:78283,end_in_contig:88524,IDY:98.94,chr: "0"},
-{contig_type: "M", mstype: "real", msg: "local misassembly"},
-{corr_start: 1944527,corr_end: 1953691,start:1944527,end:1953691,start_in_contig:89676,end_in_contig:98840,IDY:98.22,chr: "0"},
-{contig_type: "M", mstype: "real", msg: "relocation, inconsistency = -1620"},
-{corr_start: 1953690,corr_end: 1959998,start:1953690,end:1959998,start_in_contig:100459,end_in_contig:106767,IDY:99.46,chr: "0"},
-{contig_type: "M", mstype: "real", msg: "relocation, inconsistency = 2353"},
-{corr_start: 1962352,corr_end: 1967507,start:1962352,end:1967507,start_in_contig:106768,end_in_contig:111923,IDY:99.71,chr: "0"},
-{contig_type: "M", mstype: "real", msg: "relocation, inconsistency = -35890"},
-{corr_start: 1931618,corr_end: 1932392,start:1931618,end:1932392,start_in_contig:111924,end_in_contig:112698,IDY:100.0,chr: "0"},
-{contig_type: "M", mstype: "real", msg: "relocation, inconsistency = 34368"},
-{corr_start: 1967500,corr_end: 1992662,start:1967500,end:1992662,start_in_contig:113438,end_in_contig:138605,IDY:99.32,chr: "0"},
-{contig_type: "M", mstype: "real", msg: "local misassembly"},
-{corr_start: 1992783,corr_end: 2011026,start:1992783,end:2011026,start_in_contig:138606,end_in_contig:156850,IDY:99.72,chr: "0"},
-{contig_type: "M", mstype: "real", msg: "translocation"},
-{corr_start: 2961327,corr_end: 2962237,start:160682,end:161592,start_in_contig:157068,end_in_contig:157978,IDY:95.28,chr: "3"},
-{contig_type: "M", mstype: "real", msg: "translocation"},
-{corr_start: 1831522,corr_end: 1832936,start:1831522,end:1832936,start_in_contig:159394,end_in_contig:157979,IDY:99.93,chr: "0"},
-{contig_type: "M", mstype: "real", msg: "translocation"},
-{corr_start: 2933253,corr_end: 2933641,start:132608,end:132996,start_in_contig:159783,end_in_contig:159395,IDY:97.94,chr: "3"},
-{contig_type: "M", mstype: "real", msg: "translocation"},
-{corr_start: 2011019,corr_end: 2144453,start:2011019,end:2144453,start_in_contig:159784,end_in_contig:293214,IDY:99.86,chr: "0"},
+{corr_start: 1125905,corr_end: 1238602,start:1125905,end:1238602,start_in_contig:112698,end_in_contig:1,IDY:99.97,chr: "0"},
+{contig_type: "M", mstype: "indel", msg: " stretch of mismatches"},
+{corr_start: 945389,corr_end: 1125218,start:945389,end:1125218,start_in_contig:293214,end_in_contig:113385,IDY:99.99,chr: "0"},
 ];
 contig_lengths["scaffolds"]["NODE_4_length_212823_cov_82.822680"] = 212823;
 contig_structures["scaffolds"]["NODE_4_length_212823_cov_82.822680"] = [ 
-{corr_start: 2818943,corr_end: 2830347,start:18298,end:29702,start_in_contig:1,end_in_contig:11396,IDY:99.42,chr: "3"},
-{contig_type: "M", mstype: "real", msg: "relocation, inconsistency = -2030"},
-{corr_start: 2831039,corr_end: 2835541,start:30394,end:34896,start_in_contig:14118,end_in_contig:18596,IDY:96.87,chr: "3"},
-{contig_type: "M", mstype: "real", msg: "relocation, inconsistency = 78042"},
-{corr_start: 2917063,corr_end: 2919525,start:116418,end:118880,start_in_contig:22076,end_in_contig:24501,IDY:98.3,chr: "3"},
-{contig_type: "M", mstype: "real", msg: "relocation, inconsistency = -83992"},
-{corr_start: 2835541,corr_end: 2835834,start:34896,end:35189,start_in_contig:24509,end_in_contig:24801,IDY:95.38,chr: "3"},
-{contig_type: "M", mstype: "real", msg: "relocation, inconsistency = 1346"},
-{corr_start: 2837181,corr_end: 2838863,start:36536,end:38218,start_in_contig:24802,end_in_contig:26484,IDY:99.41,chr: "3"},
-{contig_type: "M", mstype: "real", msg: "relocation, inconsistency = 30284"},
-{corr_start: 2869148,corr_end: 2869955,start:68503,end:69310,start_in_contig:26485,end_in_contig:27292,IDY:99.26,chr: "3"},
-{contig_type: "M", mstype: "real", msg: "local misassembly"},
-{corr_start: 2870059,corr_end: 2872529,start:69414,end:71884,start_in_contig:27294,end_in_contig:29764,IDY:99.72,chr: "3"},
-{contig_type: "M", mstype: "real", msg: "translocation"},
-{corr_start: 2755288,corr_end: 2756808,start:20890,end:22410,start_in_contig:31349,end_in_contig:29829,IDY:100.0,chr: "2"},
-{contig_type: "M", mstype: "real", msg: "translocation"},
-{corr_start: 2841186,corr_end: 2841610,start:40541,end:40965,start_in_contig:31896,end_in_contig:31472,IDY:99.53,chr: "3"},
-{contig_type: "M", mstype: "real", msg: "relocation, inconsistency = -191215"},
-{corr_start: 3032015,corr_end: 3032400,start:231370,end:231755,start_in_contig:32278,end_in_contig:31897,IDY:98.75,chr: "3"},
-{contig_type: "M", mstype: "real", msg: "relocation, inconsistency = 187405"},
-{corr_start: 2842407,corr_end: 2844609,start:41762,end:43964,start_in_contig:32279,end_in_contig:34481,IDY:99.82,chr: "3"},
-{contig_type: "M", mstype: "real", msg: "relocation, inconsistency = 203943"},
-{corr_start: 3048553,corr_end: 3050443,start:247908,end:249798,start_in_contig:34482,end_in_contig:36372,IDY:95.57,chr: "3"},
-{contig_type: "M", mstype: "real", msg: "relocation, inconsistency = -205834"},
-{corr_start: 2844610,corr_end: 2853675,start:43965,end:53030,start_in_contig:36373,end_in_contig:45417,IDY:99.66,chr: "3"},
-{contig_type: "M", mstype: "real", msg: "relocation, inconsistency = 2353"},
-{corr_start: 2856029,corr_end: 2857840,start:55384,end:57195,start_in_contig:45418,end_in_contig:47226,IDY:99.45,chr: "3"},
-{contig_type: "M", mstype: "real", msg: "relocation, inconsistency = 15615"},
-{corr_start: 2873456,corr_end: 2891465,start:72811,end:90820,start_in_contig:47227,end_in_contig:65237,IDY:99.86,chr: "3"},
-{contig_type: "M", mstype: "real", msg: "relocation, inconsistency = 36232"},
-{corr_start: 2835843,corr_end: 2836361,start:35198,end:35716,start_in_contig:66618,end_in_contig:66100,IDY:99.81,chr: "3"},
-{contig_type: "M", mstype: "real", msg: "relocation, inconsistency = -152772"},
-{corr_start: 2988161,corr_end: 2988614,start:187516,end:187969,start_in_contig:67072,end_in_contig:66619,IDY:100.0,chr: "3"},
-{contig_type: "M", mstype: "real", msg: "translocation"},
-{corr_start: 279506,corr_end: 280991,start:279506,end:280991,start_in_contig:72167,end_in_contig:73652,IDY:99.66,chr: "0"},
-{contig_type: "M", mstype: "real", msg: "relocation, inconsistency = 2030384"},
-{corr_start: 2311376,corr_end: 2312449,start:2311376,end:2312449,start_in_contig:74726,end_in_contig:73653,IDY:99.44,chr: "0"},
-{contig_type: "M", mstype: "real", msg: "relocation, inconsistency = 434047"},
-{corr_start: 1874450,corr_end: 1875350,start:1874450,end:1875350,start_in_contig:77604,end_in_contig:76705,IDY:99.62,chr: "0"},
-{contig_type: "M", mstype: "real", msg: "translocation"},
-{corr_start: 2985296,corr_end: 2986462,start:184651,end:185817,start_in_contig:78772,end_in_contig:77605,IDY:99.91,chr: "3"},
-{contig_type: "M", mstype: "real", msg: "relocation, inconsistency = 62085"},
-{corr_start: 3048548,corr_end: 3050444,start:247903,end:249799,start_in_contig:78773,end_in_contig:80669,IDY:95.52,chr: "3"},
-{contig_type: "M", mstype: "real", msg: "relocation, inconsistency = 64392"},
-{corr_start: 2983498,corr_end: 2984155,start:182853,end:183510,start_in_contig:81330,end_in_contig:80670,IDY:96.89,chr: "3"},
-{contig_type: "M", mstype: "real", msg: "relocation, inconsistency = 14984"},
-{corr_start: 2999140,corr_end: 3000048,start:198495,end:199403,start_in_contig:81331,end_in_contig:82239,IDY:100.0,chr: "3"},
-{contig_type: "M", mstype: "real", msg: "relocation, inconsistency = 16552"},
-{corr_start: 2974008,corr_end: 2982587,start:173363,end:181942,start_in_contig:90829,end_in_contig:82240,IDY:99.27,chr: "3"},
-{contig_type: "M", mstype: "real", msg: "relocation, inconsistency = 65724"},
-{corr_start: 2904457,corr_end: 2908283,start:103812,end:107638,start_in_contig:90830,end_in_contig:94615,IDY:97.91,chr: "3"},
+{corr_start: 2963824,corr_end: 2982484,start:198815,end:217475,start_in_contig:18652,end_in_contig:1,IDY:99.87,chr: "1"},
+{contig_type: "M", mstype: "indel", msg: " stretch of mismatches"},
+{corr_start: 2952657,corr_end: 2960400,start:187648,end:195391,start_in_contig:29819,end_in_contig:22076,IDY:99.99,chr: "1"},
 {contig_type: "M", mstype: "indel", msg: " indel (> 5bp)"},
-{corr_start: 2908433,corr_end: 2908676,start:107788,end:108031,start_in_contig:94696,end_in_contig:94939,IDY:99.59,chr: "3"},
-{contig_type: "M", mstype: "real", msg: "relocation, inconsistency = 77782"},
-{corr_start: 2986459,corr_end: 2987996,start:185814,end:187351,start_in_contig:94940,end_in_contig:96477,IDY:99.48,chr: "3"},
-{contig_type: "M", mstype: "real", msg: "relocation, inconsistency = 17119"},
-{corr_start: 2938373,corr_end: 2961332,start:137728,end:160687,start_in_contig:127444,end_in_contig:104485,IDY:99.77,chr: "3"},
-{contig_type: "M", mstype: "real", msg: "local misassembly"},
-{corr_start: 2937858,corr_end: 2938278,start:137213,end:137633,start_in_contig:127866,end_in_contig:127445,IDY:99.76,chr: "3"},
-{contig_type: "M", mstype: "real", msg: "relocation, inconsistency = -112586"},
-{corr_start: 3048548,corr_end: 3050443,start:247903,end:249798,start_in_contig:129762,end_in_contig:127867,IDY:100.0,chr: "3"},
-{contig_type: "M", mstype: "real", msg: "relocation, inconsistency = 50503"},
-{corr_start: 2996437,corr_end: 2997952,start:195792,end:197307,start_in_contig:129855,end_in_contig:131370,IDY:97.89,chr: "3"},
-{contig_type: "M", mstype: "real", msg: "relocation, inconsistency = -89679"},
-{corr_start: 2908676,corr_end: 2909686,start:108031,end:109041,start_in_contig:131773,end_in_contig:132783,IDY:97.73,chr: "3"},
+{corr_start: 2917207,corr_end: 2952712,start:152198,end:187703,start_in_contig:65334,end_in_contig:29829,IDY:99.99,chr: "1"},
+{contig_type: "M", mstype: "indel", msg: " stretch of mismatches"},
+{corr_start: 2915184,corr_end: 2916441,start:150175,end:151432,start_in_contig:67357,end_in_contig:66100,IDY:100.0,chr: "1"},
+{contig_type: "M", mstype: "indel", msg: " stretch of mismatches"},
+{corr_start: 2848026,corr_end: 2913309,start:83017,end:148300,start_in_contig:134515,end_in_contig:69232,IDY:99.88,chr: "1"},
+{contig_type: "M", mstype: "indel", msg: " stretch of mismatches"},
+{corr_start: 2791835,corr_end: 2846587,start:26826,end:81578,start_in_contig:190706,end_in_contig:135954,IDY:100.0,chr: "1"},
+{contig_type: "M", mstype: "indel", msg: " stretch of mismatches"},
+{corr_start: 2789620,corr_end: 2790672,start:24611,end:25663,start_in_contig:192921,end_in_contig:191869,IDY:100.0,chr: "1"},
+{contig_type: "M", mstype: "indel", msg: " stretch of mismatches"},
+{corr_start: 2772247,corr_end: 2788995,start:7238,end:23986,start_in_contig:210307,end_in_contig:193546,IDY:99.08,chr: "1"},
 {contig_type: "M", mstype: "real", msg: "translocation"},
-{corr_start: 168613,corr_end: 170031,start:168613,end:170031,start_in_contig:133098,end_in_contig:134515,IDY:99.79,chr: "0"},
-{contig_type: "M", mstype: "real", msg: "translocation"},
-{corr_start: 3048548,corr_end: 3050444,start:247903,end:249799,start_in_contig:144566,end_in_contig:142670,IDY:95.52,chr: "3"},
-{contig_type: "M", mstype: "real", msg: "translocation"},
-{corr_start: 2755290,corr_end: 2756808,start:20892,end:22410,start_in_contig:144608,end_in_contig:146126,IDY:100.0,chr: "2"},
-{contig_type: "M", mstype: "real", msg: "translocation"},
-{corr_start: 2891465,corr_end: 2892832,start:90820,end:92187,start_in_contig:147953,end_in_contig:146587,IDY:99.78,chr: "3"},
-{contig_type: "M", mstype: "real", msg: "relocation, inconsistency = 16588"},
-{corr_start: 2909773,corr_end: 2915301,start:109128,end:114656,start_in_contig:148306,end_in_contig:153834,IDY:99.93,chr: "3"},
-{contig_type: "M", mstype: "real", msg: "local misassembly"},
-{corr_start: 2915390,corr_end: 2916491,start:114745,end:115846,start_in_contig:153835,end_in_contig:154937,IDY:99.64,chr: "3"},
-{contig_type: "M", mstype: "real", msg: "relocation, inconsistency = 3034"},
-{corr_start: 2919526,corr_end: 2921224,start:118881,end:120579,start_in_contig:154938,end_in_contig:156637,IDY:99.82,chr: "3"},
-{contig_type: "M", mstype: "real", msg: "relocation, inconsistency = 1048"},
-{corr_start: 2922273,corr_end: 2923228,start:121628,end:122583,start_in_contig:156638,end_in_contig:157593,IDY:99.69,chr: "3"},
-{contig_type: "M", mstype: "real", msg: "relocation, inconsistency = 27261"},
-{corr_start: 2891464,corr_end: 2894804,start:90819,end:94159,start_in_contig:161079,end_in_contig:157801,IDY:98.05,chr: "3"},
-{contig_type: "M", mstype: "real", msg: "relocation, inconsistency = 96728"},
-{corr_start: 2991817,corr_end: 2992385,start:191172,end:191740,start_in_contig:161364,end_in_contig:161932,IDY:99.83,chr: "3"},
-{contig_type: "M", mstype: "real", msg: "relocation, inconsistency = 42302"},
-{corr_start: 3034691,corr_end: 3036477,start:234046,end:235832,start_in_contig:163719,end_in_contig:161933,IDY:99.94,chr: "3"},
-{contig_type: "M", mstype: "real", msg: "relocation, inconsistency = 38560"},
-{corr_start: 2992390,corr_end: 2996130,start:191745,end:195485,start_in_contig:163720,end_in_contig:167460,IDY:99.95,chr: "3"},
-{contig_type: "M", mstype: "real", msg: "relocation, inconsistency = 35282"},
-{corr_start: 3032826,corr_end: 3033111,start:232181,end:232466,start_in_contig:168874,end_in_contig:169159,IDY:99.65,chr: "3"},
-{contig_type: "M", mstype: "real", msg: "translocation"},
-{corr_start: 483857,corr_end: 484731,start:483857,end:484731,start_in_contig:170961,end_in_contig:171834,IDY:98.51,chr: "0"},
-{contig_type: "M", mstype: "real", msg: "translocation"},
-{corr_start: 2997952,corr_end: 2999012,start:197307,end:198367,start_in_contig:179027,end_in_contig:177967,IDY:99.72,chr: "3"},
-{contig_type: "M", mstype: "real", msg: "relocation, inconsistency = 139943"},
-{corr_start: 2857034,corr_end: 2857845,start:56389,end:57200,start_in_contig:179970,end_in_contig:179191,IDY:95.57,chr: "3"},
-{contig_type: "M", mstype: "real", msg: "translocation"},
-{corr_start: 119469,corr_end: 119873,start:119469,end:119873,start_in_contig:192921,end_in_contig:192517,IDY:100.0,chr: "0"},
-{contig_type: "M", mstype: "real", msg: "translocation"},
-{corr_start: 3043466,corr_end: 3046952,start:242821,end:246307,start_in_contig:194943,end_in_contig:198428,IDY:95.5,chr: "3"},
-{contig_type: "M", mstype: "real", msg: "relocation, inconsistency = -250150"},
-{corr_start: 2801544,corr_end: 2804584,start:899,end:3939,start_in_contig:203170,end_in_contig:206209,IDY:95.49,chr: "3"},
-{contig_type: "M", mstype: "real", msg: "translocation"},
-{corr_start: 1020053,corr_end: 1021817,start:1020053,end:1021817,start_in_contig:207974,end_in_contig:206210,IDY:99.94,chr: "0"},
+{corr_start: 3097119,corr_end: 3099633,start:49435,end:51949,start_in_contig:212823,end_in_contig:210308,IDY:99.98,chr: "5"},
 ];
 contig_lengths["scaffolds"]["NODE_5_length_155237_cov_56.663271"] = 155237;
 contig_structures["scaffolds"]["NODE_5_length_155237_cov_56.663271"] = [ 
-{corr_start: 1795488,corr_end: 1821097,start:1795488,end:1821097,start_in_contig:25609,end_in_contig:1,IDY:99.96,chr: "0"},
-{contig_type: "M", mstype: "real", msg: "relocation, inconsistency = -2712"},
-{corr_start: 1738894,corr_end: 1795489,start:1738894,end:1795489,start_in_contig:84917,end_in_contig:28320,IDY:99.99,chr: "0"},
-{contig_type: "M", mstype: "real", msg: "translocation"},
-{corr_start: 2961327,corr_end: 2962446,start:160682,end:161801,start_in_contig:86214,end_in_contig:85095,IDY:95.71,chr: "3"},
-{contig_type: "M", mstype: "real", msg: "translocation"},
-{corr_start: 1711807,corr_end: 1738901,start:1711807,end:1738901,start_in_contig:113526,end_in_contig:86432,IDY:99.98,chr: "0"},
-{contig_type: "M", mstype: "real", msg: "translocation"},
-{corr_start: 2961327,corr_end: 2962549,start:160682,end:161904,start_in_contig:114823,end_in_contig:113601,IDY:95.91,chr: "3"},
-{contig_type: "M", mstype: "real", msg: "translocation"},
-{corr_start: 1711158,corr_end: 1711814,start:1711158,end:1711814,start_in_contig:115697,end_in_contig:115041,IDY:100.0,chr: "0"},
-{contig_type: "M", mstype: "real", msg: "translocation"},
-{corr_start: 2986459,corr_end: 2987994,start:185814,end:187349,start_in_contig:115698,end_in_contig:117233,IDY:99.54,chr: "3"},
-{contig_type: "M", mstype: "real", msg: "translocation"},
-{corr_start: 1700391,corr_end: 1711175,start:1700391,end:1711175,start_in_contig:128021,end_in_contig:117234,IDY:99.96,chr: "0"},
-{contig_type: "M", mstype: "real", msg: "relocation, inconsistency = 869612"},
-{corr_start: 826308,corr_end: 826825,start:826308,end:826825,start_in_contig:131975,end_in_contig:132487,IDY:95.76,chr: "0"},
+{corr_start: 1250386,corr_end: 1386923,start:1250386,end:1386923,start_in_contig:1,end_in_contig:136538,IDY:99.99,chr: "0"},
 {contig_type: "M", mstype: "real", msg: "local misassembly"},
-{corr_start: 827378,corr_end: 830711,start:827378,end:830711,start_in_contig:133206,end_in_contig:136538,IDY:96.01,chr: "0"},
-{contig_type: "M", mstype: "real", msg: "local misassembly"},
-{corr_start: 832887,corr_end: 833299,start:832887,end:833299,start_in_contig:138251,end_in_contig:138663,IDY:99.03,chr: "0"},
+{corr_start: 1388926,corr_end: 1389338,start:1388926,end:1389338,start_in_contig:138251,end_in_contig:138663,IDY:100.0,chr: "0"},
+{contig_type: "M", mstype: "indel", msg: " indel (> 5bp)"},
+{corr_start: 1389283,corr_end: 1405847,start:1389283,end:1405847,start_in_contig:138673,end_in_contig:155237,IDY:100.0,chr: "0"},
 ];
 contig_lengths["scaffolds"]["NODE_6_length_62897_cov_73.711292"] = 62897;
 contig_structures["scaffolds"]["NODE_6_length_62897_cov_73.711292"] = [ 
-{corr_start: 579052,corr_end: 579469,start:579052,end:579469,start_in_contig:32737,end_in_contig:33154,IDY:98.8,chr: "0"},
-{contig_type: "M", mstype: "real", msg: "unknown"},
-{corr_start: 2853676,corr_end: 2856023,start:53031,end:55378,start_in_contig:37722,end_in_contig:40069,IDY:99.91,chr: "3"},
-{contig_type: "M", mstype: "real", msg: "unknown"},
-{corr_start: 583652,corr_end: 583870,start:583652,end:583870,start_in_contig:59326,end_in_contig:59108,IDY:98.17,chr: "0"},
-{contig_type: "M", mstype: "real", msg: "unknown"},
-{corr_start: 582485,corr_end: 583650,start:582485,end:583650,start_in_contig:60595,end_in_contig:59433,IDY:95.97,chr: "0"},
-{contig_type: "M", mstype: "real", msg: "unknown"},
+{corr_start: 3102852,corr_end: 3132396,start:1,end:29545,start_in_contig:29545,end_in_contig:1,IDY:100.0,chr: "6"},
+{contig_type: "M", mstype: "fake", msg: " not a misassembly [linear representation of circular genome]"},
+{corr_start: 3135058,corr_end: 3168409,start:32207,end:65558,start_in_contig:62897,end_in_contig:29546,IDY:100.0,chr: "6"},
 ];
 contig_lengths["scaffolds"]["NODE_7_length_11099_cov_67.285675"] = 11099;
 contig_structures["scaffolds"]["NODE_7_length_11099_cov_67.285675"] = [ 
-{corr_start: 3041825,corr_end: 3043682,start:241180,end:243037,start_in_contig:1859,end_in_contig:1,IDY:98.71,chr: "3"},
-{contig_type: "M", mstype: "real", msg: "unknown"},
-{corr_start: 2791196,corr_end: 2791543,start:56798,end:57145,start_in_contig:4337,end_in_contig:3990,IDY:96.55,chr: "2"},
-{contig_type: "M", mstype: "real", msg: "unknown"},
-{corr_start: 2830234,corr_end: 2831398,start:29589,end:30753,start_in_contig:11099,end_in_contig:9935,IDY:99.14,chr: "3"},
-{contig_type: "M", mstype: "real", msg: "unknown"},
+{corr_start: 3059982,corr_end: 3071080,start:12298,end:23396,start_in_contig:1,end_in_contig:11099,IDY:100.0,chr: "5"},
 ];
 contig_lengths["scaffolds"]["NODE_8_length_10124_cov_111.618631"] = 10124;
 contig_structures["scaffolds"]["NODE_8_length_10124_cov_111.618631"] = [ 
-{corr_start: 2788023,corr_end: 2793359,start:53625,end:58961,start_in_contig:5337,end_in_contig:1,IDY:100.0,chr: "2"},
-{contig_type: "M", mstype: "real", msg: "relocation, inconsistency = -10764"},
-{corr_start: 2794000,corr_end: 2798786,start:59602,end:64388,start_in_contig:10124,end_in_contig:5338,IDY:99.98,chr: "2"},
+{corr_start: 3037665,corr_end: 3047610,start:7235,end:17180,start_in_contig:1,end_in_contig:10124,IDY:97.84,chr: "4"},
 ];
 contig_lengths["scaffolds"]["NODE_9_length_9325_cov_146.068608"] = 9325;
 contig_structures["scaffolds"]["NODE_9_length_9325_cov_146.068608"] = [ 
-{corr_start: 2735667,corr_end: 2743966,start:1269,end:9568,start_in_contig:645,end_in_contig:8942,IDY:98.98,chr: "2"},
+{corr_start: 3024255,corr_end: 3030430,start:3135,end:9310,start_in_contig:1,end_in_contig:6184,IDY:99.77,chr: "3"},
+{contig_type: "M", mstype: "indel", msg: " indel (> 5bp) [linear representation of circular genome]"},
+{corr_start: 3021121,corr_end: 3024261,start:1,end:3141,start_in_contig:6185,end_in_contig:9325,IDY:100.0,chr: "3"},
 ];
 contig_lengths["scaffolds"]["NODE_10_length_9074_cov_81.922386"] = 9074;
 contig_structures["scaffolds"]["NODE_10_length_9074_cov_81.922386"] = [ 
-{corr_start: 2800648,corr_end: 2804491,start:3,end:3846,start_in_contig:3844,end_in_contig:1,IDY:96.36,chr: "3"},
-{contig_type: "M", mstype: "real", msg: "relocation, inconsistency = -250229"},
-{corr_start: 3046439,corr_end: 3048552,start:245794,end:247907,start_in_contig:8282,end_in_contig:6169,IDY:96.45,chr: "3"},
-{contig_type: "M", mstype: "real", msg: "local misassembly"},
-{corr_start: 3045298,corr_end: 3045751,start:244653,end:245106,start_in_contig:9072,end_in_contig:8621,IDY:95.85,chr: "3"},
+{corr_start: 3048658,corr_end: 3057733,start:974,end:10049,start_in_contig:1,end_in_contig:9074,IDY:99.93,chr: "5"},
+];
+contig_lengths["scaffolds"]["NODE_11_length_7934_cov_102.905191"] = 7934;
+contig_structures["scaffolds"]["NODE_11_length_7934_cov_102.905191"] = [ 
+{corr_start: 3012561,corr_end: 3020495,start:23864,end:31798,start_in_contig:1,end_in_contig:7934,IDY:99.99,chr: "2"},
+];
+contig_lengths["scaffolds"]["NODE_12_length_7618_cov_68.746397"] = 7618;
+contig_structures["scaffolds"]["NODE_12_length_7618_cov_68.746397"] = [ 
+{corr_start: 3073218,corr_end: 3080835,start:25534,end:33151,start_in_contig:1,end_in_contig:7618,IDY:100.0,chr: "5"},
 ];
 contig_lengths["scaffolds"]["NODE_13_length_7020_cov_106.988945"] = 7020;
 contig_structures["scaffolds"]["NODE_13_length_7020_cov_106.988945"] = [ 
-{corr_start: 2810443,corr_end: 2817450,start:9798,end:16805,start_in_contig:1,end_in_contig:7020,IDY:97.91,chr: "3"},
+{corr_start: 3089313,corr_end: 3096328,start:41629,end:48644,start_in_contig:7020,end_in_contig:1,IDY:99.49,chr: "5"},
 ];
 contig_lengths["scaffolds"]["NODE_14_length_6410_cov_179.274587"] = 6410;
 contig_structures["scaffolds"]["NODE_14_length_6410_cov_179.274587"] = [ 
-{corr_start: 1827399,corr_end: 1828809,start:1827399,end:1828809,start_in_contig:1410,end_in_contig:1,IDY:99.93,chr: "0"},
+{corr_start: 1242677,corr_end: 1244086,start:1242677,end:1244086,start_in_contig:1,end_in_contig:1410,IDY:100.0,chr: "0"},
 {contig_type: "M", mstype: "indel", msg: " indel (> 5bp)"},
-{corr_start: 1822457,corr_end: 1827450,start:1822457,end:1827450,start_in_contig:6410,end_in_contig:1419,IDY:99.9,chr: "0"},
+{corr_start: 1244035,corr_end: 1249026,start:1244035,end:1249026,start_in_contig:1419,end_in_contig:6410,IDY:100.0,chr: "0"},
+];
+contig_lengths["scaffolds"]["NODE_15_length_5123_cov_123.773875"] = 5123;
+contig_structures["scaffolds"]["NODE_15_length_5123_cov_123.773875"] = [ 
+{corr_start: 3084245,corr_end: 3089367,start:36561,end:41683,start_in_contig:5123,end_in_contig:1,IDY:99.88,chr: "5"},
+];
+contig_lengths["scaffolds"]["NODE_16_length_5029_cov_113.684962"] = 5029;
+contig_structures["scaffolds"]["NODE_16_length_5029_cov_113.684962"] = [ 
+{corr_start: 2994133,corr_end: 2999161,start:5436,end:10464,start_in_contig:1,end_in_contig:5029,IDY:100.0,chr: "2"},
+];
+contig_lengths["scaffolds"]["NODE_17_length_4989_cov_70.473855"] = 4989;
+contig_structures["scaffolds"]["NODE_17_length_4989_cov_70.473855"] = [ 
+{corr_start: 1406504,corr_end: 1411492,start:1406504,end:1411492,start_in_contig:4989,end_in_contig:1,IDY:100.0,chr: "0"},
+];
+contig_lengths["scaffolds"]["NODE_18_length_4732_cov_102.521061"] = 4732;
+contig_structures["scaffolds"]["NODE_18_length_4732_cov_102.521061"] = [ 
+{corr_start: 2988701,corr_end: 2993432,start:4,end:4735,start_in_contig:4732,end_in_contig:1,IDY:100.0,chr: "2"},
 ];
 contig_lengths["scaffolds"]["NODE_19_length_3950_cov_107.460591"] = 3950;
 contig_structures["scaffolds"]["NODE_19_length_3950_cov_107.460591"] = [ 
-{corr_start: 2707001,corr_end: 2710813,start:8865,end:12677,start_in_contig:3867,end_in_contig:55,IDY:99.95,chr: "1"},
+{corr_start: 2999866,corr_end: 3003815,start:11169,end:15118,start_in_contig:1,end_in_contig:3950,IDY:100.0,chr: "2"},
 ];
 contig_lengths["scaffolds"]["NODE_20_length_3758_cov_69.106670"] = 3758;
 contig_structures["scaffolds"]["NODE_20_length_3758_cov_69.106670"] = [ 
-{corr_start: 2807730,corr_end: 2808043,start:7085,end:7398,start_in_contig:567,end_in_contig:254,IDY:95.24,chr: "3"},
+{corr_start: 2770843,corr_end: 2774601,start:5834,end:9592,start_in_contig:1,end_in_contig:3758,IDY:99.89,chr: "1"},
+];
+contig_lengths["scaffolds"]["NODE_21_length_3460_cov_267.052570"] = 3460;
+contig_structures["scaffolds"]["NODE_21_length_3460_cov_267.052570"] = [ 
+{corr_start: 3005374,corr_end: 3005921,start:16677,end:17224,start_in_contig:2327,end_in_contig:2874,IDY:99.27,chr: "2"},
 ];
 contig_lengths["scaffolds"]["NODE_23_length_2830_cov_183.700901"] = 2830;
 contig_structures["scaffolds"]["NODE_23_length_2830_cov_183.700901"] = [ 
-{corr_start: 1697628,corr_end: 1700456,start:1697628,end:1700456,start_in_contig:1,end_in_contig:2830,IDY:99.89,chr: "0"},
+{corr_start: 1415199,corr_end: 1418028,start:1415199,end:1418028,start_in_contig:2830,end_in_contig:1,IDY:100.0,chr: "0"},
+];
+contig_lengths["scaffolds"]["NODE_24_length_2043_cov_124.488431"] = 2043;
+contig_structures["scaffolds"]["NODE_24_length_2043_cov_124.488431"] = [ 
+{corr_start: 3009817,corr_end: 3011859,start:21120,end:23162,start_in_contig:1,end_in_contig:2043,IDY:100.0,chr: "2"},
+];
+contig_lengths["scaffolds"]["NODE_25_length_1681_cov_106.083641"] = 1681;
+contig_structures["scaffolds"]["NODE_25_length_1681_cov_106.083641"] = [ 
+{corr_start: 3007431,corr_end: 3009111,start:18734,end:20414,start_in_contig:1681,end_in_contig:1,IDY:100.0,chr: "2"},
+];
+contig_lengths["scaffolds"]["NODE_26_length_1510_cov_195.775258"] = 1510;
+contig_structures["scaffolds"]["NODE_26_length_1510_cov_195.775258"] = [ 
+{corr_start: 3004831,corr_end: 3006340,start:16134,end:17643,start_in_contig:1,end_in_contig:1510,IDY:100.0,chr: "2"},
+];
+contig_lengths["scaffolds"]["NODE_27_length_1391_cov_40.581587"] = 1391;
+contig_structures["scaffolds"]["NODE_27_length_1391_cov_40.581587"] = [ 
+{corr_start: 1412048,corr_end: 1413438,start:1412048,end:1413438,start_in_contig:1,end_in_contig:1391,IDY:100.0,chr: "0"},
+];
+contig_lengths["scaffolds"]["NODE_28_length_830_cov_355.651613"] = 830;
+contig_structures["scaffolds"]["NODE_28_length_830_cov_355.651613"] = [ 
+{corr_start: 3006656,corr_end: 3007485,start:17959,end:18788,start_in_contig:1,end_in_contig:830,IDY:100.0,chr: "2"},
 ];
 contig_lengths["scaffolds"]["NODE_29_length_692_cov_74.073783"] = 692;
 contig_structures["scaffolds"]["NODE_29_length_692_cov_74.073783"] = [ 
-{corr_start: 2809595,corr_end: 2810286,start:8950,end:9641,start_in_contig:1,end_in_contig:692,IDY:97.11,chr: "3"},
+{corr_start: 3096486,corr_end: 3097173,start:48802,end:49489,start_in_contig:692,end_in_contig:1,IDY:99.13,chr: "5"},
 ];
 contig_lengths["scaffolds"]["NODE_30_length_578_cov_71.022945"] = 578;
 contig_structures["scaffolds"]["NODE_30_length_578_cov_71.022945"] = [ 
-{corr_start: 2510528,corr_end: 2511105,start:2510528,end:2511105,start_in_contig:578,end_in_contig:1,IDY:100.0,chr: "0"},
+{corr_start: 2510698,corr_end: 2511275,start:2510698,end:2511275,start_in_contig:578,end_in_contig:1,IDY:100.0,chr: "0"},
+];
+contig_lengths["scaffolds"]["NODE_31_length_519_cov_32.366379"] = 519;
+contig_structures["scaffolds"]["NODE_31_length_519_cov_32.366379"] = [ 
+{corr_start: 1405797,corr_end: 1406315,start:1405797,end:1406315,start_in_contig:519,end_in_contig:1,IDY:100.0,chr: "0"},
 ];</script>
     <script type="text/javascript" name="d3.js">
         (function() {

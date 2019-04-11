@@ -1,409 +1,114 @@
 S1	E1	S2	E2	Reference	Contig	IDY	Ambiguous	Best_group
-832887	835267	20893	18513	NC_017960.1_Enterococcus_faecium_DO_chromosome__complete_genome	NODE_1_length_1439166_cov_42.837164	99.83		True
-local misassembly
-828192	829775	26509	24928	NC_017960.1_Enterococcus_faecium_DO_chromosome__complete_genome	NODE_1_length_1439166_cov_42.837164	95.27		True
-relocation, inconsistency = 1463093
-2298541	2417518	32182	151170	NC_017960.1_Enterococcus_faecium_DO_chromosome__complete_genome	NODE_1_length_1439166_cov_42.837164	99.98		True
+2264055	2415224	1	151170	CP014529.1_Enterococcus_faecium_strain_E745__complete_genome	NODE_1_length_1439166_cov_42.837164	100.0		True
 indel: indel (<= 5bp)
-2422277	2482938	155930	216594	NC_017960.1_Enterococcus_faecium_DO_chromosome__complete_genome	NODE_1_length_1439166_cov_42.837164	99.9		True
+2419983	2506102	155930	242044	CP014529.1_Enterococcus_faecium_strain_E745__complete_genome	NODE_1_length_1439166_cov_42.837164	99.95		True
+indel: indel (> 5bp)
+2506045	2509123	242050	245128	CP014529.1_Enterococcus_faecium_strain_E745__complete_genome	NODE_1_length_1439166_cov_42.837164	100.0		True
 local misassembly
-2482658	2508052	216595	241987	NC_017960.1_Enterococcus_faecium_DO_chromosome__complete_genome	NODE_1_length_1439166_cov_42.837164	99.76		True
-relocation, inconsistency = -576498
-1931618	1933131	242051	243564	NC_017960.1_Enterococcus_faecium_DO_chromosome__complete_genome	NODE_1_length_1439166_cov_42.837164	99.93		True
-relocation, inconsistency = 574913
-2508045	2509608	243565	245128	NC_017960.1_Enterococcus_faecium_DO_chromosome__complete_genome	NODE_1_length_1439166_cov_42.837164	100.0		True
-local misassembly
-2516010	2516941	251966	252897	NC_017960.1_Enterococcus_faecium_DO_chromosome__complete_genome	NODE_1_length_1439166_cov_42.837164	100.0		True
-translocation
-160682	161801	253115	254234	NC_017963.1_Enterococcus_faecium_DO_plasmid_3__complete_sequence	NODE_1_length_1439166_cov_42.837164	95.71		True
-translocation
-2516934	2624683	254412	362160	NC_017960.1_Enterococcus_faecium_DO_chromosome__complete_genome	NODE_1_length_1439166_cov_42.837164	99.99		True
-translocation
-25274	28204	374945	377875	NC_017961.1_Enterococcus_faecium_DO_plasmid_1__complete_sequence	NODE_1_length_1439166_cov_42.837164	98.57		True
-translocation
-2624629	2657799	427043	460212	NC_017960.1_Enterococcus_faecium_DO_chromosome__complete_genome	NODE_1_length_1439166_cov_42.837164	99.93		True
-local misassembly
-2657632	2674082	460213	476664	NC_017960.1_Enterococcus_faecium_DO_chromosome__complete_genome	NODE_1_length_1439166_cov_42.837164	99.92		True
+2516180	2740880	251966	476664	CP014529.1_Enterococcus_faecium_strain_E745__complete_genome	NODE_1_length_1439166_cov_42.837164	99.99		True
 indel: stretch of mismatches
-2676741	2698137	479323	500723	NC_017960.1_Enterococcus_faecium_DO_chromosome__complete_genome	NODE_1_length_1439166_cov_42.837164	99.97		True
+2743539	2765010	479323	500793	CP014529.1_Enterococcus_faecium_strain_E745__complete_genome	NODE_1_length_1439166_cov_42.837164	99.99		True
 fake: not a misassembly [linear representation of circular genome]
-1	79921	500724	580641	NC_017960.1_Enterococcus_faecium_DO_chromosome__complete_genome	NODE_1_length_1439166_cov_42.837164	99.92		True
-local misassembly
-80007	80248	580792	581033	NC_017960.1_Enterococcus_faecium_DO_chromosome__complete_genome	NODE_1_length_1439166_cov_42.837164	96.69		True
-relocation, inconsistency = 1746602
-1830169	1831524	585704	584352	NC_017960.1_Enterococcus_faecium_DO_chromosome__complete_genome	NODE_1_length_1439166_cov_42.837164	99.71		True
-relocation, inconsistency = 41002
-1874301	1875343	587479	588521	NC_017960.1_Enterococcus_faecium_DO_chromosome__complete_genome	NODE_1_length_1439166_cov_42.837164	99.62		True
-relocation, inconsistency = -1795186
-80248	89545	588612	597909	NC_017960.1_Enterococcus_faecium_DO_chromosome__complete_genome	NODE_1_length_1439166_cov_42.837164	99.74		True
-relocation, inconsistency = -1620
-89544	108929	599528	618912	NC_017960.1_Enterococcus_faecium_DO_chromosome__complete_genome	NODE_1_length_1439166_cov_42.837164	99.35		True
-local misassembly
-109053	109224	618913	619086	NC_017960.1_Enterococcus_faecium_DO_chromosome__complete_genome	NODE_1_length_1439166_cov_42.837164	97.52		True
-relocation, inconsistency = 1340561
-1449786	1450849	620150	619087	NC_017960.1_Enterococcus_faecium_DO_chromosome__complete_genome	NODE_1_length_1439166_cov_42.837164	100.0		True
-relocation, inconsistency = 1340294
-109222	109491	620151	620421	NC_017960.1_Enterococcus_faecium_DO_chromosome__complete_genome	NODE_1_length_1439166_cov_42.837164	99.26		True
-relocation, inconsistency = -1332
-109484	111223	621746	623484	NC_017960.1_Enterococcus_faecium_DO_chromosome__complete_genome	NODE_1_length_1439166_cov_42.837164	99.14		True
-relocation, inconsistency = 1599091
-1710316	1711352	624510	623485	NC_017960.1_Enterococcus_faecium_DO_chromosome__complete_genome	NODE_1_length_1439166_cov_42.837164	98.56		True
-relocation, inconsistency = 1596242
-111215	114073	624511	627369	NC_017960.1_Enterococcus_faecium_DO_chromosome__complete_genome	NODE_1_length_1439166_cov_42.837164	99.58		True
-translocation
-88406	89471	627370	628435	NC_017963.1_Enterococcus_faecium_DO_plasmid_3__complete_sequence	NODE_1_length_1439166_cov_42.837164	99.53		True
-translocation
-119863	143696	628436	652265	NC_017960.1_Enterococcus_faecium_DO_chromosome__complete_genome	NODE_1_length_1439166_cov_42.837164	99.39		True
-translocation
-114732	115814	653388	652306	NC_017963.1_Enterococcus_faecium_DO_plasmid_3__complete_sequence	NODE_1_length_1439166_cov_42.837164	99.35		True
-translocation
-145397	161272	653564	669429	NC_017960.1_Enterococcus_faecium_DO_chromosome__complete_genome	NODE_1_length_1439166_cov_42.837164	99.62		True
-local misassembly
-161272	168634	669553	676918	NC_017960.1_Enterococcus_faecium_DO_chromosome__complete_genome	NODE_1_length_1439166_cov_42.837164	99.59		True
-relocation, inconsistency = 177134
-345789	347164	678294	676919	NC_017960.1_Enterococcus_faecium_DO_chromosome__complete_genome	NODE_1_length_1439166_cov_42.837164	100.0		True
-relocation, inconsistency = 143558
-170012	202230	678295	710513	NC_017960.1_Enterococcus_faecium_DO_chromosome__complete_genome	NODE_1_length_1439166_cov_42.837164	99.24		True
-translocation
-232181	232465	710798	710514	NC_017963.1_Enterococcus_faecium_DO_plasmid_3__complete_sequence	NODE_1_length_1439166_cov_42.837164	99.65		True
-translocation
-202226	205253	712192	715219	NC_017960.1_Enterococcus_faecium_DO_chromosome__complete_genome	NODE_1_length_1439166_cov_42.837164	99.44		True
-relocation, inconsistency = 64948
-270202	271265	715220	716283	NC_017960.1_Enterococcus_faecium_DO_chromosome__complete_genome	NODE_1_length_1439166_cov_42.837164	99.62		True
-relocation, inconsistency = -59297
-211969	234834	716284	739148	NC_017960.1_Enterococcus_faecium_DO_chromosome__complete_genome	NODE_1_length_1439166_cov_42.837164	99.42		True
-local misassembly
-234932	239241	739149	743458	NC_017960.1_Enterococcus_faecium_DO_chromosome__complete_genome	NODE_1_length_1439166_cov_42.837164	99.49		True
-relocation, inconsistency = 1631108
-1878144	1879509	752618	751253	NC_017960.1_Enterococcus_faecium_DO_chromosome__complete_genome	NODE_1_length_1439166_cov_42.837164	99.93		True
-inversion
-1874776	1875350	754412	754987	NC_017960.1_Enterococcus_faecium_DO_chromosome__complete_genome	NODE_1_length_1439166_cov_42.837164	99.31		True
-relocation, inconsistency = -372031
-1510174	1510890	761842	762558	NC_017960.1_Enterococcus_faecium_DO_chromosome__complete_genome	NODE_1_length_1439166_cov_42.837164	99.72		True
-relocation, inconsistency = -1222827
-288114	289656	762609	764152	NC_017960.1_Enterococcus_faecium_DO_chromosome__complete_genome	NODE_1_length_1439166_cov_42.837164	97.6		True
-translocation
-232181	232465	764437	764153	NC_017963.1_Enterococcus_faecium_DO_plasmid_3__complete_sequence	NODE_1_length_1439166_cov_42.837164	99.65		True
-translocation
-289651	291042	765831	767228	NC_017960.1_Enterococcus_faecium_DO_chromosome__complete_genome	NODE_1_length_1439166_cov_42.837164	95.64		True
-relocation, inconsistency = -29433
-265698	279531	771317	785151	NC_017960.1_Enterococcus_faecium_DO_chromosome__complete_genome	NODE_1_length_1439166_cov_42.837164	99.05		True
-relocation, inconsistency = -33827
-245705	246070	785152	785517	NC_017960.1_Enterococcus_faecium_DO_chromosome__complete_genome	NODE_1_length_1439166_cov_42.837164	98.91		True
-relocation, inconsistency = 770511
-1016582	1017656	785518	786594	NC_017960.1_Enterococcus_faecium_DO_chromosome__complete_genome	NODE_1_length_1439166_cov_42.837164	99.35		True
-relocation, inconsistency = -721994
-296792	300142	787724	791074	NC_017960.1_Enterococcus_faecium_DO_chromosome__complete_genome	NODE_1_length_1439166_cov_42.837164	99.05		True
-translocation
-181788	182859	794484	793413	NC_017963.1_Enterococcus_faecium_DO_plasmid_3__complete_sequence	NODE_1_length_1439166_cov_42.837164	99.53		True
-translocation
-351511	354100	794485	797078	NC_017960.1_Enterococcus_faecium_DO_chromosome__complete_genome	NODE_1_length_1439166_cov_42.837164	99.11		True
-relocation, inconsistency = -1745
-354222	357639	798945	802360	NC_017960.1_Enterococcus_faecium_DO_chromosome__complete_genome	NODE_1_length_1439166_cov_42.837164	99.01		True
-relocation, inconsistency = 7342
-365040	377826	802419	815214	NC_017960.1_Enterococcus_faecium_DO_chromosome__complete_genome	NODE_1_length_1439166_cov_42.837164	98.75		True
-local misassembly
-377949	393062	815215	830327	NC_017960.1_Enterococcus_faecium_DO_chromosome__complete_genome	NODE_1_length_1439166_cov_42.837164	98.88		True
-relocation, inconsistency = -122860
-270203	271262	830328	831387	NC_017960.1_Enterococcus_faecium_DO_chromosome__complete_genome	NODE_1_length_1439166_cov_42.837164	99.62		True
-relocation, inconsistency = 121793
-393056	413854	831388	852188	NC_017960.1_Enterococcus_faecium_DO_chromosome__complete_genome	NODE_1_length_1439166_cov_42.837164	99.74		True
-translocation
-232181	232465	852473	852189	NC_017963.1_Enterococcus_faecium_DO_plasmid_3__complete_sequence	NODE_1_length_1439166_cov_42.837164	99.65		True
-translocation
-413850	415470	853867	855487	NC_017960.1_Enterococcus_faecium_DO_chromosome__complete_genome	NODE_1_length_1439166_cov_42.837164	99.75		True
-local misassembly
-415470	462967	855611	903117	NC_017960.1_Enterococcus_faecium_DO_chromosome__complete_genome	NODE_1_length_1439166_cov_42.837164	99.95		True
+1	250251	500794	751044	CP014529.1_Enterococcus_faecium_strain_E745__complete_genome	NODE_1_length_1439166_cov_42.837164	99.99		True
 indel: stretch of mismatches
-464573	577368	904723	1017514	NC_017960.1_Enterococcus_faecium_DO_chromosome__complete_genome	NODE_1_length_1439166_cov_42.837164	99.98		True
-relocation, inconsistency = 13242
-590611	681969	1017515	1108872	NC_017960.1_Enterococcus_faecium_DO_chromosome__complete_genome	NODE_1_length_1439166_cov_42.837164	99.97		True
-local misassembly
-681848	822470	1108873	1249495	NC_017960.1_Enterococcus_faecium_DO_chromosome__complete_genome	NODE_1_length_1439166_cov_42.837164	99.98		True
-relocation, inconsistency = -1477
-823139	823854	1251641	1252356	NC_017960.1_Enterococcus_faecium_DO_chromosome__complete_genome	NODE_1_length_1439166_cov_42.837164	96.09		True
-relocation, inconsistency = 1017
-825913	848740	1253398	1276226	NC_017960.1_Enterococcus_faecium_DO_chromosome__complete_genome	NODE_1_length_1439166_cov_42.837164	99.98		True
-translocation
-160682	161801	1277521	1276402	NC_017963.1_Enterococcus_faecium_DO_plasmid_3__complete_sequence	NODE_1_length_1439166_cov_42.837164	95.71		True
-translocation
-848730	858462	1277738	1287470	NC_017960.1_Enterococcus_faecium_DO_chromosome__complete_genome	NODE_1_length_1439166_cov_42.837164	99.54		True
-relocation, inconsistency = 1321324
-2182600	2298559	1406250	1290284	NC_017960.1_Enterococcus_faecium_DO_chromosome__complete_genome	NODE_1_length_1439166_cov_42.837164	99.98		True
-relocation, inconsistency = 1160753
-1020058	1021838	1406251	1408031	NC_017960.1_Enterococcus_faecium_DO_chromosome__complete_genome	NODE_1_length_1439166_cov_42.837164	100.0		True
-relocation, inconsistency = 1129630
-2151469	2182601	1439166	1408032	NC_017960.1_Enterococcus_faecium_DO_chromosome__complete_genome	NODE_1_length_1439166_cov_42.837164	99.99		True
-CONTIG	NODE_1_length_1439166_cov_42.837164	1439166	misassembled
-858408	882648	1	24240	NC_017960.1_Enterococcus_faecium_DO_chromosome__complete_genome	NODE_2_length_835679_cov_39.731750	98.76		True
-translocation
-88405	89469	25365	24301	NC_017963.1_Enterococcus_faecium_DO_plasmid_3__complete_sequence	NODE_2_length_835679_cov_39.731750	99.62		True
-relocation, inconsistency = -111223
-185814	187349	39179	37644	NC_017963.1_Enterococcus_faecium_DO_plasmid_3__complete_sequence	NODE_2_length_835679_cov_39.731750	99.54		True
-translocation
-1885005	1887350	48574	46229	NC_017960.1_Enterococcus_faecium_DO_chromosome__complete_genome	NODE_2_length_835679_cov_39.731750	100.0		True
-relocation, inconsistency = 924509
-916614	960495	48575	92456	NC_017960.1_Enterococcus_faecium_DO_chromosome__complete_genome	NODE_2_length_835679_cov_39.731750	99.99		True
-translocation
-160682	161801	93752	92633	NC_017963.1_Enterococcus_faecium_DO_plasmid_3__complete_sequence	NODE_2_length_835679_cov_39.731750	95.71		True
-translocation
-960487	976031	93970	109514	NC_017960.1_Enterococcus_faecium_DO_chromosome__complete_genome	NODE_2_length_835679_cov_39.731750	99.99		True
-translocation
-195794	197306	111027	109515	NC_017963.1_Enterococcus_faecium_DO_plasmid_3__complete_sequence	NODE_2_length_835679_cov_39.731750	97.89		True
-translocation
-976023	990619	111028	125625	NC_017960.1_Enterococcus_faecium_DO_chromosome__complete_genome	NODE_2_length_835679_cov_39.731750	99.97		True
+250460	253200	751253	753993	CP014529.1_Enterococcus_faecium_strain_E745__complete_genome	NODE_1_length_1439166_cov_42.837164	99.96		True
 indel: indel (<= 5bp)
-993952	1063765	128957	198771	NC_017960.1_Enterococcus_faecium_DO_chromosome__complete_genome	NODE_2_length_835679_cov_39.731750	99.97		True
-relocation, inconsistency = 1511
-1065277	1078356	198772	211850	NC_017960.1_Enterococcus_faecium_DO_chromosome__complete_genome	NODE_2_length_835679_cov_39.731750	99.98		True
-translocation
-160682	161904	213147	211925	NC_017963.1_Enterococcus_faecium_DO_plasmid_3__complete_sequence	NODE_2_length_835679_cov_39.731750	95.99		True
-translocation
-1078376	1157754	213361	292741	NC_017960.1_Enterococcus_faecium_DO_chromosome__complete_genome	NODE_2_length_835679_cov_39.731750	99.98		True
+253620	258707	754412	759499	CP014529.1_Enterococcus_faecium_strain_E745__complete_genome	NODE_1_length_1439166_cov_42.837164	100.0		True
+indel: indel (<= 5bp)
+261049	402324	761842	903117	CP014529.1_Enterococcus_faecium_strain_E745__complete_genome	NODE_1_length_1439166_cov_42.837164	99.99		True
 indel: stretch of mismatches
-1158573	1249579	293560	384559	NC_017960.1_Enterococcus_faecium_DO_chromosome__complete_genome	NODE_2_length_835679_cov_39.731750	99.97		True
+403930	786677	904723	1287470	CP014529.1_Enterococcus_faecium_strain_E745__complete_genome	NODE_1_length_1439166_cov_42.837164	99.99		True
+indel: indel (<= 5bp)
+788966	938372	1289760	1439166	CP014529.1_Enterococcus_faecium_strain_E745__complete_genome	NODE_1_length_1439166_cov_42.837164	100.0		True
+CONTIG	NODE_1_length_1439166_cov_42.837164	1439166	correct
+2129514	2255139	125625	1	CP014529.1_Enterococcus_faecium_strain_E745__complete_genome	NODE_2_length_835679_cov_39.731750	99.97		True
+indel: indel (<= 5bp)
+1962397	2126181	292741	128957	CP014529.1_Enterococcus_faecium_strain_E745__complete_genome	NODE_2_length_835679_cov_39.731750	99.99		True
+indel: stretch of mismatches
+1419459	1961578	835679	293560	CP014529.1_Enterococcus_faecium_strain_E745__complete_genome	NODE_2_length_835679_cov_39.731750	99.99		True
+CONTIG	NODE_2_length_835679_cov_39.731750	835679	correct
+1125905	1238602	112698	1	CP014529.1_Enterococcus_faecium_strain_E745__complete_genome	NODE_3_length_293214_cov_37.144294	99.97		True
+indel: stretch of mismatches
+945389	1125218	293214	113385	CP014529.1_Enterococcus_faecium_strain_E745__complete_genome	NODE_3_length_293214_cov_37.144294	99.99		True
+CONTIG	NODE_3_length_293214_cov_37.144294	293214	correct
+198815	217475	18652	1	CP014530.1_Enterococcus_faecium_strain_E745_plasmid_pl1__complete_sequence	NODE_4_length_212823_cov_82.822680	99.87		True
+indel: stretch of mismatches
+187648	195391	29819	22076	CP014530.1_Enterococcus_faecium_strain_E745_plasmid_pl1__complete_sequence	NODE_4_length_212823_cov_82.822680	99.99		True
 indel: indel (> 5bp)
-1249629	1258986	384560	393918	NC_017960.1_Enterococcus_faecium_DO_chromosome__complete_genome	NODE_2_length_835679_cov_39.731750	99.84		True
+152198	187703	65334	29829	CP014530.1_Enterococcus_faecium_strain_E745_plasmid_pl1__complete_sequence	NODE_4_length_212823_cov_82.822680	99.99		True
+indel: stretch of mismatches
+150175	151432	67357	66100	CP014530.1_Enterococcus_faecium_strain_E745_plasmid_pl1__complete_sequence	NODE_4_length_212823_cov_82.822680	100.0		True
+indel: stretch of mismatches
+83017	148300	134515	69232	CP014530.1_Enterococcus_faecium_strain_E745_plasmid_pl1__complete_sequence	NODE_4_length_212823_cov_82.822680	99.88		True
+indel: stretch of mismatches
+26826	81578	190706	135954	CP014530.1_Enterococcus_faecium_strain_E745_plasmid_pl1__complete_sequence	NODE_4_length_212823_cov_82.822680	100.0		True
+indel: stretch of mismatches
+24611	25663	192921	191869	CP014530.1_Enterococcus_faecium_strain_E745_plasmid_pl1__complete_sequence	NODE_4_length_212823_cov_82.822680	100.0		True
+indel: stretch of mismatches
+7238	23986	210307	193546	CP014530.1_Enterococcus_faecium_strain_E745_plasmid_pl1__complete_sequence	NODE_4_length_212823_cov_82.822680	99.08		True
 translocation
-160682	161801	395215	394096	NC_017963.1_Enterococcus_faecium_DO_plasmid_3__complete_sequence	NODE_2_length_835679_cov_39.731750	95.71		True
-translocation
-1258979	1284485	395433	420940	NC_017960.1_Enterococcus_faecium_DO_chromosome__complete_genome	NODE_2_length_835679_cov_39.731750	99.63		True
-translocation
-88405	89466	422002	420941	NC_017963.1_Enterococcus_faecium_DO_plasmid_3__complete_sequence	NODE_2_length_835679_cov_39.731750	99.53		True
-translocation
-1284480	1298290	422003	435814	NC_017960.1_Enterococcus_faecium_DO_chromosome__complete_genome	NODE_2_length_835679_cov_39.731750	99.7		True
-relocation, inconsistency = 1013215
-270202	271264	436877	435815	NC_017960.1_Enterococcus_faecium_DO_chromosome__complete_genome	NODE_2_length_835679_cov_39.731750	99.81		True
-relocation, inconsistency = 1027022
-1298287	1307561	436878	446144	NC_017960.1_Enterococcus_faecium_DO_chromosome__complete_genome	NODE_2_length_835679_cov_39.731750	99.7		True
-relocation, inconsistency = 538777
-1846339	1847852	446145	447658	NC_017960.1_Enterococcus_faecium_DO_chromosome__complete_genome	NODE_2_length_835679_cov_39.731750	97.82		True
-relocation, inconsistency = -540299
-1307554	1445864	447659	585974	NC_017960.1_Enterococcus_faecium_DO_chromosome__complete_genome	NODE_2_length_835679_cov_39.731750	99.94		True
-relocation, inconsistency = 1542
-1447407	1449777	585975	588345	NC_017960.1_Enterococcus_faecium_DO_chromosome__complete_genome	NODE_2_length_835679_cov_39.731750	99.92		True
-relocation, inconsistency = 1067
-1450845	1456470	588346	593971	NC_017960.1_Enterococcus_faecium_DO_chromosome__complete_genome	NODE_2_length_835679_cov_39.731750	99.95		True
-relocation, inconsistency = 1065
-1457536	1461894	593972	598330	NC_017960.1_Enterococcus_faecium_DO_chromosome__complete_genome	NODE_2_length_835679_cov_39.731750	100.0		True
-translocation
-160682	161904	598548	599770	NC_017963.1_Enterococcus_faecium_DO_plasmid_3__complete_sequence	NODE_2_length_835679_cov_39.731750	95.99		True
-translocation
-1461887	1526124	599845	664082	NC_017960.1_Enterococcus_faecium_DO_chromosome__complete_genome	NODE_2_length_835679_cov_39.731750	99.99		True
-relocation, inconsistency = 405493
-1931618	1933129	664083	665594	NC_017960.1_Enterococcus_faecium_DO_chromosome__complete_genome	NODE_2_length_835679_cov_39.731750	99.93		True
-relocation, inconsistency = -407015
-1526115	1696197	665595	835679	NC_017960.1_Enterococcus_faecium_DO_chromosome__complete_genome	NODE_2_length_835679_cov_39.731750	99.99		True
-CONTIG	NODE_2_length_835679_cov_39.731750	835679	misassembled
-1832882	1871232	1	38353	NC_017960.1_Enterococcus_faecium_DO_chromosome__complete_genome	NODE_3_length_293214_cov_37.144294	98.71		True
-relocation, inconsistency = 20483
-1915695	1931617	62333	78282	NC_017960.1_Enterococcus_faecium_DO_chromosome__complete_genome	NODE_3_length_293214_cov_37.144294	97.92		True
-relocation, inconsistency = 1522
-1933140	1943381	78283	88524	NC_017960.1_Enterococcus_faecium_DO_chromosome__complete_genome	NODE_3_length_293214_cov_37.144294	98.94		True
-local misassembly
-1944527	1953691	89676	98840	NC_017960.1_Enterococcus_faecium_DO_chromosome__complete_genome	NODE_3_length_293214_cov_37.144294	98.22		True
-relocation, inconsistency = -1620
-1953690	1959998	100459	106767	NC_017960.1_Enterococcus_faecium_DO_chromosome__complete_genome	NODE_3_length_293214_cov_37.144294	99.46		True
-relocation, inconsistency = 2353
-1962352	1967507	106768	111923	NC_017960.1_Enterococcus_faecium_DO_chromosome__complete_genome	NODE_3_length_293214_cov_37.144294	99.71		True
-relocation, inconsistency = -35890
-1931618	1932392	111924	112698	NC_017960.1_Enterococcus_faecium_DO_chromosome__complete_genome	NODE_3_length_293214_cov_37.144294	100.0		True
-relocation, inconsistency = 34368
-1967500	1992662	113438	138605	NC_017960.1_Enterococcus_faecium_DO_chromosome__complete_genome	NODE_3_length_293214_cov_37.144294	99.32		True
-local misassembly
-1992783	2011026	138606	156850	NC_017960.1_Enterococcus_faecium_DO_chromosome__complete_genome	NODE_3_length_293214_cov_37.144294	99.72		True
-translocation
-160682	161592	157068	157978	NC_017963.1_Enterococcus_faecium_DO_plasmid_3__complete_sequence	NODE_3_length_293214_cov_37.144294	95.28		True
-translocation
-1831522	1832936	159394	157979	NC_017960.1_Enterococcus_faecium_DO_chromosome__complete_genome	NODE_3_length_293214_cov_37.144294	99.93		True
-translocation
-132608	132996	159783	159395	NC_017963.1_Enterococcus_faecium_DO_plasmid_3__complete_sequence	NODE_3_length_293214_cov_37.144294	97.94		True
-translocation
-2011019	2144453	159784	293214	NC_017960.1_Enterococcus_faecium_DO_chromosome__complete_genome	NODE_3_length_293214_cov_37.144294	99.86		True
-CONTIG	NODE_3_length_293214_cov_37.144294	293214	misassembled
-18298	29702	1	11396	NC_017963.1_Enterococcus_faecium_DO_plasmid_3__complete_sequence	NODE_4_length_212823_cov_82.822680	99.42		True
-relocation, inconsistency = -2030
-30394	34896	14118	18596	NC_017963.1_Enterococcus_faecium_DO_plasmid_3__complete_sequence	NODE_4_length_212823_cov_82.822680	96.87		True
-relocation, inconsistency = 78042
-116418	118880	22076	24501	NC_017963.1_Enterococcus_faecium_DO_plasmid_3__complete_sequence	NODE_4_length_212823_cov_82.822680	98.3		True
-relocation, inconsistency = -83992
-34896	35189	24509	24801	NC_017963.1_Enterococcus_faecium_DO_plasmid_3__complete_sequence	NODE_4_length_212823_cov_82.822680	95.38		True
-relocation, inconsistency = 1346
-36536	38218	24802	26484	NC_017963.1_Enterococcus_faecium_DO_plasmid_3__complete_sequence	NODE_4_length_212823_cov_82.822680	99.41		True
-relocation, inconsistency = 30284
-68503	69310	26485	27292	NC_017963.1_Enterococcus_faecium_DO_plasmid_3__complete_sequence	NODE_4_length_212823_cov_82.822680	99.26		True
-local misassembly
-69414	71884	27294	29764	NC_017963.1_Enterococcus_faecium_DO_plasmid_3__complete_sequence	NODE_4_length_212823_cov_82.822680	99.72		True
-translocation
-20890	22410	31349	29829	NC_017962.1_Enterococcus_faecium_DO_plasmid_2__complete_sequence	NODE_4_length_212823_cov_82.822680	100.0		True
-translocation
-40541	40965	31896	31472	NC_017963.1_Enterococcus_faecium_DO_plasmid_3__complete_sequence	NODE_4_length_212823_cov_82.822680	99.53		True
-relocation, inconsistency = -191215
-231370	231755	32278	31897	NC_017963.1_Enterococcus_faecium_DO_plasmid_3__complete_sequence	NODE_4_length_212823_cov_82.822680	98.75		True
-relocation, inconsistency = 187405
-41762	43964	32279	34481	NC_017963.1_Enterococcus_faecium_DO_plasmid_3__complete_sequence	NODE_4_length_212823_cov_82.822680	99.82		True
-relocation, inconsistency = 203943
-247908	249798	34482	36372	NC_017963.1_Enterococcus_faecium_DO_plasmid_3__complete_sequence	NODE_4_length_212823_cov_82.822680	95.57		True
-relocation, inconsistency = -205834
-43965	53030	36373	45417	NC_017963.1_Enterococcus_faecium_DO_plasmid_3__complete_sequence	NODE_4_length_212823_cov_82.822680	99.66		True
-relocation, inconsistency = 2353
-55384	57195	45418	47226	NC_017963.1_Enterococcus_faecium_DO_plasmid_3__complete_sequence	NODE_4_length_212823_cov_82.822680	99.45		True
-relocation, inconsistency = 15615
-72811	90820	47227	65237	NC_017963.1_Enterococcus_faecium_DO_plasmid_3__complete_sequence	NODE_4_length_212823_cov_82.822680	99.86		True
-relocation, inconsistency = 36232
-35198	35716	66618	66100	NC_017963.1_Enterococcus_faecium_DO_plasmid_3__complete_sequence	NODE_4_length_212823_cov_82.822680	99.81		True
-relocation, inconsistency = -152772
-187516	187969	67072	66619	NC_017963.1_Enterococcus_faecium_DO_plasmid_3__complete_sequence	NODE_4_length_212823_cov_82.822680	100.0		True
-translocation
-279506	280991	72167	73652	NC_017960.1_Enterococcus_faecium_DO_chromosome__complete_genome	NODE_4_length_212823_cov_82.822680	99.66		True
-relocation, inconsistency = 2030384
-2311376	2312449	74726	73653	NC_017960.1_Enterococcus_faecium_DO_chromosome__complete_genome	NODE_4_length_212823_cov_82.822680	99.44		True
-relocation, inconsistency = 434047
-1874450	1875350	77604	76705	NC_017960.1_Enterococcus_faecium_DO_chromosome__complete_genome	NODE_4_length_212823_cov_82.822680	99.62		True
-translocation
-184651	185817	78772	77605	NC_017963.1_Enterococcus_faecium_DO_plasmid_3__complete_sequence	NODE_4_length_212823_cov_82.822680	99.91		True
-relocation, inconsistency = 62085
-247903	249799	78773	80669	NC_017963.1_Enterococcus_faecium_DO_plasmid_3__complete_sequence	NODE_4_length_212823_cov_82.822680	95.52		True
-relocation, inconsistency = 64392
-182853	183510	81330	80670	NC_017963.1_Enterococcus_faecium_DO_plasmid_3__complete_sequence	NODE_4_length_212823_cov_82.822680	96.89		True
-relocation, inconsistency = 14984
-198495	199403	81331	82239	NC_017963.1_Enterococcus_faecium_DO_plasmid_3__complete_sequence	NODE_4_length_212823_cov_82.822680	100.0		True
-relocation, inconsistency = 16552
-173363	181942	90829	82240	NC_017963.1_Enterococcus_faecium_DO_plasmid_3__complete_sequence	NODE_4_length_212823_cov_82.822680	99.27		True
-relocation, inconsistency = 65724
-103812	107638	90830	94615	NC_017963.1_Enterococcus_faecium_DO_plasmid_3__complete_sequence	NODE_4_length_212823_cov_82.822680	97.91		True
-indel: indel (> 5bp)
-107788	108031	94696	94939	NC_017963.1_Enterococcus_faecium_DO_plasmid_3__complete_sequence	NODE_4_length_212823_cov_82.822680	99.59		True
-relocation, inconsistency = 77782
-185814	187351	94940	96477	NC_017963.1_Enterococcus_faecium_DO_plasmid_3__complete_sequence	NODE_4_length_212823_cov_82.822680	99.48		True
-relocation, inconsistency = 17119
-137728	160687	127444	104485	NC_017963.1_Enterococcus_faecium_DO_plasmid_3__complete_sequence	NODE_4_length_212823_cov_82.822680	99.77		True
-local misassembly
-137213	137633	127866	127445	NC_017963.1_Enterococcus_faecium_DO_plasmid_3__complete_sequence	NODE_4_length_212823_cov_82.822680	99.76		True
-relocation, inconsistency = -112586
-247903	249798	129762	127867	NC_017963.1_Enterococcus_faecium_DO_plasmid_3__complete_sequence	NODE_4_length_212823_cov_82.822680	100.0		True
-relocation, inconsistency = 50503
-195792	197307	129855	131370	NC_017963.1_Enterococcus_faecium_DO_plasmid_3__complete_sequence	NODE_4_length_212823_cov_82.822680	97.89		True
-relocation, inconsistency = -89679
-108031	109041	131773	132783	NC_017963.1_Enterococcus_faecium_DO_plasmid_3__complete_sequence	NODE_4_length_212823_cov_82.822680	97.73		True
-translocation
-168613	170031	133098	134515	NC_017960.1_Enterococcus_faecium_DO_chromosome__complete_genome	NODE_4_length_212823_cov_82.822680	99.79		True
-translocation
-247903	249799	144566	142670	NC_017963.1_Enterococcus_faecium_DO_plasmid_3__complete_sequence	NODE_4_length_212823_cov_82.822680	95.52		True
-translocation
-20892	22410	144608	146126	NC_017962.1_Enterococcus_faecium_DO_plasmid_2__complete_sequence	NODE_4_length_212823_cov_82.822680	100.0		True
-translocation
-90820	92187	147953	146587	NC_017963.1_Enterococcus_faecium_DO_plasmid_3__complete_sequence	NODE_4_length_212823_cov_82.822680	99.78		True
-relocation, inconsistency = 16588
-109128	114656	148306	153834	NC_017963.1_Enterococcus_faecium_DO_plasmid_3__complete_sequence	NODE_4_length_212823_cov_82.822680	99.93		True
-local misassembly
-114745	115846	153835	154937	NC_017963.1_Enterococcus_faecium_DO_plasmid_3__complete_sequence	NODE_4_length_212823_cov_82.822680	99.64		True
-relocation, inconsistency = 3034
-118881	120579	154938	156637	NC_017963.1_Enterococcus_faecium_DO_plasmid_3__complete_sequence	NODE_4_length_212823_cov_82.822680	99.82		True
-relocation, inconsistency = 1048
-121628	122583	156638	157593	NC_017963.1_Enterococcus_faecium_DO_plasmid_3__complete_sequence	NODE_4_length_212823_cov_82.822680	99.69		True
-relocation, inconsistency = 27261
-90819	94159	161079	157801	NC_017963.1_Enterococcus_faecium_DO_plasmid_3__complete_sequence	NODE_4_length_212823_cov_82.822680	98.05		True
-relocation, inconsistency = 96728
-191172	191740	161364	161932	NC_017963.1_Enterococcus_faecium_DO_plasmid_3__complete_sequence	NODE_4_length_212823_cov_82.822680	99.83		True
-relocation, inconsistency = 42302
-234046	235832	163719	161933	NC_017963.1_Enterococcus_faecium_DO_plasmid_3__complete_sequence	NODE_4_length_212823_cov_82.822680	99.94		True
-relocation, inconsistency = 38560
-191745	195485	163720	167460	NC_017963.1_Enterococcus_faecium_DO_plasmid_3__complete_sequence	NODE_4_length_212823_cov_82.822680	99.95		True
-relocation, inconsistency = 35282
-232181	232466	168874	169159	NC_017963.1_Enterococcus_faecium_DO_plasmid_3__complete_sequence	NODE_4_length_212823_cov_82.822680	99.65		True
-translocation
-483857	484731	170961	171834	NC_017960.1_Enterococcus_faecium_DO_chromosome__complete_genome	NODE_4_length_212823_cov_82.822680	98.51		True
-translocation
-197307	198367	179027	177967	NC_017963.1_Enterococcus_faecium_DO_plasmid_3__complete_sequence	NODE_4_length_212823_cov_82.822680	99.72		True
-relocation, inconsistency = 139943
-56389	57200	179970	179191	NC_017963.1_Enterococcus_faecium_DO_plasmid_3__complete_sequence	NODE_4_length_212823_cov_82.822680	95.57		True
-translocation
-119469	119873	192921	192517	NC_017960.1_Enterococcus_faecium_DO_chromosome__complete_genome	NODE_4_length_212823_cov_82.822680	100.0		True
-translocation
-242821	246307	194943	198428	NC_017963.1_Enterococcus_faecium_DO_plasmid_3__complete_sequence	NODE_4_length_212823_cov_82.822680	95.5		True
-relocation, inconsistency = -250150
-899	3939	203170	206209	NC_017963.1_Enterococcus_faecium_DO_plasmid_3__complete_sequence	NODE_4_length_212823_cov_82.822680	95.49		True
-translocation
-1020053	1021817	207974	206210	NC_017960.1_Enterococcus_faecium_DO_chromosome__complete_genome	NODE_4_length_212823_cov_82.822680	99.94		True
+49435	51949	212823	210308	CP014534.1_Enterococcus_faecium_strain_E745_plasmid_pl5__complete_sequence	NODE_4_length_212823_cov_82.822680	99.98		True
 CONTIG	NODE_4_length_212823_cov_82.822680	212823	misassembled
-1795488	1821097	25609	1	NC_017960.1_Enterococcus_faecium_DO_chromosome__complete_genome	NODE_5_length_155237_cov_56.663271	99.96		True
-relocation, inconsistency = -2712
-1738894	1795489	84917	28320	NC_017960.1_Enterococcus_faecium_DO_chromosome__complete_genome	NODE_5_length_155237_cov_56.663271	99.99		True
-translocation
-160682	161801	86214	85095	NC_017963.1_Enterococcus_faecium_DO_plasmid_3__complete_sequence	NODE_5_length_155237_cov_56.663271	95.71		True
-translocation
-1711807	1738901	113526	86432	NC_017960.1_Enterococcus_faecium_DO_chromosome__complete_genome	NODE_5_length_155237_cov_56.663271	99.98		True
-translocation
-160682	161904	114823	113601	NC_017963.1_Enterococcus_faecium_DO_plasmid_3__complete_sequence	NODE_5_length_155237_cov_56.663271	95.91		True
-translocation
-1711158	1711814	115697	115041	NC_017960.1_Enterococcus_faecium_DO_chromosome__complete_genome	NODE_5_length_155237_cov_56.663271	100.0		True
-translocation
-185814	187349	115698	117233	NC_017963.1_Enterococcus_faecium_DO_plasmid_3__complete_sequence	NODE_5_length_155237_cov_56.663271	99.54		True
-translocation
-1700391	1711175	128021	117234	NC_017960.1_Enterococcus_faecium_DO_chromosome__complete_genome	NODE_5_length_155237_cov_56.663271	99.96		True
-relocation, inconsistency = 869612
-826308	826825	131975	132487	NC_017960.1_Enterococcus_faecium_DO_chromosome__complete_genome	NODE_5_length_155237_cov_56.663271	95.76		True
+1250386	1386923	1	136538	CP014529.1_Enterococcus_faecium_strain_E745__complete_genome	NODE_5_length_155237_cov_56.663271	99.99		True
 local misassembly
-827378	830711	133206	136538	NC_017960.1_Enterococcus_faecium_DO_chromosome__complete_genome	NODE_5_length_155237_cov_56.663271	96.01		True
-local misassembly
-832887	833299	138251	138663	NC_017960.1_Enterococcus_faecium_DO_chromosome__complete_genome	NODE_5_length_155237_cov_56.663271	99.03		True
-CONTIG	NODE_5_length_155237_cov_56.663271	155237	misassembled
-579052	579469	32737	33154	NC_017960.1_Enterococcus_faecium_DO_chromosome__complete_genome	NODE_6_length_62897_cov_73.711292	98.8		True
-unknown
-53031	55378	37722	40069	NC_017963.1_Enterococcus_faecium_DO_plasmid_3__complete_sequence	NODE_6_length_62897_cov_73.711292	99.91		True
-unknown
-583652	583870	59326	59108	NC_017960.1_Enterococcus_faecium_DO_chromosome__complete_genome	NODE_6_length_62897_cov_73.711292	98.17		True
-unknown
-582485	583650	60595	59433	NC_017960.1_Enterococcus_faecium_DO_chromosome__complete_genome	NODE_6_length_62897_cov_73.711292	95.97		True
-unknown
-CONTIG	NODE_6_length_62897_cov_73.711292	62897	mis_unaligned
-241180	243037	1859	1	NC_017963.1_Enterococcus_faecium_DO_plasmid_3__complete_sequence	NODE_7_length_11099_cov_67.285675	98.71		True
-unknown
-56798	57145	4337	3990	NC_017962.1_Enterococcus_faecium_DO_plasmid_2__complete_sequence	NODE_7_length_11099_cov_67.285675	96.55		True
-unknown
-29589	30753	11099	9935	NC_017963.1_Enterococcus_faecium_DO_plasmid_3__complete_sequence	NODE_7_length_11099_cov_67.285675	99.14		True
-unknown
-CONTIG	NODE_7_length_11099_cov_67.285675	11099	mis_unaligned
-53625	58961	5337	1	NC_017962.1_Enterococcus_faecium_DO_plasmid_2__complete_sequence	NODE_8_length_10124_cov_111.618631	100.0		True
-relocation, inconsistency = -10764
-59602	64388	10124	5338	NC_017962.1_Enterococcus_faecium_DO_plasmid_2__complete_sequence	NODE_8_length_10124_cov_111.618631	99.98		True
-CONTIG	NODE_8_length_10124_cov_111.618631	10124	misassembled
-1269	9568	645	8942	NC_017962.1_Enterococcus_faecium_DO_plasmid_2__complete_sequence	NODE_9_length_9325_cov_146.068608	98.98		True
-CONTIG	NODE_9_length_9325_cov_146.068608	9325	correct
-3	3846	3844	1	NC_017963.1_Enterococcus_faecium_DO_plasmid_3__complete_sequence	NODE_10_length_9074_cov_81.922386	96.36		True
-relocation, inconsistency = -250229
-245794	247907	8282	6169	NC_017963.1_Enterococcus_faecium_DO_plasmid_3__complete_sequence	NODE_10_length_9074_cov_81.922386	96.45		True
-local misassembly
-244653	245106	9072	8621	NC_017963.1_Enterococcus_faecium_DO_plasmid_3__complete_sequence	NODE_10_length_9074_cov_81.922386	95.85		True
-CONTIG	NODE_10_length_9074_cov_81.922386	9074	misassembled
-CONTIG	NODE_11_length_7934_cov_102.905191	7934	unaligned
-CONTIG	NODE_12_length_7618_cov_68.746397	7618	unaligned
-9798	16805	1	7020	NC_017963.1_Enterococcus_faecium_DO_plasmid_3__complete_sequence	NODE_13_length_7020_cov_106.988945	97.91		True
-CONTIG	NODE_13_length_7020_cov_106.988945	7020	correct
-1827399	1828809	1410	1	NC_017960.1_Enterococcus_faecium_DO_chromosome__complete_genome	NODE_14_length_6410_cov_179.274587	99.93		True
+1388926	1389338	138251	138663	CP014529.1_Enterococcus_faecium_strain_E745__complete_genome	NODE_5_length_155237_cov_56.663271	100.0		True
 indel: indel (> 5bp)
-1822457	1827450	6410	1419	NC_017960.1_Enterococcus_faecium_DO_chromosome__complete_genome	NODE_14_length_6410_cov_179.274587	99.9		True
+1389283	1405847	138673	155237	CP014529.1_Enterococcus_faecium_strain_E745__complete_genome	NODE_5_length_155237_cov_56.663271	100.0		True
+CONTIG	NODE_5_length_155237_cov_56.663271	155237	correct
+1	29545	29545	1	CP014535.1_Enterococcus_faecium_strain_E745_plasmid_pl6__complete_sequence	NODE_6_length_62897_cov_73.711292	100.0		True
+fake: not a misassembly [linear representation of circular genome]
+32207	65558	62897	29546	CP014535.1_Enterococcus_faecium_strain_E745_plasmid_pl6__complete_sequence	NODE_6_length_62897_cov_73.711292	100.0		True
+CONTIG	NODE_6_length_62897_cov_73.711292	62897	correct
+12298	23396	1	11099	CP014534.1_Enterococcus_faecium_strain_E745_plasmid_pl5__complete_sequence	NODE_7_length_11099_cov_67.285675	100.0		True
+CONTIG	NODE_7_length_11099_cov_67.285675	11099	correct
+7235	17180	1	10124	CP014533.1_Enterococcus_faecium_strain_E745_plasmid_pl4__complete_sequence	NODE_8_length_10124_cov_111.618631	97.84		True
+CONTIG	NODE_8_length_10124_cov_111.618631	10124	correct
+3135	9310	1	6184	CP014532.1_Enterococcus_faecium_strain_E745_plasmid_pl3__complete_sequence	NODE_9_length_9325_cov_146.068608	99.77		True
+indel: indel (> 5bp) [linear representation of circular genome]
+1	3141	6185	9325	CP014532.1_Enterococcus_faecium_strain_E745_plasmid_pl3__complete_sequence	NODE_9_length_9325_cov_146.068608	100.0		True
+CONTIG	NODE_9_length_9325_cov_146.068608	9325	correct
+974	10049	1	9074	CP014534.1_Enterococcus_faecium_strain_E745_plasmid_pl5__complete_sequence	NODE_10_length_9074_cov_81.922386	99.93		True
+CONTIG	NODE_10_length_9074_cov_81.922386	9074	correct
+23864	31798	1	7934	CP014531.1_Enterococcus_faecium_strain_E745_plasmid_pl2__complete_sequence	NODE_11_length_7934_cov_102.905191	99.99		True
+CONTIG	NODE_11_length_7934_cov_102.905191	7934	correct
+25534	33151	1	7618	CP014534.1_Enterococcus_faecium_strain_E745_plasmid_pl5__complete_sequence	NODE_12_length_7618_cov_68.746397	100.0		True
+CONTIG	NODE_12_length_7618_cov_68.746397	7618	correct
+41629	48644	7020	1	CP014534.1_Enterococcus_faecium_strain_E745_plasmid_pl5__complete_sequence	NODE_13_length_7020_cov_106.988945	99.49		True
+CONTIG	NODE_13_length_7020_cov_106.988945	7020	correct
+1242677	1244086	1	1410	CP014529.1_Enterococcus_faecium_strain_E745__complete_genome	NODE_14_length_6410_cov_179.274587	100.0		True
+indel: indel (> 5bp)
+1244035	1249026	1419	6410	CP014529.1_Enterococcus_faecium_strain_E745__complete_genome	NODE_14_length_6410_cov_179.274587	100.0		True
 CONTIG	NODE_14_length_6410_cov_179.274587	6410	correct
-CONTIG	NODE_15_length_5123_cov_123.773875	5123	unaligned
-CONTIG	NODE_16_length_5029_cov_113.684962	5029	unaligned
-CONTIG	NODE_17_length_4989_cov_70.473855	4989	unaligned
-CONTIG	NODE_18_length_4732_cov_102.521061	4732	unaligned
-8865	12677	3867	55	NC_017961.1_Enterococcus_faecium_DO_plasmid_1__complete_sequence	NODE_19_length_3950_cov_107.460591	99.95		True
+36561	41683	5123	1	CP014534.1_Enterococcus_faecium_strain_E745_plasmid_pl5__complete_sequence	NODE_15_length_5123_cov_123.773875	99.88		True
+CONTIG	NODE_15_length_5123_cov_123.773875	5123	correct
+5436	10464	1	5029	CP014531.1_Enterococcus_faecium_strain_E745_plasmid_pl2__complete_sequence	NODE_16_length_5029_cov_113.684962	100.0		True
+CONTIG	NODE_16_length_5029_cov_113.684962	5029	correct
+1406504	1411492	4989	1	CP014529.1_Enterococcus_faecium_strain_E745__complete_genome	NODE_17_length_4989_cov_70.473855	100.0		True
+CONTIG	NODE_17_length_4989_cov_70.473855	4989	correct
+4	4735	4732	1	CP014531.1_Enterococcus_faecium_strain_E745_plasmid_pl2__complete_sequence	NODE_18_length_4732_cov_102.521061	100.0		True
+CONTIG	NODE_18_length_4732_cov_102.521061	4732	correct
+11169	15118	1	3950	CP014531.1_Enterococcus_faecium_strain_E745_plasmid_pl2__complete_sequence	NODE_19_length_3950_cov_107.460591	100.0		True
 CONTIG	NODE_19_length_3950_cov_107.460591	3950	correct
-7085	7398	567	254	NC_017963.1_Enterococcus_faecium_DO_plasmid_3__complete_sequence	NODE_20_length_3758_cov_69.106670	95.24		True
-CONTIG	NODE_20_length_3758_cov_69.106670	3758	correct_unaligned
-CONTIG	NODE_21_length_3460_cov_267.052570	3460	unaligned
+5834	9592	1	3758	CP014530.1_Enterococcus_faecium_strain_E745_plasmid_pl1__complete_sequence	NODE_20_length_3758_cov_69.106670	99.89		True
+CONTIG	NODE_20_length_3758_cov_69.106670	3758	correct
+16677	17224	2327	2874	CP014531.1_Enterococcus_faecium_strain_E745_plasmid_pl2__complete_sequence	NODE_21_length_3460_cov_267.052570	99.27		True
+CONTIG	NODE_21_length_3460_cov_267.052570	3460	correct_unaligned
 CONTIG	NODE_22_length_3214_cov_234.269706	3214	unaligned
-1697628	1700456	1	2830	NC_017960.1_Enterococcus_faecium_DO_chromosome__complete_genome	NODE_23_length_2830_cov_183.700901	99.89		True
+1415199	1418028	2830	1	CP014529.1_Enterococcus_faecium_strain_E745__complete_genome	NODE_23_length_2830_cov_183.700901	100.0		True
 CONTIG	NODE_23_length_2830_cov_183.700901	2830	correct
-CONTIG	NODE_24_length_2043_cov_124.488431	2043	unaligned
-CONTIG	NODE_25_length_1681_cov_106.083641	1681	unaligned
-CONTIG	NODE_26_length_1510_cov_195.775258	1510	unaligned
-CONTIG	NODE_27_length_1391_cov_40.581587	1391	unaligned
-CONTIG	NODE_28_length_830_cov_355.651613	830	unaligned
-8950	9641	1	692	NC_017963.1_Enterococcus_faecium_DO_plasmid_3__complete_sequence	NODE_29_length_692_cov_74.073783	97.11		True
+21120	23162	1	2043	CP014531.1_Enterococcus_faecium_strain_E745_plasmid_pl2__complete_sequence	NODE_24_length_2043_cov_124.488431	100.0		True
+CONTIG	NODE_24_length_2043_cov_124.488431	2043	correct
+18734	20414	1681	1	CP014531.1_Enterococcus_faecium_strain_E745_plasmid_pl2__complete_sequence	NODE_25_length_1681_cov_106.083641	100.0		True
+CONTIG	NODE_25_length_1681_cov_106.083641	1681	correct
+16134	17643	1	1510	CP014531.1_Enterococcus_faecium_strain_E745_plasmid_pl2__complete_sequence	NODE_26_length_1510_cov_195.775258	100.0		True
+CONTIG	NODE_26_length_1510_cov_195.775258	1510	correct
+1412048	1413438	1	1391	CP014529.1_Enterococcus_faecium_strain_E745__complete_genome	NODE_27_length_1391_cov_40.581587	100.0		True
+CONTIG	NODE_27_length_1391_cov_40.581587	1391	correct
+17959	18788	1	830	CP014531.1_Enterococcus_faecium_strain_E745_plasmid_pl2__complete_sequence	NODE_28_length_830_cov_355.651613	100.0		True
+CONTIG	NODE_28_length_830_cov_355.651613	830	correct
+48802	49489	692	1	CP014534.1_Enterococcus_faecium_strain_E745_plasmid_pl5__complete_sequence	NODE_29_length_692_cov_74.073783	99.13		True
 CONTIG	NODE_29_length_692_cov_74.073783	692	correct
-2510528	2511105	578	1	NC_017960.1_Enterococcus_faecium_DO_chromosome__complete_genome	NODE_30_length_578_cov_71.022945	100.0		True
+2510698	2511275	578	1	CP014529.1_Enterococcus_faecium_strain_E745__complete_genome	NODE_30_length_578_cov_71.022945	100.0		True
 CONTIG	NODE_30_length_578_cov_71.022945	578	correct
-CONTIG	NODE_31_length_519_cov_32.366379	519	unaligned
+1405797	1406315	519	1	CP014529.1_Enterococcus_faecium_strain_E745__complete_genome	NODE_31_length_519_cov_32.366379	100.0		True
+CONTIG	NODE_31_length_519_cov_32.366379	519	correct

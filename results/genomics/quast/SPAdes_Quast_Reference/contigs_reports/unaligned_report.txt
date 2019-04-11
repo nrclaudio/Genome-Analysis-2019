@@ -2,8 +2,8 @@ All statistics are based on contigs of size >= 500 bp, unless otherwise noted (e
 Suggestion: assembly scaffolds contains continuous fragments of N's of length >= 10 bp. You may consider rerunning QUAST using --scaffolds (-s) option!
 
 Assembly                       scaffolds
-# fully unaligned contigs      14       
-Fully unaligned length         50073    
-# partially unaligned contigs  10       
-Partially unaligned length     370714   
+# fully unaligned contigs      1        
+Fully unaligned length         3214     
+# partially unaligned contigs  6        
+Partially unaligned length     39884    
 # N's                          36980    

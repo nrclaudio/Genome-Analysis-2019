@@ -1,4 +1,4 @@
 All statistics are based on contigs of size >= 500 bp, unless otherwise noted (e.g., "# contigs (>= 0 bp)" and "Total length (>= 0 bp)" include all contigs).
 
 Assembly                        # misassemblies      # relocations      # translocations      # inversions  # misassembled contigs  Misassembled contigs length  # local misassemblies  # unaligned mis. contigs  # mismatches  # indels      # indels (<= 5 bp)      # indels (> 5 bp)  Indels length
-pilon_outdir.sorted.05-04-2019  157              98                 58                    1                 5                       3025401                      20                     3                         4560          354       339                     15                     769          
+pilon_outdir.sorted.05-04-2019  7                5                  2                     0                 5                       3052985                      0                      0                         121           131       124                     7                      242          

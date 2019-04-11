@@ -2,16 +2,16 @@ All statistics are based on contigs of size >= 500 bp, unless otherwise noted (e
 Suggestion: assembly scaffolds contains continuous fragments of N's of length >= 10 bp. You may consider rerunning QUAST using --scaffolds (-s) option!
 
 Assembly                     scaffolds
-# misassemblies              146      
-    # relocations            90       
-    # translocations         55       
-    # inversions             1        
-# misassembled contigs       7        
-Misassembled contigs length  2955317  
-# local misassemblies        19       
-# unaligned mis. contigs     2        
-# mismatches                 4957     
-# indels                     356      
-    # indels (<= 5 bp)       339      
-    # indels (> 5 bp)        17       
-Indels length                840      
+# misassemblies              1        
+    # relocations            0        
+    # translocations         1        
+    # inversions             0        
+# misassembled contigs       1        
+Misassembled contigs length  212823   
+# local misassemblies        2        
+# unaligned mis. contigs     0        
+# mismatches                 331      
+# indels                     149      
+    # indels (<= 5 bp)       137      
+    # indels (> 5 bp)        12       
+Indels length                527      

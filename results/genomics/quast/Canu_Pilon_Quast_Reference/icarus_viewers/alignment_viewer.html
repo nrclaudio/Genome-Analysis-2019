@@ -2465,10 +2465,10 @@ THE SOFTWARE.
                 <span id="misassemblies_selector_panel">
                     <div class="text_div" id="misassemblies_checkboxes_div">
                         Show misassemblies:
-                        <label><input type="checkbox" id="relocation" name="misassemblies_select" checked="checked"/>relocations (99)</label>
-                        <label><input type="checkbox" id="translocation" name="misassemblies_select" checked="checked"/>translocations (56)</label>
-                        <label><input type="checkbox" id="inversion" name="misassemblies_select" checked="checked"/>inversion (1)</label>
-                        <label><input type="checkbox" id="local" name="misassemblies_select" checked="checked"/>local (20)</label>
+                        <label><input type="checkbox" id="relocation" name="misassemblies_select" checked="checked"/>relocations (5)</label>
+                        <label><input type="checkbox" id="translocation" name="misassemblies_select" checked="checked"/>translocations (2)</label>
+                        <label><input type="checkbox" id="inversion" name="misassemblies_select" checked="checked"/>inversions (0)</label>
+                        <label><input type="checkbox" id="local" name="misassemblies_select" checked="checked"/>local (0)</label>
                     </div>
                 </span>
             </div>
@@ -2482,7 +2482,7 @@ THE SOFTWARE.
     </table>
 </div>
 <div class="content" style="padding-bottom: 0;">
-    <div class="reftitle"><b>Contig alignment viewer</b>. Contigs aligned to GCF 000174395.2 ASM17439v2 genomic
+    <div class="reftitle"><b>Contig alignment viewer</b>. Contigs aligned to Assembled genome
     </div>
 </div>
 
@@ -2509,858 +2509,114 @@ THE SOFTWARE.
 	}
 </script>
     <script type="text/javascript">var references_by_id = {};
-references_by_id["2"] = "NC_017962.1_Enterococcus_faecium_DO_plasmid_2__complete_sequence";
-references_by_id["0"] = "NC_017960.1_Enterococcus_faecium_DO_chromosome__complete_genome";
-references_by_id["3"] = "NC_017963.1_Enterococcus_faecium_DO_plasmid_3__complete_sequence";
-references_by_id["1"] = "NC_017961.1_Enterococcus_faecium_DO_plasmid_1__complete_sequence";
+references_by_id["1"] = "CP014530.1_Enterococcus_faecium_strain_E745_plasmid_pl1__complete_sequence";
+references_by_id["0"] = "CP014529.1_Enterococcus_faecium_strain_E745__complete_genome";
+references_by_id["3"] = "CP014532.1_Enterococcus_faecium_strain_E745_plasmid_pl3__complete_sequence";
+references_by_id["2"] = "CP014531.1_Enterococcus_faecium_strain_E745_plasmid_pl2__complete_sequence";
+references_by_id["4"] = "CP014533.1_Enterococcus_faecium_strain_E745_plasmid_pl4__complete_sequence";
+references_by_id["5"] = "CP014534.1_Enterococcus_faecium_strain_E745_plasmid_pl5__complete_sequence";
+references_by_id["6"] = "CP014535.1_Enterococcus_faecium_strain_E745_plasmid_pl6__complete_sequence";
 var assemblies_links = {};
 var assemblies_len = {};
 var assemblies_contigs = {};
 var assemblies_misassemblies = {};
 var assemblies_n50 = {};
 assemblies_links["pilon_outdir.sorted.05-04-2019"] = "../contigs_reports/contigs_report_pilon_outdir-sorted-05-04-2019.stdout";
-assemblies_len["pilon_outdir.sorted.05-04-2019"] = 2780615;
+assemblies_len["pilon_outdir.sorted.05-04-2019"] = 3136310;
 assemblies_contigs["pilon_outdir.sorted.05-04-2019"] = 8;
-assemblies_misassemblies["pilon_outdir.sorted.05-04-2019"] = "176+20";
-chromosome = "GCF_000174395.2_ASM17439v2_genomic";
-var chrContigs = ["NC_017960.1_Enterococcus_faecium_DO_chromosome__complete_genome","NC_017961.1_Enterococcus_faecium_DO_plasmid_1__complete_sequence","NC_017962.1_Enterococcus_faecium_DO_plasmid_2__complete_sequence","NC_017963.1_Enterococcus_faecium_DO_plasmid_3__complete_sequence"];
+assemblies_misassemblies["pilon_outdir.sorted.05-04-2019"] = "7+0";
+chromosome = "Assembled_genome";
+var chrContigs = ["CP014529.1_Enterococcus_faecium_strain_E745__complete_genome","CP014530.1_Enterococcus_faecium_strain_E745_plasmid_pl1__complete_sequence","CP014531.1_Enterococcus_faecium_strain_E745_plasmid_pl2__complete_sequence","CP014532.1_Enterococcus_faecium_strain_E745_plasmid_pl3__complete_sequence","CP014533.1_Enterococcus_faecium_strain_E745_plasmid_pl4__complete_sequence","CP014534.1_Enterococcus_faecium_strain_E745_plasmid_pl5__complete_sequence","CP014535.1_Enterococcus_faecium_strain_E745_plasmid_pl6__complete_sequence"];
 var features_data;
 features_data = [];
 var chromosomes_len = {};
-chromosomes_len["NC_017960.1_Enterococcus_faecium_DO_chromosome__complete_genome"] = 2698137;
-chromosomes_len["NC_017961.1_Enterococcus_faecium_DO_plasmid_1__complete_sequence"] = 36262;
-chromosomes_len["NC_017962.1_Enterococcus_faecium_DO_plasmid_2__complete_sequence"] = 66247;
-chromosomes_len["NC_017963.1_Enterococcus_faecium_DO_plasmid_3__complete_sequence"] = 251926;
+chromosomes_len["CP014529.1_Enterococcus_faecium_strain_E745__complete_genome"] = 2765010;
+chromosomes_len["CP014530.1_Enterococcus_faecium_strain_E745_plasmid_pl1__complete_sequence"] = 223688;
+chromosomes_len["CP014531.1_Enterococcus_faecium_strain_E745_plasmid_pl2__complete_sequence"] = 32423;
+chromosomes_len["CP014532.1_Enterococcus_faecium_strain_E745_plasmid_pl3__complete_sequence"] = 9310;
+chromosomes_len["CP014533.1_Enterococcus_faecium_strain_E745_plasmid_pl4__complete_sequence"] = 17254;
+chromosomes_len["CP014534.1_Enterococcus_faecium_strain_E745_plasmid_pl5__complete_sequence"] = 55167;
+chromosomes_len["CP014535.1_Enterococcus_faecium_strain_E745_plasmid_pl6__complete_sequence"] = 65558;
 var links_to_chromosomes;
 var oneHtml = true;
 var contig_data = {};
-contig_data["GCF_000174395.2_ASM17439v2_genomic"] = {};
-contig_data["GCF_000174395.2_ASM17439v2_genomic"]["pilon_outdir.sorted.05-04-2019"] = [ 
-{name:"tig00000001_pilon",corr_start:1,corr_end:79921,start:1,end:79921,misassemblies:"local;",mis_ends:"R",is_best:"True"},
-{name:"tig00000001_pilon",corr_start:80007,corr_end:80248,start:80007,end:80248,misassemblies:"relocation;local",mis_ends:"R;L",is_best:"True"},
-{name:"tig00000001_pilon",corr_start:80248,corr_end:89545,start:80248,end:89545,misassemblies:"relocation;relocation",mis_ends:"R;L",is_best:"True"},
-{name:"tig00000001_pilon",corr_start:89544,corr_end:108929,start:89544,end:108929,misassemblies:"local;relocation",mis_ends:"R;L",is_best:"True"},
-{name:"tig00000001_pilon",corr_start:109053,corr_end:109224,start:109053,end:109224,misassemblies:"relocation;local",mis_ends:"R;L",is_best:"True"},
-{name:"tig00000001_pilon",corr_start:109222,corr_end:109491,start:109222,end:109491,misassemblies:"relocation;relocation",mis_ends:"R;L",is_best:"True"},
-{name:"tig00000001_pilon",corr_start:109484,corr_end:111223,start:109484,end:111223,misassemblies:"relocation;relocation",mis_ends:"R;L",is_best:"True"},
-{name:"tig00000001_pilon",corr_start:111215,corr_end:114073,start:111215,end:114073,misassemblies:"translocation;relocation",mis_ends:"R;L",is_best:"True"},
-{name:"tig00000001_pilon",corr_start:116388,corr_end:117731,start:116388,end:117731,misassemblies:"relocation;relocation",mis_ends:"L;R",is_best:"True"},
-{name:"tig00000464_pilon",corr_start:118788,corr_end:119873,start:118788,end:119873,misassemblies:"relocation;translocation",mis_ends:"R;L",is_best:"True"},
-{name:"tig00000001_pilon",corr_start:119863,corr_end:143696,start:119863,end:143696,misassemblies:"translocation;translocation",mis_ends:"R;L",is_best:"True"},
-{name:"tig00000001_pilon",corr_start:143692,corr_end:145036,start:143692,end:145036,misassemblies:"relocation;translocation",mis_ends:"R;L",is_best:"True"
+contig_data["Assembled_genome"] = {};
+contig_data["Assembled_genome"]["pilon_outdir.sorted.05-04-2019"] = [ 
+{name:"tig00000001_pilon",corr_start:1,corr_end:578289,start:1,end:578289,misassemblies:";relocation",mis_ends:";L",is_best:"True"},
+{name:"tig00000001_pilon",corr_start:569593,corr_end:2765010,start:569593,end:2765010,misassemblies:"relocation;",mis_ends:"R",is_best:"True"},
+{name:"tig00000464_pilon",corr_start:2772247,corr_end:2955698,start:7238,end:190689,misassemblies:";translocation",mis_ends:";L",is_best:"True"},
+{name:"tig00000465_pilon",corr_start:2957644,corr_end:2959379,start:192635,end:194370,misassemblies:"relocation;",mis_ends:"R",is_best:"True"},
+{name:"tig00000465_pilon",corr_start:2960821,corr_end:2967388,start:195812,end:202379,misassemblies:";relocation",mis_ends:";L",is_best:"True"
 ,overlaps:[ 
-{contig:"tig00000464_pilon",corr_start: 143706,corr_end: 145021,start:143706,end:145021,start_in_contig:42491,end_in_contig:41176,chr: "0"}
+{contig:"tig00000464_pilon",corr_start: 2961524,corr_end: 2988697,start:196515,end:223688,start_in_contig:218977,end_in_contig:191800,chr: "1"}
 ]},
-{name:"tig00000464_pilon",corr_start:143706,corr_end:145021,start:143706,end:145021,misassemblies:"translocation;relocation",mis_ends:"R;L",is_best:"True"
+{name:"tig00000464_pilon",corr_start:2961524,corr_end:2988697,start:196515,end:223688,misassemblies:"translocation;",mis_ends:"R",is_best:"True"
 ,overlaps:[ 
-{contig:"tig00000001_pilon",corr_start: 143692,corr_end: 145036,start:143692,end:145036,start_in_contig:317868,end_in_contig:316525,chr: "0"}
+{contig:"tig00000465_pilon",corr_start: 2960821,corr_end: 2967388,start:195812,end:202379,start_in_contig:6563,end_in_contig:1,chr: "1"}
 ]},
-{name:"tig00000001_pilon",corr_start:145397,corr_end:161272,start:145397,end:161272,misassemblies:"local;translocation",mis_ends:"R;L",is_best:"True"},
-{name:"tig00000001_pilon",corr_start:161272,corr_end:168634,start:161272,end:168634,misassemblies:"relocation;local",mis_ends:"R;L",is_best:"True"},
-{name:"tig00000001_pilon",corr_start:170012,corr_end:202230,start:170012,end:202230,misassemblies:"translocation;relocation",mis_ends:"R;L",is_best:"True"},
-{name:"tig00000001_pilon",corr_start:202226,corr_end:205253,start:202226,end:205253,misassemblies:"relocation;translocation",mis_ends:"R;L",is_best:"True"},
-{name:"tig00000001_pilon",corr_start:211969,corr_end:234834,start:211969,end:234834,misassemblies:"local;relocation",mis_ends:"R;L",is_best:"True"},
-{name:"tig00000001_pilon",corr_start:234932,corr_end:239241,start:234932,end:239241,misassemblies:"relocation;local",mis_ends:"R;L",is_best:"True"},
-{name:"tig00000001_pilon",corr_start:245705,corr_end:246070,start:245705,end:246070,misassemblies:"relocation;relocation",mis_ends:"R;L",is_best:"True"},
-{name:"tig00000001_pilon",corr_start:265698,corr_end:279531,start:265698,end:279531,misassemblies:"relocation;relocation",mis_ends:"R;L",is_best:"True"},
-{name:"tig00000001_pilon",corr_start:270202,corr_end:271265,start:270202,end:271265,misassemblies:"relocation;relocation",mis_ends:"R;L",is_best:"True"},
-{name:"tig00000001_pilon",corr_start:270202,corr_end:271264,start:270202,end:271264,misassemblies:"relocation;relocation",mis_ends:"R;L",is_best:"True"},
-{name:"tig00000001_pilon",corr_start:270203,corr_end:271262,start:270203,end:271262,misassemblies:"relocation;relocation",mis_ends:"R;L",is_best:"True"},
-{name:"tig00000464_pilon",corr_start:279506,corr_end:280991,start:279506,end:280991,misassemblies:"relocation;relocation",mis_ends:"L;R",is_best:"True"},
-{name:"tig00000001_pilon",corr_start:285596,corr_end:286643,start:285596,end:286643,misassemblies:"translocation;relocation",mis_ends:"R;L",is_best:"True"},
-{name:"tig00000001_pilon",corr_start:288114,corr_end:289656,start:288114,end:289656,misassemblies:"translocation;relocation",mis_ends:"R;L",is_best:"True"},
-{name:"tig00000001_pilon",corr_start:289651,corr_end:291042,start:289651,end:291042,misassemblies:"relocation;translocation",mis_ends:"R;L",is_best:"True"},
-{name:"tig00000001_pilon",corr_start:296792,corr_end:300142,start:296792,end:300142,misassemblies:"translocation;relocation",mis_ends:"R;L",is_best:"True"},
-{name:"tig00000001_pilon",corr_start:345789,corr_end:347164,start:345789,end:347164,misassemblies:"relocation;relocation",mis_ends:"L;R",is_best:"True"},
-{name:"tig00000001_pilon",corr_start:351511,corr_end:354100,start:351511,end:354100,misassemblies:"relocation;translocation",mis_ends:"R;L",is_best:"True"},
-{name:"tig00000001_pilon",corr_start:354222,corr_end:357639,start:354222,end:357639,misassemblies:"relocation;relocation",mis_ends:"R;L",is_best:"True"},
-{name:"tig00000001_pilon",corr_start:365040,corr_end:377826,start:365040,end:377826,misassemblies:"local;relocation",mis_ends:"R;L",is_best:"True"},
-{name:"tig00000001_pilon",corr_start:377949,corr_end:393062,start:377949,end:393062,misassemblies:"relocation;local",mis_ends:"R;L",is_best:"True"},
-{name:"tig00000001_pilon",corr_start:393056,corr_end:413854,start:393056,end:413854,misassemblies:"translocation;relocation",mis_ends:"R;L",is_best:"True"},
-{name:"tig00000001_pilon",corr_start:413850,corr_end:415470,start:413850,end:415470,misassemblies:"local;translocation",mis_ends:"R;L",is_best:"True"},
-{name:"tig00000001_pilon",corr_start:415470,corr_end:577368,start:415470,end:577368,misassemblies:"relocation;local",mis_ends:"R;L",is_best:"True"
+{name:"tig00000019_pilon",corr_start:2988698,corr_end:3001983,start:1,end:13286,misassemblies:";relocation",mis_ends:";L",is_best:"True"},
+{name:"tig00000019_pilon",corr_start:2994392,corr_end:3021120,start:5695,end:32423,misassemblies:"relocation;",mis_ends:"R",is_best:"True"},
+{name:"tig00000029_pilon",corr_start:3021121,corr_end:3030430,start:1,end:9310,misassemblies:"relocation;relocation",mis_ends:"L;R",is_best:"True"},
+{name:"tig00000029_pilon",corr_start:3021121,corr_end:3022445,start:1,end:1325,misassemblies:"relocation;",mis_ends:"L",is_best:"True"},
+{name:"tig00000029_pilon",corr_start:3029090,corr_end:3030430,start:7970,end:9310,misassemblies:";relocation",mis_ends:";R",is_best:"True"},
+{name:"tig00000025_pilon",corr_start:3030905,corr_end:3043184,start:475,end:12754,misassemblies:"",mis_ends:"",is_best:"True"},
+{name:"tig00000020_pilon",corr_start:3049200,corr_end:3093814,start:1516,end:46130,misassemblies:"",mis_ends:"",is_best:"True"
 ,overlaps:[ 
-{contig:"tig00000464_pilon",corr_start: 483857,corr_end: 484731,start:483857,end:484731,start_in_contig:144119,end_in_contig:144992,chr: "0"}
+{contig:"tig00000464_pilon",corr_start: 3091297,corr_end: 3099651,start:43613,end:51967,start_in_contig:191799,end_in_contig:183450,chr: "5"}
 ]},
-{name:"tig00000464_pilon",corr_start:483857,corr_end:484731,start:483857,end:484731,misassemblies:"translocation;translocation",mis_ends:"L;R",is_best:"True"
+{name:"tig00000464_pilon",corr_start:3091297,corr_end:3099651,start:43613,end:51967,misassemblies:"translocation;translocation",mis_ends:"R;L",is_best:"True"
 ,overlaps:[ 
-{contig:"tig00000001_pilon",corr_start: 415470,corr_end: 577368,start:415470,end:577368,start_in_contig:223469,end_in_contig:61566,chr: "0"}
+{contig:"tig00000020_pilon",corr_start: 3049200,corr_end: 3093814,start:1516,end:46130,start_in_contig:44609,end_in_contig:1,chr: "5"}
 ]},
-{name:"tig00000027_pilon",corr_start:582485,corr_end:583650,start:582485,end:583650,misassemblies:"unknown",mis_ends:"",is_best:"True",more_unaligned:"True"},
-{name:"tig00000027_pilon",corr_start:583652,corr_end:583870,start:583652,end:583870,misassemblies:"unknown",mis_ends:"",is_best:"True",more_unaligned:"True"},
-{name:"tig00000001_pilon",corr_start:590611,corr_end:652180,start:590611,end:652180,misassemblies:";relocation",mis_ends:";L",is_best:"True"},
-{name:"tig00000001_pilon",corr_start:643484,corr_end:681969,start:643484,end:681969,misassemblies:"local;",mis_ends:"R",is_best:"True"},
-{name:"tig00000001_pilon",corr_start:681848,corr_end:822470,start:681848,end:822470,misassemblies:"relocation;local",mis_ends:"R;L",is_best:"True"},
-{name:"tig00000001_pilon",corr_start:823139,corr_end:823854,start:823139,end:823854,misassemblies:"relocation;relocation",mis_ends:"R;L",is_best:"True"},
-{name:"tig00000001_pilon",corr_start:825913,corr_end:848740,start:825913,end:848740,misassemblies:"translocation;relocation",mis_ends:"R;L",is_best:"True"},
-{name:"tig00000001_pilon",corr_start:826308,corr_end:826825,start:826308,end:826825,misassemblies:"local;relocation",mis_ends:"R;L",is_best:"True"},
-{name:"tig00000001_pilon",corr_start:827378,corr_end:831264,start:827378,end:831264,misassemblies:"local;local",mis_ends:"R;L",is_best:"True"},
-{name:"tig00000001_pilon",corr_start:828192,corr_end:829775,start:828192,end:829775,misassemblies:"relocation;local",mis_ends:"L;R",is_best:"True"},
-{name:"tig00000001_pilon",corr_start:831943,corr_end:833305,start:831943,end:833305,misassemblies:"relocation;local",mis_ends:"R;L",is_best:"True"},
-{name:"tig00000001_pilon",corr_start:832887,corr_end:835267,start:832887,end:835267,misassemblies:"local;relocation",mis_ends:"L;R",is_best:"True"},
-{name:"tig00000001_pilon",corr_start:848730,corr_end:860836,start:848730,end:860836,misassemblies:"relocation;translocation",mis_ends:"R;L",is_best:"True"},
-{name:"tig00000001_pilon",corr_start:854125,corr_end:882648,start:854125,end:882648,misassemblies:"relocation;translocation",mis_ends:"L;R",is_best:"True"},
-{name:"tig00000001_pilon",corr_start:916614,corr_end:960495,start:916614,end:960495,misassemblies:"relocation;translocation",mis_ends:"L;R",is_best:"True"},
-{name:"tig00000001_pilon",corr_start:960487,corr_end:976031,start:960487,end:976031,misassemblies:"translocation;relocation",mis_ends:"L;R",is_best:"True"},
-{name:"tig00000001_pilon",corr_start:976023,corr_end:1063765,start:976023,end:1063765,misassemblies:"relocation;relocation",mis_ends:"L;R",is_best:"True"},
-{name:"tig00000001_pilon",corr_start:1016582,corr_end:1017656,start:1016582,end:1017656,misassemblies:"relocation;relocation",mis_ends:"R;L",is_best:"True"},
-{name:"tig00000001_pilon",corr_start:1020058,corr_end:1021838,start:1020058,end:1021838,misassemblies:"relocation;relocation",mis_ends:"R;L",is_best:"True"},
-{name:"tig00000001_pilon",corr_start:1065277,corr_end:1078356,start:1065277,end:1078356,misassemblies:"relocation;translocation",mis_ends:"L;R",is_best:"True"},
-{name:"tig00000001_pilon",corr_start:1078376,corr_end:1249579,start:1078376,end:1249579,misassemblies:"translocation;",mis_ends:"L",is_best:"True"
-,overlaps:[ 
-{contig:"tig00000464_pilon",corr_start: 1157701,corr_end: 1159038,start:1157701,end:1159038,start_in_contig:38439,end_in_contig:39776,chr: "0"}
-]},
-{name:"tig00000464_pilon",corr_start:1157701,corr_end:1159038,start:1157701,end:1159038,misassemblies:"translocation;translocation",mis_ends:"L;R",is_best:"True"
-,overlaps:[ 
-{contig:"tig00000001_pilon",corr_start: 1078376,corr_end: 1249579,start:1078376,end:1249579,start_in_contig:1301517,end_in_contig:1472715,chr: "0"}
-]},
-{name:"tig00000001_pilon",corr_start:1249629,corr_end:1258986,start:1249629,end:1258986,misassemblies:";translocation",mis_ends:";R",is_best:"True"},
-{name:"tig00000001_pilon",corr_start:1258979,corr_end:1284485,start:1258979,end:1284485,misassemblies:"translocation;translocation",mis_ends:"L;R",is_best:"True"},
-{name:"tig00000001_pilon",corr_start:1284480,corr_end:1298290,start:1284480,end:1298290,misassemblies:"translocation;relocation",mis_ends:"L;R",is_best:"True"},
-{name:"tig00000001_pilon",corr_start:1298287,corr_end:1307561,start:1298287,end:1307561,misassemblies:"relocation;relocation",mis_ends:"L;R",is_best:"True"},
-{name:"tig00000001_pilon",corr_start:1307554,corr_end:1445864,start:1307554,end:1445864,misassemblies:"relocation;relocation",mis_ends:"L;R",is_best:"True"},
-{name:"tig00000001_pilon",corr_start:1447407,corr_end:1449777,start:1447407,end:1449777,misassemblies:"relocation;relocation",mis_ends:"L;R",is_best:"True"},
-{name:"tig00000001_pilon",corr_start:1449786,corr_end:1450849,start:1449786,end:1450849,misassemblies:"relocation;relocation",mis_ends:"L;R",is_best:"True"},
-{name:"tig00000001_pilon",corr_start:1450845,corr_end:1456470,start:1450845,end:1456470,misassemblies:"relocation;relocation",mis_ends:"L;R",is_best:"True"},
-{name:"tig00000001_pilon",corr_start:1457536,corr_end:1461894,start:1457536,end:1461894,misassemblies:"relocation;translocation",mis_ends:"L;R",is_best:"True"},
-{name:"tig00000001_pilon",corr_start:1461887,corr_end:1526124,start:1461887,end:1526124,misassemblies:"translocation;relocation",mis_ends:"L;R",is_best:"True"
-,overlaps:[ 
-{contig:"tig00000464_pilon",corr_start: 1500180,corr_end: 1501945,start:1500180,end:1501945,start_in_contig:179370,end_in_contig:181135,chr: "0"}
-]},
-{name:"tig00000464_pilon",corr_start:1500180,corr_end:1501945,start:1500180,end:1501945,misassemblies:"translocation;translocation",mis_ends:"L;R",is_best:"True"
-,overlaps:[ 
-{contig:"tig00000001_pilon",corr_start: 1461887,corr_end: 1526124,start:1461887,end:1526124,start_in_contig:1688001,end_in_contig:1752238,chr: "0"}
-]},
-{name:"tig00000001_pilon",corr_start:1526115,corr_end:1700464,start:1526115,end:1700464,misassemblies:"relocation;relocation",mis_ends:"L;R",is_best:"True"},
-{name:"tig00000001_pilon",corr_start:1700391,corr_end:1711175,start:1700391,end:1711175,misassemblies:"relocation;translocation",mis_ends:"L;R",is_best:"True"},
-{name:"tig00000001_pilon",corr_start:1710316,corr_end:1711352,start:1710316,end:1711352,misassemblies:"relocation;relocation",mis_ends:"L;R",is_best:"True"},
-{name:"tig00000001_pilon",corr_start:1711158,corr_end:1711814,start:1711158,end:1711814,misassemblies:"translocation;translocation",mis_ends:"L;R",is_best:"True"},
-{name:"tig00000001_pilon",corr_start:1711807,corr_end:1738901,start:1711807,end:1738901,misassemblies:"translocation;translocation",mis_ends:"L;R",is_best:"True"
-,overlaps:[ 
-{contig:"tig00000464_pilon",corr_start: 1727264,corr_end: 1728613,start:1727264,end:1728613,start_in_contig:163785,end_in_contig:165134,chr: "0"}
-]},
-{name:"tig00000464_pilon",corr_start:1727264,corr_end:1728613,start:1727264,end:1728613,misassemblies:"translocation;relocation",mis_ends:"L;R",is_best:"True"
-,overlaps:[ 
-{contig:"tig00000001_pilon",corr_start: 1711807,corr_end: 1738901,start:1711807,end:1738901,start_in_contig:1979383,end_in_contig:2006477,chr: "0"}
-]},
-{name:"tig00000001_pilon",corr_start:1738894,corr_end:1795489,start:1738894,end:1795489,misassemblies:"translocation;relocation",mis_ends:"L;R",is_best:"True"},
-{name:"tig00000001_pilon",corr_start:1795488,corr_end:1830169,start:1795488,end:1830169,misassemblies:"relocation;relocation",mis_ends:"L;R",is_best:"True"
-,overlaps:[ 
-{contig:"tig00000464_pilon",corr_start: 1828756,corr_end: 1830176,start:1828756,end:1830176,start_in_contig:106258,end_in_contig:107681,chr: "0"}
-]},
-{name:"tig00000464_pilon",corr_start:1828756,corr_end:1830176,start:1828756,end:1830176,misassemblies:"translocation;relocation",mis_ends:"L;R",is_best:"True"
-,overlaps:[ 
-{contig:"tig00000001_pilon",corr_start: 1795488,corr_end: 1830169,start:1795488,end:1830169,start_in_contig:2067300,end_in_contig:2101980,chr: "0"}
-]},
-{name:"tig00000001_pilon",corr_start:1830169,corr_end:1831524,start:1830169,end:1831524,misassemblies:"relocation;relocation",mis_ends:"L;R",is_best:"True"},
-{name:"tig00000001_pilon",corr_start:1831522,corr_end:1833657,start:1831522,end:1833657,misassemblies:"relocation;relocation",mis_ends:"L;R",is_best:"True"},
-{name:"tig00000001_pilon",corr_start:1831522,corr_end:1871232,start:1831522,end:1871232,misassemblies:"relocation;relocation",mis_ends:"L;R",is_best:"True"},
-{name:"tig00000001_pilon",corr_start:1831522,corr_end:1832936,start:1831522,end:1832936,misassemblies:"translocation;translocation",mis_ends:"R;L",is_best:"True"},
-{name:"tig00000001_pilon",corr_start:1846339,corr_end:1847852,start:1846339,end:1847852,misassemblies:"relocation;relocation",mis_ends:"L;R",is_best:"True"},
-{name:"tig00000001_pilon",corr_start:1846340,corr_end:1847852,start:1846340,end:1847852,misassemblies:"relocation;relocation",mis_ends:"R;L",is_best:"True"},
-{name:"tig00000001_pilon",corr_start:1874301,corr_end:1875343,start:1874301,end:1875343,misassemblies:"relocation;relocation",mis_ends:"R;L",is_best:"True"
-,overlaps:[ 
-{contig:"tig00000464_pilon",corr_start: 1874450,corr_end: 1875350,start:1874450,end:1875350,start_in_contig:50762,end_in_contig:49863,chr: "0"}
-]},
-{name:"tig00000464_pilon",corr_start:1874450,corr_end:1875350,start:1874450,end:1875350,misassemblies:"relocation;translocation",mis_ends:"R;L",is_best:"True"
-,overlaps:[ 
-{contig:"tig00000001_pilon",corr_start: 1874301,corr_end: 1875343,start:1874301,end:1875343,start_in_contig:491601,end_in_contig:490559,chr: "0"}
-]},
-{name:"tig00000464_pilon",corr_start:1878142,corr_end:1879509,start:1878142,end:1879509,misassemblies:"relocation;translocation",mis_ends:"L;R",is_best:"True"
-,overlaps:[ 
-{contig:"tig00000001_pilon",corr_start: 1878144,corr_end: 1879511,start:1878144,end:1879511,start_in_contig:326462,end_in_contig:327829,chr: "0"}
-]},
-{name:"tig00000001_pilon",corr_start:1878144,corr_end:1879511,start:1878144,end:1879511,misassemblies:"relocation;relocation",mis_ends:"L;R",is_best:"True"
-,overlaps:[ 
-{contig:"tig00000464_pilon",corr_start: 1878142,corr_end: 1879509,start:1878142,end:1879509,start_in_contig:107801,end_in_contig:109168,chr: "0"}
-]},
-{name:"tig00000001_pilon",corr_start:1885005,corr_end:1887350,start:1885005,end:1887350,misassemblies:"translocation;relocation",mis_ends:"R;L",is_best:"True"},
-{name:"tig00000001_pilon",corr_start:1915695,corr_end:1931617,start:1915695,end:1931617,misassemblies:"relocation;relocation",mis_ends:"L;R",is_best:"True"},
-{name:"tig00000001_pilon",corr_start:1931618,corr_end:1933131,start:1931618,end:1933131,misassemblies:"relocation;relocation",mis_ends:"R;L",is_best:"True"},
-{name:"tig00000001_pilon",corr_start:1931618,corr_end:1933129,start:1931618,end:1933129,misassemblies:"relocation;relocation",mis_ends:"L;R",is_best:"True"},
-{name:"tig00000001_pilon",corr_start:1931618,corr_end:1933131,start:1931618,end:1933131,misassemblies:"relocation;relocation",mis_ends:"L;R",is_best:"True"},
-{name:"tig00000001_pilon",corr_start:1933140,corr_end:1943381,start:1933140,end:1943381,misassemblies:"relocation;local",mis_ends:"L;R",is_best:"True"},
-{name:"tig00000001_pilon",corr_start:1944527,corr_end:1953691,start:1944527,end:1953691,misassemblies:"local;relocation",mis_ends:"L;R",is_best:"True"},
-{name:"tig00000001_pilon",corr_start:1953690,corr_end:1959998,start:1953690,end:1959998,misassemblies:"relocation;relocation",mis_ends:"L;R",is_best:"True"},
-{name:"tig00000001_pilon",corr_start:1962352,corr_end:1967507,start:1962352,end:1967507,misassemblies:"relocation;relocation",mis_ends:"L;R",is_best:"True"},
-{name:"tig00000001_pilon",corr_start:1967500,corr_end:1992662,start:1967500,end:1992662,misassemblies:"relocation;local",mis_ends:"L;R",is_best:"True"},
-{name:"tig00000001_pilon",corr_start:1992783,corr_end:2011026,start:1992783,end:2011026,misassemblies:"local;translocation",mis_ends:"L;R",is_best:"True"},
-{name:"tig00000001_pilon",corr_start:2011019,corr_end:2182601,start:2011019,end:2182601,misassemblies:"translocation;relocation",mis_ends:"L;R",is_best:"True"
-,overlaps:[ 
-{contig:"tig00000019_pilon",corr_start: 2110770,corr_end: 2111109,start:2110770,end:2111109,start_in_contig:30675,end_in_contig:30337,chr: "0"}
-]},
-{name:"tig00000019_pilon",corr_start:2110770,corr_end:2111109,start:2110770,end:2111109,misassemblies:"unknown",mis_ends:"",is_best:"True",more_unaligned:"True"
-,overlaps:[ 
-{contig:"tig00000001_pilon",corr_start: 2011019,corr_end: 2182601,start:2011019,end:2182601,start_in_contig:2264476,end_in_contig:2436057,chr: "0"}
-]},
-{name:"tig00000001_pilon",corr_start:2182600,corr_end:2298559,start:2182600,end:2298559,misassemblies:"relocation;relocation",mis_ends:"L;R",is_best:"True"},
-{name:"tig00000001_pilon",corr_start:2298541,corr_end:2482938,start:2298541,end:2482938,misassemblies:"local;relocation",mis_ends:"R;L",is_best:"True"
-,overlaps:[ 
-{contig:"tig00000464_pilon",corr_start: 2311376,corr_end: 2312449,start:2311376,end:2312449,start_in_contig:47884,end_in_contig:46811,chr: "0"}
-]},
-{name:"tig00000464_pilon",corr_start:2311376,corr_end:2312449,start:2311376,end:2312449,misassemblies:"relocation;relocation",mis_ends:"R;L",is_best:"True"
-,overlaps:[ 
-{contig:"tig00000001_pilon",corr_start: 2298541,corr_end: 2482938,start:2298541,end:2482938,start_in_contig:1047058,end_in_contig:862645,chr: "0"}
-]},
-{name:"tig00000001_pilon",corr_start:2482660,corr_end:2508052,start:2482660,end:2508052,misassemblies:"relocation;local",mis_ends:"R;L",is_best:"True"},
-{name:"tig00000001_pilon",corr_start:2508045,corr_end:2510151,start:2508045,end:2510151,misassemblies:"local;relocation",mis_ends:"R;L",is_best:"True"},
-{name:"tig00000001_pilon",corr_start:2509554,corr_end:2509627,start:2509554,end:2509627,misassemblies:"local;local",mis_ends:"R;L",is_best:"True"},
-{name:"tig00000001_pilon",corr_start:2509636,corr_end:2516941,start:2509636,end:2516941,misassemblies:"translocation;local",mis_ends:"R;L",is_best:"True"},
-{name:"tig00000001_pilon",corr_start:2516934,corr_end:2624683,start:2516934,end:2624683,misassemblies:"translocation;translocation",mis_ends:"R;L",is_best:"True"},
-{name:"tig00000001_pilon",corr_start:2624629,corr_end:2657530,start:2624629,end:2657530,misassemblies:"local;translocation",mis_ends:"R;L",is_best:"True"},
-{name:"tig00000001_pilon",corr_start:2657363,corr_end:2698137,start:2657363,end:2698137,misassemblies:";local",mis_ends:";L",is_best:"True"},
-{name:"tig00000019_pilon",corr_start:2707001,corr_end:2710813,start:8865,end:12677,misassemblies:"unknown",mis_ends:"",is_best:"True",more_unaligned:"True"},
-{name:"tig00000019_pilon",corr_start:2708750,corr_end:2710813,start:10614,end:12677,misassemblies:"unknown",mis_ends:"",is_best:"True",more_unaligned:"True"},
-{name:"tig00000001_pilon",corr_start:2723410,corr_end:2726340,start:25274,end:28204,misassemblies:"translocation;translocation",mis_ends:"R;L",is_best:"True"},
-{name:"tig00000029_pilon",corr_start:2735667,corr_end:2742533,start:1269,end:8135,misassemblies:"relocation;",mis_ends:"L",is_best:"True"},
-{name:"tig00000029_pilon",corr_start:2739861,corr_end:2743966,start:5463,end:9568,misassemblies:";relocation",mis_ends:";R",is_best:"True"},
-{name:"tig00000464_pilon",corr_start:2755288,corr_end:2756807,start:20890,end:22409,misassemblies:"translocation;translocation",mis_ends:"R;L",is_best:"True"},
-{name:"tig00000464_pilon",corr_start:2755290,corr_end:2756808,start:20892,end:22410,misassemblies:"translocation;translocation",mis_ends:"L;R",is_best:"True"},
-{name:"tig00000019_pilon",corr_start:2773194,corr_end:2774003,start:38796,end:39605,misassemblies:"unknown",mis_ends:"",is_best:"True",more_unaligned:"True"},
-{name:"tig00000019_pilon",corr_start:2782388,corr_end:2783202,start:47990,end:48804,misassemblies:"unknown",mis_ends:"",is_best:"True",more_unaligned:"True"},
-{name:"tig00000019_pilon",corr_start:2782389,corr_end:2783202,start:47991,end:48804,misassemblies:"unknown",mis_ends:"",is_best:"True",more_unaligned:"True"},
-{name:"tig00000019_pilon",corr_start:2782389,corr_end:2783197,start:47991,end:48799,misassemblies:"unknown",mis_ends:"",is_best:"True",more_unaligned:"True"},
-{name:"tig00000019_pilon",corr_start:2782389,corr_end:2783202,start:47991,end:48804,misassemblies:"unknown",mis_ends:"",is_best:"True",more_unaligned:"True"},
-{name:"tig00000019_pilon",corr_start:2786895,corr_end:2787703,start:52497,end:53305,misassemblies:"unknown",mis_ends:"",is_best:"True",more_unaligned:"True"
-,overlaps:[ 
-{contig:"tig00000025_pilon",corr_start: 2787357,corr_end: 2787703,start:52959,end:53305,start_in_contig:1,end_in_contig:347,chr: "2"}
-]},
-{name:"tig00000019_pilon",corr_start:2786895,corr_end:2787703,start:52497,end:53305,misassemblies:"unknown",mis_ends:"",is_best:"True",more_unaligned:"True"
-,overlaps:[ 
-{contig:"tig00000025_pilon",corr_start: 2787357,corr_end: 2787703,start:52959,end:53305,start_in_contig:1,end_in_contig:347,chr: "2"}
-]},
-{name:"tig00000025_pilon",corr_start:2787357,corr_end:2787703,start:52959,end:53305,misassemblies:";local",mis_ends:";R",is_best:"True"
-,overlaps:[ 
-{contig:"tig00000019_pilon",corr_start: 2786895,corr_end: 2787703,start:52497,end:53305,start_in_contig:8610,end_in_contig:7802,chr: "2"},{contig:"tig00000019_pilon",corr_start: 2786895,corr_end: 2787703,start:52497,end:53305,start_in_contig:29528,end_in_contig:30336,chr: "2"}
-]},
-{name:"tig00000025_pilon",corr_start:2788025,corr_end:2789354,start:53627,end:54956,misassemblies:"relocation;",mis_ends:"L",is_best:"True"},
-{name:"tig00000025_pilon",corr_start:2788027,corr_end:2798788,start:53629,end:64390,misassemblies:"local;relocation",mis_ends:"L;R",is_best:"True"
-,overlaps:[ 
-{contig:"tig00000020_pilon",corr_start: 2791196,corr_end: 2791543,start:56798,end:57145,start_in_contig:29492,end_in_contig:29839,chr: "2"}
-]},
-{name:"tig00000020_pilon",corr_start:2791196,corr_end:2791543,start:56798,end:57145,misassemblies:"unknown",mis_ends:"",is_best:"True",more_unaligned:"True"
-,overlaps:[ 
-{contig:"tig00000025_pilon",corr_start: 2788027,corr_end: 2798788,start:53629,end:64390,start_in_contig:349,end_in_contig:11103,chr: "2"}
-]},
-{name:"tig00000020_pilon",corr_start:2800648,corr_end:2803950,start:3,end:3305,misassemblies:"unknown",mis_ends:"",is_best:"True",more_unaligned:"True"
-,overlaps:[ 
-{contig:"tig00000464_pilon",corr_start: 2801544,corr_end: 2804584,start:899,end:3939,start_in_contig:176329,end_in_contig:179369,chr: "3"}
-]},
-{name:"tig00000464_pilon",corr_start:2801544,corr_end:2804584,start:899,end:3939,misassemblies:"relocation;translocation",mis_ends:"L;R",is_best:"True"
-,overlaps:[ 
-{contig:"tig00000020_pilon",corr_start: 2800648,corr_end: 2803950,start:3,end:3305,start_in_contig:41307,end_in_contig:44609,chr: "3"}
-]},
-{name:"tig00000464_pilon",corr_start:2809385,corr_end:2818723,start:8740,end:18078,misassemblies:"translocation;relocation",mis_ends:"L;R",is_best:"True"
-,overlaps:[ 
-{contig:"tig00000020_pilon",corr_start: 2812948,corr_end: 2818723,start:12303,end:18078,start_in_contig:1,end_in_contig:5769,chr: "3"}
-]},
-{name:"tig00000020_pilon",corr_start:2812948,corr_end:2818723,start:12303,end:18078,misassemblies:"unknown",mis_ends:"",is_best:"True",more_unaligned:"True"
-,overlaps:[ 
-{contig:"tig00000464_pilon",corr_start: 2809385,corr_end: 2818723,start:8740,end:18078,start_in_contig:185699,end_in_contig:195050,chr: "3"}
-]},
-{name:"tig00000464_pilon",corr_start:2818718,corr_end:2830347,start:18073,end:29702,misassemblies:"relocation;relocation",mis_ends:"L;R",is_best:"True"
-,overlaps:[ 
-{contig:"tig00000020_pilon",corr_start: 2827600,corr_end: 2831398,start:26955,end:30753,start_in_contig:20096,end_in_contig:23894,chr: "3"}
-]},
-{name:"tig00000020_pilon",corr_start:2827600,corr_end:2831398,start:26955,end:30753,misassemblies:"unknown",mis_ends:"",is_best:"True",more_unaligned:"True"
-,overlaps:[ 
-{contig:"tig00000464_pilon",corr_start: 2818718,corr_end: 2830347,start:18073,end:29702,start_in_contig:197794,end_in_contig:209423,chr: "3"},{contig:"tig00000464_pilon",corr_start: 2831039,corr_end: 2835541,start:30394,end:34896,start_in_contig:212145,end_in_contig:216622,chr: "3"}
-]},
-{name:"tig00000464_pilon",corr_start:2831039,corr_end:2835541,start:30394,end:34896,misassemblies:"relocation;relocation",mis_ends:"L;R",is_best:"True"
-,overlaps:[ 
-{contig:"tig00000020_pilon",corr_start: 2827600,corr_end: 2831398,start:26955,end:30753,start_in_contig:20096,end_in_contig:23894,chr: "3"},{contig:"tig00000465_pilon",corr_start: 2832009,corr_end: 2835541,start:31364,end:34896,start_in_contig:1,end_in_contig:3503,chr: "3"}
-]},
-{name:"tig00000465_pilon",corr_start:2832009,corr_end:2835541,start:31364,end:34896,misassemblies:";relocation",mis_ends:";R",is_best:"True"
-,overlaps:[ 
-{contig:"tig00000464_pilon",corr_start: 2831039,corr_end: 2835541,start:30394,end:34896,start_in_contig:212145,end_in_contig:216622,chr: "3"}
-]},
-{name:"tig00000465_pilon",corr_start:2835534,corr_end:2835842,start:34889,end:35197,misassemblies:"relocation;",mis_ends:"L",is_best:"True"},
-{name:"tig00000464_pilon",corr_start:2841186,corr_end:2841610,start:40541,end:40965,misassemblies:"translocation;inversion",mis_ends:"R;L",is_best:"True"},
-{name:"tig00000464_pilon",corr_start:2842407,corr_end:2844609,start:41762,end:43964,misassemblies:"inversion;relocation",mis_ends:"L;R",is_best:"True"},
-{name:"tig00000464_pilon",corr_start:2844610,corr_end:2853675,start:43965,end:53030,misassemblies:"relocation;relocation",mis_ends:"L;R",is_best:"True"},
-{name:"tig00000464_pilon",corr_start:2856029,corr_end:2857840,start:55384,end:57195,misassemblies:"relocation;relocation",mis_ends:"L;R",is_best:"True"},
-{name:"tig00000464_pilon",corr_start:2857034,corr_end:2857845,start:56389,end:57200,misassemblies:"relocation;translocation",mis_ends:"R;L",is_best:"True"},
-{name:"tig00000464_pilon",corr_start:2869441,corr_end:2869955,start:68796,end:69310,misassemblies:";local",mis_ends:";R",is_best:"True"},
-{name:"tig00000464_pilon",corr_start:2870059,corr_end:2872529,start:69414,end:71884,misassemblies:"local;translocation",mis_ends:"L;R",is_best:"True"},
-{name:"tig00000464_pilon",corr_start:2873456,corr_end:2891465,start:72811,end:90820,misassemblies:"relocation;translocation",mis_ends:"L;R",is_best:"True"
-,overlaps:[ 
-{contig:"tig00000001_pilon",corr_start: 2889050,corr_end: 2890114,start:88405,end:89469,start_in_contig:1113520,end_in_contig:1112456,chr: "3"},{contig:"tig00000001_pilon",corr_start: 2889050,corr_end: 2890111,start:88405,end:89466,start_in_contig:1510158,end_in_contig:1509097,chr: "3"},{contig:"tig00000001_pilon",corr_start: 2889051,corr_end: 2890116,start:88406,end:89471,start_in_contig:451710,end_in_contig:450645,chr: "3"}
-]},
-{name:"tig00000001_pilon",corr_start:2889050,corr_end:2890114,start:88405,end:89469,misassemblies:"translocation;relocation",mis_ends:"R;L",is_best:"True"
-,overlaps:[ 
-{contig:"tig00000464_pilon",corr_start: 2873456,corr_end: 2891465,start:72811,end:90820,start_in_contig:20385,end_in_contig:38395,chr: "3"},{contig:"tig00000464_pilon",corr_start: 2889050,corr_end: 2889747,start:88405,end:89102,start_in_contig:40465,end_in_contig:41162,chr: "3"}
-]},
-{name:"tig00000001_pilon",corr_start:2889050,corr_end:2890111,start:88405,end:89466,misassemblies:"translocation;translocation",mis_ends:"R;L",is_best:"True"
-,overlaps:[ 
-{contig:"tig00000464_pilon",corr_start: 2873456,corr_end: 2891465,start:72811,end:90820,start_in_contig:20385,end_in_contig:38395,chr: "3"},{contig:"tig00000464_pilon",corr_start: 2889050,corr_end: 2889747,start:88405,end:89102,start_in_contig:40465,end_in_contig:41162,chr: "3"}
-]},
-{name:"tig00000464_pilon",corr_start:2889050,corr_end:2889747,start:88405,end:89102,misassemblies:"relocation;translocation",mis_ends:"L;R",is_best:"True"
-,overlaps:[ 
-{contig:"tig00000001_pilon",corr_start: 2889050,corr_end: 2890114,start:88405,end:89469,start_in_contig:1113520,end_in_contig:1112456,chr: "3"},{contig:"tig00000001_pilon",corr_start: 2889050,corr_end: 2890111,start:88405,end:89466,start_in_contig:1510158,end_in_contig:1509097,chr: "3"},{contig:"tig00000001_pilon",corr_start: 2889051,corr_end: 2890116,start:88406,end:89471,start_in_contig:451710,end_in_contig:450645,chr: "3"}
-]},
-{name:"tig00000001_pilon",corr_start:2889051,corr_end:2890116,start:88406,end:89471,misassemblies:"translocation;translocation",mis_ends:"R;L",is_best:"True"
-,overlaps:[ 
-{contig:"tig00000464_pilon",corr_start: 2873456,corr_end: 2891465,start:72811,end:90820,start_in_contig:20385,end_in_contig:38395,chr: "3"},{contig:"tig00000464_pilon",corr_start: 2889050,corr_end: 2889747,start:88405,end:89102,start_in_contig:40465,end_in_contig:41162,chr: "3"}
-]},
-{name:"tig00000464_pilon",corr_start:2891464,corr_end:2894804,start:90819,end:94159,misassemblies:"relocation;relocation",mis_ends:"R;L",is_best:"True"},
-{name:"tig00000464_pilon",corr_start:2891465,corr_end:2892832,start:90820,end:92187,misassemblies:"translocation;relocation",mis_ends:"R;L",is_best:"True"},
-{name:"tig00000464_pilon",corr_start:2904457,corr_end:2908283,start:103812,end:107638,misassemblies:"relocation;",mis_ends:"L",is_best:"True"},
-{name:"tig00000464_pilon",corr_start:2908323,corr_end:2909686,start:107678,end:109041,misassemblies:"relocation;translocation",mis_ends:"L;R",is_best:"True"},
-{name:"tig00000464_pilon",corr_start:2908433,corr_end:2908676,start:107788,end:108031,misassemblies:";relocation",mis_ends:";R",is_best:"True"},
-{name:"tig00000464_pilon",corr_start:2909773,corr_end:2915301,start:109128,end:114656,misassemblies:"relocation;local",mis_ends:"L;R",is_best:"True"},
-{name:"tig00000001_pilon",corr_start:2915377,corr_end:2916459,start:114732,end:115814,misassemblies:"translocation;translocation",mis_ends:"L;R",is_best:"True"
-,overlaps:[ 
-{contig:"tig00000464_pilon",corr_start: 2915390,corr_end: 2916491,start:114745,end:115846,start_in_contig:126993,end_in_contig:128095,chr: "3"}
-]},
-{name:"tig00000464_pilon",corr_start:2915390,corr_end:2916491,start:114745,end:115846,misassemblies:"local;relocation",mis_ends:"L;R",is_best:"True"
-,overlaps:[ 
-{contig:"tig00000001_pilon",corr_start: 2915377,corr_end: 2916459,start:114732,end:115814,start_in_contig:425692,end_in_contig:426774,chr: "3"}
-]},
-{name:"tig00000465_pilon",corr_start:2916568,corr_end:2918081,start:115923,end:117436,misassemblies:"relocation;relocation",mis_ends:"L;R",is_best:"True"},
-{name:"tig00000465_pilon",corr_start:2916642,corr_end:2919525,start:115997,end:118880,misassemblies:"relocation;relocation",mis_ends:"L;R",is_best:"True"},
-{name:"tig00000464_pilon",corr_start:2919526,corr_end:2921224,start:118881,end:120579,misassemblies:"relocation;relocation",mis_ends:"L;R",is_best:"True"},
-{name:"tig00000464_pilon",corr_start:2922273,corr_end:2923228,start:121628,end:122583,misassemblies:"relocation;relocation",mis_ends:"L;R",is_best:"True"},
-{name:"tig00000001_pilon",corr_start:2933253,corr_end:2933641,start:132608,end:132996,misassemblies:"translocation;translocation",mis_ends:"R;L",is_best:"True"},
-{name:"tig00000464_pilon",corr_start:2937858,corr_end:2938278,start:137213,end:137633,misassemblies:"local;relocation",mis_ends:"R;L",is_best:"True"},
-{name:"tig00000464_pilon",corr_start:2938373,corr_end:2961332,start:137728,end:160687,misassemblies:"relocation;local",mis_ends:"R;L",is_best:"True"},
-{name:"tig00000001_pilon",corr_start:2961327,corr_end:2962446,start:160682,end:161801,misassemblies:"translocation;translocation",mis_ends:"R;L",is_best:"True"
-,overlaps:[ 
-{contig:"tig00000464_pilon",corr_start: 2961813,corr_end: 2964063,start:161168,end:163418,start_in_contig:218976,end_in_contig:216727,chr: "3"}
-]},
-{name:"tig00000001_pilon",corr_start:2961327,corr_end:2962446,start:160682,end:161801,misassemblies:"translocation;translocation",mis_ends:"R;L",is_best:"True"
-,overlaps:[ 
-{contig:"tig00000464_pilon",corr_start: 2961813,corr_end: 2964063,start:161168,end:163418,start_in_contig:218976,end_in_contig:216727,chr: "3"}
-]},
-{name:"tig00000001_pilon",corr_start:2961327,corr_end:2962549,start:160682,end:161904,misassemblies:"translocation;translocation",mis_ends:"R;L",is_best:"True"
-,overlaps:[ 
-{contig:"tig00000464_pilon",corr_start: 2961813,corr_end: 2964063,start:161168,end:163418,start_in_contig:218976,end_in_contig:216727,chr: "3"}
-]},
-{name:"tig00000001_pilon",corr_start:2961327,corr_end:2962446,start:160682,end:161801,misassemblies:"translocation;translocation",mis_ends:"R;L",is_best:"True"
-,overlaps:[ 
-{contig:"tig00000464_pilon",corr_start: 2961813,corr_end: 2964063,start:161168,end:163418,start_in_contig:218976,end_in_contig:216727,chr: "3"}
-]},
-{name:"tig00000001_pilon",corr_start:2961327,corr_end:2962549,start:160682,end:161904,misassemblies:"translocation;translocation",mis_ends:"L;R",is_best:"True"
-,overlaps:[ 
-{contig:"tig00000464_pilon",corr_start: 2961813,corr_end: 2964063,start:161168,end:163418,start_in_contig:218976,end_in_contig:216727,chr: "3"}
-]},
-{name:"tig00000001_pilon",corr_start:2961327,corr_end:2962549,start:160682,end:161904,misassemblies:"translocation;translocation",mis_ends:"L;R",is_best:"True"
-,overlaps:[ 
-{contig:"tig00000464_pilon",corr_start: 2961813,corr_end: 2964063,start:161168,end:163418,start_in_contig:218976,end_in_contig:216727,chr: "3"}
-]},
-{name:"tig00000001_pilon",corr_start:2961327,corr_end:2962446,start:160682,end:161801,misassemblies:"translocation;translocation",mis_ends:"L;R",is_best:"True"
-,overlaps:[ 
-{contig:"tig00000464_pilon",corr_start: 2961813,corr_end: 2964063,start:161168,end:163418,start_in_contig:218976,end_in_contig:216727,chr: "3"}
-]},
-{name:"tig00000001_pilon",corr_start:2961327,corr_end:2962237,start:160682,end:161592,misassemblies:"translocation;translocation",mis_ends:"L;R",is_best:"True"
-,overlaps:[ 
-{contig:"tig00000464_pilon",corr_start: 2961813,corr_end: 2964063,start:161168,end:163418,start_in_contig:218976,end_in_contig:216727,chr: "3"}
-]},
-{name:"tig00000001_pilon",corr_start:2961327,corr_end:2962446,start:160682,end:161801,misassemblies:"translocation;translocation",mis_ends:"L;R",is_best:"True"
-,overlaps:[ 
-{contig:"tig00000464_pilon",corr_start: 2961813,corr_end: 2964063,start:161168,end:163418,start_in_contig:218976,end_in_contig:216727,chr: "3"}
-]},
-{name:"tig00000464_pilon",corr_start:2961813,corr_end:2964063,start:161168,end:163418,misassemblies:"relocation;",mis_ends:"R",is_best:"True"
-,overlaps:[ 
-{contig:"tig00000001_pilon",corr_start: 2961327,corr_end: 2962446,start:160682,end:161801,start_in_contig:825968,end_in_contig:824849,chr: "3"},{contig:"tig00000001_pilon",corr_start: 2961327,corr_end: 2962446,start:160682,end:161801,start_in_contig:1181907,end_in_contig:1180788,chr: "3"},{contig:"tig00000001_pilon",corr_start: 2961327,corr_end: 2962549,start:160682,end:161904,start_in_contig:1301303,end_in_contig:1300081,chr: "3"},{contig:"tig00000001_pilon",corr_start: 2961327,corr_end: 2962446,start:160682,end:161801,start_in_contig:1483371,end_in_contig:1482252,chr: "3"},{contig:"tig00000001_pilon",corr_start: 2961327,corr_end: 2962549,start:160682,end:161904,start_in_contig:1686704,end_in_contig:1687926,chr: "3"},{contig:"tig00000001_pilon",corr_start: 2961327,corr_end: 2962549,start:160682,end:161904,start_in_contig:1978086,end_in_contig:1979308,chr: "3"},{contig:"tig00000001_pilon",corr_start: 2961327,corr_end: 2962446,start:160682,end:161801,start_in_contig:2006695,end_in_contig:2007814,chr: "3"},{contig:"tig00000001_pilon",corr_start: 2961327,corr_end: 2962237,start:160682,end:161592,start_in_contig:2261760,end_in_contig:2262670,chr: "3"},{contig:"tig00000001_pilon",corr_start: 2961327,corr_end: 2962446,start:160682,end:161801,start_in_contig:2566567,end_in_contig:2567686,chr: "3"}
-]},
-{name:"tig00000464_pilon",corr_start:2974008,corr_end:2982587,start:173363,end:181942,misassemblies:"relocation;relocation",mis_ends:"R;L",is_best:"True"
-,overlaps:[ 
-{contig:"tig00000001_pilon",corr_start: 2982433,corr_end: 2983504,start:181788,end:182859,start_in_contig:284596,end_in_contig:285667,chr: "3"}
-]},
-{name:"tig00000001_pilon",corr_start:2982433,corr_end:2983504,start:181788,end:182859,misassemblies:"translocation;translocation",mis_ends:"L;R",is_best:"True"
-,overlaps:[ 
-{contig:"tig00000464_pilon",corr_start: 2974008,corr_end: 2982587,start:173363,end:181942,start_in_contig:63987,end_in_contig:55398,chr: "3"}
-]},
-{name:"tig00000464_pilon",corr_start:2983498,corr_end:2984155,start:182853,end:183510,misassemblies:"relocation;relocation",mis_ends:"R;L",is_best:"True"},
-{name:"tig00000464_pilon",corr_start:2985296,corr_end:2986462,start:184651,end:185817,misassemblies:"translocation;relocation",mis_ends:"R;L",is_best:"True"},
-{name:"tig00000001_pilon",corr_start:2986459,corr_end:2987994,start:185814,end:187349,misassemblies:"relocation;translocation",mis_ends:"R;L",is_best:"True"
-,overlaps:[ 
-{contig:"tig00000464_pilon",corr_start: 2986459,corr_end: 2987996,start:185814,end:187351,start_in_contig:68098,end_in_contig:69635,chr: "3"}
-]},
-{name:"tig00000001_pilon",corr_start:2986459,corr_end:2987994,start:185814,end:187349,misassemblies:"relocation;translocation",mis_ends:"R;L",is_best:"True"
-,overlaps:[ 
-{contig:"tig00000464_pilon",corr_start: 2986459,corr_end: 2987996,start:185814,end:187351,start_in_contig:68098,end_in_contig:69635,chr: "3"}
-]},
-{name:"tig00000464_pilon",corr_start:2986459,corr_end:2987996,start:185814,end:187351,misassemblies:"relocation;relocation",mis_ends:"L;R",is_best:"True"
-,overlaps:[ 
-{contig:"tig00000001_pilon",corr_start: 2986459,corr_end: 2987994,start:185814,end:187349,start_in_contig:1127334,end_in_contig:1125799,chr: "3"},{contig:"tig00000001_pilon",corr_start: 2986459,corr_end: 2987994,start:185814,end:187349,start_in_contig:1977211,end_in_contig:1975676,chr: "3"}
-]},
-{name:"tig00000464_pilon",corr_start:2988161,corr_end:2988614,start:187516,end:187969,misassemblies:"translocation;relocation",mis_ends:"R;L",is_best:"True"},
-{name:"tig00000464_pilon",corr_start:2991817,corr_end:2992385,start:191172,end:191740,misassemblies:"relocation;relocation",mis_ends:"L;R",is_best:"True"},
-{name:"tig00000464_pilon",corr_start:2992390,corr_end:2996130,start:191745,end:195485,misassemblies:"relocation;relocation",mis_ends:"L;R",is_best:"True"},
-{name:"tig00000464_pilon",corr_start:2996437,corr_end:2997952,start:195792,end:197307,misassemblies:"relocation;relocation",mis_ends:"L;R",is_best:"True"},
-{name:"tig00000464_pilon",corr_start:2997952,corr_end:2999012,start:197307,end:198367,misassemblies:"translocation;relocation",mis_ends:"R;L",is_best:"True"},
-{name:"tig00000464_pilon",corr_start:2999140,corr_end:3000048,start:198495,end:199403,misassemblies:"relocation;relocation",mis_ends:"L;R",is_best:"True"},
-{name:"tig00000001_pilon",corr_start:3032826,corr_end:3033110,start:232181,end:232465,misassemblies:"translocation;translocation",mis_ends:"L;R",is_best:"True"
-,overlaps:[ 
-{contig:"tig00000464_pilon",corr_start: 3032826,corr_end: 3033111,start:232181,end:232466,start_in_contig:142032,end_in_contig:142317,chr: "3"}
-]},
-{name:"tig00000001_pilon",corr_start:3032826,corr_end:3033110,start:232181,end:232465,misassemblies:"translocation;translocation",mis_ends:"L;R",is_best:"True"
-,overlaps:[ 
-{contig:"tig00000464_pilon",corr_start: 3032826,corr_end: 3033111,start:232181,end:232466,start_in_contig:142032,end_in_contig:142317,chr: "3"}
-]},
-{name:"tig00000001_pilon",corr_start:3032826,corr_end:3033111,start:232181,end:232466,misassemblies:"translocation;translocation",mis_ends:"R;L",is_best:"True"
-,overlaps:[ 
-{contig:"tig00000464_pilon",corr_start: 3032826,corr_end: 3033111,start:232181,end:232466,start_in_contig:142032,end_in_contig:142317,chr: "3"}
-]},
-{name:"tig00000001_pilon",corr_start:3032826,corr_end:3033110,start:232181,end:232465,misassemblies:"translocation;translocation",mis_ends:"L;R",is_best:"True"
-,overlaps:[ 
-{contig:"tig00000464_pilon",corr_start: 3032826,corr_end: 3033111,start:232181,end:232466,start_in_contig:142032,end_in_contig:142317,chr: "3"}
-]},
-{name:"tig00000464_pilon",corr_start:3032826,corr_end:3033111,start:232181,end:232466,misassemblies:"relocation;translocation",mis_ends:"L;R",is_best:"True"
-,overlaps:[ 
-{contig:"tig00000001_pilon",corr_start: 3032826,corr_end: 3033110,start:232181,end:232465,start_in_contig:226607,end_in_contig:226891,chr: "3"},{contig:"tig00000001_pilon",corr_start: 3032826,corr_end: 3033110,start:232181,end:232465,start_in_contig:314643,end_in_contig:314927,chr: "3"},{contig:"tig00000001_pilon",corr_start: 3032826,corr_end: 3033111,start:232181,end:232466,start_in_contig:318242,end_in_contig:317957,chr: "3"},{contig:"tig00000001_pilon",corr_start: 3032826,corr_end: 3033110,start:232181,end:232465,start_in_contig:368282,end_in_contig:368566,chr: "3"}
-]},
-{name:"tig00000464_pilon",corr_start:3034691,corr_end:3036477,start:234046,end:235832,misassemblies:"relocation;relocation",mis_ends:"R;L",is_best:"True"},
-{name:"tig00000020_pilon",corr_start:3041825,corr_end:3044088,start:241180,end:243443,misassemblies:"unknown",mis_ends:"",is_best:"True",more_unaligned:"True"
-,overlaps:[ 
-{contig:"tig00000464_pilon",corr_start: 3043466,corr_end: 3046952,start:242821,end:246307,start_in_contig:168101,end_in_contig:171587,chr: "3"}
-]},
-{name:"tig00000464_pilon",corr_start:3043466,corr_end:3046952,start:242821,end:246307,misassemblies:"translocation;relocation",mis_ends:"L;R",is_best:"True"
-,overlaps:[ 
-{contig:"tig00000020_pilon",corr_start: 3041825,corr_end: 3044088,start:241180,end:243443,start_in_contig:31970,end_in_contig:34232,chr: "3"},{contig:"tig00000020_pilon",corr_start: 3044222,corr_end: 3045751,start:243577,end:245106,start_in_contig:35004,end_in_contig:36530,chr: "3"},{contig:"tig00000020_pilon",corr_start: 3046439,corr_end: 3048552,start:245794,end:247907,start_in_contig:36869,end_in_contig:38982,chr: "3"}
-]},
-{name:"tig00000020_pilon",corr_start:3044222,corr_end:3045751,start:243577,end:245106,misassemblies:"unknown",mis_ends:"",is_best:"True",more_unaligned:"True"
-,overlaps:[ 
-{contig:"tig00000464_pilon",corr_start: 3043466,corr_end: 3046952,start:242821,end:246307,start_in_contig:168101,end_in_contig:171587,chr: "3"}
-]},
-{name:"tig00000020_pilon",corr_start:3046439,corr_end:3048552,start:245794,end:247907,misassemblies:"unknown",mis_ends:"",is_best:"True",more_unaligned:"True"
-,overlaps:[ 
-{contig:"tig00000464_pilon",corr_start: 3043466,corr_end: 3046952,start:242821,end:246307,start_in_contig:168101,end_in_contig:171587,chr: "3"}
-]},
-{name:"tig00000464_pilon",corr_start:3048548,corr_end:3050444,start:247903,end:249799,misassemblies:"relocation;relocation",mis_ends:"L;R",is_best:"True"},
-{name:"tig00000464_pilon",corr_start:3048548,corr_end:3050443,start:247903,end:249798,misassemblies:"relocation;relocation",mis_ends:"R;L",is_best:"True"},
-{name:"tig00000464_pilon",corr_start:3048548,corr_end:3050444,start:247903,end:249799,misassemblies:"relocation;relocation",mis_ends:"R;L",is_best:"True"},
-{name:"tig00000464_pilon",corr_start:3048553,corr_end:3050443,start:247908,end:249798,misassemblies:"relocation;relocation",mis_ends:"L;R",is_best:"True"}];var contig_lengths = {};
+{name:"tig00000027_pilon",corr_start:3119345,corr_end:3145632,start:16494,end:42781,misassemblies:"",mis_ends:"",is_best:"True"}];var contig_lengths = {};
 var contig_structures = {};
 contig_lengths["pilon_outdir.sorted.05-04-2019"] = {};
 contig_structures["pilon_outdir.sorted.05-04-2019"] = {};
 contig_lengths["pilon_outdir.sorted.05-04-2019"]["tig00000001_pilon"] = 2773702;
 contig_structures["pilon_outdir.sorted.05-04-2019"]["tig00000001_pilon"] = [ 
-{corr_start: 590611,corr_end: 652180,start:590611,end:652180,start_in_contig:61565,end_in_contig:1,IDY:99.98,chr: "0"},
-{contig_type: "M", mstype: "real", msg: "relocation, inconsistency = 13242"},
-{corr_start: 415470,corr_end: 577368,start:415470,end:577368,start_in_contig:223469,end_in_contig:61566,IDY:99.98,chr: "0"},
-{contig_type: "M", mstype: "real", msg: "local misassembly"},
-{corr_start: 413850,corr_end: 415470,start:413850,end:415470,start_in_contig:225213,end_in_contig:223593,IDY:99.75,chr: "0"},
-{contig_type: "M", mstype: "real", msg: "translocation"},
-{corr_start: 3032826,corr_end: 3033110,start:232181,end:232465,start_in_contig:226607,end_in_contig:226891,IDY:99.65,chr: "3"},
-{contig_type: "M", mstype: "real", msg: "translocation"},
-{corr_start: 393056,corr_end: 413854,start:393056,end:413854,start_in_contig:247692,end_in_contig:226892,IDY:99.74,chr: "0"},
-{contig_type: "M", mstype: "real", msg: "relocation, inconsistency = 121793"},
-{corr_start: 270203,corr_end: 271262,start:270203,end:271262,start_in_contig:248752,end_in_contig:247693,IDY:99.62,chr: "0"},
-{contig_type: "M", mstype: "real", msg: "relocation, inconsistency = -122860"},
-{corr_start: 377949,corr_end: 393062,start:377949,end:393062,start_in_contig:263865,end_in_contig:248753,IDY:98.88,chr: "0"},
-{contig_type: "M", mstype: "real", msg: "local misassembly"},
-{corr_start: 365040,corr_end: 377826,start:365040,end:377826,start_in_contig:276661,end_in_contig:263866,IDY:98.75,chr: "0"},
-{contig_type: "M", mstype: "real", msg: "relocation, inconsistency = 7342"},
-{corr_start: 354222,corr_end: 357639,start:354222,end:357639,start_in_contig:280135,end_in_contig:276720,IDY:99.01,chr: "0"},
-{contig_type: "M", mstype: "real", msg: "relocation, inconsistency = -1745"},
-{corr_start: 351511,corr_end: 354100,start:351511,end:354100,start_in_contig:284595,end_in_contig:282002,IDY:99.11,chr: "0"},
-{contig_type: "M", mstype: "real", msg: "translocation"},
-{corr_start: 2982433,corr_end: 2983504,start:181788,end:182859,start_in_contig:284596,end_in_contig:285667,IDY:99.53,chr: "3"},
-{contig_type: "M", mstype: "real", msg: "translocation"},
-{corr_start: 296792,corr_end: 300142,start:296792,end:300142,start_in_contig:291356,end_in_contig:288006,IDY:99.05,chr: "0"},
-{contig_type: "M", mstype: "real", msg: "relocation, inconsistency = -721994"},
-{corr_start: 1016582,corr_end: 1017656,start:1016582,end:1017656,start_in_contig:293562,end_in_contig:292486,IDY:99.16,chr: "0"},
-{contig_type: "M", mstype: "real", msg: "relocation, inconsistency = 770511"},
-{corr_start: 245705,corr_end: 246070,start:245705,end:246070,start_in_contig:293928,end_in_contig:293563,IDY:98.91,chr: "0"},
-{contig_type: "M", mstype: "real", msg: "relocation, inconsistency = -33827"},
-{corr_start: 265698,corr_end: 279531,start:265698,end:279531,start_in_contig:307763,end_in_contig:293929,IDY:99.05,chr: "0"},
-{contig_type: "M", mstype: "real", msg: "relocation, inconsistency = -29433"},
-{corr_start: 289651,corr_end: 291042,start:289651,end:291042,start_in_contig:313249,end_in_contig:311852,IDY:95.64,chr: "0"},
-{contig_type: "M", mstype: "real", msg: "translocation"},
-{corr_start: 3032826,corr_end: 3033110,start:232181,end:232465,start_in_contig:314643,end_in_contig:314927,IDY:99.65,chr: "3"},
-{contig_type: "M", mstype: "real", msg: "translocation"},
-{corr_start: 288114,corr_end: 289656,start:288114,end:289656,start_in_contig:316471,end_in_contig:314928,IDY:97.6,chr: "0"},
-{contig_type: "M", mstype: "real", msg: "relocation, inconsistency = 143024"},
-{corr_start: 143692,corr_end: 145036,start:143692,end:145036,start_in_contig:317868,end_in_contig:316525,IDY:99.63,chr: "0"},
-{contig_type: "M", mstype: "real", msg: "translocation"},
-{corr_start: 3032826,corr_end: 3033111,start:232181,end:232466,start_in_contig:318242,end_in_contig:317957,IDY:99.65,chr: "3"},
-{contig_type: "M", mstype: "real", msg: "translocation"},
-{corr_start: 285596,corr_end: 286643,start:285596,end:286643,start_in_contig:325141,end_in_contig:324092,IDY:99.52,chr: "0"},
-{contig_type: "M", mstype: "real", msg: "relocation, inconsistency = 1590180"},
-{corr_start: 1878144,corr_end: 1879511,start:1878144,end:1879511,start_in_contig:326462,end_in_contig:327829,IDY:99.85,chr: "0"},
-{contig_type: "M", mstype: "real", msg: "relocation, inconsistency = 1631110"},
-{corr_start: 234932,corr_end: 239241,start:234932,end:239241,start_in_contig:339931,end_in_contig:335622,IDY:99.49,chr: "0"},
-{contig_type: "M", mstype: "real", msg: "local misassembly"},
-{corr_start: 211969,corr_end: 234834,start:211969,end:234834,start_in_contig:362796,end_in_contig:339932,IDY:99.42,chr: "0"},
-{contig_type: "M", mstype: "real", msg: "relocation, inconsistency = -59297"},
-{corr_start: 270202,corr_end: 271265,start:270202,end:271265,start_in_contig:363860,end_in_contig:362797,IDY:99.53,chr: "0"},
-{contig_type: "M", mstype: "real", msg: "relocation, inconsistency = 64948"},
-{corr_start: 202226,corr_end: 205253,start:202226,end:205253,start_in_contig:366888,end_in_contig:363861,IDY:99.44,chr: "0"},
-{contig_type: "M", mstype: "real", msg: "translocation"},
-{corr_start: 3032826,corr_end: 3033110,start:232181,end:232465,start_in_contig:368282,end_in_contig:368566,IDY:99.65,chr: "3"},
-{contig_type: "M", mstype: "real", msg: "translocation"},
-{corr_start: 170012,corr_end: 202230,start:170012,end:202230,start_in_contig:400785,end_in_contig:368567,IDY:99.24,chr: "0"},
-{contig_type: "M", mstype: "real", msg: "relocation, inconsistency = 143558"},
-{corr_start: 345789,corr_end: 347164,start:345789,end:347164,start_in_contig:400786,end_in_contig:402161,IDY:100.0,chr: "0"},
-{contig_type: "M", mstype: "real", msg: "relocation, inconsistency = 177154"},
-{corr_start: 161272,corr_end: 168634,start:161272,end:168634,start_in_contig:409527,end_in_contig:402162,IDY:99.59,chr: "0"},
-{contig_type: "M", mstype: "real", msg: "local misassembly"},
-{corr_start: 145397,corr_end: 161272,start:145397,end:161272,start_in_contig:425516,end_in_contig:409651,IDY:99.62,chr: "0"},
-{contig_type: "M", mstype: "real", msg: "translocation"},
-{corr_start: 2915377,corr_end: 2916459,start:114732,end:115814,start_in_contig:425692,end_in_contig:426774,IDY:99.35,chr: "3"},
-{contig_type: "M", mstype: "real", msg: "translocation"},
-{corr_start: 119863,corr_end: 143696,start:119863,end:143696,start_in_contig:450644,end_in_contig:426815,IDY:99.39,chr: "0"},
-{contig_type: "M", mstype: "real", msg: "translocation"},
-{corr_start: 2889051,corr_end: 2890116,start:88406,end:89471,start_in_contig:451710,end_in_contig:450645,IDY:99.53,chr: "3"},
-{contig_type: "M", mstype: "real", msg: "translocation"},
-{corr_start: 111215,corr_end: 114073,start:111215,end:114073,start_in_contig:454569,end_in_contig:451711,IDY:99.58,chr: "0"},
-{contig_type: "M", mstype: "real", msg: "relocation, inconsistency = 1596242"},
-{corr_start: 1710316,corr_end: 1711352,start:1710316,end:1711352,start_in_contig:454570,end_in_contig:455595,IDY:98.56,chr: "0"},
-{contig_type: "M", mstype: "real", msg: "relocation, inconsistency = 1599092"},
-{corr_start: 109484,corr_end: 111223,start:109484,end:111223,start_in_contig:457334,end_in_contig:455596,IDY:99.14,chr: "0"},
-{contig_type: "M", mstype: "real", msg: "relocation, inconsistency = -1332"},
-{corr_start: 109222,corr_end: 109491,start:109222,end:109491,start_in_contig:458929,end_in_contig:458659,IDY:99.26,chr: "0"},
-{contig_type: "M", mstype: "real", msg: "relocation, inconsistency = 1340294"},
-{corr_start: 1449786,corr_end: 1450849,start:1449786,end:1450849,start_in_contig:458930,end_in_contig:459993,IDY:99.91,chr: "0"},
-{contig_type: "M", mstype: "real", msg: "relocation, inconsistency = 1340561"},
-{corr_start: 109053,corr_end: 109224,start:109053,end:109224,start_in_contig:460167,end_in_contig:459994,IDY:97.52,chr: "0"},
-{contig_type: "M", mstype: "real", msg: "local misassembly"},
-{corr_start: 89544,corr_end: 108929,start:89544,end:108929,start_in_contig:479552,end_in_contig:460168,IDY:99.35,chr: "0"},
-{contig_type: "M", mstype: "real", msg: "relocation, inconsistency = -1620"},
-{corr_start: 80248,corr_end: 89545,start:80248,end:89545,start_in_contig:490468,end_in_contig:481171,IDY:99.74,chr: "0"},
-{contig_type: "M", mstype: "real", msg: "relocation, inconsistency = -1795186"},
-{corr_start: 1874301,corr_end: 1875343,start:1874301,end:1875343,start_in_contig:491601,end_in_contig:490559,IDY:99.62,chr: "0"},
-{contig_type: "M", mstype: "real", msg: "relocation, inconsistency = 41002"},
-{corr_start: 1830169,corr_end: 1831524,start:1830169,end:1831524,start_in_contig:493376,end_in_contig:494728,IDY:99.63,chr: "0"},
-{contig_type: "M", mstype: "real", msg: "relocation, inconsistency = 1746602"},
-{corr_start: 80007,corr_end: 80248,start:80007,end:80248,start_in_contig:498288,end_in_contig:498047,IDY:96.69,chr: "0"},
-{contig_type: "M", mstype: "real", msg: "local misassembly"},
-{corr_start: 1,corr_end: 79921,start:1,end:79921,start_in_contig:578356,end_in_contig:498439,IDY:99.92,chr: "0"},
-{contig_type: "M", mstype: "fake", msg: " not a misassembly [linear representation of circular genome]"},
-{corr_start: 2657363,corr_end: 2698137,start:2657363,end:2698137,start_in_contig:619139,end_in_contig:578357,IDY:99.96,chr: "0"},
-{contig_type: "M", mstype: "real", msg: "local misassembly"},
-{corr_start: 2624629,corr_end: 2657530,start:2624629,end:2657530,start_in_contig:652040,end_in_contig:619140,IDY:99.93,chr: "0"},
-{contig_type: "M", mstype: "real", msg: "translocation"},
-{corr_start: 2723410,corr_end: 2726340,start:25274,end:28204,start_in_contig:704138,end_in_contig:701208,IDY:98.57,chr: "1"},
-{contig_type: "M", mstype: "real", msg: "translocation"},
-{corr_start: 2516934,corr_end: 2624683,start:2516934,end:2624683,start_in_contig:824671,end_in_contig:716923,IDY:99.99,chr: "0"},
-{contig_type: "M", mstype: "real", msg: "translocation"},
-{corr_start: 2961327,corr_end: 2962446,start:160682,end:161801,start_in_contig:825968,end_in_contig:824849,IDY:95.71,chr: "3"},
-{contig_type: "M", mstype: "real", msg: "translocation"},
-{corr_start: 2509636,corr_end: 2516941,start:2509636,end:2516941,start_in_contig:833415,end_in_contig:826186,IDY:98.89,chr: "0"},
-{contig_type: "M", mstype: "real", msg: "local misassembly"},
-{corr_start: 2509554,corr_end: 2509627,start:2509554,end:2509627,start_in_contig:833619,end_in_contig:833546,IDY:100.0,chr: "0"},
-{contig_type: "M", mstype: "real", msg: "local misassembly"},
-{corr_start: 2508045,corr_end: 2510151,start:2508045,end:2510151,start_in_contig:835737,end_in_contig:833631,IDY:99.91,chr: "0"},
-{contig_type: "M", mstype: "real", msg: "relocation, inconsistency = 574913"},
-{corr_start: 1931618,corr_end: 1933131,start:1931618,end:1933131,start_in_contig:837251,end_in_contig:835738,IDY:99.93,chr: "0"},
-{contig_type: "M", mstype: "real", msg: "relocation, inconsistency = -576435"},
-{corr_start: 2482660,corr_end: 2508052,start:2482660,end:2508052,start_in_contig:862644,end_in_contig:837252,IDY:99.84,chr: "0"},
-{contig_type: "M", mstype: "real", msg: "local misassembly"},
-{corr_start: 2298541,corr_end: 2482938,start:2298541,end:2482938,start_in_contig:1047058,end_in_contig:862645,IDY:99.98,chr: "0"},
-{contig_type: "M", mstype: "real", msg: "relocation, inconsistency = 1463093"},
-{corr_start: 828192,corr_end: 829775,start:828192,end:829775,start_in_contig:1052731,end_in_contig:1054312,IDY:95.27,chr: "0"},
-{contig_type: "M", mstype: "real", msg: "local misassembly"},
-{corr_start: 832887,corr_end: 835267,start:832887,end:835267,start_in_contig:1058347,end_in_contig:1060727,IDY:99.83,chr: "0"},
-{contig_type: "M", mstype: "real", msg: "relocation, inconsistency = -4287"},
-{corr_start: 854125,corr_end: 882648,start:854125,end:882648,start_in_contig:1083872,end_in_contig:1112395,IDY:98.63,chr: "0"},
-{contig_type: "M", mstype: "real", msg: "translocation"},
-{corr_start: 2889050,corr_end: 2890114,start:88405,end:89469,start_in_contig:1113520,end_in_contig:1112456,IDY:99.62,chr: "3"},
-{contig_type: "M", mstype: "real", msg: "relocation, inconsistency = -111223"},
-{corr_start: 2986459,corr_end: 2987994,start:185814,end:187349,start_in_contig:1127334,end_in_contig:1125799,IDY:99.93,chr: "3"},
-{contig_type: "M", mstype: "real", msg: "translocation"},
-{corr_start: 1885005,corr_end: 1887350,start:1885005,end:1887350,start_in_contig:1136729,end_in_contig:1134384,IDY:100.0,chr: "0"},
-{contig_type: "M", mstype: "real", msg: "relocation, inconsistency = 924509"},
-{corr_start: 916614,corr_end: 960495,start:916614,end:960495,start_in_contig:1136730,end_in_contig:1180611,IDY:99.99,chr: "0"},
-{contig_type: "M", mstype: "real", msg: "translocation"},
-{corr_start: 2961327,corr_end: 2962446,start:160682,end:161801,start_in_contig:1181907,end_in_contig:1180788,IDY:95.71,chr: "3"},
-{contig_type: "M", mstype: "real", msg: "translocation"},
-{corr_start: 960487,corr_end: 976031,start:960487,end:976031,start_in_contig:1182125,end_in_contig:1197669,IDY:99.99,chr: "0"},
-{contig_type: "M", mstype: "real", msg: "relocation, inconsistency = 870307"},
-{corr_start: 1846340,corr_end: 1847852,start:1846340,end:1847852,start_in_contig:1199182,end_in_contig:1197670,IDY:99.93,chr: "0"},
-{contig_type: "M", mstype: "real", msg: "relocation, inconsistency = 782574"},
-{corr_start: 976023,corr_end: 1063765,start:976023,end:1063765,start_in_contig:1199183,end_in_contig:1286927,IDY:99.97,chr: "0"},
-{contig_type: "M", mstype: "real", msg: "relocation, inconsistency = 1511"},
-{corr_start: 1065277,corr_end: 1078356,start:1065277,end:1078356,start_in_contig:1286928,end_in_contig:1300006,IDY:99.98,chr: "0"},
-{contig_type: "M", mstype: "real", msg: "translocation"},
-{corr_start: 2961327,corr_end: 2962549,start:160682,end:161904,start_in_contig:1301303,end_in_contig:1300081,IDY:95.99,chr: "3"},
-{contig_type: "M", mstype: "real", msg: "translocation"},
-{corr_start: 1078376,corr_end: 1249579,start:1078376,end:1249579,start_in_contig:1301517,end_in_contig:1472715,IDY:99.97,chr: "0"},
-{contig_type: "M", mstype: "indel", msg: " indel (> 5bp)"},
-{corr_start: 1249629,corr_end: 1258986,start:1249629,end:1258986,start_in_contig:1472716,end_in_contig:1482074,IDY:99.84,chr: "0"},
-{contig_type: "M", mstype: "real", msg: "translocation"},
-{corr_start: 2961327,corr_end: 2962446,start:160682,end:161801,start_in_contig:1483371,end_in_contig:1482252,IDY:95.71,chr: "3"},
-{contig_type: "M", mstype: "real", msg: "translocation"},
-{corr_start: 1258979,corr_end: 1284485,start:1258979,end:1284485,start_in_contig:1483589,end_in_contig:1509096,IDY:99.63,chr: "0"},
-{contig_type: "M", mstype: "real", msg: "translocation"},
-{corr_start: 2889050,corr_end: 2890111,start:88405,end:89466,start_in_contig:1510158,end_in_contig:1509097,IDY:99.53,chr: "3"},
-{contig_type: "M", mstype: "real", msg: "translocation"},
-{corr_start: 1284480,corr_end: 1298290,start:1284480,end:1298290,start_in_contig:1510159,end_in_contig:1523970,IDY:99.7,chr: "0"},
-{contig_type: "M", mstype: "real", msg: "relocation, inconsistency = 1013215"},
-{corr_start: 270202,corr_end: 271264,start:270202,end:271264,start_in_contig:1525033,end_in_contig:1523971,IDY:99.72,chr: "0"},
-{contig_type: "M", mstype: "real", msg: "relocation, inconsistency = 1027022"},
-{corr_start: 1298287,corr_end: 1307561,start:1298287,end:1307561,start_in_contig:1525034,end_in_contig:1534300,IDY:99.7,chr: "0"},
-{contig_type: "M", mstype: "real", msg: "relocation, inconsistency = 538777"},
-{corr_start: 1846339,corr_end: 1847852,start:1846339,end:1847852,start_in_contig:1534301,end_in_contig:1535814,IDY:99.93,chr: "0"},
-{contig_type: "M", mstype: "real", msg: "relocation, inconsistency = -540299"},
-{corr_start: 1307554,corr_end: 1445864,start:1307554,end:1445864,start_in_contig:1535815,end_in_contig:1674130,IDY:99.94,chr: "0"},
-{contig_type: "M", mstype: "real", msg: "relocation, inconsistency = 1542"},
-{corr_start: 1447407,corr_end: 1449777,start:1447407,end:1449777,start_in_contig:1674131,end_in_contig:1676501,IDY:99.92,chr: "0"},
-{contig_type: "M", mstype: "real", msg: "relocation, inconsistency = 1067"},
-{corr_start: 1450845,corr_end: 1456470,start:1450845,end:1456470,start_in_contig:1676502,end_in_contig:1682127,IDY:99.95,chr: "0"},
-{contig_type: "M", mstype: "real", msg: "relocation, inconsistency = 1065"},
-{corr_start: 1457536,corr_end: 1461894,start:1457536,end:1461894,start_in_contig:1682128,end_in_contig:1686486,IDY:100.0,chr: "0"},
-{contig_type: "M", mstype: "real", msg: "translocation"},
-{corr_start: 2961327,corr_end: 2962549,start:160682,end:161904,start_in_contig:1686704,end_in_contig:1687926,IDY:95.99,chr: "3"},
-{contig_type: "M", mstype: "real", msg: "translocation"},
-{corr_start: 1461887,corr_end: 1526124,start:1461887,end:1526124,start_in_contig:1688001,end_in_contig:1752238,IDY:99.99,chr: "0"},
-{contig_type: "M", mstype: "real", msg: "relocation, inconsistency = 405493"},
-{corr_start: 1931618,corr_end: 1933129,start:1931618,end:1933129,start_in_contig:1752239,end_in_contig:1753750,IDY:99.93,chr: "0"},
-{contig_type: "M", mstype: "real", msg: "relocation, inconsistency = -407015"},
-{corr_start: 1526115,corr_end: 1700464,start:1526115,end:1700464,start_in_contig:1753751,end_in_contig:1928103,IDY:99.99,chr: "0"},
-{contig_type: "M", mstype: "real", msg: "relocation, inconsistency = 130667"},
-{corr_start: 1831522,corr_end: 1833657,start:1831522,end:1833657,start_in_contig:1928494,end_in_contig:1930630,IDY:96.35,chr: "0"},
-{contig_type: "M", mstype: "real", msg: "relocation, inconsistency = 974897"},
-{corr_start: 831943,corr_end: 833305,start:831943,end:833305,start_in_contig:1955312,end_in_contig:1953950,IDY:99.27,chr: "0"},
-{contig_type: "M", mstype: "real", msg: "local misassembly"},
-{corr_start: 827378,corr_end: 831264,start:827378,end:831264,start_in_contig:1959703,end_in_contig:1955818,IDY:95.45,chr: "0"},
-{contig_type: "M", mstype: "real", msg: "local misassembly"},
-{corr_start: 826308,corr_end: 826825,start:826308,end:826825,start_in_contig:1960934,end_in_contig:1960422,IDY:95.76,chr: "0"},
-{contig_type: "M", mstype: "real", msg: "relocation, inconsistency = 869612"},
-{corr_start: 1700391,corr_end: 1711175,start:1700391,end:1711175,start_in_contig:1964888,end_in_contig:1975675,IDY:99.96,chr: "0"},
-{contig_type: "M", mstype: "real", msg: "translocation"},
-{corr_start: 2986459,corr_end: 2987994,start:185814,end:187349,start_in_contig:1977211,end_in_contig:1975676,IDY:99.93,chr: "3"},
-{contig_type: "M", mstype: "real", msg: "translocation"},
-{corr_start: 1711158,corr_end: 1711814,start:1711158,end:1711814,start_in_contig:1977212,end_in_contig:1977868,IDY:100.0,chr: "0"},
-{contig_type: "M", mstype: "real", msg: "translocation"},
-{corr_start: 2961327,corr_end: 2962549,start:160682,end:161904,start_in_contig:1978086,end_in_contig:1979308,IDY:95.91,chr: "3"},
-{contig_type: "M", mstype: "real", msg: "translocation"},
-{corr_start: 1711807,corr_end: 1738901,start:1711807,end:1738901,start_in_contig:1979383,end_in_contig:2006477,IDY:99.99,chr: "0"},
-{contig_type: "M", mstype: "real", msg: "translocation"},
-{corr_start: 2961327,corr_end: 2962446,start:160682,end:161801,start_in_contig:2006695,end_in_contig:2007814,IDY:95.71,chr: "3"},
-{contig_type: "M", mstype: "real", msg: "translocation"},
-{corr_start: 1738894,corr_end: 1795489,start:1738894,end:1795489,start_in_contig:2007992,end_in_contig:2064589,IDY:99.99,chr: "0"},
-{contig_type: "M", mstype: "real", msg: "relocation, inconsistency = -2712"},
-{corr_start: 1795488,corr_end: 1830169,start:1795488,end:1830169,start_in_contig:2067300,end_in_contig:2101980,IDY:99.96,chr: "0"},
-{contig_type: "M", mstype: "real", msg: "relocation, inconsistency = -1713786"},
-{corr_start: 116388,corr_end: 117731,start:116388,end:117731,start_in_contig:2101985,end_in_contig:2103328,IDY:99.78,chr: "0"},
-{contig_type: "M", mstype: "real", msg: "relocation, inconsistency = 1713787"},
-{corr_start: 1831522,corr_end: 1871232,start:1831522,end:1871232,start_in_contig:2103332,end_in_contig:2143045,IDY:98.83,chr: "0"},
-{contig_type: "M", mstype: "real", msg: "relocation, inconsistency = 20483"},
-{corr_start: 1915695,corr_end: 1931617,start:1915695,end:1931617,start_in_contig:2167025,end_in_contig:2182974,IDY:97.92,chr: "0"},
-{contig_type: "M", mstype: "real", msg: "relocation, inconsistency = 1522"},
-{corr_start: 1933140,corr_end: 1943381,start:1933140,end:1943381,start_in_contig:2182975,end_in_contig:2193216,IDY:98.94,chr: "0"},
-{contig_type: "M", mstype: "real", msg: "local misassembly"},
-{corr_start: 1944527,corr_end: 1953691,start:1944527,end:1953691,start_in_contig:2194368,end_in_contig:2203532,IDY:98.22,chr: "0"},
-{contig_type: "M", mstype: "real", msg: "relocation, inconsistency = -1620"},
-{corr_start: 1953690,corr_end: 1959998,start:1953690,end:1959998,start_in_contig:2205151,end_in_contig:2211459,IDY:99.46,chr: "0"},
-{contig_type: "M", mstype: "real", msg: "relocation, inconsistency = 2353"},
-{corr_start: 1962352,corr_end: 1967507,start:1962352,end:1967507,start_in_contig:2211460,end_in_contig:2216615,IDY:99.71,chr: "0"},
-{contig_type: "M", mstype: "real", msg: "relocation, inconsistency = -35890"},
-{corr_start: 1931618,corr_end: 1933131,start:1931618,end:1933131,start_in_contig:2216616,end_in_contig:2218129,IDY:99.93,chr: "0"},
-{contig_type: "M", mstype: "real", msg: "relocation, inconsistency = 34368"},
-{corr_start: 1967500,corr_end: 1992662,start:1967500,end:1992662,start_in_contig:2218130,end_in_contig:2243297,IDY:99.32,chr: "0"},
-{contig_type: "M", mstype: "real", msg: "local misassembly"},
-{corr_start: 1992783,corr_end: 2011026,start:1992783,end:2011026,start_in_contig:2243298,end_in_contig:2261542,IDY:99.72,chr: "0"},
-{contig_type: "M", mstype: "real", msg: "translocation"},
-{corr_start: 2961327,corr_end: 2962237,start:160682,end:161592,start_in_contig:2261760,end_in_contig:2262670,IDY:95.28,chr: "3"},
-{contig_type: "M", mstype: "real", msg: "translocation"},
-{corr_start: 1831522,corr_end: 1832936,start:1831522,end:1832936,start_in_contig:2264086,end_in_contig:2262671,IDY:99.93,chr: "0"},
-{contig_type: "M", mstype: "real", msg: "translocation"},
-{corr_start: 2933253,corr_end: 2933641,start:132608,end:132996,start_in_contig:2264475,end_in_contig:2264087,IDY:97.94,chr: "3"},
-{contig_type: "M", mstype: "real", msg: "translocation"},
-{corr_start: 2011019,corr_end: 2182601,start:2011019,end:2182601,start_in_contig:2264476,end_in_contig:2436057,IDY:99.88,chr: "0"},
-{contig_type: "M", mstype: "real", msg: "relocation, inconsistency = 989180"},
-{corr_start: 1020058,corr_end: 1021838,start:1020058,end:1021838,start_in_contig:2437838,end_in_contig:2436058,IDY:100.0,chr: "0"},
-{contig_type: "M", mstype: "real", msg: "relocation, inconsistency = 1160761"},
-{corr_start: 2182600,corr_end: 2298559,start:2182600,end:2298559,start_in_contig:2437839,end_in_contig:2553805,IDY:99.98,chr: "0"},
-{contig_type: "M", mstype: "real", msg: "relocation, inconsistency = 1321325"},
-{corr_start: 848730,corr_end: 860836,start:848730,end:860836,start_in_contig:2566350,end_in_contig:2554244,IDY:99.6,chr: "0"},
-{contig_type: "M", mstype: "real", msg: "translocation"},
-{corr_start: 2961327,corr_end: 2962446,start:160682,end:161801,start_in_contig:2566567,end_in_contig:2567686,IDY:95.71,chr: "3"},
-{contig_type: "M", mstype: "real", msg: "translocation"},
-{corr_start: 825913,corr_end: 848740,start:825913,end:848740,start_in_contig:2590690,end_in_contig:2567862,IDY:99.98,chr: "0"},
-{contig_type: "M", mstype: "real", msg: "relocation, inconsistency = 1017"},
-{corr_start: 823139,corr_end: 823854,start:823139,end:823854,start_in_contig:2592447,end_in_contig:2591732,IDY:96.09,chr: "0"},
-{contig_type: "M", mstype: "real", msg: "relocation, inconsistency = -1477"},
-{corr_start: 681848,corr_end: 822470,start:681848,end:822470,start_in_contig:2735215,end_in_contig:2594593,IDY:99.98,chr: "0"},
-{contig_type: "M", mstype: "real", msg: "local misassembly"},
-{corr_start: 643484,corr_end: 681969,start:643484,end:681969,start_in_contig:2773702,end_in_contig:2735216,IDY:99.96,chr: "0"},
+{corr_start: 1,corr_end: 578289,start:1,end:578289,start_in_contig:578286,end_in_contig:1,IDY:99.99,chr: "0"},
+{contig_type: "M", mstype: "real", msg: "relocation, inconsistency = -8697 [linear representation of circular genome]"},
+{corr_start: 569593,corr_end: 2765010,start:569593,end:2765010,start_in_contig:2773702,end_in_contig:578287,IDY:99.99,chr: "0"},
 ];
 contig_lengths["pilon_outdir.sorted.05-04-2019"]["tig00000019_pilon"] = 40017;
 contig_structures["pilon_outdir.sorted.05-04-2019"]["tig00000019_pilon"] = [ 
-{corr_start: 2708750,corr_end: 2710813,start:10614,end:12677,start_in_contig:1,end_in_contig:2068,IDY:99.61,chr: "1"},
-{contig_type: "M", mstype: "real", msg: "unknown"},
-{corr_start: 2782389,corr_end: 2783202,start:47991,end:48804,start_in_contig:2069,end_in_contig:2881,IDY:99.88,chr: "2"},
-{contig_type: "M", mstype: "real", msg: "unknown"},
-{corr_start: 2786895,corr_end: 2787703,start:52497,end:53305,start_in_contig:8610,end_in_contig:7802,IDY:99.75,chr: "2"},
-{contig_type: "M", mstype: "real", msg: "unknown"},
-{corr_start: 2782389,corr_end: 2783197,start:47991,end:48799,start_in_contig:14043,end_in_contig:13235,IDY:99.63,chr: "2"},
-{contig_type: "M", mstype: "real", msg: "unknown"},
-{corr_start: 2773194,corr_end: 2774003,start:38796,end:39605,start_in_contig:22607,end_in_contig:21798,IDY:99.63,chr: "2"},
-{contig_type: "M", mstype: "real", msg: "unknown"},
-{corr_start: 2782388,corr_end: 2783202,start:47990,end:48804,start_in_contig:24542,end_in_contig:25355,IDY:99.75,chr: "2"},
-{contig_type: "M", mstype: "real", msg: "unknown"},
-{corr_start: 2786895,corr_end: 2787703,start:52497,end:53305,start_in_contig:29528,end_in_contig:30336,IDY:99.75,chr: "2"},
-{contig_type: "M", mstype: "real", msg: "unknown"},
-{corr_start: 2110770,corr_end: 2111109,start:2110770,end:2111109,start_in_contig:30675,end_in_contig:30337,IDY:97.94,chr: "0"},
-{contig_type: "M", mstype: "real", msg: "unknown"},
-{corr_start: 2707001,corr_end: 2710813,start:8865,end:12677,start_in_contig:30680,end_in_contig:34492,IDY:99.95,chr: "1"},
-{contig_type: "M", mstype: "real", msg: "unknown"},
-{corr_start: 2782389,corr_end: 2783202,start:47991,end:48804,start_in_contig:34493,end_in_contig:35305,IDY:99.88,chr: "2"},
-{contig_type: "M", mstype: "real", msg: "unknown"},
+{corr_start: 2988698,corr_end: 3001983,start:1,end:13286,start_in_contig:13290,end_in_contig:1,IDY:99.95,chr: "2"},
+{contig_type: "M", mstype: "real", msg: "relocation, inconsistency = -7592 [linear representation of circular genome]"},
+{corr_start: 2994392,corr_end: 3021120,start:5695,end:32423,start_in_contig:40017,end_in_contig:13291,IDY:99.94,chr: "2"},
 ];
 contig_lengths["pilon_outdir.sorted.05-04-2019"]["tig00000020_pilon"] = 44609;
 contig_structures["pilon_outdir.sorted.05-04-2019"]["tig00000020_pilon"] = [ 
-{corr_start: 2812948,corr_end: 2818723,start:12303,end:18078,start_in_contig:1,end_in_contig:5769,IDY:96.52,chr: "3"},
-{contig_type: "M", mstype: "real", msg: "unknown"},
-{corr_start: 2827600,corr_end: 2831398,start:26955,end:30753,start_in_contig:20096,end_in_contig:23894,IDY:97.53,chr: "3"},
-{contig_type: "M", mstype: "real", msg: "unknown"},
-{corr_start: 2791196,corr_end: 2791543,start:56798,end:57145,start_in_contig:29492,end_in_contig:29839,IDY:96.55,chr: "2"},
-{contig_type: "M", mstype: "real", msg: "unknown"},
-{corr_start: 3041825,corr_end: 3044088,start:241180,end:243443,start_in_contig:31970,end_in_contig:34232,IDY:97.26,chr: "3"},
-{contig_type: "M", mstype: "real", msg: "unknown"},
-{corr_start: 3044222,corr_end: 3045751,start:243577,end:245106,start_in_contig:35004,end_in_contig:36530,IDY:96.35,chr: "3"},
-{contig_type: "M", mstype: "real", msg: "unknown"},
-{corr_start: 3046439,corr_end: 3048552,start:245794,end:247907,start_in_contig:36869,end_in_contig:38982,IDY:96.45,chr: "3"},
-{contig_type: "M", mstype: "real", msg: "unknown"},
-{corr_start: 2800648,corr_end: 2803950,start:3,end:3305,start_in_contig:41307,end_in_contig:44609,IDY:95.91,chr: "3"},
-{contig_type: "M", mstype: "real", msg: "unknown"},
+{corr_start: 3049200,corr_end: 3093814,start:1516,end:46130,start_in_contig:44609,end_in_contig:1,IDY:99.97,chr: "5"},
 ];
 contig_lengths["pilon_outdir.sorted.05-04-2019"]["tig00000025_pilon"] = 12433;
 contig_structures["pilon_outdir.sorted.05-04-2019"]["tig00000025_pilon"] = [ 
-{corr_start: 2787357,corr_end: 2787703,start:52959,end:53305,start_in_contig:1,end_in_contig:347,IDY:99.43,chr: "2"},
-{contig_type: "M", mstype: "real", msg: "local misassembly"},
-{corr_start: 2788027,corr_end: 2798788,start:53629,end:64390,start_in_contig:349,end_in_contig:11103,IDY:99.85,chr: "2"},
-{contig_type: "M", mstype: "real", msg: "relocation, inconsistency = -10764"},
-{corr_start: 2788025,corr_end: 2789354,start:53627,end:54956,start_in_contig:11104,end_in_contig:12433,IDY:100.0,chr: "2"},
+{corr_start: 3030905,corr_end: 3043184,start:475,end:12754,start_in_contig:12433,end_in_contig:5,IDY:98.46,chr: "4"},
 ];
 contig_lengths["pilon_outdir.sorted.05-04-2019"]["tig00000027_pilon"] = 26287;
 contig_structures["pilon_outdir.sorted.05-04-2019"]["tig00000027_pilon"] = [ 
-{corr_start: 583652,corr_end: 583870,start:583652,end:583870,start_in_contig:7003,end_in_contig:6785,IDY:98.17,chr: "0"},
-{contig_type: "M", mstype: "real", msg: "unknown"},
-{corr_start: 582485,corr_end: 583650,start:582485,end:583650,start_in_contig:8272,end_in_contig:7110,IDY:95.97,chr: "0"},
-{contig_type: "M", mstype: "real", msg: "unknown"},
+{corr_start: 3119345,corr_end: 3145632,start:16494,end:42781,start_in_contig:26287,end_in_contig:1,IDY:99.98,chr: "6"},
 ];
 contig_lengths["pilon_outdir.sorted.05-04-2019"]["tig00000029_pilon"] = 11989;
 contig_structures["pilon_outdir.sorted.05-04-2019"]["tig00000029_pilon"] = [ 
-{corr_start: 2739861,corr_end: 2743966,start:5463,end:9568,start_in_contig:1,end_in_contig:4104,IDY:99.17,chr: "2"},
-{contig_type: "M", mstype: "real", msg: "relocation, inconsistency = -9320"},
-{corr_start: 2735667,corr_end: 2742533,start:1269,end:8135,start_in_contig:5125,end_in_contig:11989,IDY:98.81,chr: "2"},
+{corr_start: 3029090,corr_end: 3030430,start:7970,end:9310,start_in_contig:1,end_in_contig:1346,IDY:99.33,chr: "3"},
+{contig_type: "M", mstype: "real", msg: "relocation, inconsistency = -1341 [linear representation of circular genome]"},
+{corr_start: 3021121,corr_end: 3030430,start:1,end:9310,start_in_contig:1347,end_in_contig:10663,IDY:99.84,chr: "3"},
+{contig_type: "M", mstype: "real", msg: "relocation, inconsistency = -1325 [linear representation of circular genome]"},
+{corr_start: 3021121,corr_end: 3022445,start:1,end:1325,start_in_contig:10664,end_in_contig:11989,IDY:99.92,chr: "3"},
 ];
 contig_lengths["pilon_outdir.sorted.05-04-2019"]["tig00000464_pilon"] = 218977;
 contig_structures["pilon_outdir.sorted.05-04-2019"]["tig00000464_pilon"] = [ 
-{corr_start: 2869441,corr_end: 2869955,start:68796,end:69310,start_in_contig:1,end_in_contig:515,IDY:98.84,chr: "3"},
-{contig_type: "M", mstype: "real", msg: "local misassembly"},
-{corr_start: 2870059,corr_end: 2872529,start:69414,end:71884,start_in_contig:517,end_in_contig:2987,IDY:99.72,chr: "3"},
+{corr_start: 2772247,corr_end: 2955698,start:7238,end:190689,start_in_contig:183449,end_in_contig:1,IDY:99.94,chr: "1"},
 {contig_type: "M", mstype: "real", msg: "translocation"},
-{corr_start: 2755288,corr_end: 2756807,start:20890,end:22409,start_in_contig:4507,end_in_contig:2988,IDY:100.0,chr: "2"},
+{corr_start: 3091297,corr_end: 3099651,start:43613,end:51967,start_in_contig:191799,end_in_contig:183450,IDY:97.63,chr: "5"},
 {contig_type: "M", mstype: "real", msg: "translocation"},
-{corr_start: 2841186,corr_end: 2841610,start:40541,end:40965,start_in_contig:5054,end_in_contig:4630,IDY:99.53,chr: "3"},
-{contig_type: "M", mstype: "real", msg: "inversion"},
-{corr_start: 2842407,corr_end: 2844609,start:41762,end:43964,start_in_contig:5437,end_in_contig:7639,IDY:99.82,chr: "3"},
-{contig_type: "M", mstype: "real", msg: "relocation, inconsistency = 203943"},
-{corr_start: 3048553,corr_end: 3050443,start:247908,end:249798,start_in_contig:7640,end_in_contig:9530,IDY:95.63,chr: "3"},
-{contig_type: "M", mstype: "real", msg: "relocation, inconsistency = -205834"},
-{corr_start: 2844610,corr_end: 2853675,start:43965,end:53030,start_in_contig:9531,end_in_contig:18575,IDY:99.66,chr: "3"},
-{contig_type: "M", mstype: "real", msg: "relocation, inconsistency = 2353"},
-{corr_start: 2856029,corr_end: 2857840,start:55384,end:57195,start_in_contig:18576,end_in_contig:20384,IDY:99.45,chr: "3"},
-{contig_type: "M", mstype: "real", msg: "relocation, inconsistency = 15615"},
-{corr_start: 2873456,corr_end: 2891465,start:72811,end:90820,start_in_contig:20385,end_in_contig:38395,IDY:99.84,chr: "3"},
-{contig_type: "M", mstype: "real", msg: "translocation"},
-{corr_start: 1157701,corr_end: 1159038,start:1157701,end:1159038,start_in_contig:38439,end_in_contig:39776,IDY:100.0,chr: "0"},
-{contig_type: "M", mstype: "real", msg: "translocation"},
-{corr_start: 2988161,corr_end: 2988614,start:187516,end:187969,start_in_contig:40230,end_in_contig:39777,IDY:100.0,chr: "3"},
-{contig_type: "M", mstype: "real", msg: "relocation, inconsistency = 98179"},
-{corr_start: 2889050,corr_end: 2889747,start:88405,end:89102,start_in_contig:40465,end_in_contig:41162,IDY:99.57,chr: "3"},
-{contig_type: "M", mstype: "real", msg: "translocation"},
-{corr_start: 143706,corr_end: 145021,start:143706,end:145021,start_in_contig:42491,end_in_contig:41176,IDY:99.77,chr: "0"},
-{contig_type: "M", mstype: "real", msg: "relocation, inconsistency = 131651"},
-{corr_start: 279506,corr_end: 280991,start:279506,end:280991,start_in_contig:45325,end_in_contig:46810,IDY:99.66,chr: "0"},
-{contig_type: "M", mstype: "real", msg: "relocation, inconsistency = 2030384"},
-{corr_start: 2311376,corr_end: 2312449,start:2311376,end:2312449,start_in_contig:47884,end_in_contig:46811,IDY:99.44,chr: "0"},
-{contig_type: "M", mstype: "real", msg: "relocation, inconsistency = 434047"},
-{corr_start: 1874450,corr_end: 1875350,start:1874450,end:1875350,start_in_contig:50762,end_in_contig:49863,IDY:99.52,chr: "0"},
-{contig_type: "M", mstype: "real", msg: "translocation"},
-{corr_start: 2985296,corr_end: 2986462,start:184651,end:185817,start_in_contig:51930,end_in_contig:50763,IDY:99.91,chr: "3"},
-{contig_type: "M", mstype: "real", msg: "relocation, inconsistency = 62085"},
-{corr_start: 3048548,corr_end: 3050444,start:247903,end:249799,start_in_contig:51931,end_in_contig:53827,IDY:95.52,chr: "3"},
-{contig_type: "M", mstype: "real", msg: "relocation, inconsistency = 64392"},
-{corr_start: 2983498,corr_end: 2984155,start:182853,end:183510,start_in_contig:54488,end_in_contig:53828,IDY:96.89,chr: "3"},
-{contig_type: "M", mstype: "real", msg: "relocation, inconsistency = 14984"},
-{corr_start: 2999140,corr_end: 3000048,start:198495,end:199403,start_in_contig:54489,end_in_contig:55397,IDY:100.0,chr: "3"},
-{contig_type: "M", mstype: "real", msg: "relocation, inconsistency = 16552"},
-{corr_start: 2974008,corr_end: 2982587,start:173363,end:181942,start_in_contig:63987,end_in_contig:55398,IDY:99.26,chr: "3"},
-{contig_type: "M", mstype: "real", msg: "relocation, inconsistency = 65724"},
-{corr_start: 2904457,corr_end: 2908283,start:103812,end:107638,start_in_contig:63988,end_in_contig:67773,IDY:98.75,chr: "3"},
-{contig_type: "M", mstype: "indel", msg: " indel (> 5bp)"},
-{corr_start: 2908433,corr_end: 2908676,start:107788,end:108031,start_in_contig:67854,end_in_contig:68097,IDY:99.59,chr: "3"},
-{contig_type: "M", mstype: "real", msg: "relocation, inconsistency = 77782"},
-{corr_start: 2986459,corr_end: 2987996,start:185814,end:187351,start_in_contig:68098,end_in_contig:69635,IDY:99.48,chr: "3"},
-{contig_type: "M", mstype: "real", msg: "relocation, inconsistency = 17119"},
-{corr_start: 2938373,corr_end: 2961332,start:137728,end:160687,start_in_contig:100602,end_in_contig:77643,IDY:99.73,chr: "3"},
-{contig_type: "M", mstype: "real", msg: "local misassembly"},
-{corr_start: 2937858,corr_end: 2938278,start:137213,end:137633,start_in_contig:101024,end_in_contig:100603,IDY:99.76,chr: "3"},
-{contig_type: "M", mstype: "real", msg: "relocation, inconsistency = -112586"},
-{corr_start: 3048548,corr_end: 3050443,start:247903,end:249798,start_in_contig:102920,end_in_contig:101025,IDY:100.0,chr: "3"},
-{contig_type: "M", mstype: "real", msg: "relocation, inconsistency = 50503"},
-{corr_start: 2996437,corr_end: 2997952,start:195792,end:197307,start_in_contig:103013,end_in_contig:104528,IDY:99.87,chr: "3"},
-{contig_type: "M", mstype: "real", msg: "relocation, inconsistency = -89679"},
-{corr_start: 2908323,corr_end: 2909686,start:107678,end:109041,start_in_contig:104578,end_in_contig:105941,IDY:95.38,chr: "3"},
-{contig_type: "M", mstype: "real", msg: "translocation"},
-{corr_start: 1828756,corr_end: 1830176,start:1828756,end:1830176,start_in_contig:106258,end_in_contig:107681,IDY:99.65,chr: "0"},
-{contig_type: "M", mstype: "real", msg: "relocation, inconsistency = 47846"},
-{corr_start: 1878142,corr_end: 1879509,start:1878142,end:1879509,start_in_contig:107801,end_in_contig:109168,IDY:99.78,chr: "0"},
-{contig_type: "M", mstype: "real", msg: "translocation"},
-{corr_start: 3048548,corr_end: 3050444,start:247903,end:249799,start_in_contig:117724,end_in_contig:115828,IDY:95.52,chr: "3"},
-{contig_type: "M", mstype: "real", msg: "translocation"},
-{corr_start: 2755290,corr_end: 2756808,start:20892,end:22410,start_in_contig:117766,end_in_contig:119284,IDY:100.0,chr: "2"},
-{contig_type: "M", mstype: "real", msg: "translocation"},
-{corr_start: 2891465,corr_end: 2892832,start:90820,end:92187,start_in_contig:121111,end_in_contig:119745,IDY:99.78,chr: "3"},
-{contig_type: "M", mstype: "real", msg: "relocation, inconsistency = 16588"},
-{corr_start: 2909773,corr_end: 2915301,start:109128,end:114656,start_in_contig:121464,end_in_contig:126992,IDY:99.93,chr: "3"},
-{contig_type: "M", mstype: "real", msg: "local misassembly"},
-{corr_start: 2915390,corr_end: 2916491,start:114745,end:115846,start_in_contig:126993,end_in_contig:128095,IDY:99.64,chr: "3"},
-{contig_type: "M", mstype: "real", msg: "relocation, inconsistency = 3034"},
-{corr_start: 2919526,corr_end: 2921224,start:118881,end:120579,start_in_contig:128096,end_in_contig:129795,IDY:99.82,chr: "3"},
-{contig_type: "M", mstype: "real", msg: "relocation, inconsistency = 1048"},
-{corr_start: 2922273,corr_end: 2923228,start:121628,end:122583,start_in_contig:129796,end_in_contig:130751,IDY:99.69,chr: "3"},
-{contig_type: "M", mstype: "real", msg: "relocation, inconsistency = 27261"},
-{corr_start: 2891464,corr_end: 2894804,start:90819,end:94159,start_in_contig:134237,end_in_contig:130959,IDY:98.05,chr: "3"},
-{contig_type: "M", mstype: "real", msg: "relocation, inconsistency = 96728"},
-{corr_start: 2991817,corr_end: 2992385,start:191172,end:191740,start_in_contig:134522,end_in_contig:135090,IDY:99.83,chr: "3"},
-{contig_type: "M", mstype: "real", msg: "relocation, inconsistency = 42302"},
-{corr_start: 3034691,corr_end: 3036477,start:234046,end:235832,start_in_contig:136877,end_in_contig:135091,IDY:99.94,chr: "3"},
-{contig_type: "M", mstype: "real", msg: "relocation, inconsistency = 38560"},
-{corr_start: 2992390,corr_end: 2996130,start:191745,end:195485,start_in_contig:136878,end_in_contig:140618,IDY:99.95,chr: "3"},
-{contig_type: "M", mstype: "real", msg: "relocation, inconsistency = 35282"},
-{corr_start: 3032826,corr_end: 3033111,start:232181,end:232466,start_in_contig:142032,end_in_contig:142317,IDY:99.65,chr: "3"},
-{contig_type: "M", mstype: "real", msg: "translocation"},
-{corr_start: 483857,corr_end: 484731,start:483857,end:484731,start_in_contig:144119,end_in_contig:144992,IDY:98.51,chr: "0"},
-{contig_type: "M", mstype: "real", msg: "translocation"},
-{corr_start: 2997952,corr_end: 2999012,start:197307,end:198367,start_in_contig:152185,end_in_contig:151125,IDY:99.72,chr: "3"},
-{contig_type: "M", mstype: "real", msg: "relocation, inconsistency = 139943"},
-{corr_start: 2857034,corr_end: 2857845,start:56389,end:57200,start_in_contig:153128,end_in_contig:152349,IDY:95.57,chr: "3"},
-{contig_type: "M", mstype: "real", msg: "translocation"},
-{corr_start: 1727264,corr_end: 1728613,start:1727264,end:1728613,start_in_contig:163785,end_in_contig:165134,IDY:99.7,chr: "0"},
-{contig_type: "M", mstype: "real", msg: "relocation, inconsistency = 1606850"},
-{corr_start: 118788,corr_end: 119873,start:118788,end:119873,start_in_contig:166760,end_in_contig:165675,IDY:99.72,chr: "0"},
-{contig_type: "M", mstype: "real", msg: "translocation"},
-{corr_start: 3043466,corr_end: 3046952,start:242821,end:246307,start_in_contig:168101,end_in_contig:171587,IDY:95.56,chr: "3"},
-{contig_type: "M", mstype: "real", msg: "relocation, inconsistency = -250150"},
-{corr_start: 2801544,corr_end: 2804584,start:899,end:3939,start_in_contig:176329,end_in_contig:179369,IDY:95.82,chr: "3"},
-{contig_type: "M", mstype: "real", msg: "translocation"},
-{corr_start: 1500180,corr_end: 1501945,start:1500180,end:1501945,start_in_contig:179370,end_in_contig:181135,IDY:99.83,chr: "0"},
-{contig_type: "M", mstype: "real", msg: "translocation"},
-{corr_start: 2809385,corr_end: 2818723,start:8740,end:18078,start_in_contig:185699,end_in_contig:195050,IDY:97.78,chr: "3"},
-{contig_type: "M", mstype: "real", msg: "relocation, inconsistency = -2749"},
-{corr_start: 2818718,corr_end: 2830347,start:18073,end:29702,start_in_contig:197794,end_in_contig:209423,IDY:99.57,chr: "3"},
-{contig_type: "M", mstype: "real", msg: "relocation, inconsistency = -2030"},
-{corr_start: 2831039,corr_end: 2835541,start:30394,end:34896,start_in_contig:212145,end_in_contig:216622,IDY:96.85,chr: "3"},
-{contig_type: "M", mstype: "real", msg: "relocation, inconsistency = 126167"},
-{corr_start: 2961813,corr_end: 2964063,start:161168,end:163418,start_in_contig:218976,end_in_contig:216727,IDY:97.96,chr: "3"},
+{corr_start: 2961524,corr_end: 2988697,start:196515,end:223688,start_in_contig:218977,end_in_contig:191800,IDY:99.96,chr: "1"},
 ];
 contig_lengths["pilon_outdir.sorted.05-04-2019"]["tig00000465_pilon"] = 8300;
 contig_structures["pilon_outdir.sorted.05-04-2019"]["tig00000465_pilon"] = [ 
-{corr_start: 2832009,corr_end: 2835541,start:31364,end:34896,start_in_contig:1,end_in_contig:3503,IDY:96.8,chr: "3"},
-{contig_type: "M", mstype: "real", msg: "relocation, inconsistency = 80922"},
-{corr_start: 2916568,corr_end: 2918081,start:115923,end:117436,start_in_contig:3608,end_in_contig:5122,IDY:99.8,chr: "3"},
-{contig_type: "M", mstype: "real", msg: "relocation, inconsistency = -1440"},
-{corr_start: 2916642,corr_end: 2919525,start:115997,end:118880,start_in_contig:5123,end_in_contig:7969,IDY:98.34,chr: "3"},
-{contig_type: "M", mstype: "real", msg: "relocation, inconsistency = -83992"},
-{corr_start: 2835534,corr_end: 2835842,start:34889,end:35197,start_in_contig:7970,end_in_contig:8277,IDY:95.48,chr: "3"},
+{corr_start: 2960821,corr_end: 2967388,start:195812,end:202379,start_in_contig:6563,end_in_contig:1,IDY:99.86,chr: "1"},
+{contig_type: "M", mstype: "real", msg: "relocation, inconsistency = 1441"},
+{corr_start: 2957644,corr_end: 2959379,start:192635,end:194370,start_in_contig:8300,end_in_contig:6564,IDY:99.87,chr: "1"},
 ];</script>
     <script type="text/javascript" name="d3.js">
         (function() {

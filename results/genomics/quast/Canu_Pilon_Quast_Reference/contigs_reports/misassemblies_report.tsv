@@ -1,14 +1,14 @@
 Assembly	pilon_outdir.sorted.05-04-2019
-# misassemblies	157
-    # relocations	98
-    # translocations	58
-    # inversions	1
+# misassemblies	7
+    # relocations	5
+    # translocations	2
+    # inversions	0
 # misassembled contigs	5
-Misassembled contigs length	3025401
-# local misassemblies	20
-# unaligned mis. contigs	3
-# mismatches	4560
-# indels	354
-    # indels (<= 5 bp)	339
-    # indels (> 5 bp)	15
-Indels length	769
+Misassembled contigs length	3052985
+# local misassemblies	0
+# unaligned mis. contigs	0
+# mismatches	121
+# indels	131
+    # indels (<= 5 bp)	124
+    # indels (> 5 bp)	7
+Indels length	242

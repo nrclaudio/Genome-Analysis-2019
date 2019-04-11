@@ -1,5 +1,5 @@
-Writing filtered delta file /domus/h1/clno2215/Canu_Pilon_Quast_Reference/contigs_reports/nucmer_output/pilon_outdir-sorted-05-04-2019.filter
-Reading delta file /domus/h1/clno2215/Canu_Pilon_Quast_Reference/contigs_reports/nucmer_output/pilon_outdir-sorted-05-04-2019.delta
-Writing plot files /domus/h1/clno2215/Canu_Pilon_Quast_Reference/contigs_reports/nucmer_output/pilon_outdir-sorted-05-04-2019.fplot, /domus/h1/clno2215/Canu_Pilon_Quast_Reference/contigs_reports/nucmer_output/pilon_outdir-sorted-05-04-2019.rplot
-Writing gnuplot script /domus/h1/clno2215/Canu_Pilon_Quast_Reference/contigs_reports/nucmer_output/pilon_outdir-sorted-05-04-2019.gp
-Rendering plot /domus/h1/clno2215/Canu_Pilon_Quast_Reference/contigs_reports/nucmer_output/pilon_outdir-sorted-05-04-2019.html
+Writing filtered delta file /domus/h1/clno2215/stunning-garbanzo/results/genomics/quast/Canu_Pilon_Quast_Reference/contigs_reports/nucmer_output/pilon_outdir-sorted-05-04-2019.filter
+Reading delta file /domus/h1/clno2215/stunning-garbanzo/results/genomics/quast/Canu_Pilon_Quast_Reference/contigs_reports/nucmer_output/pilon_outdir-sorted-05-04-2019.delta
+Writing plot files /domus/h1/clno2215/stunning-garbanzo/results/genomics/quast/Canu_Pilon_Quast_Reference/contigs_reports/nucmer_output/pilon_outdir-sorted-05-04-2019.fplot, /domus/h1/clno2215/stunning-garbanzo/results/genomics/quast/Canu_Pilon_Quast_Reference/contigs_reports/nucmer_output/pilon_outdir-sorted-05-04-2019.rplot
+Writing gnuplot script /domus/h1/clno2215/stunning-garbanzo/results/genomics/quast/Canu_Pilon_Quast_Reference/contigs_reports/nucmer_output/pilon_outdir-sorted-05-04-2019.gp
+Rendering plot /domus/h1/clno2215/stunning-garbanzo/results/genomics/quast/Canu_Pilon_Quast_Reference/contigs_reports/nucmer_output/pilon_outdir-sorted-05-04-2019.html
