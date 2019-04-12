@@ -1,0 +1,5 @@
+S1	E1	S2	E2	Reference	Contig	IDY	Ambiguous	Best_group
+1	578289	578286	1	CP014529.1_Enterococcus_faecium_strain_E745__complete_genome	tig00000001_pilon	99.99		True
+relocation, inconsistency = -8697 [linear representation of circular genome]
+569593	2765010	2773702	578287	CP014529.1_Enterococcus_faecium_strain_E745__complete_genome	tig00000001_pilon	99.99		True
+CONTIG	tig00000001_pilon	2773702	misassembled
