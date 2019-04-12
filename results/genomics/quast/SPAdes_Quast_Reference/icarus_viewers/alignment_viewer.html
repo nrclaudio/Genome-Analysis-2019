@@ -2465,10 +2465,10 @@ THE SOFTWARE.
                 <span id="misassemblies_selector_panel">
                     <div class="text_div" id="misassemblies_checkboxes_div">
                         Show misassemblies:
-                        <label><input type="checkbox" id="relocation" name="misassemblies_select" checked="checked"/>relocations (0)</label>
-                        <label><input type="checkbox" id="translocation" name="misassemblies_select" checked="checked"/>translocation (1)</label>
+                        <label><input type="checkbox" id="relocation" name="misassemblies_select" checked="checked"/>relocation (1)</label>
+                        <label><input type="checkbox" id="translocation" name="misassemblies_select" checked="checked"/>translocations (4)</label>
                         <label><input type="checkbox" id="inversion" name="misassemblies_select" checked="checked"/>inversions (0)</label>
-                        <label><input type="checkbox" id="local" name="misassemblies_select" checked="checked"/>local (2)</label>
+                        <label><input type="checkbox" id="local" name="misassemblies_select" checked="checked"/>local (0)</label>
                     </div>
                 </span>
             </div>
@@ -2521,10 +2521,10 @@ var assemblies_len = {};
 var assemblies_contigs = {};
 var assemblies_misassemblies = {};
 var assemblies_n50 = {};
-assemblies_links["scaffolds"] = "../contigs_reports/contigs_report_scaffolds.stdout";
-assemblies_len["scaffolds"] = 3070843;
-assemblies_contigs["scaffolds"] = 30;
-assemblies_misassemblies["scaffolds"] = "1+2";
+assemblies_links["Spades_assembly"] = "../contigs_reports/contigs_report_Spades_assembly.stdout";
+assemblies_len["Spades_assembly"] = 3128738;
+assemblies_contigs["Spades_assembly"] = 17;
+assemblies_misassemblies["Spades_assembly"] = "5+0";
 chromosome = "Assembled_genome";
 var chrContigs = ["CP014529.1_Enterococcus_faecium_strain_E745__complete_genome","CP014530.1_Enterococcus_faecium_strain_E745_plasmid_pl1__complete_sequence","CP014531.1_Enterococcus_faecium_strain_E745_plasmid_pl2__complete_sequence","CP014532.1_Enterococcus_faecium_strain_E745_plasmid_pl3__complete_sequence","CP014533.1_Enterococcus_faecium_strain_E745_plasmid_pl4__complete_sequence","CP014534.1_Enterococcus_faecium_strain_E745_plasmid_pl5__complete_sequence","CP014535.1_Enterococcus_faecium_strain_E745_plasmid_pl6__complete_sequence"];
 var features_data;
@@ -2541,249 +2541,133 @@ var links_to_chromosomes;
 var oneHtml = true;
 var contig_data = {};
 contig_data["Assembled_genome"] = {};
-contig_data["Assembled_genome"]["scaffolds"] = [ 
-{name:"NODE_1_length_1439166_cov_42.837164",corr_start:1,corr_end:250251,start:1,end:250251,misassemblies:"",mis_ends:"",is_best:"True"},
-{name:"NODE_1_length_1439166_cov_42.837164",corr_start:250460,corr_end:253200,start:250460,end:253200,misassemblies:"",mis_ends:"",is_best:"True"},
-{name:"NODE_1_length_1439166_cov_42.837164",corr_start:253620,corr_end:258707,start:253620,end:258707,misassemblies:"",mis_ends:"",is_best:"True"},
-{name:"NODE_1_length_1439166_cov_42.837164",corr_start:261049,corr_end:402324,start:261049,end:402324,misassemblies:"",mis_ends:"",is_best:"True"},
-{name:"NODE_1_length_1439166_cov_42.837164",corr_start:403930,corr_end:786677,start:403930,end:786677,misassemblies:"",mis_ends:"",is_best:"True"},
-{name:"NODE_1_length_1439166_cov_42.837164",corr_start:788966,corr_end:938372,start:788966,end:938372,misassemblies:"",mis_ends:"",is_best:"True"},
-{name:"NODE_3_length_293214_cov_37.144294",corr_start:945389,corr_end:1125218,start:945389,end:1125218,misassemblies:"",mis_ends:"",is_best:"True"},
-{name:"NODE_3_length_293214_cov_37.144294",corr_start:1125905,corr_end:1238602,start:1125905,end:1238602,misassemblies:"",mis_ends:"",is_best:"True"},
-{name:"NODE_14_length_6410_cov_179.274587",corr_start:1242677,corr_end:1244086,start:1242677,end:1244086,misassemblies:"",mis_ends:"",is_best:"True"},
-{name:"NODE_14_length_6410_cov_179.274587",corr_start:1244035,corr_end:1249026,start:1244035,end:1249026,misassemblies:"",mis_ends:"",is_best:"True"},
-{name:"NODE_5_length_155237_cov_56.663271",corr_start:1250386,corr_end:1386923,start:1250386,end:1386923,misassemblies:";local",mis_ends:";R",is_best:"True"},
-{name:"NODE_5_length_155237_cov_56.663271",corr_start:1388926,corr_end:1389338,start:1388926,end:1389338,misassemblies:"local;",mis_ends:"L",is_best:"True"},
-{name:"NODE_5_length_155237_cov_56.663271",corr_start:1389283,corr_end:1405847,start:1389283,end:1405847,misassemblies:"",mis_ends:"",is_best:"True"},
-{name:"NODE_31_length_519_cov_32.366379",corr_start:1405797,corr_end:1406315,start:1405797,end:1406315,misassemblies:"",mis_ends:"",is_best:"True"},
-{name:"NODE_17_length_4989_cov_70.473855",corr_start:1406504,corr_end:1411492,start:1406504,end:1411492,misassemblies:"",mis_ends:"",is_best:"True"},
-{name:"NODE_27_length_1391_cov_40.581587",corr_start:1412048,corr_end:1413438,start:1412048,end:1413438,misassemblies:"",mis_ends:"",is_best:"True"},
-{name:"NODE_23_length_2830_cov_183.700901",corr_start:1415199,corr_end:1418028,start:1415199,end:1418028,misassemblies:"",mis_ends:"",is_best:"True"},
-{name:"NODE_2_length_835679_cov_39.731750",corr_start:1419459,corr_end:1961578,start:1419459,end:1961578,misassemblies:"",mis_ends:"",is_best:"True"},
-{name:"NODE_2_length_835679_cov_39.731750",corr_start:1962397,corr_end:2126181,start:1962397,end:2126181,misassemblies:"",mis_ends:"",is_best:"True"},
-{name:"NODE_2_length_835679_cov_39.731750",corr_start:2129514,corr_end:2255139,start:2129514,end:2255139,misassemblies:"",mis_ends:"",is_best:"True"},
-{name:"NODE_1_length_1439166_cov_42.837164",corr_start:2264055,corr_end:2415224,start:2264055,end:2415224,misassemblies:"",mis_ends:"",is_best:"True"},
-{name:"NODE_1_length_1439166_cov_42.837164",corr_start:2419983,corr_end:2506102,start:2419983,end:2506102,misassemblies:"",mis_ends:"",is_best:"True"},
-{name:"NODE_1_length_1439166_cov_42.837164",corr_start:2506045,corr_end:2509123,start:2506045,end:2509123,misassemblies:";local",mis_ends:";R",is_best:"True"},
-{name:"NODE_30_length_578_cov_71.022945",corr_start:2510698,corr_end:2511275,start:2510698,end:2511275,misassemblies:"",mis_ends:"",is_best:"True"},
-{name:"NODE_1_length_1439166_cov_42.837164",corr_start:2516180,corr_end:2740880,start:2516180,end:2740880,misassemblies:"local;",mis_ends:"L",is_best:"True"},
-{name:"NODE_1_length_1439166_cov_42.837164",corr_start:2743539,corr_end:2765010,start:2743539,end:2765010,misassemblies:"",mis_ends:"",is_best:"True"},
-{name:"NODE_20_length_3758_cov_69.106670",corr_start:2770843,corr_end:2774601,start:5834,end:9592,misassemblies:"",mis_ends:"",is_best:"True"
+contig_data["Assembled_genome"]["Spades_assembly"] = [ 
+{name:"NODE_3_length_500609_cov_47.960903",corr_start:1,corr_end:250250,start:1,end:250250,misassemblies:"",mis_ends:"",is_best:"True"},
+{name:"NODE_16_length_1429_cov_27.793304",corr_start:251771,corr_end:253199,start:251771,end:253199,misassemblies:"",mis_ends:"",is_best:"True"},
+{name:"NODE_1_length_986763_cov_43.494015",corr_start:253620,corr_end:1239963,start:253620,end:1239963,misassemblies:"",mis_ends:"",is_best:"True"},
+{name:"NODE_5_length_164595_cov_65.919916",corr_start:1241252,corr_end:1405847,start:1241252,end:1405847,misassemblies:"",mis_ends:"",is_best:"True"},
+{name:"NODE_18_length_519_cov_32.366379",corr_start:1405797,corr_end:1406315,start:1405797,end:1406315,misassemblies:"",mis_ends:"",is_best:"True"},
+{name:"NODE_12_length_5232_cov_70.113772",corr_start:1406261,corr_end:1411492,start:1406261,end:1411492,misassemblies:"",mis_ends:"",is_best:"True"},
+{name:"NODE_2_length_840748_cov_42.698417",corr_start:1412048,corr_end:2252794,start:1412048,end:2252794,misassemblies:"",mis_ends:"",is_best:"True"},
+{name:"NODE_6_length_150922_cov_42.321628",corr_start:2264298,corr_end:2415221,start:2264298,end:2415221,misassemblies:"",mis_ends:"",is_best:"True"},
+{name:"NODE_7_length_88799_cov_43.513274",corr_start:2420323,corr_end:2509123,start:2420323,end:2509123,misassemblies:"",mis_ends:"",is_best:"True"},
+{name:"NODE_3_length_500609_cov_47.960903",corr_start:2514650,corr_end:2765010,start:2514650,end:2765010,misassemblies:"",mis_ends:"",is_best:"True"},
+{name:"NODE_4_length_266941_cov_102.662627",corr_start:2771092,corr_end:2779866,start:6083,end:14857,misassemblies:"translocation;translocation",mis_ends:"R;L",is_best:"True"},
+{name:"NODE_4_length_266941_cov_102.662627",corr_start:2773876,corr_end:2785312,start:8867,end:20303,misassemblies:"translocation;",mis_ends:"R",is_best:"True"},
+{name:"NODE_4_length_266941_cov_102.662627",corr_start:2785313,corr_end:2986779,start:20304,end:221770,misassemblies:";translocation",mis_ends:";L",is_best:"True"},
+{name:"NODE_9_length_31334_cov_224.503597",corr_start:2988698,corr_end:3006340,start:1,end:17643,misassemblies:"",mis_ends:"",is_best:"True"
 ,overlaps:[ 
-{contig:"NODE_4_length_212823_cov_82.822680",corr_start: 2772247,corr_end: 2788995,start:7238,end:23986,start_in_contig:210307,end_in_contig:193546,chr: "1"}
+{contig:"NODE_14_length_3460_cov_267.035242",corr_start: 3005374,corr_end: 3005921,start:16677,end:17224,start_in_contig:2327,end_in_contig:2874,chr: "2"}
 ]},
-{name:"NODE_4_length_212823_cov_82.822680",corr_start:2772247,corr_end:2788995,start:7238,end:23986,misassemblies:";translocation",mis_ends:";L",is_best:"True"
+{name:"NODE_14_length_3460_cov_267.035242",corr_start:3005374,corr_end:3005921,start:16677,end:17224,misassemblies:"",mis_ends:"",is_best:"True",more_unaligned:"True"
 ,overlaps:[ 
-{contig:"NODE_20_length_3758_cov_69.106670",corr_start: 2770843,corr_end: 2774601,start:5834,end:9592,start_in_contig:1,end_in_contig:3758,chr: "1"}
+{contig:"NODE_9_length_31334_cov_224.503597",corr_start: 2988698,corr_end: 3006340,start:1,end:17643,start_in_contig:13692,end_in_contig:31334,chr: "2"}
 ]},
-{name:"NODE_4_length_212823_cov_82.822680",corr_start:2789620,corr_end:2790672,start:24611,end:25663,misassemblies:"",mis_ends:"",is_best:"True"},
-{name:"NODE_4_length_212823_cov_82.822680",corr_start:2791835,corr_end:2846587,start:26826,end:81578,misassemblies:"",mis_ends:"",is_best:"True"},
-{name:"NODE_4_length_212823_cov_82.822680",corr_start:2848026,corr_end:2913309,start:83017,end:148300,misassemblies:"",mis_ends:"",is_best:"True"},
-{name:"NODE_4_length_212823_cov_82.822680",corr_start:2915184,corr_end:2916441,start:150175,end:151432,misassemblies:"",mis_ends:"",is_best:"True"},
-{name:"NODE_4_length_212823_cov_82.822680",corr_start:2917207,corr_end:2952712,start:152198,end:187703,misassemblies:"",mis_ends:"",is_best:"True"},
-{name:"NODE_4_length_212823_cov_82.822680",corr_start:2952657,corr_end:2960400,start:187648,end:195391,misassemblies:"",mis_ends:"",is_best:"True"},
-{name:"NODE_4_length_212823_cov_82.822680",corr_start:2963824,corr_end:2982484,start:198815,end:217475,misassemblies:"",mis_ends:"",is_best:"True"},
-{name:"NODE_18_length_4732_cov_102.521061",corr_start:2988701,corr_end:2993432,start:4,end:4735,misassemblies:"",mis_ends:"",is_best:"True"},
-{name:"NODE_16_length_5029_cov_113.684962",corr_start:2994133,corr_end:2999161,start:5436,end:10464,misassemblies:"",mis_ends:"",is_best:"True"},
-{name:"NODE_19_length_3950_cov_107.460591",corr_start:2999866,corr_end:3003815,start:11169,end:15118,misassemblies:"",mis_ends:"",is_best:"True"},
-{name:"NODE_26_length_1510_cov_195.775258",corr_start:3004831,corr_end:3006340,start:16134,end:17643,misassemblies:"",mis_ends:"",is_best:"True"
+{name:"NODE_17_length_886_cov_350.894103",corr_start:3006600,corr_end:3007485,start:17903,end:18788,misassemblies:"",mis_ends:"",is_best:"True"},
+{name:"NODE_9_length_31334_cov_224.503597",corr_start:3007431,corr_end:3021120,start:18734,end:32423,misassemblies:"",mis_ends:"",is_best:"True"},
+{name:"NODE_11_length_9325_cov_146.068608",corr_start:3021121,corr_end:3024261,start:1,end:3141,misassemblies:"",mis_ends:"",is_best:"True"},
+{name:"NODE_11_length_9325_cov_146.068608",corr_start:3024255,corr_end:3030430,start:3135,end:9310,misassemblies:"",mis_ends:"",is_best:"True"},
+{name:"NODE_10_length_12383_cov_107.950438",corr_start:3037129,corr_end:3039280,start:6699,end:8850,misassemblies:"relocation;",mis_ends:"L",is_best:"True"},
+{name:"NODE_10_length_12383_cov_107.950438",corr_start:3037665,corr_end:3047684,start:7235,end:17254,misassemblies:";relocation",mis_ends:";R",is_best:"True"},
+{name:"NODE_4_length_266941_cov_102.662627",corr_start:3052101,corr_end:3057279,start:4417,end:9595,misassemblies:"translocation;translocation",mis_ends:"R;L",is_best:"True"},
+{name:"NODE_4_length_266941_cov_102.662627",corr_start:3057280,corr_end:3097368,start:9596,end:49684,misassemblies:"translocation;translocation",mis_ends:"R;L",is_best:"True"
 ,overlaps:[ 
-{contig:"NODE_21_length_3460_cov_267.052570",corr_start: 3005374,corr_end: 3005921,start:16677,end:17224,start_in_contig:2327,end_in_contig:2874,chr: "2"}
+{contig:"NODE_13_length_5228_cov_42.845544",corr_start: 3095706,corr_end: 3100930,start:48022,end:53246,start_in_contig:5228,end_in_contig:1,chr: "5"}
 ]},
-{name:"NODE_21_length_3460_cov_267.052570",corr_start:3005374,corr_end:3005921,start:16677,end:17224,misassemblies:"",mis_ends:"",is_best:"True",more_unaligned:"True"
+{name:"NODE_13_length_5228_cov_42.845544",corr_start:3095706,corr_end:3100930,start:48022,end:53246,misassemblies:"",mis_ends:"",is_best:"True"
 ,overlaps:[ 
-{contig:"NODE_26_length_1510_cov_195.775258",corr_start: 3004831,corr_end: 3006340,start:16134,end:17643,start_in_contig:1,end_in_contig:1510,chr: "2"}
+{contig:"NODE_4_length_266941_cov_102.662627",corr_start: 3057280,corr_end: 3097368,start:9596,end:49684,start_in_contig:255501,end_in_contig:215406,chr: "5"}
 ]},
-{name:"NODE_28_length_830_cov_355.651613",corr_start:3006656,corr_end:3007485,start:17959,end:18788,misassemblies:"",mis_ends:"",is_best:"True"},
-{name:"NODE_25_length_1681_cov_106.083641",corr_start:3007431,corr_end:3009111,start:18734,end:20414,misassemblies:"",mis_ends:"",is_best:"True"},
-{name:"NODE_24_length_2043_cov_124.488431",corr_start:3009817,corr_end:3011859,start:21120,end:23162,misassemblies:"",mis_ends:"",is_best:"True"},
-{name:"NODE_11_length_7934_cov_102.905191",corr_start:3012561,corr_end:3020495,start:23864,end:31798,misassemblies:"",mis_ends:"",is_best:"True"},
-{name:"NODE_9_length_9325_cov_146.068608",corr_start:3021121,corr_end:3024261,start:1,end:3141,misassemblies:"",mis_ends:"",is_best:"True"},
-{name:"NODE_9_length_9325_cov_146.068608",corr_start:3024255,corr_end:3030430,start:3135,end:9310,misassemblies:"",mis_ends:"",is_best:"True"},
-{name:"NODE_8_length_10124_cov_111.618631",corr_start:3037665,corr_end:3047610,start:7235,end:17180,misassemblies:"",mis_ends:"",is_best:"True"},
-{name:"NODE_10_length_9074_cov_81.922386",corr_start:3048658,corr_end:3057733,start:974,end:10049,misassemblies:"",mis_ends:"",is_best:"True"},
-{name:"NODE_7_length_11099_cov_67.285675",corr_start:3059982,corr_end:3071080,start:12298,end:23396,misassemblies:"",mis_ends:"",is_best:"True"},
-{name:"NODE_12_length_7618_cov_68.746397",corr_start:3073218,corr_end:3080835,start:25534,end:33151,misassemblies:"",mis_ends:"",is_best:"True"},
-{name:"NODE_15_length_5123_cov_123.773875",corr_start:3084245,corr_end:3089367,start:36561,end:41683,misassemblies:"",mis_ends:"",is_best:"True"},
-{name:"NODE_13_length_7020_cov_106.988945",corr_start:3089313,corr_end:3096328,start:41629,end:48644,misassemblies:"",mis_ends:"",is_best:"True"},
-{name:"NODE_29_length_692_cov_74.073783",corr_start:3096486,corr_end:3097173,start:48802,end:49489,misassemblies:"",mis_ends:"",is_best:"True"},
-{name:"NODE_4_length_212823_cov_82.822680",corr_start:3097119,corr_end:3099633,start:49435,end:51949,misassemblies:"translocation;",mis_ends:"R",is_best:"True"},
-{name:"NODE_6_length_62897_cov_73.711292",corr_start:3102852,corr_end:3132396,start:1,end:29545,misassemblies:"",mis_ends:"",is_best:"True"},
-{name:"NODE_6_length_62897_cov_73.711292",corr_start:3135058,corr_end:3168409,start:32207,end:65558,misassemblies:"",mis_ends:"",is_best:"True"}];var contig_lengths = {};
+{name:"NODE_8_length_62897_cov_74.024920",corr_start:3102852,corr_end:3132396,start:1,end:29545,misassemblies:"",mis_ends:"",is_best:"True"},
+{name:"NODE_8_length_62897_cov_74.024920",corr_start:3135058,corr_end:3168409,start:32207,end:65558,misassemblies:"",mis_ends:"",is_best:"True"}];var contig_lengths = {};
 var contig_structures = {};
-contig_lengths["scaffolds"] = {};
-contig_structures["scaffolds"] = {};
-contig_lengths["scaffolds"]["NODE_1_length_1439166_cov_42.837164"] = 1439166;
-contig_structures["scaffolds"]["NODE_1_length_1439166_cov_42.837164"] = [ 
-{corr_start: 2264055,corr_end: 2415224,start:2264055,end:2415224,start_in_contig:1,end_in_contig:151170,IDY:100.0,chr: "0"},
-{contig_type: "M", mstype: "indel", msg: " indel (<= 5bp)"},
-{corr_start: 2419983,corr_end: 2506102,start:2419983,end:2506102,start_in_contig:155930,end_in_contig:242044,IDY:99.95,chr: "0"},
-{contig_type: "M", mstype: "indel", msg: " indel (> 5bp)"},
-{corr_start: 2506045,corr_end: 2509123,start:2506045,end:2509123,start_in_contig:242050,end_in_contig:245128,IDY:100.0,chr: "0"},
-{contig_type: "M", mstype: "real", msg: "local misassembly"},
-{corr_start: 2516180,corr_end: 2740880,start:2516180,end:2740880,start_in_contig:251966,end_in_contig:476664,IDY:99.99,chr: "0"},
-{contig_type: "M", mstype: "indel", msg: " stretch of mismatches"},
-{corr_start: 2743539,corr_end: 2765010,start:2743539,end:2765010,start_in_contig:479323,end_in_contig:500793,IDY:99.99,chr: "0"},
+contig_lengths["Spades_assembly"] = {};
+contig_structures["Spades_assembly"] = {};
+contig_lengths["Spades_assembly"]["NODE_1_length_986763_cov_43.494015"] = 986763;
+contig_structures["Spades_assembly"]["NODE_1_length_986763_cov_43.494015"] = [ 
+{corr_start: 253620,corr_end: 1239963,start:253620,end:1239963,start_in_contig:1,end_in_contig:986343,IDY:99.99,chr: "0"},
+];
+contig_lengths["Spades_assembly"]["NODE_2_length_840748_cov_42.698417"] = 840748;
+contig_structures["Spades_assembly"]["NODE_2_length_840748_cov_42.698417"] = [ 
+{corr_start: 1412048,corr_end: 2252794,start:1412048,end:2252794,start_in_contig:1,end_in_contig:840748,IDY:99.99,chr: "0"},
+];
+contig_lengths["Spades_assembly"]["NODE_3_length_500609_cov_47.960903"] = 500609;
+contig_structures["Spades_assembly"]["NODE_3_length_500609_cov_47.960903"] = [ 
+{corr_start: 2514650,corr_end: 2765010,start:2514650,end:2765010,start_in_contig:1,end_in_contig:250359,IDY:99.99,chr: "0"},
 {contig_type: "M", mstype: "fake", msg: " not a misassembly [linear representation of circular genome]"},
-{corr_start: 1,corr_end: 250251,start:1,end:250251,start_in_contig:500794,end_in_contig:751044,IDY:99.99,chr: "0"},
-{contig_type: "M", mstype: "indel", msg: " stretch of mismatches"},
-{corr_start: 250460,corr_end: 253200,start:250460,end:253200,start_in_contig:751253,end_in_contig:753993,IDY:99.96,chr: "0"},
-{contig_type: "M", mstype: "indel", msg: " indel (<= 5bp)"},
-{corr_start: 253620,corr_end: 258707,start:253620,end:258707,start_in_contig:754412,end_in_contig:759499,IDY:100.0,chr: "0"},
-{contig_type: "M", mstype: "indel", msg: " indel (<= 5bp)"},
-{corr_start: 261049,corr_end: 402324,start:261049,end:402324,start_in_contig:761842,end_in_contig:903117,IDY:99.99,chr: "0"},
-{contig_type: "M", mstype: "indel", msg: " stretch of mismatches"},
-{corr_start: 403930,corr_end: 786677,start:403930,end:786677,start_in_contig:904723,end_in_contig:1287470,IDY:99.99,chr: "0"},
-{contig_type: "M", mstype: "indel", msg: " indel (<= 5bp)"},
-{corr_start: 788966,corr_end: 938372,start:788966,end:938372,start_in_contig:1289760,end_in_contig:1439166,IDY:100.0,chr: "0"},
+{corr_start: 1,corr_end: 250250,start:1,end:250250,start_in_contig:250360,end_in_contig:500609,IDY:99.99,chr: "0"},
 ];
-contig_lengths["scaffolds"]["NODE_2_length_835679_cov_39.731750"] = 835679;
-contig_structures["scaffolds"]["NODE_2_length_835679_cov_39.731750"] = [ 
-{corr_start: 2129514,corr_end: 2255139,start:2129514,end:2255139,start_in_contig:125625,end_in_contig:1,IDY:99.97,chr: "0"},
-{contig_type: "M", mstype: "indel", msg: " indel (<= 5bp)"},
-{corr_start: 1962397,corr_end: 2126181,start:1962397,end:2126181,start_in_contig:292741,end_in_contig:128957,IDY:99.99,chr: "0"},
-{contig_type: "M", mstype: "indel", msg: " stretch of mismatches"},
-{corr_start: 1419459,corr_end: 1961578,start:1419459,end:1961578,start_in_contig:835679,end_in_contig:293560,IDY:99.99,chr: "0"},
-];
-contig_lengths["scaffolds"]["NODE_3_length_293214_cov_37.144294"] = 293214;
-contig_structures["scaffolds"]["NODE_3_length_293214_cov_37.144294"] = [ 
-{corr_start: 1125905,corr_end: 1238602,start:1125905,end:1238602,start_in_contig:112698,end_in_contig:1,IDY:99.97,chr: "0"},
-{contig_type: "M", mstype: "indel", msg: " stretch of mismatches"},
-{corr_start: 945389,corr_end: 1125218,start:945389,end:1125218,start_in_contig:293214,end_in_contig:113385,IDY:99.99,chr: "0"},
-];
-contig_lengths["scaffolds"]["NODE_4_length_212823_cov_82.822680"] = 212823;
-contig_structures["scaffolds"]["NODE_4_length_212823_cov_82.822680"] = [ 
-{corr_start: 2963824,corr_end: 2982484,start:198815,end:217475,start_in_contig:18652,end_in_contig:1,IDY:99.87,chr: "1"},
-{contig_type: "M", mstype: "indel", msg: " stretch of mismatches"},
-{corr_start: 2952657,corr_end: 2960400,start:187648,end:195391,start_in_contig:29819,end_in_contig:22076,IDY:99.99,chr: "1"},
-{contig_type: "M", mstype: "indel", msg: " indel (> 5bp)"},
-{corr_start: 2917207,corr_end: 2952712,start:152198,end:187703,start_in_contig:65334,end_in_contig:29829,IDY:99.99,chr: "1"},
-{contig_type: "M", mstype: "indel", msg: " stretch of mismatches"},
-{corr_start: 2915184,corr_end: 2916441,start:150175,end:151432,start_in_contig:67357,end_in_contig:66100,IDY:100.0,chr: "1"},
-{contig_type: "M", mstype: "indel", msg: " stretch of mismatches"},
-{corr_start: 2848026,corr_end: 2913309,start:83017,end:148300,start_in_contig:134515,end_in_contig:69232,IDY:99.88,chr: "1"},
-{contig_type: "M", mstype: "indel", msg: " stretch of mismatches"},
-{corr_start: 2791835,corr_end: 2846587,start:26826,end:81578,start_in_contig:190706,end_in_contig:135954,IDY:100.0,chr: "1"},
-{contig_type: "M", mstype: "indel", msg: " stretch of mismatches"},
-{corr_start: 2789620,corr_end: 2790672,start:24611,end:25663,start_in_contig:192921,end_in_contig:191869,IDY:100.0,chr: "1"},
-{contig_type: "M", mstype: "indel", msg: " stretch of mismatches"},
-{corr_start: 2772247,corr_end: 2788995,start:7238,end:23986,start_in_contig:210307,end_in_contig:193546,IDY:99.08,chr: "1"},
+contig_lengths["Spades_assembly"]["NODE_4_length_266941_cov_102.662627"] = 266941;
+contig_structures["Spades_assembly"]["NODE_4_length_266941_cov_102.662627"] = [ 
+{corr_start: 2785313,corr_end: 2986779,start:20304,end:221770,start_in_contig:201456,end_in_contig:1,IDY:99.86,chr: "1"},
 {contig_type: "M", mstype: "real", msg: "translocation"},
-{corr_start: 3097119,corr_end: 3099633,start:49435,end:51949,start_in_contig:212823,end_in_contig:210308,IDY:99.98,chr: "5"},
+{corr_start: 3052101,corr_end: 3057279,start:4417,end:9595,start_in_contig:206632,end_in_contig:201457,IDY:99.76,chr: "5"},
+{contig_type: "M", mstype: "real", msg: "translocation"},
+{corr_start: 2771092,corr_end: 2779866,start:6083,end:14857,start_in_contig:215405,end_in_contig:206633,IDY:98.69,chr: "1"},
+{contig_type: "M", mstype: "real", msg: "translocation"},
+{corr_start: 3057280,corr_end: 3097368,start:9596,end:49684,start_in_contig:255501,end_in_contig:215406,IDY:99.53,chr: "5"},
+{contig_type: "M", mstype: "real", msg: "translocation"},
+{corr_start: 2773876,corr_end: 2785312,start:8867,end:20303,start_in_contig:266941,end_in_contig:255502,IDY:99.16,chr: "1"},
 ];
-contig_lengths["scaffolds"]["NODE_5_length_155237_cov_56.663271"] = 155237;
-contig_structures["scaffolds"]["NODE_5_length_155237_cov_56.663271"] = [ 
-{corr_start: 1250386,corr_end: 1386923,start:1250386,end:1386923,start_in_contig:1,end_in_contig:136538,IDY:99.99,chr: "0"},
-{contig_type: "M", mstype: "real", msg: "local misassembly"},
-{corr_start: 1388926,corr_end: 1389338,start:1388926,end:1389338,start_in_contig:138251,end_in_contig:138663,IDY:100.0,chr: "0"},
-{contig_type: "M", mstype: "indel", msg: " indel (> 5bp)"},
-{corr_start: 1389283,corr_end: 1405847,start:1389283,end:1405847,start_in_contig:138673,end_in_contig:155237,IDY:100.0,chr: "0"},
+contig_lengths["Spades_assembly"]["NODE_5_length_164595_cov_65.919916"] = 164595;
+contig_structures["Spades_assembly"]["NODE_5_length_164595_cov_65.919916"] = [ 
+{corr_start: 1241252,corr_end: 1405847,start:1241252,end:1405847,start_in_contig:1,end_in_contig:164595,IDY:99.94,chr: "0"},
 ];
-contig_lengths["scaffolds"]["NODE_6_length_62897_cov_73.711292"] = 62897;
-contig_structures["scaffolds"]["NODE_6_length_62897_cov_73.711292"] = [ 
+contig_lengths["Spades_assembly"]["NODE_6_length_150922_cov_42.321628"] = 150922;
+contig_structures["Spades_assembly"]["NODE_6_length_150922_cov_42.321628"] = [ 
+{corr_start: 2264298,corr_end: 2415221,start:2264298,end:2415221,start_in_contig:1,end_in_contig:150922,IDY:99.98,chr: "0"},
+];
+contig_lengths["Spades_assembly"]["NODE_7_length_88799_cov_43.513274"] = 88799;
+contig_structures["Spades_assembly"]["NODE_7_length_88799_cov_43.513274"] = [ 
+{corr_start: 2420323,corr_end: 2509123,start:2420323,end:2509123,start_in_contig:1,end_in_contig:88799,IDY:99.95,chr: "0"},
+];
+contig_lengths["Spades_assembly"]["NODE_8_length_62897_cov_74.024920"] = 62897;
+contig_structures["Spades_assembly"]["NODE_8_length_62897_cov_74.024920"] = [ 
 {corr_start: 3102852,corr_end: 3132396,start:1,end:29545,start_in_contig:29545,end_in_contig:1,IDY:100.0,chr: "6"},
 {contig_type: "M", mstype: "fake", msg: " not a misassembly [linear representation of circular genome]"},
-{corr_start: 3135058,corr_end: 3168409,start:32207,end:65558,start_in_contig:62897,end_in_contig:29546,IDY:100.0,chr: "6"},
+{corr_start: 3135058,corr_end: 3168409,start:32207,end:65558,start_in_contig:62897,end_in_contig:29546,IDY:99.99,chr: "6"},
 ];
-contig_lengths["scaffolds"]["NODE_7_length_11099_cov_67.285675"] = 11099;
-contig_structures["scaffolds"]["NODE_7_length_11099_cov_67.285675"] = [ 
-{corr_start: 3059982,corr_end: 3071080,start:12298,end:23396,start_in_contig:1,end_in_contig:11099,IDY:100.0,chr: "5"},
+contig_lengths["Spades_assembly"]["NODE_9_length_31334_cov_224.503597"] = 31334;
+contig_structures["Spades_assembly"]["NODE_9_length_31334_cov_224.503597"] = [ 
+{corr_start: 3007431,corr_end: 3021120,start:18734,end:32423,start_in_contig:1,end_in_contig:13691,IDY:99.96,chr: "2"},
+{contig_type: "M", mstype: "fake", msg: " not a misassembly [linear representation of circular genome]"},
+{corr_start: 2988698,corr_end: 3006340,start:1,end:17643,start_in_contig:13692,end_in_contig:31334,IDY:99.99,chr: "2"},
 ];
-contig_lengths["scaffolds"]["NODE_8_length_10124_cov_111.618631"] = 10124;
-contig_structures["scaffolds"]["NODE_8_length_10124_cov_111.618631"] = [ 
-{corr_start: 3037665,corr_end: 3047610,start:7235,end:17180,start_in_contig:1,end_in_contig:10124,IDY:97.84,chr: "4"},
+contig_lengths["Spades_assembly"]["NODE_10_length_12383_cov_107.950438"] = 12383;
+contig_structures["Spades_assembly"]["NODE_10_length_12383_cov_107.950438"] = [ 
+{corr_start: 3037665,corr_end: 3047684,start:7235,end:17254,start_in_contig:1,end_in_contig:10198,IDY:97.64,chr: "4"},
+{contig_type: "M", mstype: "real", msg: "relocation, inconsistency = -10556"},
+{corr_start: 3037129,corr_end: 3039280,start:6699,end:8850,start_in_contig:10199,end_in_contig:12383,IDY:99.29,chr: "4"},
 ];
-contig_lengths["scaffolds"]["NODE_9_length_9325_cov_146.068608"] = 9325;
-contig_structures["scaffolds"]["NODE_9_length_9325_cov_146.068608"] = [ 
+contig_lengths["Spades_assembly"]["NODE_11_length_9325_cov_146.068608"] = 9325;
+contig_structures["Spades_assembly"]["NODE_11_length_9325_cov_146.068608"] = [ 
 {corr_start: 3024255,corr_end: 3030430,start:3135,end:9310,start_in_contig:1,end_in_contig:6184,IDY:99.77,chr: "3"},
 {contig_type: "M", mstype: "indel", msg: " indel (> 5bp) [linear representation of circular genome]"},
 {corr_start: 3021121,corr_end: 3024261,start:1,end:3141,start_in_contig:6185,end_in_contig:9325,IDY:100.0,chr: "3"},
 ];
-contig_lengths["scaffolds"]["NODE_10_length_9074_cov_81.922386"] = 9074;
-contig_structures["scaffolds"]["NODE_10_length_9074_cov_81.922386"] = [ 
-{corr_start: 3048658,corr_end: 3057733,start:974,end:10049,start_in_contig:1,end_in_contig:9074,IDY:99.93,chr: "5"},
+contig_lengths["Spades_assembly"]["NODE_12_length_5232_cov_70.113772"] = 5232;
+contig_structures["Spades_assembly"]["NODE_12_length_5232_cov_70.113772"] = [ 
+{corr_start: 1406261,corr_end: 1411492,start:1406261,end:1411492,start_in_contig:5232,end_in_contig:1,IDY:100.0,chr: "0"},
 ];
-contig_lengths["scaffolds"]["NODE_11_length_7934_cov_102.905191"] = 7934;
-contig_structures["scaffolds"]["NODE_11_length_7934_cov_102.905191"] = [ 
-{corr_start: 3012561,corr_end: 3020495,start:23864,end:31798,start_in_contig:1,end_in_contig:7934,IDY:99.99,chr: "2"},
+contig_lengths["Spades_assembly"]["NODE_13_length_5228_cov_42.845544"] = 5228;
+contig_structures["Spades_assembly"]["NODE_13_length_5228_cov_42.845544"] = [ 
+{corr_start: 3095706,corr_end: 3100930,start:48022,end:53246,start_in_contig:5228,end_in_contig:1,IDY:99.75,chr: "5"},
 ];
-contig_lengths["scaffolds"]["NODE_12_length_7618_cov_68.746397"] = 7618;
-contig_structures["scaffolds"]["NODE_12_length_7618_cov_68.746397"] = [ 
-{corr_start: 3073218,corr_end: 3080835,start:25534,end:33151,start_in_contig:1,end_in_contig:7618,IDY:100.0,chr: "5"},
-];
-contig_lengths["scaffolds"]["NODE_13_length_7020_cov_106.988945"] = 7020;
-contig_structures["scaffolds"]["NODE_13_length_7020_cov_106.988945"] = [ 
-{corr_start: 3089313,corr_end: 3096328,start:41629,end:48644,start_in_contig:7020,end_in_contig:1,IDY:99.49,chr: "5"},
-];
-contig_lengths["scaffolds"]["NODE_14_length_6410_cov_179.274587"] = 6410;
-contig_structures["scaffolds"]["NODE_14_length_6410_cov_179.274587"] = [ 
-{corr_start: 1242677,corr_end: 1244086,start:1242677,end:1244086,start_in_contig:1,end_in_contig:1410,IDY:100.0,chr: "0"},
-{contig_type: "M", mstype: "indel", msg: " indel (> 5bp)"},
-{corr_start: 1244035,corr_end: 1249026,start:1244035,end:1249026,start_in_contig:1419,end_in_contig:6410,IDY:100.0,chr: "0"},
-];
-contig_lengths["scaffolds"]["NODE_15_length_5123_cov_123.773875"] = 5123;
-contig_structures["scaffolds"]["NODE_15_length_5123_cov_123.773875"] = [ 
-{corr_start: 3084245,corr_end: 3089367,start:36561,end:41683,start_in_contig:5123,end_in_contig:1,IDY:99.88,chr: "5"},
-];
-contig_lengths["scaffolds"]["NODE_16_length_5029_cov_113.684962"] = 5029;
-contig_structures["scaffolds"]["NODE_16_length_5029_cov_113.684962"] = [ 
-{corr_start: 2994133,corr_end: 2999161,start:5436,end:10464,start_in_contig:1,end_in_contig:5029,IDY:100.0,chr: "2"},
-];
-contig_lengths["scaffolds"]["NODE_17_length_4989_cov_70.473855"] = 4989;
-contig_structures["scaffolds"]["NODE_17_length_4989_cov_70.473855"] = [ 
-{corr_start: 1406504,corr_end: 1411492,start:1406504,end:1411492,start_in_contig:4989,end_in_contig:1,IDY:100.0,chr: "0"},
-];
-contig_lengths["scaffolds"]["NODE_18_length_4732_cov_102.521061"] = 4732;
-contig_structures["scaffolds"]["NODE_18_length_4732_cov_102.521061"] = [ 
-{corr_start: 2988701,corr_end: 2993432,start:4,end:4735,start_in_contig:4732,end_in_contig:1,IDY:100.0,chr: "2"},
-];
-contig_lengths["scaffolds"]["NODE_19_length_3950_cov_107.460591"] = 3950;
-contig_structures["scaffolds"]["NODE_19_length_3950_cov_107.460591"] = [ 
-{corr_start: 2999866,corr_end: 3003815,start:11169,end:15118,start_in_contig:1,end_in_contig:3950,IDY:100.0,chr: "2"},
-];
-contig_lengths["scaffolds"]["NODE_20_length_3758_cov_69.106670"] = 3758;
-contig_structures["scaffolds"]["NODE_20_length_3758_cov_69.106670"] = [ 
-{corr_start: 2770843,corr_end: 2774601,start:5834,end:9592,start_in_contig:1,end_in_contig:3758,IDY:99.89,chr: "1"},
-];
-contig_lengths["scaffolds"]["NODE_21_length_3460_cov_267.052570"] = 3460;
-contig_structures["scaffolds"]["NODE_21_length_3460_cov_267.052570"] = [ 
+contig_lengths["Spades_assembly"]["NODE_14_length_3460_cov_267.035242"] = 3460;
+contig_structures["Spades_assembly"]["NODE_14_length_3460_cov_267.035242"] = [ 
 {corr_start: 3005374,corr_end: 3005921,start:16677,end:17224,start_in_contig:2327,end_in_contig:2874,IDY:99.27,chr: "2"},
 ];
-contig_lengths["scaffolds"]["NODE_23_length_2830_cov_183.700901"] = 2830;
-contig_structures["scaffolds"]["NODE_23_length_2830_cov_183.700901"] = [ 
-{corr_start: 1415199,corr_end: 1418028,start:1415199,end:1418028,start_in_contig:2830,end_in_contig:1,IDY:100.0,chr: "0"},
+contig_lengths["Spades_assembly"]["NODE_16_length_1429_cov_27.793304"] = 1429;
+contig_structures["Spades_assembly"]["NODE_16_length_1429_cov_27.793304"] = [ 
+{corr_start: 251771,corr_end: 253199,start:251771,end:253199,start_in_contig:1,end_in_contig:1429,IDY:100.0,chr: "0"},
 ];
-contig_lengths["scaffolds"]["NODE_24_length_2043_cov_124.488431"] = 2043;
-contig_structures["scaffolds"]["NODE_24_length_2043_cov_124.488431"] = [ 
-{corr_start: 3009817,corr_end: 3011859,start:21120,end:23162,start_in_contig:1,end_in_contig:2043,IDY:100.0,chr: "2"},
+contig_lengths["Spades_assembly"]["NODE_17_length_886_cov_350.894103"] = 886;
+contig_structures["Spades_assembly"]["NODE_17_length_886_cov_350.894103"] = [ 
+{corr_start: 3006600,corr_end: 3007485,start:17903,end:18788,start_in_contig:1,end_in_contig:886,IDY:99.89,chr: "2"},
 ];
-contig_lengths["scaffolds"]["NODE_25_length_1681_cov_106.083641"] = 1681;
-contig_structures["scaffolds"]["NODE_25_length_1681_cov_106.083641"] = [ 
-{corr_start: 3007431,corr_end: 3009111,start:18734,end:20414,start_in_contig:1681,end_in_contig:1,IDY:100.0,chr: "2"},
-];
-contig_lengths["scaffolds"]["NODE_26_length_1510_cov_195.775258"] = 1510;
-contig_structures["scaffolds"]["NODE_26_length_1510_cov_195.775258"] = [ 
-{corr_start: 3004831,corr_end: 3006340,start:16134,end:17643,start_in_contig:1,end_in_contig:1510,IDY:100.0,chr: "2"},
-];
-contig_lengths["scaffolds"]["NODE_27_length_1391_cov_40.581587"] = 1391;
-contig_structures["scaffolds"]["NODE_27_length_1391_cov_40.581587"] = [ 
-{corr_start: 1412048,corr_end: 1413438,start:1412048,end:1413438,start_in_contig:1,end_in_contig:1391,IDY:100.0,chr: "0"},
-];
-contig_lengths["scaffolds"]["NODE_28_length_830_cov_355.651613"] = 830;
-contig_structures["scaffolds"]["NODE_28_length_830_cov_355.651613"] = [ 
-{corr_start: 3006656,corr_end: 3007485,start:17959,end:18788,start_in_contig:1,end_in_contig:830,IDY:100.0,chr: "2"},
-];
-contig_lengths["scaffolds"]["NODE_29_length_692_cov_74.073783"] = 692;
-contig_structures["scaffolds"]["NODE_29_length_692_cov_74.073783"] = [ 
-{corr_start: 3096486,corr_end: 3097173,start:48802,end:49489,start_in_contig:692,end_in_contig:1,IDY:99.13,chr: "5"},
-];
-contig_lengths["scaffolds"]["NODE_30_length_578_cov_71.022945"] = 578;
-contig_structures["scaffolds"]["NODE_30_length_578_cov_71.022945"] = [ 
-{corr_start: 2510698,corr_end: 2511275,start:2510698,end:2511275,start_in_contig:578,end_in_contig:1,IDY:100.0,chr: "0"},
-];
-contig_lengths["scaffolds"]["NODE_31_length_519_cov_32.366379"] = 519;
-contig_structures["scaffolds"]["NODE_31_length_519_cov_32.366379"] = [ 
-{corr_start: 1405797,corr_end: 1406315,start:1405797,end:1406315,start_in_contig:519,end_in_contig:1,IDY:100.0,chr: "0"},
+contig_lengths["Spades_assembly"]["NODE_18_length_519_cov_32.366379"] = 519;
+contig_structures["Spades_assembly"]["NODE_18_length_519_cov_32.366379"] = [ 
+{corr_start: 1405797,corr_end: 1406315,start:1405797,end:1406315,start_in_contig:1,end_in_contig:519,IDY:100.0,chr: "0"},
 ];</script>
     <script type="text/javascript" name="d3.js">
         (function() {

@@ -2509,47 +2509,34 @@ var assemblies_len = {};
 var assemblies_contigs = {};
 var assemblies_misassemblies = {};
 var assemblies_n50 = {};
-assemblies_len["scaffolds"] = 3113949;
-assemblies_contigs["scaffolds"] = 31;
-assemblies_n50["scaffolds"] = "835679";
+assemblies_len["Spades_assembly"] = 3135284;
+assemblies_contigs["Spades_assembly"] = 18;
+assemblies_n50["Spades_assembly"] = "840748";
 var contig_data = {};
 var chromosome;
-contig_data["scaffolds"] = [ 
-{name:"NODE_1_length_1439166_cov_42.837164",size:1439166,contig_type: "",structure:[]},
-{name:"NODE_2_length_835679_cov_39.731750",size:835679, marks: "N50",contig_type: "",structure:[]},
-{name:"NODE_3_length_293214_cov_37.144294",size:293214, marks: "N75",contig_type: "",structure:[]},
-{name:"NODE_4_length_212823_cov_82.822680",size:212823,contig_type: "",structure:[]},
-{name:"NODE_5_length_155237_cov_56.663271",size:155237,contig_type: "",structure:[]},
-{name:"NODE_6_length_62897_cov_73.711292",size:62897,contig_type: "",structure:[]},
-{name:"NODE_7_length_11099_cov_67.285675",size:11099,contig_type: "",structure:[]},
-{name:"NODE_8_length_10124_cov_111.618631",size:10124,contig_type: "",structure:[]},
-{name:"NODE_9_length_9325_cov_146.068608",size:9325,contig_type: "",structure:[]},
-{name:"NODE_10_length_9074_cov_81.922386",size:9074,contig_type: "",structure:[]},
-{name:"NODE_11_length_7934_cov_102.905191",size:7934,contig_type: "",structure:[]},
-{name:"NODE_12_length_7618_cov_68.746397",size:7618,contig_type: "",structure:[]},
-{name:"NODE_13_length_7020_cov_106.988945",size:7020,contig_type: "",structure:[]},
-{name:"NODE_14_length_6410_cov_179.274587",size:6410,contig_type: "",structure:[]},
-{name:"NODE_15_length_5123_cov_123.773875",size:5123,contig_type: "",structure:[]},
-{name:"NODE_16_length_5029_cov_113.684962",size:5029,contig_type: "",structure:[]},
-{name:"NODE_17_length_4989_cov_70.473855",size:4989,contig_type: "",structure:[]},
-{name:"NODE_18_length_4732_cov_102.521061",size:4732,contig_type: "",structure:[]},
-{name:"NODE_19_length_3950_cov_107.460591",size:3950,contig_type: "",structure:[]},
-{name:"NODE_20_length_3758_cov_69.106670",size:3758,contig_type: "",structure:[]},
-{name:"NODE_21_length_3460_cov_267.052570",size:3460,contig_type: "",structure:[]},
-{name:"NODE_22_length_3214_cov_234.269706",size:3214,contig_type: "",structure:[]},
-{name:"NODE_23_length_2830_cov_183.700901",size:2830,contig_type: "",structure:[]},
-{name:"NODE_24_length_2043_cov_124.488431",size:2043,contig_type: "",structure:[]},
-{name:"NODE_25_length_1681_cov_106.083641",size:1681,contig_type: "",structure:[]},
-{name:"NODE_26_length_1510_cov_195.775258",size:1510,contig_type: "",structure:[]},
-{name:"NODE_27_length_1391_cov_40.581587",size:1391,contig_type: "",structure:[]},
-{name:"NODE_28_length_830_cov_355.651613",size:830,contig_type: "",structure:[]},
-{name:"NODE_29_length_692_cov_74.073783",size:692,contig_type: "",structure:[]},
-{name:"NODE_30_length_578_cov_71.022945",size:578,contig_type: "",structure:[]},
-{name:"NODE_31_length_519_cov_32.366379",size:519,contig_type: "",structure:[]}];
+contig_data["Spades_assembly"] = [ 
+{name:"NODE_1_length_986763_cov_43.494015",size:986763,contig_type: "",structure:[]},
+{name:"NODE_2_length_840748_cov_42.698417",size:840748, marks: "N50",contig_type: "",structure:[]},
+{name:"NODE_3_length_500609_cov_47.960903",size:500609,contig_type: "",structure:[]},
+{name:"NODE_4_length_266941_cov_102.662627",size:266941, marks: "N75",contig_type: "",structure:[]},
+{name:"NODE_5_length_164595_cov_65.919916",size:164595,contig_type: "",structure:[]},
+{name:"NODE_6_length_150922_cov_42.321628",size:150922,contig_type: "",structure:[]},
+{name:"NODE_7_length_88799_cov_43.513274",size:88799,contig_type: "",structure:[]},
+{name:"NODE_8_length_62897_cov_74.024920",size:62897,contig_type: "",structure:[]},
+{name:"NODE_9_length_31334_cov_224.503597",size:31334,contig_type: "",structure:[]},
+{name:"NODE_10_length_12383_cov_107.950438",size:12383,contig_type: "",structure:[]},
+{name:"NODE_11_length_9325_cov_146.068608",size:9325,contig_type: "",structure:[]},
+{name:"NODE_12_length_5232_cov_70.113772",size:5232,contig_type: "",structure:[]},
+{name:"NODE_13_length_5228_cov_42.845544",size:5228,contig_type: "",structure:[]},
+{name:"NODE_14_length_3460_cov_267.035242",size:3460,contig_type: "",structure:[]},
+{name:"NODE_15_length_3214_cov_234.269706",size:3214,contig_type: "",structure:[]},
+{name:"NODE_16_length_1429_cov_27.793304",size:1429,contig_type: "",structure:[]},
+{name:"NODE_17_length_886_cov_350.894103",size:886,contig_type: "",structure:[]},
+{name:"NODE_18_length_519_cov_32.366379",size:519,contig_type: "",structure:[]}];
 
 var contigLines = [];
 
-var contigs_total_len = 3113949;
+var contigs_total_len = 3135284;
 var minContigSize = 500;var links_to_chromosomes;
 links_to_chromosomes = {};</script>
     <script type="text/javascript" name="d3.js">

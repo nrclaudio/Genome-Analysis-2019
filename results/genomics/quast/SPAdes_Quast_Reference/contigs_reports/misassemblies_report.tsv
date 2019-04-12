@@ -1,14 +1,14 @@
-Assembly	scaffolds
-# misassemblies	1
-    # relocations	0
-    # translocations	1
+Assembly	Spades_assembly
+# misassemblies	5
+    # relocations	1
+    # translocations	4
     # inversions	0
-# misassembled contigs	1
-Misassembled contigs length	212823
-# local misassemblies	2
+# misassembled contigs	2
+Misassembled contigs length	279324
+# local misassemblies	0
 # unaligned mis. contigs	0
-# mismatches	331
-# indels	149
-    # indels (<= 5 bp)	137
-    # indels (> 5 bp)	12
-Indels length	527
+# mismatches	942
+# indels	154
+    # indels (<= 5 bp)	144
+    # indels (> 5 bp)	10
+Indels length	302

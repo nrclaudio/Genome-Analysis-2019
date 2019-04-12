@@ -1,6 +1,6 @@
-Assembly	scaffolds
+Assembly	Spades_assembly
 # fully unaligned contigs	1
 Fully unaligned length	3214
-# partially unaligned contigs	6
-Partially unaligned length	39884
-# N's	36980
+# partially unaligned contigs	1
+Partially unaligned length	2912
+# N's	0
