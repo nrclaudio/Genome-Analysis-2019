@@ -1,2 +1,0 @@
-Assembly	# misassemblies	    # relocations	    # translocations	    # inversions	# misassembled contigs	Misassembled contigs length	# local misassemblies	# unaligned mis. contigs	# mismatches	# indels	    # indels (<= 5 bp)	    # indels (> 5 bp)	Indels length
-contig1	1	1	0	0	1	2773702	0	0	0	6	6	0	7
