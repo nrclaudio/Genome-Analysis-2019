@@ -1,1 +1,3 @@
 *.html linguist-detectable=false
+*.tex linguist-detectable=false
+*.gp linguist-detectable=false
