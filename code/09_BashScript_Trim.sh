@@ -1,1 +1,1 @@
-for i in `ls -1 *R1*.fastq.gz | sed 's/\_R1.fastq.gz//'`; do echo trimmomatic PE -phred33 $i\_R1.fastq.gz $i\_R2.fastq.gz $i\_R1_paired.fq.gz $i\_R1_unpaired.fq.gz $i\_R2_paired.fq.gz $i\_R2_unpaired.fq.gz LEADING:3 TRAILING:3 SLIDINGWINDOW:4:15 MINLEN:36 >> cmd_file; done
+for i in `ls -1 *R1*.fastq.gz | sed 's/\_R1.fastq.gz//'` / 2; do echo trimmomatic PE -phred33 $i\_R1.fastq.gz $i\_R2.fastq.gz $i\_R1_paired.fq.gz $i\_R1_unpaired.fq.gz $i\_R2_paired.fq.gz $i\_R2_unpaired.fq.gz LEADING:3 TRAILING:3 SLIDINGWINDOW:4:15 MINLEN:36 >> cmd_file; done
