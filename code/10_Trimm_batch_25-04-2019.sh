@@ -11,6 +11,4 @@ module load bioinfo-tools
 module load trimmomatic
 # Your commands
 cd /home/clno2215/stunning-garbanzo/data/transcriptomics/RNA-seq/raw_data/Serum
-bash cmd_file_serum
-cd /home/clno2215/stunning-garbanzo/data/transcriptomics/RNA-seq/raw_data/BH
-bash cmd_file_bh
+bash cmd_file
