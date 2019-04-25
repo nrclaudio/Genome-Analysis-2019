@@ -1,2 +1,2 @@
 for i in `ls -1 *pass_*.fastq.gz | sed 's/\_pass_[1-2].fastq.gz//'`; do
-    echo trimmomatic PE -phred33 $i\_pass_1.fastq.gz $i\_pass_2.fastq.gz $i\_pass_1_paired.fq.gz $i\_pass_1_unpaired.fq.gz $i\_pass_2_paired.fq.gz $i\_pass_2_unpaired.fq.gz ILLUMINACLIP:/sw/apps/bioinfo/trimmomatic/0.36/rackham/adapters/TruSeq3-PE-2.fa:2:25:10 LEADING:3 TRAILING:3 SLIDINGWINDOW:4:15 MINLEN:36 >> cmd_file; done
+    echo trimmomatic PE -phred33 $i\_pass\_1.fastq.gz $i\_pass\_2.fastq.gz $i\_pass_1_paired.fq.gz $i\_pass_1_unpaired.fq.gz $i\_pass_2_paired.fq.gz $i\_pass_2_unpaired.fq.gz ILLUMINACLIP:/sw/apps/bioinfo/trimmomatic/0.36/rackham/adapters/TruSeq3-PE-2.fa:2:25:10 LEADING:3 TRAILING:3 SLIDINGWINDOW:4:15 MINLEN:36 >> cmd_file; done
