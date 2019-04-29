@@ -8,7 +8,7 @@
 #SBATCH --mail-user c.novella.rausell@gmail.com
 # Load modules
 module load bioinfo-tools
-module load fastqc
+module load FastQC
 # Your commands
 fastqc /home/clno2215/stunning-garbanzo/data/transcriptomics/RNA-seq/trimmed_data/BH/*_paired.fq* -o /home/clno2215/stunning-garbanzo/results/transcriptomics/Serum/fastqc_trimmed/
 
