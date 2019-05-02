@@ -22,7 +22,7 @@ samtools view -Sb efaec_pilon_bwt2_30-04-2019_ERR1797970.sam > efaec_pilon_bwt2_
 samtools sort efaec_pilon_bwt2_30-04-2019_ERR1797970.bam
 samtools index efaec_pilon_bwt2_30-04-2019_ERR1797970.bam
 rm efaec_pilon_bwt2_30-04-2019_ERR1797970.sam
-bowtie2 -x /home/clno2215/stunning-garbanzo/data/transcriptomics/RNA-seq/metadata/bowtie2_index/efaec_pilon -1 /home/clno2215/stunning-garbanzo/data/transcriptomics/RNA-seq/trimmed_data/Serum/trim_paired_ERR1797971_pass_1.fastq.gz -2 /home/clno2215/projectdata/transcriptomics_data/RNA-Seq_Serum/trim_paired_ERR1797971_pass_2.fastq.gz -S efaec_pilon_bwt2_30-04-2019_ERR1797971.sam
+bowtie2 -x /home/clno2215/stunning-garbanzo/data/transcriptomics/RNA-seq/metadata/bowtie2_index/efaec_pilon -1 /home/clno2215/projectdata/transcriptomics_data/RNA-Seq_Serum/trim_paired_ERR1797971_pass_1.fastq.gz -2 /home/clno2215/projectdata/transcriptomics_data/RNA-Seq_Serum/trim_paired_ERR1797971_pass_2.fastq.gz -S efaec_pilon_bwt2_30-04-2019_ERR1797971.sam
 samtools view -Sb efaec_pilon_bwt2_30-04-2019_ERR1797971.sam > efaec_pilon_bwt2_30-04-2019_ERR1797971.bam
 samtools sort efaec_pilon_bwt2_30-04-2019_ERR1797971.bam
 samtools index efaec_pilon_bwt2_30-04-2019_ERR1797971.bam
