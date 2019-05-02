@@ -1,8 +1,8 @@
 #!/bin/bash -l
 #SBATCH -A g2019003
 #SBATCH -p core
-#SBATCH -n 4
-#SBATCH -t 05:00:00
+#SBATCH -n 2
+#SBATCH -t 04:00:00
 #SBATCH -J SamTools_02-05-2019
 #SBATCH --mail-type=ALL
 #SBATCH --mail-user c.novella.rausell@gmail.com
