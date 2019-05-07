@@ -11,14 +11,14 @@ module load bioinfo-tools
 module load htseq/0.9.1
 # Your commands
 cd /home/clno2215/stunning-garbanzo/results/transcriptomics/BH/bowtie2
-for i in *.bam
+for i in *_sorted.bam
 do
 echo $i
-htseq-count $i /home/clno2215/stunning-garbanzo/results/genomics/prokka_annotation/PROKKA_04292019.gtf > $i.count
+htseq-count $i /home/clno2215/stunning-garbanzo/results/genomics/prokka_annotation/PROKKA_04292019.gtf -f bam -t CDS > $i.count
 done
 cd /home/clno2215/stunning-garbanzo/results/transcriptomics/Serum/bowtie2
-for i in *.bam
+for i in *_sorted.bam
 do
 echo $i
-htseq-count $i /home/clno2215/stunning-garbanzo/results/genomics/prokka_annotation/PROKKA_04292019.gtf > $i.count
+htseq-count $i /home/clno2215/stunning-garbanzo/results/genomics/prokka_annotation/PROKKA_04292019.gtf -f bam -t CDS > $i.count
 done
