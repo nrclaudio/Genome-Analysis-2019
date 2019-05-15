@@ -1,0 +1,102 @@
+---
+title: "Notebook"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+### Loading needed libraries
+
+```{r, message = FALSE}
+library("DESeq2")
+library("IHW")
+library('ggplot2')
+library('regionReport')
+library("RColorBrewer") 
+library("pheatmap")
+```
+
+### Tidying up the data
+
+```{r, results='hide', message=FALSE, warning=FALSE}
+counts = read.delim("~/MScBioinformatics/Period4/GA/stunning-garbanzo/results/transcriptomics/Counts/htseq_all_sample_count.tsv", header=F, row.names=1)
+numc <- sapply(counts, is.factor)
+counts[numc] <- lapply(counts[numc], function(x) as.numeric(as.character(x)))
+counts <- na.omit(counts)
+colnames(counts) = c("BH1", "SR1", "BH2", "SR2", "BH3", "SR3")
+my.design <- data.frame(
+  row.names = colnames( counts ),
+  condition = c( "BH", "Serum", "BH", "Serum","BH", "Serum"),
+  libType = c( "paired-end", "paired-end","paired-end","paired-end","paired-end","paired-end" )
+)
+conds <- factor(my.design$condition)
+dds <- DESeqDataSetFromMatrix(countData = counts, colData = my.design, design = ~ condition)
+featureData <- data.frame(gene=rownames(counts))
+mcols(dds) <- DataFrame(mcols(dds), featureData)
+```
+
+
+### Pre-Filtering for reads with at least 10 counts
+```{r, messsage = FALSE}
+keep <- rowSums(counts(dds)) >= 10
+dds <- dds[keep,]
+```
+### Refactor control and BH
+```{r, message = FALSE}
+dds$condition <- relevel(dds$condition, ref = "BH")
+```
+
+### Differential Expression analysis
+```{r, message = FALSE}
+dds <- DESeq(dds)
+res <- results(dds, filterFun = ihw)
+resOrdered <- res[order(res$pvalue),]
+```
+
+### Top 50 results
+```{r}
+n = 50
+topResults <- rbind( resOrdered[ abs(resOrdered[,'log2FoldChange']) > 2, ][1:n,], 
+                     resOrdered[ abs(resOrdered[,'log2FoldChange']) < 0.5, ][n:1,] )
+topResults[c(1:5,(2*n-4):(2*n)), c('baseMean','log2FoldChange','padj')]
+```
+
+### Plot log fold change vs mean expression for all genes, red = p < 0.05
+```{r plotMA}
+plotMA(resOrdered, main='DESeq2: BH vs Serum', ylim=c(-2,2), alpha = 0.05)
+```
+
+
+### PCA
+```{r plotPCA}
+rld <- rlogTransformation(dds, blind=TRUE)
+plotPCA(rld)
+```
+
+### Plot count for the best gene (lowest pval)
+```{r plotCounts}
+plotCounts(dds, gene=which.min(resOrdered$padj), intgroup='condition', pch = 19 )
+```
+
+### Top genes normalized counts heatmap
+```{r heatmap}
+hmcol <- brewer.pal(11,'RdBu')
+nCounts <- counts(dds, normalized=TRUE)
+heatmap(as.matrix(nCounts[ row.names(topResults), ]), Rowv = NA, col = hmcol, mar = c(8,2))
+```
+
+### Sample-to-sample euclidian distance plot
+```{r pheatmap}
+sampleDists <- dist(t(assay(rld)))
+sampleDistMatrix <- as.matrix(sampleDists)
+pheatmap(sampleDistMatrix, clustering_distance_rows = sampleDists,
+    clustering_distance_cols = sampleDists, color = colorRampPalette( rev(brewer.pal(9, "Blues")) )(255))
+```
+
+### ¿How many genes have a padj value smaller than 0.001?
+```{r}
+filterL2FCG2L05 <- (abs(resOrdered$log2FoldChange) > 2) | (abs(resOrdered$log2FoldChange) < 0.5)
+filtered_res <- resOrdered[filterL2FCG2L05,]
+sum(filtered_res$padj < 0.001, na.rm=TRUE)
+```
