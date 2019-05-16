@@ -10,6 +10,7 @@ library('ggplot2')
 library('regionReport')
 library("RColorBrewer") 
 library("pheatmap")
+library("vsn")
 ```
 
 ### Tidying up the data
@@ -94,6 +95,21 @@ plotPCA(rld)
 
 ![](BHvsSerum_files/figure-gfm/plotPCA-1.png)<!-- -->
 
+### Effects of transformations on the variance
+
+``` r
+ntd <- normTransform(dds)
+meanSdPlot(assay(ntd))
+```
+
+![](BHvsSerum_files/figure-gfm/unnamed-chunk-7-1.png)<!-- -->
+
+``` r
+meanSdPlot(assay(rld))
+```
+
+![](BHvsSerum_files/figure-gfm/unnamed-chunk-7-2.png)<!-- -->
+
 ### Plot count for the best gene (lowest pval)
 
 ``` r
@@ -111,6 +127,24 @@ heatmap(as.matrix(nCounts[ row.names(topResults), ]), Rowv = NA, col = hmcol, ma
 ```
 
 ![](BHvsSerum_files/figure-gfm/heatmap-1.png)<!-- -->
+
+### Heatmap of the count matrix
+
+``` r
+select <- order(rowMeans(counts(dds,normalized=TRUE)),
+                decreasing=TRUE)[1:20]
+pheatmap(assay(rld)[select,], cluster_rows=FALSE, show_rownames=FALSE,
+         cluster_cols=FALSE)
+```
+
+![](BHvsSerum_files/figure-gfm/unnamed-chunk-8-1.png)<!-- -->
+
+``` r
+pheatmap(assay(ntd)[select,], cluster_rows=FALSE, show_rownames=FALSE,
+         cluster_cols=FALSE)
+```
+
+![](BHvsSerum_files/figure-gfm/unnamed-chunk-8-2.png)<!-- -->
 
 ### Sample-to-sample euclidian distance plot
 

@@ -15,6 +15,7 @@ library('ggplot2')
 library('regionReport')
 library("RColorBrewer") 
 library("pheatmap")
+library("vsn")
 ```
 
 ### Tidying up the data
@@ -67,11 +68,18 @@ topResults[c(1:5,(2*n-4):(2*n)), c('baseMean','log2FoldChange','padj')]
 plotMA(resOrdered, main='DESeq2: BH vs Serum', ylim=c(-2,2), alpha = 0.05)
 ```
 
-
 ### PCA
 ```{r plotPCA}
 rld <- rlogTransformation(dds, blind=TRUE)
 plotPCA(rld)
+```
+
+### Effects of transformations on the variance
+```{r}
+ntd <- normTransform(dds)
+meanSdPlot(assay(ntd))
+meanSdPlot(assay(rld))
+
 ```
 
 ### Plot count for the best gene (lowest pval)
@@ -84,6 +92,16 @@ plotCounts(dds, gene=which.min(resOrdered$padj), intgroup='condition', pch = 19 
 hmcol <- brewer.pal(11,'RdBu')
 nCounts <- counts(dds, normalized=TRUE)
 heatmap(as.matrix(nCounts[ row.names(topResults), ]), Rowv = NA, col = hmcol, mar = c(8,2))
+```
+
+### Heatmap of the count matrix
+```{r}
+select <- order(rowMeans(counts(dds,normalized=TRUE)),
+                decreasing=TRUE)[1:20]
+pheatmap(assay(rld)[select,], cluster_rows=FALSE, show_rownames=FALSE,
+         cluster_cols=FALSE)
+pheatmap(assay(ntd)[select,], cluster_rows=FALSE, show_rownames=FALSE,
+         cluster_cols=FALSE)
 ```
 
 ### Sample-to-sample euclidian distance plot
