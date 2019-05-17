@@ -1,7 +1,7 @@
 #!/bin/bash -l
 #SBATCH -A g2019003
 #SBATCH -p core
-#SBATCH -n 4
+#SBATCH -n 2
 #SBATCH -t 05:00:00
 #SBATCH -J BWT2alignBHI_17-05-2019
 #SBATCH --mail-type=ALL
