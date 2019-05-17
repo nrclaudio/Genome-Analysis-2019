@@ -15,16 +15,16 @@ REF=/home/clno2215/stunning-garbanzo/data/transcriptomics/RNA-seq/metadata/bowti
 RES=/home/clno2215/stunning-garbanzo/results/transcriptomics/Tn-seq/BWT2/
 cd /home/clno2215/projectdata/transcriptomics_data/Tn-Seq_BHI/
 for file in `ls trim*.fastq.gz | sed 's/.fastq.gz//'`; do
-    bowtie2 -x $REF -U ${file}.fastq.gz -p 2 --met-file ${file}.met 2> ${file}.stats | samtools sort -o $RES${file}.bam
+    bowtie2 -x $REF -U ${file}.fastq.gz -p 2 --met-file ${file}.met  | samtools sort -o $RES${file}.bam
     samtools index $RES${file}.bam
 done
 cd /home/clno2215/projectdata/transcriptomics_data/Tn-Seq_HSerum/
 for file in `ls trim*.fastq.gz | sed 's/.fastq.gz//'`; do
-    bowtie2 -x $REF -U ${file}.fastq.gz -p 2 --met-file ${file}.met 2> ${file}.stats | samtools sort -o $RES${file}.bam
+    bowtie2 -x $REF -U ${file}.fastq.gz -p 2 --met-file ${file}.met  | samtools sort -o $RES${file}.bam
     samtools index $RES${file}.bam
 done
 cd /home/clno2215/projectdata/transcriptomics_data/Tn-Seq_Serum/
 for file in `ls trim*.fastq.gz | sed 's/.fastq.gz//'`; do
-    bowtie2 -x $REF -U ${file}.fastq.gz -p 2 --met-file ${file}.met 2> ${file}.stats | samtools sort -o $RES${file}.bam
+    bowtie2 -x $REF -U ${file}.fastq.gz -p 2 --met-file ${file}.met  | samtools sort -o $RES${file}.bam
     samtools index $RES${file}.bam
 done
