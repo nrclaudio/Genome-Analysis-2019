@@ -14,21 +14,23 @@ module load trimmomatic
 # Your commands
 REF=/home/clno2215/stunning-garbanzo/data/transcriptomics/RNA-seq/metadata/bowtie2_index/efaec_pilon
 RES=/home/clno2215/stunning-garbanzo/results/transcriptomics/Tn-seq/BWT2/
+TRIM=/home/clno2215/stunning-garbanzo/results/transcriptomics/Tn-seq/BWT2/
+
 cd /home/clno2215/projectdata/transcriptomics_data/Tn-Seq_BHI/
 for file in `ls trim*.fastq.gz | sed 's/.fastq.gz//'`; do
-    trimmomatic SE ${file}.fastq.gz ${file}_trimmed.fq.gz -phred33 ILLUMINACLIP:/sw/apps/bioinfo/trimmomatic/0.36/rackham/adapters/TruSeq3-SE.fa:2:25:10 LEADING:3 TRAILING:3 SLIDINGWINDOW:4:15 MINLEN:25
-    bowtie2 -x $REF -U ${file}_trimmed.fastq.gz -p 2  | samtools sort -o $RES${file}.bam
+    trimmomatic SE ${file}.fastq.gz $TRIM${file}_trimmed.fastq.gz -phred33 ILLUMINACLIP:/sw/apps/bioinfo/trimmomatic/0.36/rackham/adapters/TruSeq3-SE.fa:2:25:10 LEADING:3 TRAILING:3 SLIDINGWINDOW:4:15 MINLEN:25
+    bowtie2 -x $REF -U $TRIM${file}_trimmed.fastq.gz -p 2  | samtools sort -o $RES${file}.bam
     samtools index $RES${file}.bam
 done
 cd /home/clno2215/projectdata/transcriptomics_data/Tn-Seq_HSerum/
 for file in `ls trim*.fastq.gz | sed 's/.fastq.gz//'`; do
-    trimmomatic SE ${file}.fastq.gz ${file}_trimmed.fastq.gz -phred33 ILLUMINACLIP:/sw/apps/bioinfo/trimmomatic/0.36/rackham/adapters/TruSeq3-SE.fa:2:25:10 LEADING:3 TRAILING:3 SLIDINGWINDOW:4:15 MINLEN:25
-    bowtie2 -x $REF -U ${file}_trimmed.fastq.gz -p 2  | samtools sort -o $RES${file}.bam
+    trimmomatic SE ${file}.fastq.gz $TRIM${file}_trimmed.fastq.gz -phred33 ILLUMINACLIP:/sw/apps/bioinfo/trimmomatic/0.36/rackham/adapters/TruSeq3-SE.fa:2:25:10 LEADING:3 TRAILING:3 SLIDINGWINDOW:4:15 MINLEN:25
+    bowtie2 -x $REF -U $TRIM${file}_trimmed.fastq.gz -p 2  | samtools sort -o $RES${file}.bam
     samtools index $RES${file}.bam
 done
 cd /home/clno2215/projectdata/transcriptomics_data/Tn-Seq_Serum/
 for file in `ls trim*.fastq.gz | sed 's/.fastq.gz//'`; do
-    trimmomatic SE ${file}.fastq.gz ${file}_trimmed.fastq.gz -phred33 ILLUMINACLIP:/sw/apps/bioinfo/trimmomatic/0.36/rackham/adapters/TruSeq3-SE.fa:2:25:10 LEADING:3 TRAILING:3 SLIDINGWINDOW:4:15 MINLEN:25
-    bowtie2 -x $REF -U ${file}_trimmed.fastq.gz -p 2  | samtools sort -o $RES${file}.bam
+    trimmomatic SE ${file}.fastq.gz $TRIM${file}_trimmed.fastq.gz -phred33 ILLUMINACLIP:/sw/apps/bioinfo/trimmomatic/0.36/rackham/adapters/TruSeq3-SE.fa:2:25:10 LEADING:3 TRAILING:3 SLIDINGWINDOW:4:15 MINLEN:25
+    bowtie2 -x $REF -U $TRIM${file}_trimmed.fastq.gz -p 2  | samtools sort -o $RES${file}.bam
     samtools index $RES${file}.bam
 done
