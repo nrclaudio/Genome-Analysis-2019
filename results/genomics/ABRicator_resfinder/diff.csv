@@ -1,0 +1,14 @@
+#FILE,SEQUENCE,START,END,GENE,COVERAGE,COVERAGE_MAP,GAPS,%COVERAGE,%IDENTITY,DATABASE,ACCESSION,PRODUCT
+Assembled_genome.fasta,CP014529.1,870837,871385,aac(6')-Ii_1,1-549/549,===============,0/0,100.00,99.64,resfinder,L12710,resfinder~~~aac(6')-Ii_1~~~L12710 aac(6')-Ii_1
+Assembled_genome.fasta,CP014529.1,2598307,2599785,msr(C)_1,1-1479/1479,===============,0/0,100.00,98.99,resfinder,AY004350,resfinder~~~msr(C)_1~~~AY004350 msr(C)_1
+Assembled_genome.fasta,CP014531.1,5705,8311,VanHAX_2,1-2607/2607,===============,0/0,100.00,100.00,resfinder,M97297,resfinder~~~VanHAX_2~~~M97297 VanHAX_2
+Assembled_genome.fasta,CP014535.1,2232,2729,dfrG_1,1-498/498,===============,0/0,100.00,100.00,resfinder,AB205645,resfinder~~~dfrG_1~~~AB205645 dfrG_1
+Improved_PilonAssembly_15-05-2019.fasta,NODE_8_length_62897_cov_74.024920,26817,27314,dfrG_1,1-498/498,===============,0/0,100.00,100.00,resfinder,AB205645,resfinder~~~dfrG_1~~~AB205645 dfrG_1
+Improved_PilonAssembly_15-05-2019.fasta,tig00000001_pilon,743512,744990,msr(C)_1,1-1479/1479,===============,0/0,100.00,98.99,resfinder,AY004350,resfinder~~~msr(C)_1~~~AY004350 msr(C)_1
+Improved_PilonAssembly_15-05-2019.fasta,tig00000001_pilon,2471910,2472458,aac(6')-Ii_1,1-549/549,===============,0/0,100.00,99.64,resfinder,L12710,resfinder~~~aac(6')-Ii_1~~~L12710 aac(6')-Ii_1
+Improved_PilonAssembly_15-05-2019.fasta,tig00000019_pilon,4980,7586,VanHAX_2,1-2607/2607,===============,0/0,100.00,100.00,resfinder,M97297,resfinder~~~VanHAX_2~~~M97297 VanHAX_2
+Improved_PilonAssembly_15-05-2019.fasta,tig00000019_pilon,37402,40007,VanHAX_2,1-2607/2607,========/======,2/3,99.92,99.89,resfinder,M97297,resfinder~~~VanHAX_2~~~M97297 VanHAX_2
+Pilon_assembly_05-04-2019.fasta,tig00000001_pilon,743512,744990,msr(C)_1,1-1479/1479,===============,0/0,100.00,98.99,resfinder,AY004350,resfinder~~~msr(C)_1~~~AY004350 msr(C)_1
+Pilon_assembly_05-04-2019.fasta,tig00000001_pilon,2471910,2472458,aac(6')-Ii_1,1-549/549,===============,0/0,100.00,99.64,resfinder,L12710,resfinder~~~aac(6')-Ii_1~~~L12710 aac(6')-Ii_1
+Pilon_assembly_05-04-2019.fasta,tig00000019_pilon,4980,7586,VanHAX_2,1-2607/2607,===============,0/0,100.00,100.00,resfinder,M97297,resfinder~~~VanHAX_2~~~M97297 VanHAX_2
+Pilon_assembly_05-04-2019.fasta,tig00000019_pilon,37402,40007,VanHAX_2,1-2607/2607,========/======,2/3,99.92,99.89,resfinder,M97297,resfinder~~~VanHAX_2~~~M97297 VanHAX_2
