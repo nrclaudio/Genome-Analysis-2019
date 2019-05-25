@@ -1,0 +1,62 @@
+/sw/bioinfo/quast/4.5.4/rackham/bin/quast.py /home/clno2215/stunning-garbanzo/results/genomics/paper_assembly/Assembled_genome.fasta -o /home/clno2215/stunning-garbanzo/results/genomics/quast/paperquast
+
+Version: 4.5.4
+
+System information:
+  OS: Linux-3.10.0-957.12.1.el7.x86_64-x86_64-with-centos-7.6.1810-Core (linux_64)
+  Python version: 2.7.6
+  CPUs number: 20
+
+Started: 2019-05-25 15:52:00
+
+Logging to /home/clno2215/stunning-garbanzo/results/genomics/quast/paperquast/quast.log
+NOTICE: Output directory already exists. Existing Nucmer alignments can be used
+NOTICE: Maximum number of threads is set to 5 (use --threads option to set it manually)
+
+CWD: /domus/h1/clno2215
+Main parameters: 
+  Threads: 5, minimum contig length: 500, ambiguity: one, threshold for extensive misassembly size: 1000
+
+Contigs:
+  Pre-processing...
+  /home/clno2215/stunning-garbanzo/results/genomics/paper_assembly/Assembled_genome.fasta ==> Assembled_genome
+
+2019-05-25 15:52:04
+Running Basic statistics processor...
+  Contig files: 
+    Assembled_genome
+  Calculating N50 and L50...
+    Assembled_genome, N50 = 2765010, L50 = 1, Total length = 3168410, GC % = 37.70, # N's per 100 kbp =  0.00
+  Drawing Nx plot...
+    saved to /home/clno2215/stunning-garbanzo/results/genomics/quast/paperquast/basic_stats/Nx_plot.pdf
+  Drawing cumulative plot...
+    saved to /home/clno2215/stunning-garbanzo/results/genomics/quast/paperquast/basic_stats/cumulative_plot.pdf
+  Drawing GC content plot...
+    saved to /home/clno2215/stunning-garbanzo/results/genomics/quast/paperquast/basic_stats/GC_content_plot.pdf
+  Drawing Assembled_genome GC content plot...
+    saved to /home/clno2215/stunning-garbanzo/results/genomics/quast/paperquast/basic_stats/Assembled_genome_GC_content_plot.pdf
+Done.
+
+NOTICE: Genes are not predicted by default. Use --gene-finding option to enable it.
+
+2019-05-25 15:52:06
+Creating large visual summaries...
+This may take a while: press Ctrl-C to skip this step..
+  1 of 2: Creating Icarus viewers...
+  2 of 2: Creating PDF with all tables and plots...
+Done
+
+2019-05-25 15:52:07
+RESULTS:
+  Text versions of total report are saved to /home/clno2215/stunning-garbanzo/results/genomics/quast/paperquast/report.txt, report.tsv, and report.tex
+  Text versions of transposed total report are saved to /home/clno2215/stunning-garbanzo/results/genomics/quast/paperquast/transposed_report.txt, transposed_report.tsv, and transposed_report.tex
+  HTML version (interactive tables and plots) saved to /home/clno2215/stunning-garbanzo/results/genomics/quast/paperquast/report.html
+  PDF version (tables and plots) is saved to /home/clno2215/stunning-garbanzo/results/genomics/quast/paperquast/report.pdf
+  Icarus (contig browser) is saved to /home/clno2215/stunning-garbanzo/results/genomics/quast/paperquast/icarus.html
+  Log saved to /home/clno2215/stunning-garbanzo/results/genomics/quast/paperquast/quast.log
+
+Finished: 2019-05-25 15:52:07
+Elapsed time: 0:00:06.449969
+NOTICEs: 3; WARNINGs: 0; non-fatal ERRORs: 0
+
+Thank you for using QUAST!
