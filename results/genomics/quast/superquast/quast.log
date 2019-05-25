@@ -1,0 +1,142 @@
+/sw/bioinfo/quast/4.5.4/rackham/bin/quast.py /home/clno2215/stunning-garbanzo/results/genomics/pilon_assembly_improved_SPAdes/Improved_PilonAssembly_15-05-2019.fasta -R /home/clno2215/stunning-garbanzo/results/genomics/paper_assembly/Assembled_genome.fasta -o /home/clno2215/stunning-garbanzo/results/genomics/quast/superquast
+
+Version: 4.5.4
+
+System information:
+  OS: Linux-3.10.0-957.12.1.el7.x86_64-x86_64-with-centos-7.6.1810-Core (linux_64)
+  Python version: 2.7.6
+  CPUs number: 20
+
+Started: 2019-05-26 00:39:30
+
+Logging to /home/clno2215/stunning-garbanzo/results/genomics/quast/superquast/quast.log
+NOTICE: Output directory already exists. Existing Nucmer alignments can be used
+NOTICE: Maximum number of threads is set to 5 (use --threads option to set it manually)
+
+CWD: /domus/h1/clno2215
+Main parameters: 
+  Threads: 5, minimum contig length: 500, ambiguity: one, threshold for extensive misassembly size: 1000
+
+Reference:
+  /home/clno2215/stunning-garbanzo/results/genomics/paper_assembly/Assembled_genome.fasta ==> Assembled_genome
+
+Contigs:
+  Pre-processing...
+  /home/clno2215/stunning-garbanzo/results/genomics/pilon_assembly_improved_SPAdes/Improved_PilonAssembly_15-05-2019.fasta ==> Improved_PilonAssembly_15-05-2019
+
+2019-05-26 00:39:31
+Running Basic statistics processor...
+  Reference genome:
+    Assembled_genome.fasta, length = 3168410, num fragments = 7, GC % = 37.70
+  Contig files: 
+    Improved_PilonAssembly_15-05-2019
+  Calculating N50 and L50...
+    Improved_PilonAssembly_15-05-2019, N50 = 2773702, L50 = 1, Total length = 3172924, GC % = 37.71, # N's per 100 kbp =  0.00
+  Drawing Nx plot...
+    saved to /home/clno2215/stunning-garbanzo/results/genomics/quast/superquast/basic_stats/Nx_plot.pdf
+  Drawing NGx plot...
+    saved to /home/clno2215/stunning-garbanzo/results/genomics/quast/superquast/basic_stats/NGx_plot.pdf
+  Drawing cumulative plot...
+    saved to /home/clno2215/stunning-garbanzo/results/genomics/quast/superquast/basic_stats/cumulative_plot.pdf
+  Drawing GC content plot...
+    saved to /home/clno2215/stunning-garbanzo/results/genomics/quast/superquast/basic_stats/GC_content_plot.pdf
+  Drawing Improved_PilonAssembly_15-05-2019 GC content plot...
+    saved to /home/clno2215/stunning-garbanzo/results/genomics/quast/superquast/basic_stats/Improved_PilonAssembly_15-05-2019_GC_content_plot.pdf
+  Drawing Coverage histogram (bin size: 1x)...
+    saved to /home/clno2215/stunning-garbanzo/results/genomics/quast/superquast/basic_stats/coverage_histogram.pdf
+  Drawing Improved_PilonAssembly_15-05-2019 coverage histogram (bin size: 1x)...
+    saved to /home/clno2215/stunning-garbanzo/results/genomics/quast/superquast/basic_stats/Improved_PilonAssembly_15-05-2019_coverage_histogram.pdf
+Done.
+
+2019-05-26 00:39:33
+Running Contig analyzer...
+  Improved_PilonAssembly_15-05-2019
+  Logging to files /home/clno2215/stunning-garbanzo/results/genomics/quast/superquast/contigs_reports/contigs_report_Improved_PilonAssembly_15-05-2019.stdout and contigs_report_Improved_PilonAssembly_15-05-2019.stderr...
+  Aligning contigs to the reference
+  /sw/bioinfo/quast/4.5.4/rackham/lib/python2.7/site-packages/quast_libs/MUMmer/nucmer \
+  -c 65 -l 65 --maxmatch -p /home/clno2215/stunning-garbanzo/results/genomics/quast/superquast/contigs_reports/nucmer_output/Improved_PilonAssembly_15-05-2019 \
+  --emem -t 5 /home/clno2215/stunning-garbanzo/results/genomics/quast/superquast/quast_corrected_input/Assembled_genome.fasta \
+  /home/clno2215/stunning-garbanzo/results/genomics/quast/superquast/quast_corrected_input/Improved_PilonAssembly_15-05-2019.fasta \
+  >> /home/clno2215/stunning-garbanzo/results/genomics/quast/superquast/contigs_reports/contigs_report_Improved_PilonAssembly_15-05-2019.stdout \
+  2>> /home/clno2215/stunning-garbanzo/results/genomics/quast/superquast/contigs_reports/contigs_report_Improved_PilonAssembly_15-05-2019.stderr
+  /sw/bioinfo/quast/4.5.4/rackham/lib/python2.7/site-packages/quast_libs/MUMmer/delta-filter \
+  -i 95.0 -l 0 /home/clno2215/stunning-garbanzo/results/genomics/quast/superquast/contigs_reports/nucmer_output/Improved_PilonAssembly_15-05-2019.delta \
+  > /home/clno2215/stunning-garbanzo/results/genomics/quast/superquast/contigs_reports/nucmer_output/Improved_PilonAssembly_15-05-2019.fdelta \
+  2> /home/clno2215/stunning-garbanzo/results/genomics/quast/superquast/contigs_reports/contigs_report_Improved_PilonAssembly_15-05-2019.stderr
+  /sw/bioinfo/quast/4.5.4/rackham/lib/python2.7/site-packages/quast_libs/MUMmer/mummerplot \
+  --html --layout -p /home/clno2215/stunning-garbanzo/results/genomics/quast/superquast/contigs_reports/nucmer_output/Improved_PilonAssembly_15-05-2019 \
+  /home/clno2215/stunning-garbanzo/results/genomics/quast/superquast/contigs_reports/nucmer_output/Improved_PilonAssembly_15-05-2019.delta \
+  > /home/clno2215/stunning-garbanzo/results/genomics/quast/superquast/contigs_reports/contigs_report_Improved_PilonAssembly_15-05-2019.stdout \
+  2> /home/clno2215/stunning-garbanzo/results/genomics/quast/superquast/contigs_reports/contigs_report_Improved_PilonAssembly_15-05-2019.stderr
+  /sw/bioinfo/quast/4.5.4/rackham/lib/python2.7/site-packages/quast_libs/gnuplot/src/gnuplot \
+  /home/clno2215/stunning-garbanzo/results/genomics/quast/superquast/contigs_reports/nucmer_output/Improved_PilonAssembly_15-05-2019.gp \
+  > /dev/null 2> /home/clno2215/stunning-garbanzo/results/genomics/quast/superquast/contigs_reports/contigs_report_Improved_PilonAssembly_15-05-2019.stderr
+  MUMmer plot saved to /home/clno2215/stunning-garbanzo/results/genomics/quast/superquast/contigs_reports/Improved_PilonAssembly_15-05-2019_mummerplot.html
+  /sw/bioinfo/quast/4.5.4/rackham/lib/python2.7/site-packages/quast_libs/MUMmer/show-coords \
+  /home/clno2215/stunning-garbanzo/results/genomics/quast/superquast/contigs_reports/nucmer_output/Improved_PilonAssembly_15-05-2019.delta \
+  > /home/clno2215/stunning-garbanzo/results/genomics/quast/superquast/contigs_reports/nucmer_output/Improved_PilonAssembly_15-05-2019.coords_tmp \
+  2> /home/clno2215/stunning-garbanzo/results/genomics/quast/superquast/contigs_reports/contigs_report_Improved_PilonAssembly_15-05-2019.stderr
+  /sw/bioinfo/quast/4.5.4/rackham/lib/python2.7/site-packages/quast_libs/MUMmer/show-snps \
+  -S -T -H /home/clno2215/stunning-garbanzo/results/genomics/quast/superquast/contigs_reports/nucmer_output/Improved_PilonAssembly_15-05-2019.delta \
+  < /home/clno2215/stunning-garbanzo/results/genomics/quast/superquast/contigs_reports/nucmer_output/Improved_PilonAssembly_15-05-2019.coords.headless \
+  > /home/clno2215/stunning-garbanzo/results/genomics/quast/superquast/contigs_reports/nucmer_output/Improved_PilonAssembly_15-05-2019.all_snps \
+  2> /home/clno2215/stunning-garbanzo/results/genomics/quast/superquast/contigs_reports/contigs_report_Improved_PilonAssembly_15-05-2019.stderr
+  Analysis is finished.
+
+  Gzipping /home/clno2215/stunning-garbanzo/results/genomics/quast/superquast/contigs_reports/nucmer_output/Improved_PilonAssembly_15-05-2019.all_snps to reduce disk space usage...
+    saved to /home/clno2215/stunning-garbanzo/results/genomics/quast/superquast/contigs_reports/nucmer_output/Improved_PilonAssembly_15-05-2019.all_snps.gz
+  Creating total report...
+    saved to /home/clno2215/stunning-garbanzo/results/genomics/quast/superquast/contigs_reports/misassemblies_report.txt, misassemblies_report.tsv, and misassemblies_report.tex
+  Transposed version of total report...
+    saved to /home/clno2215/stunning-garbanzo/results/genomics/quast/superquast/contigs_reports/transposed_report_misassemblies.txt, transposed_report_misassemblies.tsv, and transposed_report_misassemblies.tex
+  Creating total report...
+    saved to /home/clno2215/stunning-garbanzo/results/genomics/quast/superquast/contigs_reports/unaligned_report.txt, unaligned_report.tsv, and unaligned_report.tex
+  Drawing misassemblies by types plot...
+    saved to /home/clno2215/stunning-garbanzo/results/genomics/quast/superquast/contigs_reports/misassemblies_plot.pdf
+  Drawing misassemblies FRCurve plot...
+    saved to /home/clno2215/stunning-garbanzo/results/genomics/quast/superquast/contigs_reports/misassemblies_frcurve_plot.pdf
+Done.
+
+2019-05-26 00:39:46
+Running NA-NGA calculation...
+  Improved_PilonAssembly_15-05-2019, Largest alignment = 2195416, NA50 = 2195416, NGA50 = 2195416, LA50 = 1, LGA50 = 1
+  Drawing cumulative plot...
+    saved to /home/clno2215/stunning-garbanzo/results/genomics/quast/superquast/aligned_stats/cumulative_plot.pdf
+  Drawing NAx plot...
+    saved to /home/clno2215/stunning-garbanzo/results/genomics/quast/superquast/aligned_stats/NAx_plot.pdf
+  Drawing NGAx plot...
+    saved to /home/clno2215/stunning-garbanzo/results/genomics/quast/superquast/aligned_stats/NGAx_plot.pdf
+Done.
+
+2019-05-26 00:39:47
+Running Genome analyzer...
+  NOTICE: No file with genes provided. Use the -G option if you want to specify it.
+  NOTICE: No file with operons provided. Use the -O option if you want to specify it.
+  Improved_PilonAssembly_15-05-2019
+  Analysis is finished.
+  Skipping drawing Genome fraction, % histogram... (less than 2 columns histogram makes no sense)
+Done.
+
+NOTICE: Genes are not predicted by default. Use --gene-finding option to enable it.
+
+2019-05-26 00:39:49
+Creating large visual summaries...
+This may take a while: press Ctrl-C to skip this step..
+  1 of 2: Creating Icarus viewers...
+  2 of 2: Creating PDF with all tables and plots...
+Done
+
+2019-05-26 00:39:50
+RESULTS:
+  Text versions of total report are saved to /home/clno2215/stunning-garbanzo/results/genomics/quast/superquast/report.txt, report.tsv, and report.tex
+  Text versions of transposed total report are saved to /home/clno2215/stunning-garbanzo/results/genomics/quast/superquast/transposed_report.txt, transposed_report.tsv, and transposed_report.tex
+  HTML version (interactive tables and plots) saved to /home/clno2215/stunning-garbanzo/results/genomics/quast/superquast/report.html
+  PDF version (tables and plots) is saved to /home/clno2215/stunning-garbanzo/results/genomics/quast/superquast/report.pdf
+  Icarus (contig browser) is saved to /home/clno2215/stunning-garbanzo/results/genomics/quast/superquast/icarus.html
+  Log saved to /home/clno2215/stunning-garbanzo/results/genomics/quast/superquast/quast.log
+
+Finished: 2019-05-26 00:39:50
+Elapsed time: 0:00:20.047493
+NOTICEs: 5; WARNINGs: 0; non-fatal ERRORs: 0
+
+Thank you for using QUAST!

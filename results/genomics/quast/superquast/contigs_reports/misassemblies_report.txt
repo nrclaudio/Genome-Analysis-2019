@@ -1,0 +1,16 @@
+All statistics are based on contigs of size >= 500 bp, unless otherwise noted (e.g., "# contigs (>= 0 bp)" and "Total length (>= 0 bp)" include all contigs).
+
+Assembly                     Improved_PilonAssembly_15-05-2019
+# misassemblies              7                                
+    # relocations            5                                
+    # translocations         2                                
+    # inversions             0                                
+# misassembled contigs       5                                
+Misassembled contigs length  3052985                          
+# local misassemblies        0                                
+# unaligned mis. contigs     0                                
+# mismatches                 121                              
+# indels                     128                              
+    # indels (<= 5 bp)       121                              
+    # indels (> 5 bp)        7                                
+Indels length                239                              

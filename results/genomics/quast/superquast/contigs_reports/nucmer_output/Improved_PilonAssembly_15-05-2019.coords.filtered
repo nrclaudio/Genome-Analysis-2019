@@ -1,0 +1,18 @@
+    [S1]     [E1]  |     [S2]     [E2]  |  [LEN 1]  [LEN 2]  |  [% IDY]  | [TAGS]
+=====================================================================================
+1 578289 | 578286 1 | 578289 578286 | 99.99 | CP014529.1_Enterococcus_faecium_strain_E745__complete_genome tig00000001_pilon
+569593 2765010 | 2773702 578287 | 2195418 2195416 | 99.99 | CP014529.1_Enterococcus_faecium_strain_E745__complete_genome tig00000001_pilon
+1 13286 | 13290 1 | 13286 13290 | 99.95 | CP014531.1_Enterococcus_faecium_strain_E745_plasmid_pl2__complete_sequence tig00000019_pilon
+5695 32423 | 40017 13291 | 26729 26727 | 99.94 | CP014531.1_Enterococcus_faecium_strain_E745_plasmid_pl2__complete_sequence tig00000019_pilon
+1516 46130 | 44609 1 | 44615 44609 | 99.97 | CP014534.1_Enterococcus_faecium_strain_E745_plasmid_pl5__complete_sequence tig00000020_pilon
+475 12754 | 12433 5 | 12280 12429 | 98.46 | CP014533.1_Enterococcus_faecium_strain_E745_plasmid_pl4__complete_sequence tig00000025_pilon
+1 29545 | 29545 1 | 29545 29545 | 100.0 | CP014535.1_Enterococcus_faecium_strain_E745_plasmid_pl6__complete_sequence NODE_8_length_62897_cov_74.024920
+32207 65558 | 62897 29546 | 33352 33352 | 99.99 | CP014535.1_Enterococcus_faecium_strain_E745_plasmid_pl6__complete_sequence NODE_8_length_62897_cov_74.024920
+7970 9310 | 1 1346 | 1341 1346 | 99.33 | CP014532.1_Enterococcus_faecium_strain_E745_plasmid_pl3__complete_sequence tig00000029_pilon
+1 9310 | 1347 10663 | 9310 9317 | 99.84 | CP014532.1_Enterococcus_faecium_strain_E745_plasmid_pl3__complete_sequence tig00000029_pilon
+1 1325 | 10664 11989 | 1325 1326 | 99.92 | CP014532.1_Enterococcus_faecium_strain_E745_plasmid_pl3__complete_sequence tig00000029_pilon
+7238 190689 | 183449 1 | 183452 183449 | 99.94 | CP014530.1_Enterococcus_faecium_strain_E745_plasmid_pl1__complete_sequence tig00000464_pilon
+43613 51967 | 191799 183450 | 8355 8350 | 97.63 | CP014534.1_Enterococcus_faecium_strain_E745_plasmid_pl5__complete_sequence tig00000464_pilon
+196515 223688 | 218977 191800 | 27174 27178 | 99.96 | CP014530.1_Enterococcus_faecium_strain_E745_plasmid_pl1__complete_sequence tig00000464_pilon
+195812 202379 | 6563 1 | 6568 6563 | 99.86 | CP014530.1_Enterococcus_faecium_strain_E745_plasmid_pl1__complete_sequence tig00000465_pilon
+192635 194370 | 8300 6564 | 1736 1737 | 99.87 | CP014530.1_Enterococcus_faecium_strain_E745_plasmid_pl1__complete_sequence tig00000465_pilon
